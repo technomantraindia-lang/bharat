@@ -119,3 +119,25 @@
 - Rebalanced the valued-clients section into a cleaner desktop grid: copy on the left, compact 2x2 metrics in the middle, and the drilling-site image on the right.
 - Reduced oversized card/image spacing, softened the image frame, improved button/stat styling, and made the logo rail lighter and more polished.
 - Validation evidence: `node --check main.js` passed; `validate-all.ps1` passed with 0 errors; CSS checks confirmed the copy/stats/media grid areas are active.
+
+## 2026-09-30 - Valued clients stats removal
+
+- Removed the four valued-clients metric cards from `index.html`.
+- Rebalanced the valued-clients hero to a two-column copy/image layout so no empty center column remains.
+- Validation evidence: `node --check main.js` passed; `validate-all.ps1` passed with 0 errors; markup checks confirmed 0 `.clients-stats-row` and 0 `.client-stat-card` entries in `index.html`.
+
+## 2026-09-30 - Valued clients section spacing
+
+- Added clearer top and bottom breathing room to the valued-clients section with responsive desktop/mobile padding.
+- Validation evidence: `node --check main.js` passed; `validate-all.ps1` passed with 0 errors; CSS checks confirmed the final desktop and mobile gap rules are active.
+
+## 2026-09-30 - Valued clients image width reduction
+
+- Reduced the oversized right-side client-section image by capping the desktop artwork column at 760px and the tablet artwork at 560px.
+- Validation evidence: `node --check main.js` passed; `validate-all.ps1` passed with 0 errors; CSS checks confirmed the final image-width cap rules are active.
+
+## 2026-09-30 - FAQ premium redesign
+
+- Reworked the FAQ section with a cleaner two-column desktop composition, compact accordion width, framed square visual artwork, softer section background and stronger active-question styling.
+- Kept all 8 FAQ items and the no-search layout intact.
+- Validation evidence: `node --check main.js` passed; `validate-all.ps1` passed with 0 errors; checks confirmed 8 FAQ items, 0 search markup entries and active premium FAQ CSS rules.
