@@ -6,7 +6,7 @@
 - Technology: HTML/CSS/JavaScript
 - Active file at refresh: None
 - Local code graph: 3 files · 2 edges · 0 matched flows
-- Refreshed: 2026-09-30T08:26:04.195Z
+- Refreshed: 2026-10-01T04:37:28.398Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -92,17 +92,31 @@
 - .agents/skills/subagent-delegation/SKILL.md
 - .agents/skills/token-budget/SKILL.md
 - .agents/skills/verifier/SKILL.md
+- .clinerules/05-technomantra-execution-mode.md
+- .clinerules/06-technomantra-developer-mode.md
+- .clinerules/07-technomantra-eco-execution.md
+- .clinerules/08-technomantra-task-watchdog.md
+- .clinerules/09-technomantra-multitask-isolation.md
+- .clinerules/10-technomantra-project-memory.md
+- .clinerules/11-technomantra-code-knowledge.md
+- .clinerules/12-technomantra-task-capsules.md
+- .clinerules/13-technomantra-runtime-price-optimizer.md
+
+## Additional indexed files
+- .clinerules/14-technomantra-adaptive-cost-optimizer.md
+- .clinerules/15-technomantra-fast-coding-engine.md
 - .clinerules/90-technomantra-selected-agent.md
 - .gemini/GEMINI.md
 - .gsd/examples/cross-platform.md
 - .gsd/examples/multi-wave-workflow.md
 - .gsd/examples/quick-reference.md
 - .gsd/examples/workflow-example.md
+- .gsd/JOURNAL.md
 - adapters/CLAUDE.md
 - adapters/GEMINI.md
 - adapters/GPT_OSS.md
-
-## Additional indexed files
+- ARCHITECTURE.md
 - main.js
 - model_capabilities.yaml
 - PROJECT_RULES.md
+- STACK.md

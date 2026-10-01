@@ -21,7 +21,7 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Framework: html-static
 - Developer mode: smart
 - Model mode: eco
-- Active file: .gsd/JOURNAL.md
+- Active file: index.html
 - Objective: Current developer prompt in this workspace/window only.
 - Blocker: none
 - Next action: Inspect current prompt and workspace evidence before editing.
@@ -29,8 +29,9 @@ The extension refreshes this file automatically. Prefer its concise state over o
 ## Touched files in this capsule
 
 ## Recent files in this workspace/window
-- .gsd/JOURNAL.md
 - index.html
+- .gsd/templates/architecture.md
+- .gsd/JOURNAL.md
 
 ## Hard rule
 If a file, goal, screenshot, terminal output, or decision is not connected to this capsule, do not use it for the current task.

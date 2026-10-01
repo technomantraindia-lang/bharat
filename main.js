@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initStatsCounter();
   initSearchButton();
   initAboutReveal();
+  initScrollRevealAnimations();
+  initClientMarquee();
+  initProcessAnimations();
+  initServicesAnimations();
 });
 
 // 0.1 About section reveal choreography
@@ -275,9 +279,20 @@ function initSearchButton() {
 }
 
 // 5. Consultation Modal Handlers
-function openConsultModal() {
+function openConsultModal(sectorName) {
   const modal = document.getElementById('consultModal');
-  if (modal) modal.classList.add('active');
+  if (modal) {
+    modal.classList.add('active');
+  } else {
+    const contact = document.getElementById('contact');
+    if (contact) {
+      contact.scrollIntoView({ behavior: 'smooth' });
+      const firstInput = contact.querySelector('input, textarea, select');
+      if (firstInput) {
+        setTimeout(() => firstInput.focus(), 600);
+      }
+    }
+  }
 }
 
 function closeConsultModal() {
@@ -288,7 +303,7 @@ function closeConsultModal() {
 // Close on backdrop click
 document.addEventListener('click', (e) => {
   const modal = document.getElementById('consultModal');
-  if (e.target === modal) {
+  if (modal && e.target === modal) {
     closeConsultModal();
   }
 });
@@ -296,13 +311,14 @@ document.addEventListener('click', (e) => {
 // 6. Interactive FAQ Accordion Toggle
 function toggleFaq(headerEl) {
   const item = headerEl.parentElement;
+  if (!item) return;
   const wasActive = item.classList.contains('active');
   
-  // Close other items in the same column for smooth UX
-  const column = item.closest('.faq-column');
-  if (column) {
-    const items = column.querySelectorAll('.faq-accordion-item');
-    items.forEach(i => {
+  // Find enclosing stack or column
+  const container = item.closest('.faq-accordion-stack') || item.closest('.faq-column') || item.parentElement;
+  if (container) {
+    const allItems = container.querySelectorAll('.faq-card-item, .faq-accordion-item');
+    allItems.forEach(i => {
       i.classList.remove('active');
       const icon = i.querySelector('.toggle-icon');
       if (icon) {
@@ -320,39 +336,168 @@ function toggleFaq(headerEl) {
   }
 }
 
-// 7. Testimonials Carousel Slider
+// 7. Testimonials Carousel Slider with Auto-Play & Smooth Left/Right Sliding
 function initTestimonialsSlider() {
+  const viewport = document.getElementById('testiCardsViewport');
+  const track = document.getElementById('testiCardsContainer');
   const prevBtn = document.getElementById('testiPrevBtn');
   const nextBtn = document.getElementById('testiNextBtn');
-  const dots = document.querySelectorAll('.testi-pagination-dots .p-dot');
-  let currentIndex = 0;
+  const showcase = document.querySelector('.testi-slider-showcase');
+  const dotsContainer = document.querySelector('.testi-pagination-dots');
 
-  function updateSlide(index) {
+  if (!viewport || !track) return;
+
+  const cards = track.querySelectorAll('.testi-card-box');
+  if (cards.length === 0) return;
+
+  let currentIndex = 0;
+  let autoplayTimer = null;
+  const AUTOPLAY_INTERVAL = 3800; // Auto slide every 3.8 seconds
+
+  function getVisibleCount() {
+    if (window.innerWidth <= 720) return 1;
+    if (window.innerWidth <= 1024) return 2;
+    return 3;
+  }
+
+  function getMaxIndex() {
+    return Math.max(0, cards.length - getVisibleCount());
+  }
+
+  function renderDots() {
+    if (!dotsContainer) return;
+    const maxIdx = getMaxIndex();
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i <= maxIdx; i++) {
+      const dot = document.createElement('span');
+      dot.className = `p-dot ${i === currentIndex ? 'active' : ''}`;
+      dot.setAttribute('aria-label', `Go to testimonial slide ${i + 1}`);
+      dot.addEventListener('click', () => {
+        goToSlide(i);
+        restartAutoplay();
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    if (!dotsContainer) return;
+    const dots = dotsContainer.querySelectorAll('.p-dot');
     dots.forEach((dot, idx) => {
-      dot.classList.toggle('active', idx === index);
+      dot.classList.toggle('active', idx === currentIndex);
+    });
+  }
+
+  function goToSlide(index) {
+    const maxIdx = getMaxIndex();
+    if (index > maxIdx) {
+      currentIndex = 0; // loop back to first
+    } else if (index < 0) {
+      currentIndex = maxIdx; // loop back to end
+    } else {
+      currentIndex = index;
+    }
+
+    const firstCard = cards[0];
+    if (!firstCard) return;
+
+    const cardRect = firstCard.getBoundingClientRect();
+    const style = window.getComputedStyle(track);
+    const gap = parseFloat(style.gap) || 26;
+    const shift = currentIndex * (cardRect.width + gap);
+
+    track.style.transform = `translateX(-${shift}px)`;
+
+    cards.forEach((card, idx) => {
+      const isVisible = idx >= currentIndex && idx < currentIndex + getVisibleCount();
+      card.classList.toggle('active-card', isVisible);
+    });
+
+    updateDots();
+  }
+
+  function nextSlide() {
+    const maxIdx = getMaxIndex();
+    const nextIdx = (currentIndex >= maxIdx) ? 0 : currentIndex + 1;
+    goToSlide(nextIdx);
+  }
+
+  function prevSlide() {
+    const maxIdx = getMaxIndex();
+    const prevIdx = (currentIndex <= 0) ? maxIdx : currentIndex - 1;
+    goToSlide(prevIdx);
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      restartAutoplay();
     });
   }
 
   if (prevBtn) {
     prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex > 0) ? currentIndex - 1 : dots.length - 1;
-      updateSlide(currentIndex);
+      prevSlide();
+      restartAutoplay();
     });
   }
 
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex < dots.length - 1) ? currentIndex + 1 : 0;
-      updateSlide(currentIndex);
-    });
+  function startAutoplay() {
+    stopAutoplay();
+    autoplayTimer = setInterval(nextSlide, AUTOPLAY_INTERVAL);
   }
 
-  dots.forEach((dot, idx) => {
-    dot.addEventListener('click', () => {
-      currentIndex = idx;
-      updateSlide(currentIndex);
-    });
-  });
+  function stopAutoplay() {
+    if (autoplayTimer) {
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    }
+  }
+
+  function restartAutoplay() {
+    startAutoplay();
+  }
+
+  // Pause on hover so users can comfortably read
+  if (showcase) {
+    showcase.addEventListener('mouseenter', stopAutoplay);
+    showcase.addEventListener('mouseleave', startAutoplay);
+  }
+
+  // Touch swipe support for mobile
+  let touchStartX = 0;
+  viewport.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    stopAutoplay();
+  }, { passive: true });
+
+  viewport.addEventListener('touchend', (e) => {
+    const touchEndX = e.changedTouches[0].screenX;
+    const swipeDistance = touchStartX - touchEndX;
+    if (Math.abs(swipeDistance) > 40) {
+      if (swipeDistance > 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+    }
+    startAutoplay();
+  }, { passive: true });
+
+  // Handle window resizing
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      renderDots();
+      goToSlide(Math.min(currentIndex, getMaxIndex()));
+    }, 120);
+  }, { passive: true });
+
+  // Initialize
+  renderDots();
+  goToSlide(0);
+  startAutoplay();
 }
 
 // 8. Valued clients: responsive left/right auto-moving logo strip
@@ -449,7 +594,42 @@ document.addEventListener('DOMContentLoaded', () => {
   initTestimonialsSlider();
   initAboutSlider();
   initClientLogoAutoScroll();
+  initIndustriesFilter();
 });
+
+// Industries We Serve Category Filter
+function initIndustriesFilter() {
+  const filterBtns = document.querySelectorAll('.ind-filter-btn');
+  const cards = document.querySelectorAll('.industry-card');
+  if (!filterBtns.length || !cards.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Filter cards with smooth entrance
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (filter === 'all' || cat === filter) {
+          card.classList.remove('hidden');
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(12px)';
+          setTimeout(() => {
+            card.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 30);
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+}
 
 function handleFormSubmit(e) {
   e.preventDefault();
@@ -464,3 +644,163 @@ function handleNewsletterSubmit(e) {
   e.target.reset();
 }
 
+// ==========================================================================
+// UNIVERSAL SCROLL ENTRANCE & SECTION REVEAL CHOREOGRAPHY
+// ==========================================================================
+function initScrollRevealAnimations() {
+  const containerStaggerPairs = [
+    { container: '.services-cards-grid', item: '.solution-card' },
+    { container: '.process-cards-row', item: '.process-step-column' },
+    { container: '.industries-grid', item: '.industry-card' },
+    { container: '.client-logos-grid', item: '.client-logo-box' },
+    { container: '.testi-cards-row', item: '.testi-card-box' },
+    { container: '.faq-accordion-stack', item: '.faq-card-item' },
+    { container: '.footer-grid-5col', item: '.footer-col' },
+    { container: '.about-bento-grid', item: '.about-bento-card' }
+  ];
+
+  containerStaggerPairs.forEach(({ container, item }) => {
+    const parent = document.querySelector(container);
+    if (!parent) return;
+    const items = parent.querySelectorAll(item);
+    items.forEach((el, idx) => {
+      el.classList.add('reveal-stagger-item');
+      el.style.setProperty('--stagger-index', idx);
+    });
+  });
+
+  const sectionElements = [
+    // Section Header Boxes
+    '.services-header-box',
+    '.process-header-box',
+    '.industries-header-centered',
+    '.clients-reference-header',
+    '.testi-header-box',
+    '.faq-header-box',
+    '.about-header-centered',
+    // Main Section Bodies / Containers
+    '.services-cards-grid',
+    '.process-cards-row',
+    '.industries-grid',
+    '.client-logos-showcase-shell',
+    '.testi-slider-showcase',
+    '.faq-content-col',
+    '.global-cta-section .industries-action-banner',
+    '.footer-grid-5col'
+  ];
+
+  const targets = document.querySelectorAll(sectionElements.join(', '));
+  if (!targets.length) return;
+
+  targets.forEach((el) => {
+    el.classList.add('scroll-reveal-init');
+  });
+
+  if (!('IntersectionObserver' in window)) {
+    targets.forEach((el) => el.classList.add('is-revealed'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.08,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  targets.forEach((el) => observer.observe(el));
+}
+
+// ==========================================
+// CLIENT MARQUEE: Duplicate logos for seamless infinite loop
+// ==========================================
+function initClientMarquee() {
+  const tracks = document.querySelectorAll('.client-marquee-track');
+  tracks.forEach((track) => {
+    // Clone all existing children and append for seamless loop
+    const items = Array.from(track.children);
+    items.forEach((item) => {
+      const clone = item.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    });
+  });
+}
+
+// ==========================================
+// PROCESS SECTION: Multi-directional scroll entrance
+// ==========================================
+function initProcessAnimations() {
+  const header = document.querySelector('.process-header-box');
+  const cards = document.querySelectorAll('.process-step-item');
+  if (!cards.length) return;
+
+  // Assign alternating directions: left, bottom, top, right, left, bottom
+  const directions = ['left', 'bottom', 'top', 'right', 'left', 'bottom'];
+  cards.forEach((card, i) => {
+    card.setAttribute('data-anim-dir', directions[i % directions.length]);
+  });
+
+  if (!('IntersectionObserver' in window)) {
+    // Fallback: show everything immediately
+    if (header) header.classList.add('proc-anim-visible');
+    cards.forEach(c => c.classList.add('proc-anim-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Animate header first
+        if (header) header.classList.add('proc-anim-visible');
+        // Animate all cards (stagger handled by CSS nth-child delays)
+        cards.forEach(c => c.classList.add('proc-anim-visible'));
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+  // Observe the card row container
+  const row = document.querySelector('.process-cards-row');
+  if (row) observer.observe(row);
+}
+
+// ==========================================
+// SERVICES SECTION: Multi-directional scroll entrance
+// ==========================================
+function initServicesAnimations() {
+  const header = document.querySelector('.services-header-box');
+  const cards = document.querySelectorAll('.solution-card');
+  if (!cards.length) return;
+
+  // Row 1 (cards 1-3): left, top, right
+  // Row 2 (cards 4-6): right, bottom, left
+  const directions = ['left', 'top', 'right', 'right', 'bottom', 'left'];
+  cards.forEach((card, i) => {
+    card.setAttribute('data-srv-dir', directions[i % directions.length]);
+  });
+
+  if (!('IntersectionObserver' in window)) {
+    if (header) header.classList.add('srv-anim-visible');
+    cards.forEach(c => c.classList.add('srv-anim-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (header) header.classList.add('srv-anim-visible');
+        cards.forEach(c => c.classList.add('srv-anim-visible'));
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  const grid = document.querySelector('.services-cards-grid');
+  if (grid) observer.observe(grid);
+}

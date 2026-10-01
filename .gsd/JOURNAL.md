@@ -141,3 +141,93 @@
 - Reworked the FAQ section with a cleaner two-column desktop composition, compact accordion width, framed square visual artwork, softer section background and stronger active-question styling.
 - Kept all 8 FAQ items and the no-search layout intact.
 - Validation evidence: `node --check main.js` passed; `validate-all.ps1` passed with 0 errors; checks confirmed 8 FAQ items, 0 search markup entries and active premium FAQ CSS rules.
+
+## 2026-10-01 - FAQ to CTA section transition
+
+- Added a layered blue water-wave divider with floating bubbles between the FAQ and CTA sections.
+- Added responsive sizing for the divider so the section transition remains compact on mobile.
+- Validation evidence: targeted UI structure checks passed; `git diff --check` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - CTA top spacing
+
+- Increased the breathing room above the CTA banner to 52px on desktop and 28px on mobile.
+- Validation evidence: CTA spacing/CSS balance checks passed; `git diff --check` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Valued clients reference composition
+
+- Rebuilt the valued-clients section into the supplied centered reference layout with category pills, 7x2 client logo grid, navigation arrows, stats strip, industrial horizon and layered water waves.
+- Replaced the previous split hero artwork and updated the visible client marks to match the reference lineup.
+- Added lightweight filter-pill active-state interaction and responsive layouts for tablet/mobile.
+- Validation evidence: `node --check main.js` passed; reference composition checks passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Valued clients filter and stats removal
+
+- Removed the category filter pills and four-card statistics strip from the valued-clients section.
+- Kept the 14-logo showcase and its responsive layout intact.
+- Validation evidence: removal checks confirmed filters=0, stats=0, logos=14; CSS balance passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Valued clients visual polish
+
+- Reduced the oversized empty area below the logo showcase by tightening the desktop section height and bottom spacing.
+- Made the lower wave treatment more compact and scaled the visually smaller client marks for a more balanced logo grid.
+- Validation evidence: compact section rule checks passed; CSS balance passed; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Valued clients unified heading
+
+- Matched the clients section header to the shared page-heading system: rounded category pill, centered serif heading, gradient blue highlight and centered subtitle.
+- Fixed the heading width/alignment so it no longer appears shifted to the left.
+- Validation evidence: unified heading rule checks passed; CSS balance passed; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Process background refresh
+
+- Removed the cluttered process background layers: contour SVGs, subsurface stream overlay, corner leaf images and radar rings.
+- Added a cleaner aqua gradient surface with a subtle technical grid and soft centered glow while preserving the process cards and bottom water wave.
+- Validation evidence: oldLayers=0, cleanLayers=2, CSS balance passed; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Process motion smoothing
+
+- Slowed the process header/card entrance transitions to 1.15–1.2 seconds with a soft easing curve and wider stagger timing.
+- Slowed process bubble cycles to 10–14 seconds and softened hover transitions for calmer motion.
+- Validation evidence: slower motion rule checks passed; CSS balance passed; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Homepage global motion smoothing
+
+- Slowed shared scroll reveals, About entrance/floating elements, hero pulses and bubbles, client marquee, CTA/FAQ bubbles and common hover transitions across the homepage.
+- Added smooth scrolling and a consistent soft easing curve for the page interaction system.
+- Validation evidence: homepage motion rule checks passed; CSS balance passed; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Valued clients left-aligned header
+
+- Left-aligned the clients category label, heading and description while keeping the logo showcase centered and unchanged.
+- Validation evidence: left-alignment rule checks passed; CSS balance passed; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - CTA Valued Clients background
+
+- Applied the Valued Clients aqua gradient atmosphere behind the CTA section.
+- Added the matching soft white glow and subtle dotted texture while preserving the CTA banner content and controls.
+- Validation evidence: CTA background/glow/texture checks passed; CSS balance passed; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - FAQ header left alignment correction
+
+- Restored the Valued Clients heading, category label and description to centered alignment.
+- Left-aligned only the FAQ category label, heading and description as requested.
+- Validation evidence: alignment rule checks passed; CSS balance passed; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Light process water wave
+
+- Replaced the dark blue process-section bottom wave gradients with a softer light aqua-blue palette.
+- Preserved the wave shapes, bubbles and section layout.
+- Validation evidence: light wave color checks passed; CSS balance passed; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Light CTA banner redesign
+
+- Replaced the dark CTA banner treatment with a light glass-style card, soft aqua glow and subtle dotted decoration.
+- Updated the badge, title, description and action buttons for readable light-theme contrast.
+- Validation evidence: CTA design checks passed; CSS balance passed; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+
+## 2026-10-01 - Homepage responsive system
+
+- Added final responsive rules for the navbar, hero, About, Services, Process, Valued Clients, Testimonials, FAQ, CTA, footer and modal layouts.
+- Added tablet/mobile wrapping for grids, buttons, stats, marquee logos, testimonial cards and footer columns, plus viewport overflow protection.
+- Validation evidence: responsive CSS checks passed with 1909 balanced braces; `node --check main.js` passed; `validate-all.ps1` passed with 0 errors.
+

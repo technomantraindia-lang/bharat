@@ -18,7 +18,7 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=1.7.0">
 </head>
 
 <body>
@@ -43,16 +43,8 @@
         </a>
       </div>
 
-      <!-- Right Links & Social Icons -->
+      <!-- Right Social Icons -->
       <div class="top-bar-right">
-        <div class="top-quick-links">
-          <a href="#careers">Careers</a>
-          <span class="v-sep">|</span>
-          <a href="#brochure">Brochure</a>
-          <span class="v-sep">|</span>
-          <a href="#faqs">FAQs</a>
-        </div>
-        <span class="v-sep-thick"></span>
         <div class="top-social-group">
           <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -95,26 +87,6 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#process" class="nav-link">Process</a>
-          </li>
-          <li class="nav-item has-dropdown">
-            <a href="#industries" class="nav-link">
-              Industries <i class="fa-solid fa-chevron-down nav-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-              <li><a href="#industries">Industrial & Manufacturing</a></li>
-              <li><a href="#industries">Agriculture & Irrigation</a></li>
-              <li><a href="#industries">Commercial Infrastructure</a></li>
-              <li><a href="#industries">Residential Townships</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#clients" class="nav-link">Clients</a>
-          </li>
-          <li class="nav-item">
             <a href="#knowledge" class="nav-link">Knowledge Center</a>
           </li>
           <li class="nav-item">
@@ -125,15 +97,10 @@
 
       <!-- Right Action Controls -->
       <div class="nav-right-actions">
-        <!-- Search Circle Button -->
-        <button class="btn-search-circle" id="searchBtn" aria-label="Search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-
-        <!-- Request a Consultation Button -->
-        <button class="btn-consultation-pill" onclick="openConsultModal()">
-          <i class="fa-regular fa-calendar-check"></i>
-          <span>Request a Consultation</span>
+        <!-- Free Inquiry Button -->
+        <button class="btn-inquiry-pill" onclick="openConsultModal()" aria-label="Free Inquiry">
+          <i class="fa-solid fa-file-signature inquiry-icon"></i>
+          <span>Free Inquiry</span>
           <i class="fa-solid fa-arrow-right arrow-icon"></i>
         </button>
 
@@ -262,22 +229,16 @@
       <!-- LEFT COLUMN: Content, 4 Bento Feature Cards & CTAs -->
       <div class="about-left-col">
 
-        <!-- Frosted Capsule Badge -->
-        <div class="about-hero-badge">
-          <span class="badge-icon-building"><i class="fa-solid fa-city"></i></span>
-          <span class="badge-txt">ABOUT BHARAT BHUJAL</span>
-          <span class="badge-tag-pill">CGWA &bull; ISO ACCREDITED</span>
+        <!-- Category Pill matching reference design -->
+        <div class="about-category-pill">
+          <span class="pill-blue-dash"></span>
+          <span class="pill-category-text">ABOUT BHARAT BHUJAL</span>
+          <span class="pill-blue-dash"></span>
         </div>
 
-        <!-- Big Bold Title with Ocean Gradient & Curved Wave Underline -->
+        <!-- Big Bold Title matching reference design -->
         <h2 class="about-main-headline">
-          Engineering Better
-          <span class="highlight-water-solutions">
-            &nbsp;Water Solutions
-            <svg class="wavy-underline-svg" viewBox="0 0 240 16" fill="none" preserveAspectRatio="none">
-              <path d="M2 9 C 45 3, 85 14, 125 8 C 165 2, 205 13, 238 7" stroke="#0084ff" stroke-width="4.5" stroke-linecap="round"/>
-            </svg>
-          </span>
+          Engineering Better <span class="highlight-blue-txt">Water Solutions</span>
         </h2>
 
         <!-- Refined Lead Description -->
@@ -709,17 +670,16 @@
   </section>
 
 
-  <!-- ================= OUR PROCESS SECTION (EXACT AS SCREENSHOT) ================= -->
+  <!-- ================= OUR PROCESS SECTION ================= -->
   <section class="process-flow-section" id="process">
 
-    <!-- Top-Right Ambient Water Ripple Decor -->
-    <div class="process-water-ripple-decor">
-      <svg viewBox="0 0 160 160" fill="none" class="proc-drop-svg">
-        <circle cx="100" cy="60" r="50" stroke="#38bdf8" stroke-width="1.5" opacity="0.35" />
-        <circle cx="100" cy="60" r="32" stroke="#0284c7" stroke-width="2" opacity="0.5" />
-        <circle cx="100" cy="60" r="15" fill="#0284c7" opacity="0.2" />
-        <circle cx="100" cy="60" r="8" fill="#38bdf8" opacity="0.75" />
-      </svg>
+    <!-- Clean hydrogeological background layer -->
+    <div class="process-bg-fx-layer" aria-hidden="true">
+      <div class="proc-bg-glow-orb orb-1"></div>
+      <div class="proc-bg-glow-orb orb-2"></div>
+      <div class="proc-bg-glow-orb orb-3"></div>
+      <div class="process-surface-grid"></div>
+      <div class="process-center-glow"></div>
     </div>
 
     <div class="container process-inner-container">
@@ -895,13 +855,13 @@
       <svg class="process-wave-svg" viewBox="0 0 1440 140" preserveAspectRatio="none">
         <defs>
           <linearGradient id="procWaveGrad1" x1="0" y1="0" x2="0" y2="100%">
-            <stop offset="0%" stop-color="rgba(56, 189, 248, 0.45)" />
-            <stop offset="40%" stop-color="rgba(0, 128, 255, 0.75)" />
-            <stop offset="100%" stop-color="#0066cc" />
+            <stop offset="0%" stop-color="rgba(186, 230, 253, 0.42)" />
+            <stop offset="40%" stop-color="rgba(96, 190, 245, 0.52)" />
+            <stop offset="100%" stop-color="#7ccaf4" />
           </linearGradient>
           <linearGradient id="procWaveGrad2" x1="0" y1="0" x2="0" y2="100%">
-            <stop offset="0%" stop-color="rgba(186, 230, 253, 0.55)" />
-            <stop offset="100%" stop-color="rgba(2, 132, 199, 0.85)" />
+            <stop offset="0%" stop-color="rgba(240, 249, 255, 0.86)" />
+            <stop offset="100%" stop-color="rgba(147, 218, 249, 0.68)" />
           </linearGradient>
         </defs>
         <path d="M0,60 C320,110 620,20 980,75 C1200,105 1340,40 1440,65 L1440,140 L0,140 Z" fill="url(#procWaveGrad2)">
@@ -919,324 +879,625 @@
   </section>
 
 
+  <!-- ================= INDUSTRIES WE SERVE SECTION ================= -->
+  <section class="industries-serve-section" id="industries">
+    <div class="industries-bg-decor">
+      <div class="ind-radial-glow glow-1"></div>
+      <div class="ind-radial-glow glow-2"></div>
+      <div class="ind-grid-pattern"></div>
+    </div>
+
+    <div class="container industries-container">
+      <!-- Section Header -->
+      <div class="industries-header-centered">
+        <div class="industries-category-pill">
+          <span class="pill-blue-dash"></span>
+          <span class="pill-category-text">SECTORS WE EMPOWER</span>
+          <span class="pill-blue-dash"></span>
+        </div>
+        <h2 class="industries-main-heading">
+          Tailored Water Solutions For <span class="highlight-blue-txt">Every Industry</span>
+        </h2>
+        <p class="industries-subtext-para">
+          From heavy industrial plants to expansive agriculture, high-rise townships, and vital public works — we deploy specialized hydrogeological expertise, high-capacity drilling, and CGWA compliant engineering.
+        </p>
+      </div>
+
+      <!-- 6 Industry Cards Grid -->
+      <div class="industries-grid">
+
+        <!-- Card 1: Industrial & Manufacturing -->
+        <article class="industry-card" data-category="manufacturing">
+          <div class="industry-card-media">
+            <img src="assect/industry-manufacturing.jpg" alt="Industrial Manufacturing Plants Water Solutions" class="industry-img" loading="lazy">
+            <div class="industry-media-overlay"></div>
+            <span class="industry-number-badge">01</span>
+            <span class="industry-tag-badge">Heavy Industry & FMCG</span>
+          </div>
+          <div class="industry-card-body">
+            <div class="industry-icon-title-wrap">
+              <div class="industry-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
+                  <path d="M17 18h1"/>
+                  <path d="M12 18h1"/>
+                  <path d="M7 18h1"/>
+                </svg>
+              </div>
+              <h3 class="industry-card-title">Industrial & Manufacturing</h3>
+            </div>
+            <p class="industry-card-desc">
+              Reliable, ultra-high-yield production borewells, uninterrupted process water security, and complete CGWA compliance audits for manufacturing plants, breweries, and chemical facilities.
+            </p>
+            <ul class="industry-feature-list">
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Heavy-discharge production wells (up to 1,500 ft)</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Turnkey CGWA NOC licensing & digital flow telemetry</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Zero Liquid Discharge (ZLD) hydrogeological audit</span>
+              </li>
+            </ul>
+            <div class="industry-card-footer">
+              <span class="industry-stat-chip">99.8% Uptime Supply</span>
+              <a href="#contact" class="industry-cta-link" onclick="openConsultModal()">
+                <span>Explore Plant Solutions</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Agriculture & Irrigation -->
+        <article class="industry-card" data-category="agriculture">
+          <div class="industry-card-media">
+            <img src="assect/industry-agriculture.jpg" alt="Agricultural Farm and Precision Irrigation Water Management" class="industry-img" loading="lazy">
+            <div class="industry-media-overlay"></div>
+            <span class="industry-number-badge">02</span>
+            <span class="industry-tag-badge">Farming & Agro-Forestry</span>
+          </div>
+          <div class="industry-card-body">
+            <div class="industry-icon-title-wrap">
+              <div class="industry-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2Z"/>
+                  <path d="M12 6v12"/>
+                  <path d="m8 10 4-4 4 4"/>
+                </svg>
+              </div>
+              <h3 class="industry-card-title">Agriculture & Irrigation</h3>
+            </div>
+            <p class="industry-card-desc">
+              Scientific aquifer depth mapping and high-discharge tubewell drilling to power micro-irrigation, solar pumps, and shield agricultural crops from drought cycles.
+            </p>
+            <ul class="industry-feature-list">
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Resistivity & VLF geoscientific groundwater surveys</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>High-volume tubewell casing & gravel packing</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Farm pond recharge & solar submersible pump pairing</span>
+              </li>
+            </ul>
+            <div class="industry-card-footer">
+              <span class="industry-stat-chip">3.5x Yield Protection</span>
+              <a href="#contact" class="industry-cta-link" onclick="openConsultModal()">
+                <span>Explore Farm Solutions</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Commercial & IT Tech Parks -->
+        <article class="industry-card" data-category="commercial">
+          <div class="industry-card-media">
+            <img src="assect/industry-commercial.jpg" alt="Commercial IT Parks and Corporate Campuses Water Infrastructure" class="industry-img" loading="lazy">
+            <div class="industry-media-overlay"></div>
+            <span class="industry-number-badge">03</span>
+            <span class="industry-tag-badge">IT Parks & Corporate Hubs</span>
+          </div>
+          <div class="industry-card-body">
+            <div class="industry-icon-title-wrap">
+              <div class="industry-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="16" height="20" x="4" y="2" rx="2" ry="2"/>
+                  <path d="M9 22v-4h6v4"/>
+                  <path d="M8 6h.01"/>
+                  <path d="M16 6h.01"/>
+                  <path d="M8 10h.01"/>
+                  <path d="M16 10h.01"/>
+                  <path d="M8 14h.01"/>
+                  <path d="M16 14h.01"/>
+                </svg>
+              </div>
+              <h3 class="industry-card-title">Commercial & IT Parks</h3>
+            </div>
+            <p class="industry-card-desc">
+              Resilient water ecosystems for multi-acre corporate campuses, high-rise tech parks, and commercial towers requiring LEED/IGBC green compliance and zero operational downtime.
+            </p>
+            <ul class="industry-feature-list">
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Dual-aquifer redundant production borewell systems</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Automated rainwater harvesting & percolation shafts</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>LEED / IGBC water conservation compliance</span>
+              </li>
+            </ul>
+            <div class="industry-card-footer">
+              <span class="industry-stat-chip">100% Green Rating</span>
+              <a href="#contact" class="industry-cta-link" onclick="openConsultModal()">
+                <span>Explore Commercial</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Residential Townships & Gated Societies -->
+        <article class="industry-card" data-category="residential">
+          <div class="industry-card-media">
+            <img src="assect/industry-township.jpg" alt="Residential High-Rise Townships and Gated Communities" class="industry-img" loading="lazy">
+            <div class="industry-media-overlay"></div>
+            <span class="industry-number-badge">04</span>
+            <span class="industry-tag-badge">Townships & High-Rises</span>
+          </div>
+          <div class="industry-card-body">
+            <div class="industry-icon-title-wrap">
+              <div class="industry-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+              <h3 class="industry-card-title">Residential Townships</h3>
+            </div>
+            <p class="industry-card-desc">
+              End-to-end potable water supply, failed borewell revival, and artificial groundwater recharge for multi-tower societies, villa enclaves, and integrated smart townships.
+            </p>
+            <ul class="industry-feature-list">
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Deep society borewells with hydro-pneumatic boosting</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Air-compressor flushing & clogged borewell revival</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Rainwater harvesting injection wells to raise water table</span>
+              </li>
+            </ul>
+            <div class="industry-card-footer">
+              <span class="industry-stat-chip">50,000+ Homes Powered</span>
+              <a href="#contact" class="industry-cta-link" onclick="openConsultModal()">
+                <span>Explore Township</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Municipal & Public Water Works -->
+        <article class="industry-card" data-category="infrastructure">
+          <div class="industry-card-media">
+            <img src="assect/industry-municipal.jpg" alt="Municipal Water Infrastructure and Public Supply Systems" class="industry-img" loading="lazy">
+            <div class="industry-media-overlay"></div>
+            <span class="industry-number-badge">05</span>
+            <span class="industry-tag-badge">Government & Public Works</span>
+          </div>
+          <div class="industry-card-body">
+            <div class="industry-icon-title-wrap">
+              <div class="industry-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <h3 class="industry-card-title">Municipal & Public Supply</h3>
+            </div>
+            <p class="industry-card-desc">
+              Empaneled hydrogeological investigations, large-diameter city water supply wells, and regional groundwater mapping for municipal bodies and Jal Jeevan Mission projects.
+            </p>
+            <ul class="industry-feature-list">
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Large diameter telescopic casing wells (12" to 20")</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Government Jal Jeevan Mission village cluster schemes</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Certified hydrogeological strata feasibility reports</span>
+              </li>
+            </ul>
+            <div class="industry-card-footer">
+              <span class="industry-stat-chip">Govt. Empaneled Experts</span>
+              <a href="#contact" class="industry-cta-link" onclick="openConsultModal()">
+                <span>Explore Municipal</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: Mining, Highways & Heavy Infrastructure -->
+        <article class="industry-card" data-category="infrastructure">
+          <div class="industry-card-media">
+            <img src="assect/industry-infrastructure.jpg" alt="Mining, Highways and Heavy Infrastructure Dewatering" class="industry-img" loading="lazy">
+            <div class="industry-media-overlay"></div>
+            <span class="industry-number-badge">06</span>
+            <span class="industry-tag-badge">Highways & Mining</span>
+          </div>
+          <div class="industry-card-body">
+            <div class="industry-icon-title-wrap">
+              <div class="industry-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="m4.93 4.93 4.24 4.24"/>
+                  <path d="m14.83 9.17 4.24-4.24"/>
+                  <path d="m14.83 14.83 4.24 4.24"/>
+                  <path d="m9.17 14.83-4.24 4.24"/>
+                  <circle cx="12" cy="12" r="4"/>
+                </svg>
+              </div>
+              <h3 class="industry-card-title">Mining & Infrastructure</h3>
+            </div>
+            <p class="industry-card-desc">
+              Pit dewatering, tunnel depressurization, geotechnical fracture analysis, and construction water networks for highways, metro rail, and large-scale mining operations.
+            </p>
+            <ul class="industry-feature-list">
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Deep open-cast mine dewatering borehole networks</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Geotechnical stratum lithology & fracture mapping</span>
+              </li>
+              <li>
+                <svg class="ind-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>High-velocity submersible dewatering pump setups</span>
+              </li>
+            </ul>
+            <div class="industry-card-footer">
+              <span class="industry-stat-chip">Zero Inundation Risk</span>
+              <a href="#contact" class="industry-cta-link" onclick="openConsultModal()">
+                <span>Explore Infrastructure</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
   <!-- ================= OUR VALUED CLIENTS SECTION (EXACT AS SCREENSHOT) ================= -->
   <section class="valued-clients-section" id="clients">
 
-    <!-- Ambient Blue Sky & Corner Splash Backdrop -->
+    <!-- Ambient Blue Sky, World Map & Industrial Horizon Backdrop -->
     <div class="clients-bg-sky"></div>
     <div class="clients-splash-left"></div>
     <div class="clients-splash-right"></div>
+    <div class="clients-map-backdrop" aria-hidden="true"></div>
+    <div class="clients-industrial-horizon" aria-hidden="true">
+      <span class="clients-plant-left"></span>
+      <span class="clients-stack-left"></span>
+      <span class="clients-plant-right"></span>
+      <span class="clients-stack-right"></span>
+    </div>
 
     <div class="container clients-container">
 
-      <!-- Top Grid: Left (Heading, Paragraph, CTA) & Right (Engineers Site Visual) -->
-      <div class="clients-hero-grid">
-
-        <!-- Left Column: Content -->
-        <div class="clients-left-col">
-          <!-- Category Pill -->
-          <div class="clients-category-pill">
-            <span class="pill-blue-dash"></span>
-            <span class="pill-category-text">OUR VALUED CLIENTS</span>
-          </div>
-
-          <!-- Main Heading -->
-          <h2 class="clients-main-heading">
-            Trusted by <span class="highlight-blue-txt">Industry Leaders</span>
-          </h2>
-
-          <!-- Subtitle Paragraph -->
-          <p class="clients-subtext-para">
-            We are proud to partner with leading industries, institutions and organizations across India, delivering
-            reliable groundwater exploration, water resource management and environmental solutions for critical
-            projects and long-term sustainability.
-          </p>
-
-          <!-- CTA Button -->
-          <div class="clients-action-wrap">
-            <a href="#contact" onclick="openConsultModal()" class="btn-clients-explore">
-              <span>View All Clients</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#testimonials" class="btn-client-story" aria-label="Watch our client story">
-              <span class="client-story-play"><i class="fa-solid fa-play"></i></span>
-              <span class="client-story-copy"><strong>Our Client Story</strong><small>2 min video overview</small></span>
-            </a>
-          </div>
+      <!-- Centered Reference Header -->
+      <div class="clients-reference-header">
+        <div class="clients-category-pill">
+          <span class="pill-blue-dash"></span>
+          <span class="pill-category-text">OUR VALUED CLIENTS</span>
+          <span class="pill-blue-dash"></span>
         </div>
-
-        <!-- Right Column: Industrial Projects & Exploration Visual -->
-        <div class="clients-right-visual-wrap">
-          <div class="clients-site-artwork-box">
-            <img src="assect/clients-engineers-rig-generated.png"
-              alt="Bharat Bhujal field engineers and drilling rig" class="clients-site-img">
-            <div class="site-glass-fade-overlay"></div>
-            <div class="clients-live-badge">
-              <i class="fa-solid fa-droplet clients-live-icon"></i>
-              <span>Sustainable Water Solutions<br><b>for a Better Tomorrow</b></span>
-            </div>
-          </div>
-        </div>
-
+        <h2 class="clients-main-heading">
+          Trusted by <span class="highlight-blue-txt">Industry Leaders</span>
+        </h2>
+        <p class="clients-subtext-para">
+          We are proud to partner with leading industries, institutions and organizations across India,<br class="clients-reference-break">
+          delivering reliable groundwater exploration, water resource management and environmental solutions.
+        </p>
       </div>
 
-      <!-- Main White Rounded Card Containing 16 Top Indian Industrial Client Logos -->
-      <div class="client-logos-showcase-shell">
-        <button class="client-logo-nav client-logo-prev" type="button" aria-label="Previous clients">
-          <i class="fa-solid fa-arrow-left"></i>
-        </button>
-        <div class="client-logos-showcase-card">
-        <div class="client-logos-viewport" aria-label="Our valued clients">
-          <div class="client-logos-grid">
+      <!-- Dual-Direction Infinite Marquee Logo Showcase -->
+      <div class="client-marquee-wrap">
 
-          <!-- Logo 1: TATA PROJECTS -->
-          <div class="client-logo-box">
-            <div class="logo-tata-projects">
-              <svg viewBox="0 0 160 50" class="logo-svg">
-                <g fill="#0055b8">
-                  <ellipse cx="25" cy="20" rx="18" ry="12" fill="none" stroke="#0055b8" stroke-width="2.5" />
-                  <path d="M 18,20 L 32,20 M 25,12 L 25,28" stroke="#0055b8" stroke-width="2.5"
-                    stroke-linecap="round" />
-                  <text x="50" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16"
-                    font-weight="900" letter-spacing="2">TATA</text>
-                  <text x="25" y="42" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10"
-                    font-weight="800" letter-spacing="1">TATA PROJECTS</text>
-                </g>
-              </svg>
+        <!-- Row 1: Scrolls LEFT -->
+        <div class="client-marquee-row marquee-left">
+          <div class="client-marquee-track">
+            <!-- Logo 1: TATA PROJECTS -->
+            <div class="client-logo-box">
+              <div class="logo-tata-projects">
+                <svg viewBox="0 0 160 50" class="logo-svg">
+                  <g fill="#0055b8">
+                    <ellipse cx="25" cy="20" rx="18" ry="12" fill="none" stroke="#0055b8" stroke-width="2.5" />
+                    <path d="M 18,20 L 32,20 M 25,12 L 25,28" stroke="#0055b8" stroke-width="2.5"
+                      stroke-linecap="round" />
+                    <text x="50" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16"
+                      font-weight="900" letter-spacing="2">TATA</text>
+                    <text x="25" y="42" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10"
+                      font-weight="800" letter-spacing="1">TATA PROJECTS</text>
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
-
-          <!-- Logo 2: LARSEN & TOUBRO -->
-          <div class="client-logo-box">
-            <div class="logo-lt">
-              <svg viewBox="0 0 180 50" class="logo-svg">
-                <g fill="#0a3977">
-                  <circle cx="25" cy="25" r="18" fill="none" stroke="#0a3977" stroke-width="2.5" />
-                  <text x="14" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="900">L&amp;T</text>
-                  <text x="50" y="31" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13"
-                    font-weight="900" font-style="italic" letter-spacing="0.5">LARSEN &amp; TOUBRO</text>
-                </g>
-              </svg>
+            <!-- Logo 2: LARSEN & TOUBRO -->
+            <div class="client-logo-box">
+              <div class="logo-lt">
+                <svg viewBox="0 0 180 50" class="logo-svg">
+                  <g fill="#0a3977">
+                    <circle cx="25" cy="25" r="18" fill="none" stroke="#0a3977" stroke-width="2.5" />
+                    <text x="14" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="900">L&amp;T</text>
+                    <text x="50" y="31" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13"
+                      font-weight="900" font-style="italic" letter-spacing="0.5">LARSEN &amp; TOUBRO</text>
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
-
-          <!-- Logo 3: RELIANCE INDUSTRIES -->
-          <div class="client-logo-box">
-            <div class="logo-reliance">
-              <svg viewBox="0 0 180 50" class="logo-svg">
-                <g fill="#212529">
-                  <circle cx="22" cy="25" r="14" fill="#d97706" />
-                  <circle cx="22" cy="25" r="9" fill="#f59e0b" />
-                  <circle cx="22" cy="25" r="4" fill="#ffffff" />
-                  <text x="44" y="26" font-family="'Times New Roman', serif" font-size="20"
-                    font-weight="bold">Reliance</text>
-                  <text x="45" y="40" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600"
-                    fill="#64748b">Industries Limited</text>
-                </g>
-              </svg>
+            <!-- Logo 3: RELIANCE INDUSTRIES -->
+            <div class="client-logo-box">
+              <div class="logo-reliance">
+                <svg viewBox="0 0 180 50" class="logo-svg">
+                  <g fill="#212529">
+                    <circle cx="22" cy="25" r="14" fill="#d97706" />
+                    <circle cx="22" cy="25" r="9" fill="#f59e0b" />
+                    <circle cx="22" cy="25" r="4" fill="#ffffff" />
+                    <text x="44" y="26" font-family="'Times New Roman', serif" font-size="20"
+                      font-weight="bold">Reliance</text>
+                    <text x="45" y="40" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600"
+                      fill="#64748b">Industries Limited</text>
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
-
-          <!-- Logo 4: ADITYA BIRLA / GRASIM -->
-          <div class="client-logo-box">
-            <div class="logo-aditya-birla">
-              <svg viewBox="0 0 160 55" class="logo-svg">
-                <g>
-                  <path d="M 45,5 L 115,5 L 115,40 L 45,40 Z" fill="#991b1b" />
-                  <circle cx="80" cy="40" r="22" fill="#ea580c" />
-                  <circle cx="80" cy="40" r="14" fill="#facc15" />
-                  <text x="80" y="14" font-family="Arial, sans-serif" font-size="7" font-weight="900" fill="#ffffff"
-                    text-anchor="middle" letter-spacing="1">ADITYA BIRLA</text>
-                  <rect x="45" y="40" width="70" height="14" fill="#15803d" />
-                  <text x="80" y="50" font-family="Arial, sans-serif" font-size="8.5" font-weight="900" fill="#ffffff"
-                    text-anchor="middle" letter-spacing="1.5">GRASIM</text>
-                </g>
-              </svg>
+            <!-- Logo 4: ADITYA BIRLA / GRASIM -->
+            <div class="client-logo-box">
+              <div class="logo-aditya-birla">
+                <svg viewBox="0 0 160 55" class="logo-svg">
+                  <g>
+                    <path d="M 45,5 L 115,5 L 115,40 L 45,40 Z" fill="#991b1b" />
+                    <circle cx="80" cy="40" r="22" fill="#ea580c" />
+                    <circle cx="80" cy="40" r="14" fill="#facc15" />
+                    <text x="80" y="14" font-family="Arial, sans-serif" font-size="7" font-weight="900" fill="#ffffff"
+                      text-anchor="middle" letter-spacing="1">ADITYA BIRLA</text>
+                    <rect x="45" y="40" width="70" height="14" fill="#15803d" />
+                    <text x="80" y="50" font-family="Arial, sans-serif" font-size="8.5" font-weight="900" fill="#ffffff"
+                      text-anchor="middle" letter-spacing="1.5">GRASIM</text>
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
-
-          <!-- Logo 5: JINDAL STEEL & POWER -->
-          <div class="client-logo-box">
-            <div class="logo-jindal">
-              <svg viewBox="0 0 180 50" class="logo-svg">
-                <g>
-                  <path d="M 60,10 Q 75,2 90,8 L 80,16 Q 70,10 60,14 Z" fill="#16a34a" />
-                  <text x="15" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900"
-                    fill="#1e293b" letter-spacing="1">JINDAL</text>
-                  <text x="35" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800"
-                    fill="#0f172a" letter-spacing="1">STEEL &amp; POWER</text>
-                </g>
-              </svg>
+            <!-- Logo 5: JINDAL STEEL & POWER -->
+            <div class="client-logo-box">
+              <div class="logo-jindal">
+                <svg viewBox="0 0 180 50" class="logo-svg">
+                  <g>
+                    <path d="M 60,10 Q 75,2 90,8 L 80,16 Q 70,10 60,14 Z" fill="#16a34a" />
+                    <text x="15" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900"
+                      fill="#1e293b" letter-spacing="1">JINDAL</text>
+                    <text x="35" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800"
+                      fill="#0f172a" letter-spacing="1">STEEL &amp; POWER</text>
+                  </g>
+                </svg>
+              </div>
             </div>
-          </div>
-
-          <!-- Logo 6: IFFCO -->
-          <div class="client-logo-box">
-            <div class="logo-iffco">
-              <svg viewBox="0 0 160 50" class="logo-svg">
-                <rect x="15" y="8" width="130" height="34" rx="4" fill="#15803d" />
-                <text x="80" y="32" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#ffffff"
-                  text-anchor="middle" letter-spacing="3">IFFCO</text>
-              </svg>
+            <!-- Logo 6: IFFCO -->
+            <div class="client-logo-box">
+              <div class="logo-iffco">
+                <svg viewBox="0 0 160 50" class="logo-svg">
+                  <rect x="15" y="8" width="130" height="34" rx="4" fill="#15803d" />
+                  <text x="80" y="32" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#ffffff"
+                    text-anchor="middle" letter-spacing="3">IFFCO</text>
+                </svg>
+              </div>
             </div>
-          </div>
-
-          <!-- Logo 7: GACL -->
-          <div class="client-logo-box">
-            <div class="logo-gacl">
-              <svg viewBox="0 0 160 50" class="logo-svg">
-                <ellipse cx="80" cy="22" rx="40" ry="14" fill="none" stroke="#f97316" stroke-width="2.5"
-                  transform="rotate(-10 80 22)" />
-                <text x="80" y="29" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#0284c7"
-                  text-anchor="middle" letter-spacing="2">GaCL</text>
-                <text x="80" y="44" font-family="Arial, sans-serif" font-size="5" font-weight="700" fill="#334155"
-                  text-anchor="middle">GUJARAT ALKALIES AND CHEMICALS LIMITED</text>
-              </svg>
+            <!-- Logo 7: ADANI -->
+            <div class="client-logo-box">
+              <div class="logo-adani">
+                <svg viewBox="0 0 160 50" class="logo-svg">
+                  <text x="80" y="34" font-family="Arial, sans-serif" font-size="31" font-weight="800"
+                    fill="#1769aa" text-anchor="middle" letter-spacing="1">adani</text>
+                  <path d="M116 11 C129 3 140 7 148 15 C137 13 127 15 116 22 Z" fill="#d62055" />
+                </svg>
+              </div>
             </div>
-          </div>
-
-          <!-- Logo 8: ONGC -->
-          <div class="client-logo-box">
-            <div class="logo-ongc">
-              <svg viewBox="0 0 120 55" class="logo-svg">
-                <rect x="30" y="4" width="60" height="48" rx="4" fill="#991b1b" />
-                <circle cx="60" cy="22" r="14" fill="none" stroke="#ffffff" stroke-width="1.8" />
-                <line x1="60" y1="8" x2="60" y2="36" stroke="#ffffff" stroke-width="2" />
-                <path d="M 52,24 Q 60,14 68,24" fill="none" stroke="#ffffff" stroke-width="1.8" />
-                <text x="60" y="47" font-family="Arial, sans-serif" font-size="8" font-weight="900" fill="#ffffff"
-                  text-anchor="middle" letter-spacing="1.5">ONGC</text>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Logo 9: INDORAMA -->
-          <div class="client-logo-box">
-            <div class="logo-indorama">
-              <svg viewBox="0 0 170 50" class="logo-svg">
-                <text x="15" y="33" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="900"
-                  fill="#1e3a8a" letter-spacing="2">IND<tspan fill="#38bdf8">O</tspan>RAMA</text>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Logo 10: DCM SHRIRAM -->
-          <div class="client-logo-box">
-            <div class="logo-dcm">
-              <svg viewBox="0 0 170 50" class="logo-svg">
-                <g transform="translate(15, 6)">
-                  <polygon points="12,0 24,12 12,24 0,12" fill="#0284c7" />
-                  <polygon points="30,0 42,12 30,24 18,12" fill="#38bdf8" />
-                  <polygon points="21,12 33,24 21,36 9,24" fill="#0369a1" />
-                  <text x="50" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13"
-                    font-weight="900" fill="#1e293b" letter-spacing="1">DCM SHRIRAM</text>
-                </g>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Logo 11: TATA CHEMICALS LIMITED -->
-          <div class="client-logo-box">
-            <div class="logo-tata-chem">
-              <svg viewBox="0 0 180 50" class="logo-svg">
-                <g fill="#0055b8">
-                  <ellipse cx="90" cy="14" rx="14" ry="9" fill="none" stroke="#0055b8" stroke-width="2" />
-                  <path d="M 85,14 L 95,14 M 90,8 L 90,20" stroke="#0055b8" stroke-width="2" />
-                  <text x="90" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="900"
-                    text-anchor="middle" letter-spacing="1">TATA</text>
-                  <text x="90" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800"
-                    text-anchor="middle" letter-spacing="0.5">TATA CHEMICALS LIMITED</text>
-                </g>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Logo 12: ATUL -->
-          <div class="client-logo-box">
-            <div class="logo-atul">
-              <svg viewBox="0 0 140 50" class="logo-svg">
-                <text x="30" y="34" font-family="'Brush Script MT', 'Segoe Script', cursive, sans-serif" font-size="34"
-                  font-weight="bold" fill="#ea580c">Atul</text>
-                <path d="M 35,38 Q 65,44 105,38" stroke="#16a34a" stroke-width="3" stroke-linecap="round" fill="none" />
-              </svg>
-            </div>
-          </div>
-
-          <!-- Logo 13: MEPCO -->
-          <div class="client-logo-box">
-            <div class="logo-mepco">
-              <svg viewBox="0 0 160 50" class="logo-svg">
-                <text x="25" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="900"
-                  fill="#1e293b" letter-spacing="2">MEP<tspan fill="#ea580c">CO</tspan></text>
-                <text x="35" y="42" font-family="sans-serif" font-size="6" font-weight="600" fill="#64748b">Madhya Paper
-                  Co.</text>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Logo 14: GNFC -->
-          <div class="client-logo-box">
-            <div class="logo-gnfc">
-              <svg viewBox="0 0 140 50" class="logo-svg">
-                <circle cx="70" cy="18" r="14" fill="none" stroke="#ea580c" stroke-width="2" />
-                <text x="70" y="24" font-family="'Times New Roman', serif" font-size="16" font-weight="bold"
-                  fill="#ea580c" text-anchor="middle">G</text>
-                <text x="70" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="900"
-                  fill="#ea580c" text-anchor="middle" letter-spacing="1">GNFC</text>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Logo 15: EPIGRAL -->
-          <div class="client-logo-box">
-            <div class="logo-epigral">
-              <svg viewBox="0 0 160 50" class="logo-svg">
-                <text x="25" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="700"
-                  fill="#334155">epigral</text>
-                <line x1="122" y1="12" x2="122" y2="34" stroke="#eab308" stroke-width="3" stroke-linecap="round" />
-              </svg>
-            </div>
-          </div>
-
-          <!-- Logo 16: JUBILANT INDUSTRIES -->
-          <div class="client-logo-box">
-            <div class="logo-jubilant">
-              <svg viewBox="0 0 170 50" class="logo-svg">
-                <g transform="translate(15, 2)">
-                  <path d="M 60,0 C 50,15 70,20 60,26 C 75,20 70,5 60,0 Z" fill="#0284c7" />
-                  <path d="M 75,0 C 85,15 65,20 75,26 C 60,20 65,5 75,0 Z" fill="#84cc16" />
-                  <text x="68" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="900"
-                    fill="#1e3a8a" text-anchor="middle" letter-spacing="1">JUBILANT</text>
-                  <text x="68" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="800"
-                    fill="#1e3a8a" text-anchor="middle" letter-spacing="0.5">INDUSTRIES</text>
-                </g>
-              </svg>
-            </div>
-          </div>
-
           </div>
         </div>
-        </div>
-        <button class="client-logo-nav client-logo-next" type="button" aria-label="Next clients">
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>
 
-      <!-- Bottom Tagline (Exact as Reference) -->
-      <div class="clients-bottom-tagline">
-        <span class="tagline-blue-dash"></span>
-        <span class="tagline-text">SAME PARTNERSHIP &nbsp;&nbsp; A STRONGER TOMORROW</span>
-        <span class="tagline-blue-dash"></span>
+        <!-- Row 2: Scrolls RIGHT -->
+        <div class="client-marquee-row marquee-right">
+          <div class="client-marquee-track">
+            <!-- Logo 8: ONGC -->
+            <div class="client-logo-box">
+              <div class="logo-ongc">
+                <svg viewBox="0 0 120 55" class="logo-svg">
+                  <rect x="30" y="4" width="60" height="48" rx="4" fill="#991b1b" />
+                  <circle cx="60" cy="22" r="14" fill="none" stroke="#ffffff" stroke-width="1.8" />
+                  <line x1="60" y1="8" x2="60" y2="36" stroke="#ffffff" stroke-width="2" />
+                  <path d="M 52,24 Q 60,14 68,24" fill="none" stroke="#ffffff" stroke-width="1.8" />
+                  <text x="60" y="47" font-family="Arial, sans-serif" font-size="8" font-weight="900" fill="#ffffff"
+                    text-anchor="middle" letter-spacing="1.5">ONGC</text>
+                </svg>
+              </div>
+            </div>
+            <!-- Logo 9: NTPC -->
+            <div class="client-logo-box">
+              <div class="logo-ntpc">
+                <svg viewBox="0 0 170 50" class="logo-svg">
+                  <rect x="22" y="6" width="126" height="38" rx="5" fill="none" stroke="#0874bb" stroke-width="4" />
+                  <path d="M42 13 L42 36 M42 13 L67 36 M67 13 L67 36" fill="none" stroke="#0874bb" stroke-width="3" />
+                  <text x="106" y="32" font-family="Arial, sans-serif" font-size="24" font-weight="900"
+                    fill="#0874bb" text-anchor="middle">NTPC</text>
+                </svg>
+              </div>
+            </div>
+            <!-- Logo 10: INDIANOIL -->
+            <div class="client-logo-box">
+              <div class="logo-indianoil">
+                <svg viewBox="0 0 170 50" class="logo-svg">
+                  <circle cx="70" cy="23" r="20" fill="none" stroke="#1458a6" stroke-width="3" />
+                  <path d="M57 24 Q70 3 83 24 Q70 43 57 24 Z" fill="#f6a51b" />
+                  <text x="117" y="30" font-family="Arial, sans-serif" font-size="17" font-weight="800"
+                    fill="#183d83" text-anchor="middle">IndianOil</text>
+                </svg>
+              </div>
+            </div>
+            <!-- Logo 11: GAIL -->
+            <div class="client-logo-box">
+              <div class="logo-gail">
+                <svg viewBox="0 0 180 50" class="logo-svg">
+                  <ellipse cx="84" cy="21" rx="43" ry="15" fill="none" stroke="#f59e0b" stroke-width="3" transform="rotate(-8 84 21)" />
+                  <text x="84" y="29" font-family="Arial, sans-serif" font-size="23" font-weight="900" fill="#164b88" text-anchor="middle">GAIL</text>
+                  <text x="84" y="44" font-family="Arial, sans-serif" font-size="6" font-weight="700" fill="#334155" text-anchor="middle">(India) Limited</text>
+                </svg>
+              </div>
+            </div>
+            <!-- Logo 12: BHEL -->
+            <div class="client-logo-box">
+              <div class="logo-bhel">
+                <svg viewBox="0 0 160 50" class="logo-svg">
+                  <rect x="20" y="7" width="120" height="36" rx="5" fill="#234e91" />
+                  <path d="M33 15 L33 35 M33 25 L49 25 M49 15 L49 35 M66 15 L66 35 M66 15 L82 15 M66 25 L79 25 M66 35 L82 35" stroke="#fff" stroke-width="3" />
+                  <text x="112" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#fff" text-anchor="middle">BHEL</text>
+                </svg>
+              </div>
+            </div>
+            <!-- Logo 13: INDIAN RAILWAYS -->
+            <div class="client-logo-box">
+              <div class="logo-railways">
+                <svg viewBox="0 0 160 50" class="logo-svg">
+                  <circle cx="80" cy="21" r="17" fill="none" stroke="#dc2626" stroke-width="3" />
+                  <path d="M69 21 H91 M80 10 V32 M71 14 L89 28 M89 14 L71 28" stroke="#dc2626" stroke-width="2" />
+                  <text x="80" y="44" font-family="Arial, sans-serif" font-size="7" font-weight="800" fill="#b91c1c" text-anchor="middle">INDIAN RAILWAYS</text>
+                </svg>
+              </div>
+            </div>
+            <!-- Logo 14: JSW -->
+            <div class="client-logo-box">
+              <div class="logo-jsw">
+                <svg viewBox="0 0 160 50" class="logo-svg">
+                  <path d="M20 30 C36 8 62 11 77 20 C93 30 111 28 141 12 C124 29 102 42 78 35 C57 29 42 21 20 30 Z" fill="#1754a5" />
+                  <path d="M93 15 C112 7 128 7 143 12 C126 14 111 19 98 26 Z" fill="#db1e2f" />
+                  <text x="78" y="42" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#174c94" text-anchor="middle">JSW</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
-    <!-- Bottom Flowing Wave Decor -->
+    <!-- Bottom Flowing Light Hydro Wave Decor -->
     <div class="clients-bottom-wave">
       <svg class="clients-wave-svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
-        <path d="M0,40 C320,80 620,10 980,55 C1200,85 1340,20 1440,45 L1440,100 L0,100 Z"
-          fill="rgba(0, 128, 255, 0.12)"></path>
-        <path d="M0,60 C360,20 680,85 1040,35 C1260,15 1380,65 1440,50 L1440,100 L0,100 Z"
-          fill="rgba(56, 189, 248, 0.22)"></path>
+        <defs>
+          <linearGradient id="clientWaveLight1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#bae6fd" stop-opacity="0.85" />
+            <stop offset="50%" stop-color="#e0f2fe" stop-opacity="0.95" />
+            <stop offset="100%" stop-color="#bae6fd" stop-opacity="0.85" />
+          </linearGradient>
+          <linearGradient id="clientWaveLight2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.75" />
+            <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.5" />
+            <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.75" />
+          </linearGradient>
+          <linearGradient id="clientWaveLight3" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+            <stop offset="50%" stop-color="#f0f7fe" stop-opacity="0.95" />
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.9" />
+          </linearGradient>
+        </defs>
+        <path d="M0,28 C280,65 580,12 920,48 C1180,75 1330,18 1440,36 L1440,100 L0,100 Z"
+          fill="url(#clientWaveLight1)"></path>
+        <path d="M0,48 C330,22 650,78 1010,38 C1220,16 1350,60 1440,46 L1440,100 L0,100 Z"
+          fill="url(#clientWaveLight2)"></path>
+        <path d="M0,70 C360,45 700,88 1060,56 C1260,38 1380,72 1440,62 L1440,100 L0,100 Z"
+          fill="url(#clientWaveLight3)"></path>
       </svg>
     </div>
 
@@ -1248,16 +1509,6 @@
 
     <!-- Ambient Blue Sky & Wave Backdrop -->
     <div class="testi-bg-sky"></div>
-
-    <!-- Left Green Foliage Decor -->
-    <div class="testi-leaf-decor-left">
-      <img src="assect/about-leaf-left.png" alt="Leaf Decor" class="testi-leaf-img">
-    </div>
-
-    <!-- Left Bottom Realistic Water Splash Accent (as in screenshot) -->
-    <div class="testi-water-splash-left">
-      <img src="assect/about-exact-water-splash.png" alt="Water Splash" class="testi-splash-img">
-    </div>
 
     <div class="container testi-container">
 
@@ -1279,35 +1530,42 @@
         </p>
       </div>
 
-      <!-- Main Testimonials Layout Grid: Left Cards Slider + Right Site Exploration Photo -->
-      <div class="testi-main-grid">
+      <!-- Testimonials Cards Showcase (Centered with Left & Right Edge Fade) -->
+      <div class="testi-slider-showcase">
 
-        <!-- Left Column: 3 Testimonial Cards Slider -->
-        <div class="testi-cards-slider-wrap">
+        <!-- Left & Right Gradient Fade Edges -->
+        <div class="testi-edge-fade fade-left" aria-hidden="true"></div>
+        <div class="testi-edge-fade fade-right" aria-hidden="true"></div>
 
-          <!-- Prev Arrow Button -->
-          <button class="testi-nav-arrow arrow-prev" id="testiPrevBtn" aria-label="Previous Testimonial">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
+        <!-- Prev Arrow Button -->
+        <button class="testi-nav-arrow arrow-prev" id="testiPrevBtn" aria-label="Previous Testimonial">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
 
-          <!-- 3 Cards Grid -->
+        <!-- Viewport with CSS Mask Fade -->
+        <div class="testi-cards-viewport" id="testiCardsViewport">
           <div class="testi-cards-row" id="testiCardsContainer">
 
             <!-- Testimonial 1: Tata Projects -->
             <div class="testi-card-box">
               <div class="testi-card-top-header">
-                <span class="testi-quote-mark">“</span>
-                <div class="testi-star-rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                <div class="testi-quote-icon-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testi-rating-wrap">
+                  <div class="testi-star-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="testi-rating-score">5.0</span>
                 </div>
               </div>
               <p class="testi-quote-body">
                 “Bharat Bhujal Tech provided accurate groundwater assessment and helped us implement an effective
-                solution. Their team is highly professional and technically strong.”
+                solution. Their team is highly professional, responsive, and technically strong throughout execution.”
               </p>
               <div class="testi-author-bar">
                 <div class="author-logo-square">
@@ -1326,24 +1584,32 @@
                   <span class="author-role-txt">Project Head</span>
                   <span class="author-company-txt">Tata Projects Ltd.</span>
                 </div>
+                <div class="testi-verified-pill" title="Verified Client">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
               </div>
             </div>
 
             <!-- Testimonial 2: Reliance Industries -->
             <div class="testi-card-box">
               <div class="testi-card-top-header">
-                <span class="testi-quote-mark">“</span>
-                <div class="testi-star-rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                <div class="testi-quote-icon-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testi-rating-wrap">
+                  <div class="testi-star-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="testi-rating-score">5.0</span>
                 </div>
               </div>
               <p class="testi-quote-body">
-                “The geophysical survey and detailed analysis helped us identify the right location for our production
-                well. Excellent support and service throughout the project.”
+                “The geophysical survey and detailed hydrogeological analysis helped us identify the precise location for
+                our production well. Excellent service, robust reporting, and dependable support.”
               </p>
               <div class="testi-author-bar">
                 <div class="author-logo-square">
@@ -1363,30 +1629,40 @@
                   <span class="author-role-txt">Facility Manager</span>
                   <span class="author-company-txt">Reliance Industries Limited</span>
                 </div>
+                <div class="testi-verified-pill" title="Verified Client">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
               </div>
             </div>
 
             <!-- Testimonial 3: Adani Infrastructure -->
             <div class="testi-card-box">
               <div class="testi-card-top-header">
-                <span class="testi-quote-mark">“</span>
-                <div class="testi-star-rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                <div class="testi-quote-icon-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testi-rating-wrap">
+                  <div class="testi-star-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="testi-rating-score">5.0</span>
                 </div>
               </div>
               <p class="testi-quote-body">
-                “We are satisfied with their technical approach, timely execution and post-project support. A dependable
-                partner for groundwater and environmental solutions.”
+                “We are thoroughly satisfied with their scientific approach, timely execution, and post-project advisory.
+                A highly dependable partner for groundwater exploration and sustainable solutions.”
               </p>
               <div class="testi-author-bar">
                 <div class="author-logo-square">
                   <div class="logo-adani-mini" style="display: flex; align-items: center;">
-                    <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 1.45rem; font-weight: 800; letter-spacing: -0.5px; line-height: 1;">
-                      <span style="color: #0284c7;">ad</span><span style="color: #c026d3;">a</span><span style="color: #f97316;">ni</span>
+                    <span
+                      style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 1.45rem; font-weight: 800; letter-spacing: -0.5px; line-height: 1;">
+                      <span style="color: #0284c7;">ad</span><span style="color: #c026d3;">a</span><span
+                        style="color: #f97316;">ni</span>
                     </span>
                   </div>
                 </div>
@@ -1395,221 +1671,356 @@
                   <span class="author-role-txt">Project Manager</span>
                   <span class="author-company-txt">Adani Infrastructure</span>
                 </div>
+                <div class="testi-verified-pill" title="Verified Client">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4: L&T Construction -->
+            <div class="testi-card-box">
+              <div class="testi-card-top-header">
+                <div class="testi-quote-icon-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testi-rating-wrap">
+                  <div class="testi-star-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="testi-rating-score">5.0</span>
+                </div>
+              </div>
+              <p class="testi-quote-body">
+                “Their hydrogeological survey and precision borewell logging ensured zero dry holes across our expressway and metro corridor projects. Exceptional engineering rigor.”
+              </p>
+              <div class="testi-author-bar">
+                <div class="author-logo-square">
+                  <div class="logo-lt-mini" style="display: flex; align-items: center; justify-content: center; width: 100%;">
+                    <div style="background: #003366; color: #ffffff; font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 0.95rem; font-weight: 900; border-radius: 4px; padding: 2px 7px; letter-spacing: 0.8px; border: 1.5px solid #0055b8;">
+                      L&amp;T
+                    </div>
+                  </div>
+                </div>
+                <div class="author-meta-info">
+                  <h4 class="author-name-txt">Er. Rajesh Deshmukh</h4>
+                  <span class="author-role-txt">Chief Infra Engineer</span>
+                  <span class="author-company-txt">L&amp;T Construction</span>
+                </div>
+                <div class="testi-verified-pill" title="Verified Client">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 5: UltraTech Cement -->
+            <div class="testi-card-box">
+              <div class="testi-card-top-header">
+                <div class="testi-quote-icon-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testi-rating-wrap">
+                  <div class="testi-star-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="testi-rating-score">5.0</span>
+                </div>
+              </div>
+              <p class="testi-quote-body">
+                “Bharat Bhujal Tech delivered an end-to-end industrial rainwater harvesting and aquifer recharge system that cut our municipal water dependence by 65%. Highly recommended.”
+              </p>
+              <div class="testi-author-bar">
+                <div class="author-logo-square">
+                  <div class="logo-ultratech-mini" style="display: flex; align-items: center; justify-content: center; width: 100%;">
+                    <div style="background: #facc15; color: #1e293b; font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 0.72rem; font-weight: 900; border-radius: 4px; padding: 3px 5px; text-transform: uppercase; letter-spacing: 0.5px; border: 1px solid #eab308;">
+                      UltraTech
+                    </div>
+                  </div>
+                </div>
+                <div class="author-meta-info">
+                  <h4 class="author-name-txt">Dr. Vikram Singhania</h4>
+                  <span class="author-role-txt">Sustainability Director</span>
+                  <span class="author-company-txt">UltraTech Cement Ltd.</span>
+                </div>
+                <div class="testi-verified-pill" title="Verified Client">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 6: Jindal Steel & Power -->
+            <div class="testi-card-box">
+              <div class="testi-card-top-header">
+                <div class="testi-quote-icon-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testi-rating-wrap">
+                  <div class="testi-star-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="testi-rating-score">5.0</span>
+                </div>
+              </div>
+              <p class="testi-quote-body">
+                “Comprehensive groundwater modeling and deep exploration services with scientific accuracy. The CGWA compliance clearance and continuous piezometer monitoring were top-notch.”
+              </p>
+              <div class="testi-author-bar">
+                <div class="author-logo-square">
+                  <div class="logo-jindal-mini" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+                    <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 0.8rem; font-weight: 900; color: #002244; letter-spacing: 0.5px;">JINDAL</span>
+                    <span style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 0.52rem; font-weight: 700; color: #f97316; letter-spacing: 0.4px;">STEEL &amp; POWER</span>
+                  </div>
+                </div>
+                <div class="author-meta-info">
+                  <h4 class="author-name-txt">Mr. Anand Vardhan</h4>
+                  <span class="author-role-txt">Mining &amp; Water Head</span>
+                  <span class="author-company-txt">Jindal Steel &amp; Power</span>
+                </div>
+                <div class="testi-verified-pill" title="Verified Client">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 7: NTPC Limited -->
+            <div class="testi-card-box">
+              <div class="testi-card-top-header">
+                <div class="testi-quote-icon-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testi-rating-wrap">
+                  <div class="testi-star-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="testi-rating-score">5.0</span>
+                </div>
+              </div>
+              <p class="testi-quote-body">
+                “Outstanding electrical resistivity tomography and aquifer yield testing for our township colony. Professional team with state-of-the-art drilling supervision.”
+              </p>
+              <div class="testi-author-bar">
+                <div class="author-logo-square">
+                  <div class="logo-ntpc-mini" style="display: flex; align-items: center; justify-content: center; width: 100%;">
+                    <div style="background: #0284c7; color: #ffffff; font-family: 'Plus Jakarta Sans', Arial, sans-serif; font-size: 0.85rem; font-weight: 900; border-radius: 4px; padding: 2px 6px; letter-spacing: 0.8px;">
+                      NTPC
+                    </div>
+                  </div>
+                </div>
+                <div class="author-meta-info">
+                  <h4 class="author-name-txt">Er. Alok Mukherjee</h4>
+                  <span class="author-role-txt">GM (Civil &amp; Hydro)</span>
+                  <span class="author-company-txt">NTPC Limited</span>
+                </div>
+                <div class="testi-verified-pill" title="Verified Client">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 8: Godrej Properties -->
+            <div class="testi-card-box">
+              <div class="testi-card-top-header">
+                <div class="testi-quote-icon-badge">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="testi-rating-wrap">
+                  <div class="testi-star-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="testi-rating-score">5.0</span>
+                </div>
+              </div>
+              <p class="testi-quote-body">
+                “From hydro-fracturing to geophysical site clearance, Bharat Bhujal Tech exceeded our expectations for our high-rise luxury residential township. Dependable and transparent.”
+              </p>
+              <div class="testi-author-bar">
+                <div class="author-logo-square">
+                  <div class="logo-godrej-mini" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+                    <span style="font-family: 'Georgia', serif; font-size: 1.15rem; font-weight: bold; font-style: italic; color: #be123c;">Godrej</span>
+                    <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.48rem; font-weight: 700; color: #64748b; letter-spacing: 0.4px;">PROPERTIES</span>
+                  </div>
+                </div>
+                <div class="author-meta-info">
+                  <h4 class="author-name-txt">Ms. Priya Sharma</h4>
+                  <span class="author-role-txt">Sr. Project Director</span>
+                  <span class="author-company-txt">Godrej Properties</span>
+                </div>
+                <div class="testi-verified-pill" title="Verified Client">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
               </div>
             </div>
 
           </div>
-
-          <!-- Next Arrow Button -->
-          <button class="testi-nav-arrow arrow-next" id="testiNextBtn" aria-label="Next Testimonial">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-
-          <!-- Slider Pagination Dots -->
-          <div class="testi-pagination-dots">
-            <span class="p-dot active"></span>
-            <span class="p-dot"></span>
-            <span class="p-dot"></span>
-          </div>
-
         </div>
 
-        <!-- Right Column: Real Image of Site Engineers & Drilling Rig -->
-        <div class="testi-site-photo-column">
-          <div class="testi-site-photo-card">
-            <img src="assect/clients-engineers-rig-generated.png" alt="Bharat Bhujal Site Engineers & Hydraulic Rig"
-              class="testi-engineers-photo" onerror="this.src='assect/testimonial-engineers-rig.jpg'">
-            <div class="testi-photo-shine-border"></div>
-            <div class="testi-photo-organic-fade"></div>
-          </div>
-        </div>
+        <!-- Next Arrow Button -->
+        <button class="testi-nav-arrow arrow-next" id="testiNextBtn" aria-label="Next Testimonial">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
 
       </div>
 
-    </div>
+      <!-- Slider Pagination Dots (Centered below) -->
+      <div class="testi-pagination-dots">
+        <span class="p-dot active"></span>
+        <span class="p-dot"></span>
+        <span class="p-dot"></span>
+      </div>
 
-    <!-- Realistic Water Splash at Section Transition -->
-    <div class="testi-bottom-water-splash">
-      <svg viewBox="0 0 1440 90" preserveAspectRatio="none" class="splash-stream-svg">
-        <path d="M0,30 C300,70 600,10 900,50 C1200,80 1350,20 1440,40 L1440,90 L0,90 Z" fill="rgba(0, 128, 255, 0.1)">
-        </path>
-        <path d="M0,50 C360,20 720,80 1080,35 C1260,15 1380,60 1440,45 L1440,90 L0,90 Z" fill="rgba(56, 189, 248, 0.2)">
-        </path>
-      </svg>
     </div>
 
   </section>
 
 
-  <!-- ================= FREQUENTLY ASKED QUESTIONS (EXACT AS SCREENSHOT) ================= -->
+  <!-- ================= FREQUENTLY ASKED QUESTIONS & KNOWLEDGE CENTER ================= -->
+  <div id="knowledge"></div>
   <section class="faq-answers-section" id="faqs">
 
-    <!-- Ambient Sky & Water Ripple Backdrop -->
-    <div class="faq-bg-sky"></div>
+    <div class="faq-container-fluid">
+      <div class="faq-exact-layout">
 
-    <div class="container faq-container">
+        <!-- Left Visual: Dedicated Framing Space for 3D Droplet on faq-backround.png -->
+        <div class="faq-visual-col" aria-hidden="true"></div>
 
-      <!-- Section Header -->
-      <div class="faq-header-box">
-        <div class="faq-category-pill">
-          <span class="pill-blue-dash"></span>
-          <span class="pill-category-text">FREQUENTLY ASKED QUESTIONS</span>
-          <span class="pill-blue-dash"></span>
-        </div>
+        <!-- Right Content Column: Header + Single Vertical Stack of 6 Cards -->
+        <div class="faq-content-col">
 
-        <h2 class="faq-main-heading">
-          Have Questions? <span class="highlight-blue-txt">We've Got Answers</span>
-        </h2>
+          <!-- Section Header (Centered over the right accordion cards) -->
+          <div class="faq-header-box">
+            <div class="faq-category-pill">
+              <span class="pill-blue-dash"></span>
+              <span class="pill-category-text">FREQUENTLY ASKED QUESTIONS</span>
+              <span class="pill-blue-dash"></span>
+            </div>
 
-        <p class="faq-subtext-para">
-          Find quick answers to common questions about our groundwater exploration, water resource management and
-          environmental solutions.
-        </p>
+            <h2 class="faq-main-heading">
+              Have Questions? <span class="highlight-blue-txt">We’ve Got Answers</span>
+            </h2>
 
-      </div>
-
-      <!-- Main FAQ Grid: Left 3D Droplet Artwork Image + Right 2-Col Accordion -->
-      <div class="faq-main-grid">
-
-        <!-- Left Visual: 3D Crystal Water Droplet with Underground Aquifer Stratum -->
-        <div class="faq-left-droplet-col">
-          <div class="faq-droplet-artwork-wrap">
-            <img src="assect/faq-questions-visual-generated.png" alt="Groundwater engineers and drilling rig inside a water droplet" class="faq-droplet-img"
-              onerror="this.src='assect/faq-aquifer-droplet.jpg'">
-            <div class="droplet-water-ripples"></div>
+            <p class="faq-subtext-para">
+              Find quick answers to common questions about our groundwater exploration, water resource management and
+              environmental solutions.
+            </p>
           </div>
-        </div>
 
-        <!-- Right 2-Column Accordion List -->
-        <div class="faq-right-accordion-grid">
+          <!-- Single-Column Vertical Stack of 6 Accordion Cards -->
+          <div class="faq-accordion-stack">
 
-          <!-- Column 1 (Questions 01 - 03) -->
-          <div class="faq-column">
-
-            <!-- FAQ Item 01 (Active by default) -->
-            <div class="faq-accordion-item active">
-              <div class="faq-item-header" onclick="toggleFaq(this)">
-                <span class="faq-item-num">01</span>
+            <!-- Card 01 (Active / Expanded by default) -->
+            <div class="faq-card-item active">
+              <div class="faq-card-header" onclick="toggleFaq(this)">
+                <span class="faq-num-pill">01</span>
+                <span class="faq-divider-pipe">|</span>
                 <h3 class="faq-question-title">What is a geophysical survey and how does it help?</h3>
-                <button class="faq-toggle-circle" aria-label="Toggle answer">
+                <button class="faq-action-btn" type="button" aria-label="Toggle answer">
                   <i class="fa-solid fa-minus toggle-icon"></i>
                 </button>
               </div>
-              <div class="faq-item-body">
+              <div class="faq-card-body">
                 <p>A geophysical survey is a scientific method used to identify the presence, depth and potential of
                   groundwater by studying subsurface geological formations. It helps in selecting the most suitable
-                  location for drilling, reducing risk and improving success rate.</p>
+                  location for drilling. reducing risk and improving success rates.</p>
               </div>
             </div>
 
-            <!-- FAQ Item 02 -->
-            <div class="faq-accordion-item">
-              <div class="faq-item-header" onclick="toggleFaq(this)">
-                <span class="faq-item-num">02</span>
+            <!-- Card 02 -->
+            <div class="faq-card-item">
+              <div class="faq-card-header" onclick="toggleFaq(this)">
+                <span class="faq-num-pill">02</span>
+                <span class="faq-divider-pipe">|</span>
                 <h3 class="faq-question-title">What types of wells do you construct?</h3>
-                <button class="faq-toggle-circle" aria-label="Toggle answer">
+                <button class="faq-action-btn" type="button" aria-label="Toggle answer">
                   <i class="fa-solid fa-plus toggle-icon"></i>
                 </button>
               </div>
-              <div class="faq-item-body">
-                <p>We construct high-yield production wells, deep agricultural borewells, commercial open wells,
+              <div class="faq-card-body">
+                <p>We construct high-yield production tube wells, deep agricultural borewells, commercial open wells,
                   artificial recharge wells, and customized industrial water well systems using advanced rotary and DTH
                   drilling rigs.</p>
               </div>
             </div>
 
-            <!-- FAQ Item 03 -->
-            <div class="faq-accordion-item">
-              <div class="faq-item-header" onclick="toggleFaq(this)">
-                <span class="faq-item-num">03</span>
-                <h3 class="faq-question-title">How do you revive a dry or failed borewell?</h3>
-                <button class="faq-toggle-circle" aria-label="Toggle answer">
-                  <i class="fa-solid fa-plus toggle-icon"></i>
-                </button>
-              </div>
-              <div class="faq-item-body">
-                <p>We perform downhole camera inspection, hydro-fracturing, high-pressure jet silt flushing, re-drilling
-                  and casing rehabilitation to restore and enhance yield in depleted or silted borewells.</p>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Column 2 (Questions 04 - 08) -->
-          <div class="faq-column">
-
-            <!-- FAQ Item 04 -->
-            <div class="faq-accordion-item">
-              <div class="faq-item-header" onclick="toggleFaq(this)">
-                <span class="faq-item-num">04</span>
+            <!-- Card 03 -->
+            <div class="faq-card-item">
+              <div class="faq-card-header" onclick="toggleFaq(this)">
+                <span class="faq-num-pill">03</span>
+                <span class="faq-divider-pipe">|</span>
                 <h3 class="faq-question-title">Do you provide solutions for open wells as well?</h3>
-                <button class="faq-toggle-circle" aria-label="Toggle answer">
+                <button class="faq-action-btn" type="button" aria-label="Toggle answer">
                   <i class="fa-solid fa-plus toggle-icon"></i>
                 </button>
               </div>
-              <div class="faq-item-body">
+              <div class="faq-card-body">
                 <p>Yes, we offer complete assessment, desilting, deepening, radial bore extension, and concrete ring
                   lining solutions to maximize open well storage and recovery rate.</p>
               </div>
             </div>
 
-            <!-- FAQ Item 05 -->
-            <div class="faq-accordion-item">
-              <div class="faq-item-header" onclick="toggleFaq(this)">
-                <span class="faq-item-num">05</span>
+            <!-- Card 04 -->
+            <div class="faq-card-item">
+              <div class="faq-card-header" onclick="toggleFaq(this)">
+                <span class="faq-num-pill">04</span>
+                <span class="faq-divider-pipe">|</span>
                 <h3 class="faq-question-title">What is a recharge well and why is it important?</h3>
-                <button class="faq-toggle-circle" aria-label="Toggle answer">
+                <button class="faq-action-btn" type="button" aria-label="Toggle answer">
                   <i class="fa-solid fa-plus toggle-icon"></i>
                 </button>
               </div>
-              <div class="faq-item-body">
+              <div class="faq-card-body">
                 <p>A recharge well captures and filters rainwater or surface runoff, percolating it into deep
                   underground aquifers to replenish depleted water tables and ensure sustainable water security.</p>
               </div>
             </div>
 
-            <!-- FAQ Item 06 -->
-            <div class="faq-accordion-item">
-              <div class="faq-item-header" onclick="toggleFaq(this)">
-                <span class="faq-item-num">06</span>
+            <!-- Card 05 -->
+            <div class="faq-card-item">
+              <div class="faq-card-header" onclick="toggleFaq(this)">
+                <span class="faq-num-pill">05</span>
+                <span class="faq-divider-pipe">|</span>
                 <h3 class="faq-question-title">Do you offer CGWA consultancy services?</h3>
-                <button class="faq-toggle-circle" aria-label="Toggle answer">
+                <button class="faq-action-btn" type="button" aria-label="Toggle answer">
                   <i class="fa-solid fa-plus toggle-icon"></i>
                 </button>
               </div>
-              <div class="faq-item-body">
+              <div class="faq-card-body">
                 <p>Yes, we provide end-to-end CGWA permissions, comprehensive hydrogeological impact assessment reports,
                   piezometer installations, and statutory regulatory compliance.</p>
               </div>
             </div>
 
-            <!-- FAQ Item 07 -->
-            <div class="faq-accordion-item">
-              <div class="faq-item-header" onclick="toggleFaq(this)">
-                <span class="faq-item-num">07</span>
+            <!-- Card 06 -->
+            <div class="faq-card-item">
+              <div class="faq-card-header" onclick="toggleFaq(this)">
+                <span class="faq-num-pill">06</span>
+                <span class="faq-divider-pipe">|</span>
                 <h3 class="faq-question-title">In which industries do you provide your services?</h3>
-                <button class="faq-toggle-circle" aria-label="Toggle answer">
+                <button class="faq-action-btn" type="button" aria-label="Toggle answer">
                   <i class="fa-solid fa-plus toggle-icon"></i>
                 </button>
               </div>
-              <div class="faq-item-body">
+              <div class="faq-card-body">
                 <p>We serve manufacturing plants, chemical & pharmaceutical industries, commercial infrastructure,
                   agricultural projects, townships, and institutional campuses.</p>
-              </div>
-            </div>
-
-            <!-- FAQ Item 08 -->
-            <div class="faq-accordion-item">
-              <div class="faq-item-header" onclick="toggleFaq(this)">
-                <span class="faq-item-num">08</span>
-                <h3 class="faq-question-title">Do you work across India?</h3>
-                <button class="faq-toggle-circle" aria-label="Toggle answer">
-                  <i class="fa-solid fa-plus toggle-icon"></i>
-                </button>
-              </div>
-              <div class="faq-item-body">
-                <p>Yes, Bharat Bhujal Tech operates across India with mobile technical crews, specialized heavy drilling
-                  rigs, and certified hydrogeologists.</p>
               </div>
             </div>
 
@@ -1618,7 +2029,49 @@
         </div>
 
       </div>
+    </div>
+  </section>
 
+
+  <!-- ================= GLOBAL SECTOR FEASIBILITY CTA SECTION (BELOW FAQ) ================= -->
+  <!-- Water-wave transition keeps the FAQ and CTA sections visually connected. -->
+  <div class="faq-cta-transition" aria-hidden="true">
+    <svg viewBox="0 0 1440 96" preserveAspectRatio="none" class="faq-cta-transition-svg">
+      <path d="M0,30 C260,72 520,8 790,42 C1040,74 1230,16 1440,38 L1440,96 L0,96 Z" fill="rgba(56, 189, 248, 0.18)"></path>
+      <path d="M0,52 C310,18 565,82 860,46 C1110,16 1265,70 1440,50 L1440,96 L0,96 Z" fill="rgba(0, 119, 255, 0.09)"></path>
+      <path d="M0,68 C330,42 615,92 900,62 C1120,40 1290,84 1440,64 L1440,96 L0,96 Z" fill="#ffffff"></path>
+    </svg>
+    <span class="faq-cta-bubble faq-cta-bubble-one"></span>
+    <span class="faq-cta-bubble faq-cta-bubble-two"></span>
+    <span class="faq-cta-bubble faq-cta-bubble-three"></span>
+  </div>
+  <section class="global-cta-section">
+    <div class="container cta-section-container">
+      <div class="industries-action-banner">
+        <div class="ind-banner-content">
+          <div class="ind-banner-badge">
+            <span class="pulse-point"></span>
+            <span>CUSTOM HYDROGEOLOGY ENGINEERING</span>
+          </div>
+          <h3 class="ind-banner-title">Need a Tailored Water Feasibility Study for Your Specific Sector?</h3>
+          <p class="ind-banner-text">Our certified senior hydrologists and heavy hydraulic drilling rigs are mobilized across India. Get a free, data-backed feasibility assessment.</p>
+        </div>
+        <div class="ind-banner-action">
+          <button class="btn-ind-primary" onclick="openConsultModal()">
+            <span>Request Sector Feasibility</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+          <a href="tel:+919876543210" class="btn-ind-call">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Direct Project Helpline</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1659,98 +2112,159 @@
           </a>
 
           <p class="brand-mission-text">
-            Your trusted partner for groundwater exploration, water resource management and environmental solutions for
-            a sustainable future.
+            Your trusted partner for groundwater exploration, precision borewell drilling, and sustainable water resource management across India.
           </p>
 
+          <div class="footer-trust-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>ISO 9001:2015 &amp; CGWA Compliant</span>
+          </div>
+
           <div class="footer-social-circles">
-            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+            <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Website" title="Website"><i class="fa-solid fa-globe"></i></a>
           </div>
         </div>
 
         <!-- Column 2: Quick Links -->
-        <div class="footer-col">
-          <h4 class="footer-heading">Quick Links</h4>
+        <div class="footer-col col-quicklinks">
+          <h4 class="footer-heading">
+            Quick Links
+            <span class="heading-accent-line"></span>
+          </h4>
           <ul class="footer-nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#industries">Industries</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#knowledge">Knowledge Center</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li>
+              <a href="#home">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>About Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="#services">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Services &amp; Solutions</span>
+              </a>
+            </li>
+            <li>
+              <a href="#knowledge">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Knowledge Center</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Contact Us</span>
+              </a>
+            </li>
           </ul>
         </div>
 
         <!-- Column 3: Our Services -->
-        <div class="footer-col">
-          <h4 class="footer-heading">Our Services</h4>
+        <div class="footer-col col-services">
+          <h4 class="footer-heading">
+            Our Services
+            <span class="heading-accent-line"></span>
+          </h4>
           <ul class="footer-services-list">
             <li>
               <a href="#services">
-                <i class="fa-solid fa-water icon-blue"></i>
-                <span>Geophysical Survey</span>
+                <span class="f-service-badge"><i class="fa-solid fa-water"></i></span>
+                <span class="f-service-title">Geophysical Survey</span>
               </a>
             </li>
             <li>
               <a href="#services">
-                <i class="fa-solid fa-bore-hole icon-blue"></i>
-                <span>Production Well</span>
+                <span class="f-service-badge"><i class="fa-solid fa-bore-hole"></i></span>
+                <span class="f-service-title">Production Well Drilling</span>
               </a>
             </li>
             <li>
               <a href="#services">
-                <i class="fa-solid fa-circle-notch icon-blue"></i>
-                <span>Open Well Solutions</span>
+                <span class="f-service-badge"><i class="fa-solid fa-circle-notch"></i></span>
+                <span class="f-service-title">Open Well Solutions</span>
               </a>
             </li>
             <li>
               <a href="#services">
-                <i class="fa-solid fa-gear icon-blue"></i>
-                <span>Revival of Dry or Failed Bore</span>
+                <span class="f-service-badge"><i class="fa-solid fa-gear"></i></span>
+                <span class="f-service-title">Revival of Dry or Failed Bore</span>
               </a>
             </li>
             <li>
               <a href="#services">
-                <i class="fa-solid fa-droplet icon-blue"></i>
-                <span>Recharge Well</span>
+                <span class="f-service-badge"><i class="fa-solid fa-droplet"></i></span>
+                <span class="f-service-title">Recharge Well &amp; Rainwater</span>
               </a>
             </li>
             <li>
               <a href="#services">
-                <i class="fa-solid fa-file-lines icon-blue"></i>
-                <span>CGWA Consultancy</span>
+                <span class="f-service-badge"><i class="fa-solid fa-file-shield"></i></span>
+                <span class="f-service-title">CGWA Consultancy &amp; NOC</span>
               </a>
             </li>
           </ul>
         </div>
 
         <!-- Column 4: Get in Touch -->
-        <div class="footer-col">
-          <h4 class="footer-heading">Get in Touch</h4>
+        <div class="footer-col col-contact">
+          <h4 class="footer-heading">
+            Get in Touch
+            <span class="heading-accent-line"></span>
+          </h4>
           <div class="footer-contact-items">
 
-            <div class="contact-row">
-              <i class="fa-solid fa-location-dot contact-ico"></i>
-              <span>301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India</span>
+            <!-- Location Tile -->
+            <div class="f-contact-card">
+              <div class="f-contact-icon-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Corporate Office</span>
+                <span class="f-contact-val">301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India</span>
+              </div>
             </div>
 
-            <a href="tel:+919826377611" class="contact-row">
-              <i class="fa-solid fa-phone-volume contact-ico"></i>
-              <span>+91 98263 77611</span>
+            <!-- Phone Call Tile -->
+            <a href="tel:+919826377611" class="f-contact-card f-contact-link">
+              <div class="f-contact-icon-box pulse-blue">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Direct Technical Inquiry</span>
+                <span class="f-contact-val highlight-val">+91 98263 77611</span>
+              </div>
+              <span class="f-card-action-chip">Call</span>
             </a>
 
-            <a href="mailto:info@bharatbhujal.com" class="contact-row">
-              <i class="fa-regular fa-envelope contact-ico"></i>
-              <span>info@bharatbhujal.com</span>
+            <!-- Email Tile -->
+            <a href="mailto:info@bharatbhujal.com" class="f-contact-card f-contact-link">
+              <div class="f-contact-icon-box">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Email Consultation</span>
+                <span class="f-contact-val highlight-val">info@bharatbhujal.com</span>
+              </div>
             </a>
 
-            <div class="contact-row">
-              <i class="fa-regular fa-clock contact-ico"></i>
-              <span>Mon - Sat : 9:00 AM - 6:00 PM<br>(Sunday Closed)</span>
+            <!-- Working Hours Tile -->
+            <div class="f-contact-card">
+              <div class="f-contact-icon-box">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Working Hours</span>
+                <span class="f-contact-val">Mon - Sat : 9:00 AM - 6:00 PM <span class="closed-pill">Sun Closed</span></span>
+              </div>
             </div>
 
           </div>
@@ -1787,8 +2301,8 @@
 
       <div class="modal-header-section">
         <div class="modal-icon-bubble"><i class="fa-solid fa-droplet"></i></div>
-        <h3>Request a Free Consultation</h3>
-        <p>Talk to our senior hydrogeologists for site survey & technical feasibility.</p>
+        <h3>Free Inquiry &amp; Consultation</h3>
+        <p>Talk to our senior hydrogeologists for site survey &amp; technical feasibility.</p>
       </div>
 
       <form class="modal-form-body" onsubmit="handleFormSubmit(event)">
@@ -1822,14 +2336,14 @@
         </div>
 
         <button type="submit" class="btn-modal-submit">
-          <span>Submit Request</span>
+          <span>Submit Free Inquiry</span>
           <i class="fa-solid fa-paper-plane"></i>
         </button>
       </form>
     </div>
   </div>
 
-  <script src="main.js"></script>
+  <script src="main.js?v=1.7.0"></script>
 </body>
 
 </html>
