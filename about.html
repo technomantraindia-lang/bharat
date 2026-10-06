@@ -18,7 +18,7 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="style.css?v=2.5.0">
+  <link rel="stylesheet" href="style.css?v=2.6.0">
 </head>
 
 <body>
@@ -78,12 +78,12 @@
               Services <i class="fa-solid fa-chevron-down nav-arrow"></i>
             </a>
             <ul class="dropdown-list">
-              <li><a href="index.html#services"><i class="fa-solid fa-water"></i> Geophysical Survey</a></li>
-              <li><a href="index.html#services"><i class="fa-solid fa-bore-hole"></i> Production Well</a></li>
-              <li><a href="index.html#services"><i class="fa-solid fa-circle-notch"></i> Open Well Solutions</a></li>
-              <li><a href="index.html#services"><i class="fa-solid fa-gear"></i> Revival of Dry or Failed Bore</a></li>
-              <li><a href="index.html#services"><i class="fa-solid fa-droplet"></i> Recharge Well</a></li>
-              <li><a href="index.html#services"><i class="fa-solid fa-file-shield"></i> CGWA Consultancy</a></li>
+              <li><a href="services/service-detail.html?service=geophysical"><i class="fa-solid fa-water"></i> Geophysical Survey</a></li>
+              <li><a href="services/service-detail.html?service=production"><i class="fa-solid fa-bore-hole"></i> Production Well</a></li>
+              <li><a href="services/service-detail.html?service=openwell"><i class="fa-solid fa-circle-notch"></i> Open Well Solutions</a></li>
+              <li><a href="services/service-detail.html?service=revival"><i class="fa-solid fa-gear"></i> Revival of Dry or Failed Bore</a></li>
+              <li><a href="services/service-detail.html?service=recharge"><i class="fa-solid fa-droplet"></i> Recharge Well</a></li>
+              <li><a href="services/service-detail.html?service=cgwa"><i class="fa-solid fa-file-shield"></i> CGWA Consultancy</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -100,7 +100,8 @@
         <!-- Free Inquiry Button -->
         <button class="btn-inquiry-pill" onclick="openConsultModal()" aria-label="Free Inquiry">
           <i class="fa-solid fa-file-signature inquiry-icon"></i>
-          <span>Get in Touch +</span>
+          <span>Free Inquiry</span>
+          <i class="fa-solid fa-arrow-right arrow-icon"></i>
         </button>
 
         <!-- Mobile Hamburger -->
@@ -180,12 +181,20 @@
   <section class="about-whoweare-sec">
     <div class="whoweare-container">
       <div class="about-grid-2col">
-        <!-- Left Image Frame with Offset Outer Border and Leaf Pins -->
+        <!-- Left Image Showcase Frame -->
         <div class="about-whoweare-img-wrap">
-          <div class="leaf-pin-badge leaf-pin-tl"><i class="fa-solid fa-leaf"></i></div>
-          <div class="leaf-pin-badge leaf-pin-br"><i class="fa-solid fa-leaf"></i></div>
           <div class="about-whoweare-img-inner">
             <img src="assect/who-we-are-hand-globe.jpg" alt="Sustainable Solutions for a Better Tomorrow" class="main-whoweare-img">
+          </div>
+          <!-- Floating Glass Stat Badge -->
+          <div class="whoweare-floating-stat-badge">
+            <div class="whoweare-stat-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="whoweare-stat-info">
+              <span class="whoweare-stat-number">100%</span>
+              <span class="whoweare-stat-text">Eco-Friendly & Sustainable</span>
+            </div>
           </div>
         </div>
 
@@ -197,11 +206,11 @@
             <span class="badge-dash"></span>
           </div>
 
-          <h2 class="about-sec-heading" style="font-size: 2.85rem; font-weight: 800; line-height: 1.2; color: #1e1b4b; margin-bottom: 20px;">
-            Sustainable Solutions<br>for a <span class="highlight-text" style="color: #2563eb;">Better Tomorrow</span>
+          <h2 class="about-sec-heading">
+            Sustainable Solutions<br>for a <span class="highlight-blue-gradient">Better Tomorrow</span>
           </h2>
 
-          <p class="about-sec-text" style="font-size: 0.98rem; line-height: 1.7; color: #475569; margin-bottom: 30px;">
+          <p class="about-sec-text">
             Bharat Bhujal Tech Pvt. Ltd. is a premier consulting service providing comprehensive and sustainable expertise in areas of land, water and environment management. We design, develop and implement systems and methods to bring turnkey solutions to your land, environment and water management problems with a focus on sustainable growth and long-term impact.
           </p>
 
@@ -242,72 +251,89 @@
     </div>
   </section>
 
-  <!-- ================= SECTION 2: OUR EXPERTISE (EXACT REFERENCE MATCH) ================= -->
+  <!-- ================= SECTION 2: OUR EXPERTISE (LUXURY BENTO REDESIGN) ================= -->
   <section class="about-expertise-sec">
     <div class="expertise-container-full">
       <div class="about-expertise-grid">
-        <!-- Left Content & 4 Feature Cards -->
+        <!-- Left Content & 4 Bento Feature Cards Matrix -->
         <div class="about-expertise-content">
           <div class="about-sec-badge">
-            <span class="badge-blue-line"></span>
+            <span class="badge-dash"></span>
             <span class="badge-blue-text">OUR EXPERTISE</span>
+            <span class="badge-dash"></span>
           </div>
 
           <h2 class="exact-expertise-title">
-            Integrated Approach to<br><span class="blue-highlight">Land, Water &amp; Environment</span>
+            Integrated Approach to<br><span class="highlight-blue-gradient">Land, Water &amp; Environment</span>
           </h2>
 
           <p class="exact-expertise-para">
-            We design, develop and implement systems and methods to bring turnkey solutions to your land, environment and water management problems.
+            We design, develop and implement systems and methods to bring turnkey solutions to your land, environment and water management problems with a focus on long-term ecological sustainability.
           </p>
 
-          <p class="exact-expertise-para">
-            Our expertise covers GIS mapping, ground water modelling, geological studies, environmental management techniques, water conservation and augmentation technologies, sewage and effluent treatment systems, waste land reclamation and land management methods.
-          </p>
-
-          <!-- 4 Feature Cards Row -->
-          <div class="expertise-cards-4col">
+          <!-- 4 Feature Bento Matrix (2x2 Grid) -->
+          <div class="expertise-bento-2x2">
             <!-- Card 1: Scientific Approach -->
-            <div class="exp-card-item card-blue">
-              <div class="exp-card-icon">
+            <div class="exp-bento-card card-blue">
+              <div class="exp-bento-icon">
                 <i class="fa-solid fa-layer-group"></i>
               </div>
-              <h4 class="exp-card-title">Scientific<br>Approach</h4>
-              <p class="exp-card-desc">Data driven solutions for better decision making.</p>
+              <div class="exp-bento-info">
+                <h4 class="exp-bento-title">Scientific Approach</h4>
+                <p class="exp-bento-desc">Data-driven hydrogeological models for precision decision making.</p>
+              </div>
             </div>
 
             <!-- Card 2: Sustainable Development -->
-            <div class="exp-card-item card-green">
-              <div class="exp-card-icon">
+            <div class="exp-bento-card card-green">
+              <div class="exp-bento-icon">
                 <i class="fa-solid fa-leaf"></i>
               </div>
-              <h4 class="exp-card-title">Sustainable<br>Development</h4>
-              <p class="exp-card-desc">Environmentally responsible and future-focused.</p>
+              <div class="exp-bento-info">
+                <h4 class="exp-bento-title">Sustainable Development</h4>
+                <p class="exp-bento-desc">Environmentally responsible, future-focused aquifer solutions.</p>
+              </div>
             </div>
 
             <!-- Card 3: Advanced Technology -->
-            <div class="exp-card-item card-amber">
-              <div class="exp-card-icon">
-                <i class="fa-solid fa-gear"></i>
+            <div class="exp-bento-card card-amber">
+              <div class="exp-bento-icon">
+                <i class="fa-solid fa-microscope"></i>
               </div>
-              <h4 class="exp-card-title">Advanced<br>Technology</h4>
-              <p class="exp-card-desc">Use of latest tools like GIS, GPS and groundwater modelling.</p>
+              <div class="exp-bento-info">
+                <h4 class="exp-bento-title">Advanced Technology</h4>
+                <p class="exp-bento-desc">Cutting-edge 2D/3D ERT, GIS mapping &amp; telemetry monitoring.</p>
+              </div>
             </div>
 
             <!-- Card 4: Sector Expertise -->
-            <div class="exp-card-item card-purple">
-              <div class="exp-card-icon">
-                <i class="fa-solid fa-users"></i>
+            <div class="exp-bento-card card-purple">
+              <div class="exp-bento-icon">
+                <i class="fa-solid fa-user-shield"></i>
               </div>
-              <h4 class="exp-card-title">Sector<br>Expertise</h4>
-              <p class="exp-card-desc">A multidisciplinary team with diverse domain knowledge.</p>
+              <div class="exp-bento-info">
+                <h4 class="exp-bento-title">Sector Expertise</h4>
+                <p class="exp-bento-desc">Multidisciplinary team with deep domain experience across India.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Right 3D Visual Artwork (EXACT REFERENCE MATCH) -->
+        <!-- Right 3D Visual Artwork Frame -->
         <div class="expertise-3d-visual-wrap">
-          <img src="assect/our-expertise-3d-diagram.jpg" alt="Integrated Approach to Land, Water &amp; Environment 3D Diagram" class="expertise-3d-img">
+          <div class="expertise-3d-img-inner">
+            <img src="assect/our-expertise-3d-diagram-exact.png" alt="Integrated Approach to Land, Water &amp; Environment 3D Diagram" class="expertise-3d-img">
+          </div>
+          <!-- Floating Glass Badge -->
+          <div class="expertise-floating-glass-badge">
+            <div class="exp-glass-icon">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <div class="exp-glass-info">
+              <span class="exp-glass-title">Rainwater &amp; Aquifer Sync</span>
+              <span class="exp-glass-sub">Integrated Sub-Surface System</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

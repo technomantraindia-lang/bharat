@@ -78,12 +78,12 @@
               Services <i class="fa-solid fa-chevron-down nav-arrow"></i>
             </a>
             <ul class="dropdown-list">
-              <li><a href="index.html#services"><i class="fa-solid fa-water"></i> Geophysical Survey</a></li>
-              <li><a href="index.html#services"><i class="fa-solid fa-bore-hole"></i> Production Well</a></li>
-              <li><a href="index.html#services"><i class="fa-solid fa-circle-notch"></i> Open Well Solutions</a></li>
-              <li><a href="index.html#services"><i class="fa-solid fa-gear"></i> Revival of Dry or Failed Bore</a></li>
-              <li><a href="index.html#services"><i class="fa-solid fa-droplet"></i> Recharge Well</a></li>
-              <li><a href="index.html#services"><i class="fa-solid fa-file-shield"></i> CGWA Consultancy</a></li>
+              <li><a href="services/service-detail.html?service=geophysical"><i class="fa-solid fa-water"></i> Geophysical Survey</a></li>
+              <li><a href="services/service-detail.html?service=production"><i class="fa-solid fa-bore-hole"></i> Production Well</a></li>
+              <li><a href="services/service-detail.html?service=openwell"><i class="fa-solid fa-circle-notch"></i> Open Well Solutions</a></li>
+              <li><a href="services/service-detail.html?service=revival"><i class="fa-solid fa-gear"></i> Revival of Dry or Failed Bore</a></li>
+              <li><a href="services/service-detail.html?service=recharge"><i class="fa-solid fa-droplet"></i> Recharge Well</a></li>
+              <li><a href="services/service-detail.html?service=cgwa"><i class="fa-solid fa-file-shield"></i> CGWA Consultancy</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -100,7 +100,8 @@
         <!-- Free Inquiry Button -->
         <button class="btn-inquiry-pill" onclick="openConsultModal()" aria-label="Free Inquiry">
           <i class="fa-solid fa-file-signature inquiry-icon"></i>
-          <span>Get in Touch +</span>
+          <span>Free Inquiry</span>
+          <i class="fa-solid fa-arrow-right arrow-icon"></i>
         </button>
 
         <!-- Mobile Hamburger -->
@@ -715,7 +716,7 @@
         <p>Talk to our senior hydrogeologists for site survey &amp; technical feasibility.</p>
       </div>
 
-      <form class="modal-form-body" onsubmit="event.preventDefault(); alert('Inquiry submitted successfully!'); closeConsultModal();">
+      <form class="modal-form-body" onsubmit="handleFormSubmit(event)">
         <div class="form-group">
           <label>Full Name</label>
           <input type="text" placeholder="e.g. Chetan Patel" required>
