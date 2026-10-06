@@ -18,7 +18,7 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Workspace ID: tm-ws-1c3b596939051378137c64b6
 - Window ID: tm-win-71e97444ee5d05a858ec797f
 - Project: bharta
-- Framework: html-static
+- Framework: 
 - Developer mode: smart
 - Model mode: eco
 - Active file: index.html

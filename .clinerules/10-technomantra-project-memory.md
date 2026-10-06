@@ -5,8 +5,8 @@
 - Workspace: bharta
 - Technology: HTML/CSS/JavaScript
 - Active file at refresh: None
-- Local code graph: 3 files · 2 edges · 0 matched flows
-- Refreshed: 2026-10-01T04:37:28.398Z
+- Local code graph: 4 files · 3 edges · 0 matched flows
+- Refreshed: 2026-10-06T03:23:28.778Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -112,6 +112,8 @@
 - .gsd/examples/quick-reference.md
 - .gsd/examples/workflow-example.md
 - .gsd/JOURNAL.md
+- .journey-render.html
+- about.html
 - adapters/CLAUDE.md
 - adapters/GEMINI.md
 - adapters/GPT_OSS.md

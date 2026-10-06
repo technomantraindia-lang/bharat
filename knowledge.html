@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Center | Bharat Bhujal Tech Pvt. Ltd.</title>
+  <meta name="description"
+    content="Explore expert insights, technical resources, case studies and latest updates on land, water and environmental management at Bharat Bhujal Knowledge Center.">
+
+  <!-- Google Fonts: Inter, Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css?v=4.7.0">
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR (EXACT AS HOME PAGE) ================= -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+
+      <!-- Left Contact & Location Details -->
+      <div class="top-bar-left">
+        <div class="top-info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India</span>
+        </div>
+        <a href="mailto:info@bharatbhujal.com" class="top-info-item">
+          <i class="fa-regular fa-envelope"></i>
+          <span>info@bharatbhujal.com</span>
+        </a>
+        <a href="tel:+919826377611" class="top-info-item">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>+91 98263 77611</span>
+        </a>
+      </div>
+
+      <!-- Right Social Icons -->
+      <div class="top-bar-right">
+        <div class="top-social-group">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER / NAVBAR ================= -->
+  <header class="main-header" id="navbar">
+    <div class="container navbar-container">
+
+      <!-- Logo: Bharat Bhujal Tech Pvt. Ltd. -->
+      <a href="index.html" class="brand-logo">
+        <img src="assect/logo.png" alt="Bharat Bhujal Tech Pvt. Ltd." class="site-main-logo">
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="index.html#services" class="nav-link">
+              Services <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-list">
+              <li><a href="index.html#services"><i class="fa-solid fa-water"></i> Geophysical Survey</a></li>
+              <li><a href="index.html#services"><i class="fa-solid fa-bore-hole"></i> Production Well</a></li>
+              <li><a href="index.html#services"><i class="fa-solid fa-circle-notch"></i> Open Well Solutions</a></li>
+              <li><a href="index.html#services"><i class="fa-solid fa-gear"></i> Revival of Dry or Failed Bore</a></li>
+              <li><a href="index.html#services"><i class="fa-solid fa-droplet"></i> Recharge Well</a></li>
+              <li><a href="index.html#services"><i class="fa-solid fa-file-shield"></i> CGWA Consultancy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="knowledge.html" class="nav-link active">Knowledge Center</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="nav-right-actions">
+        <!-- Free Inquiry Button -->
+        <button class="btn-inquiry-pill" onclick="openConsultModal()" aria-label="Free Inquiry">
+          <i class="fa-solid fa-file-signature inquiry-icon"></i>
+          <span>Get in Touch +</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= 1. KNOWLEDGE CENTER HERO BANNER ================= -->
+  <section class="contact-hero-banner-sec">
+    <div class="contact-hero-dark-overlay"></div>
+    <div class="contact-hero-inner container">
+      <div class="about-sec-badge" style="justify-content: flex-start; margin-bottom: 14px;">
+        <span class="badge-blue-line"></span>
+        <span class="badge-blue-text">KNOWLEDGE CENTER</span>
+      </div>
+
+      <div class="about-page-breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Knowledge Center</span>
+      </div>
+
+      <h1 class="about-page-title">Knowledge for a <span class="highlight-blue">Sustainable Tomorrow</span></h1>
+
+      <p class="about-page-desc">
+        Explore expert insights, technical resources, case studies and the latest updates on land, water and environmental management.
+      </p>
+
+      <!-- Hero Stats Bar (Exact Match with Contact & About Page) -->
+      <div class="hero-stats-bar">
+        <div class="stat-item">
+          <div class="stat-icon-circle"><i class="fa-solid fa-file-lines"></i></div>
+          <div class="stat-meta">
+            <span class="txt-bold">Expert</span>
+            <span class="lbl">Articles</span>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon-circle"><i class="fa-solid fa-chart-pie"></i></div>
+          <div class="stat-meta">
+            <span class="txt-bold">Case</span>
+            <span class="lbl">Studies</span>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon-circle"><i class="fa-solid fa-book-open"></i></div>
+          <div class="stat-meta">
+            <span class="txt-bold">Guidelines</span>
+            <span class="lbl">&amp; Standards</span>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon-circle"><i class="fa-solid fa-folder-open"></i></div>
+          <div class="stat-meta">
+            <span class="txt-bold">Reports</span>
+            <span class="lbl">&amp; Publications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2. 6 CATEGORY QUICK FILTER TABS BAR ================= -->
+  <section class="knowledge-category-bar-sec">
+    <div class="container">
+      <div class="knowledge-category-filter-bar">
+
+        <a href="#featured" class="category-filter-item" data-category="water">
+          <div class="cat-icon-circle icon-blue">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <span class="cat-label">Water<br>Management</span>
+        </a>
+
+        <a href="#featured" class="category-filter-item" data-category="environment">
+          <div class="cat-icon-circle icon-green">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <span class="cat-label">Environment &amp;<br>Sustainability</span>
+        </a>
+
+        <a href="#featured" class="category-filter-item" data-category="technology">
+          <div class="cat-icon-circle icon-sky">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <span class="cat-label">Technology &amp;<br>Innovations</span>
+        </a>
+
+        <a href="#featured" class="category-filter-item" data-category="casestudies">
+          <div class="cat-icon-circle icon-amber">
+            <i class="fa-solid fa-file-text"></i>
+          </div>
+          <span class="cat-label">Case<br>Studies</span>
+        </a>
+
+        <a href="#featured" class="category-filter-item" data-category="infrastructure">
+          <div class="cat-icon-circle icon-purple">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <span class="cat-label">Guidelines &amp;<br>Standards</span>
+        </a>
+
+        <a href="#featured" class="category-filter-item" data-category="all">
+          <div class="cat-icon-circle icon-cyan">
+            <i class="fa-solid fa-folder-open"></i>
+          </div>
+          <span class="cat-label">Reports &amp;<br>Publications</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. FEATURED INSIGHTS SECTION ================= -->
+  <section class="knowledge-featured-sec" id="featured">
+    <!-- Top-right Dam Mountain Landscape Graphic Overlay -->
+    <div class="featured-sec-bg-dam-art"></div>
+
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="knowledge-sec-header-box">
+        <div class="about-sec-badge" style="justify-content: center; margin-bottom: 12px;">
+          <span class="badge-blue-line"></span>
+          <span class="badge-blue-text">FEATURED INSIGHTS</span>
+          <span class="badge-blue-line"></span>
+        </div>
+        <h2 class="knowledge-sec-title text-center">Latest from <span class="highlight-blue">Our Experts</span></h2>
+        <p class="knowledge-sec-desc text-center">
+          In-depth knowledge, practical solutions and real-world experiences to support a water-secure and sustainable future.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills Row (Exact Match with Reference Image) -->
+      <div class="featured-category-pills-row">
+        <button class="feat-pill-btn active" data-category="all"><i class="fa-solid fa-table-cells"></i> All Articles</button>
+        <button class="feat-pill-btn" data-category="water"><i class="fa-solid fa-droplet"></i> Water Management</button>
+        <button class="feat-pill-btn" data-category="environment"><i class="fa-solid fa-leaf"></i> Environment &amp; Sustainability</button>
+        <button class="feat-pill-btn" data-category="technology"><i class="fa-solid fa-gear"></i> Technology &amp; Innovation</button>
+        <button class="feat-pill-btn" data-category="infrastructure"><i class="fa-solid fa-chart-line"></i> Infrastructure</button>
+        <button class="feat-pill-btn" data-category="casestudies"><i class="fa-solid fa-file-lines"></i> Case Studies</button>
+      </div>
+
+      <!-- Panel Container for Dynamic Filtering -->
+      <div class="featured-panels-master-wrapper">
+
+        <!-- PANEL 1: ALL ARTICLES (DEFAULT) -->
+        <div class="knowledge-featured-grid active-panel" data-category="all">
+          <article class="featured-card-large">
+            <div class="featured-media-box">
+              <span class="featured-badge"><i class="fa-solid fa-star"></i> FEATURED ARTICLE</span>
+              <img src="assect/about-hero-dam.jpg" alt="Integrated Water Management" class="featured-media-img">
+            </div>
+            <div class="featured-content-box">
+              <div class="featured-meta-row">
+                <span class="cat-pill-tag badge-blue">WATER MANAGEMENT</span>
+                <div class="article-date-meta"><i class="fa-regular fa-calendar"></i> 12 Sep 2024</div>
+              </div>
+              <h3 class="featured-article-title">Integrated Water Management for a Climate Resilient Future</h3>
+              <p class="featured-article-desc">Learn how integrated planning, advanced technology and community participation can ensure long-term water security and environmental balance.</p>
+            </div>
+          </article>
+
+          <div class="featured-cards-stacked-col">
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-teal">RECHARGE</span>
+                <img src="assect/industry-agriculture.jpg" alt="Groundwater Recharge" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 02 Sep 2024</div>
+                <h4 class="small-card-title">Groundwater Recharge: Strategies and Best Practices</h4>
+                <p class="small-card-desc">Explore effective methods and real-world examples for sustainable groundwater recharge.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-blue">GEOSPATIAL</span>
+                <img src="assect/service-geophysical-survey-generated.png" alt="Geospatial Technology" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 25 Aug 2024</div>
+                <h4 class="small-card-title">Role of Geospatial Technology in Water Resource Planning</h4>
+                <p class="small-card-desc">Discover how GIS and remote sensing are transforming water resource management.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-orange">INFRASTRUCTURE</span>
+                <img src="assect/contact-river-dam.jpg" alt="Sustainable Infrastructure" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 15 Aug 2024</div>
+                <h4 class="small-card-title">Sustainable Infrastructure for Growing Communities</h4>
+                <p class="small-card-desc">Learn about innovative and resilient infrastructure solutions for a sustainable future.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- PANEL 2: WATER MANAGEMENT -->
+        <div class="knowledge-featured-grid" data-category="water" style="display: none;">
+          <article class="featured-card-large">
+            <div class="featured-media-box">
+              <span class="featured-badge"><i class="fa-solid fa-droplet"></i> HYDROGEOLOGY</span>
+              <img src="assect/about-aquifer-hands.jpg" alt="Subsurface Aquifer Mapping" class="featured-media-img">
+            </div>
+            <div class="featured-content-box">
+              <div class="featured-meta-row">
+                <span class="cat-pill-tag badge-blue">HYDROGEOLOGY</span>
+                <div class="article-date-meta"><i class="fa-regular fa-calendar"></i> 18 Sep 2024</div>
+              </div>
+              <h3 class="featured-article-title">Hydrogeological Assessment &amp; Subsurface Aquifer Mapping</h3>
+              <p class="featured-article-desc">In-depth analysis of vertical electrical sounding and 2D resistivity imaging for precision high-yield borewell siting.</p>
+            </div>
+          </article>
+
+          <div class="featured-cards-stacked-col">
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-teal">REVIVAL</span>
+                <img src="assect/proc-03-drilling.jpg" alt="Reviving Borewells" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 10 Sep 2024</div>
+                <h4 class="small-card-title">Reviving Failed Borewells Using Hydro-fracturing</h4>
+                <p class="small-card-desc">Proven engineering techniques to restore discharge rates in dry agricultural wells.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-blue">RECHARGE</span>
+                <img src="assect/proc-05-implementation.jpg" alt="Rainwater Shafts" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 05 Sep 2024</div>
+                <h4 class="small-card-title">Rainwater Recharge Shafts for Industrial Parks</h4>
+                <p class="small-card-desc">Designing high-capacity injection wells to safely replenish subterranean aquifers.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-green">COMPLIANCE</span>
+                <img src="assect/proc-06-sustainability.jpg" alt="CGWA Audit" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 28 Aug 2024</div>
+                <h4 class="small-card-title">CGWA Guidelines &amp; Water Audit Compliance Guide</h4>
+                <p class="small-card-desc">Essential regulatory requirements and impact assessment procedures for bulk consumers.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- PANEL 3: ENVIRONMENT & SUSTAINABILITY -->
+        <div class="knowledge-featured-grid" data-category="environment" style="display: none;">
+          <article class="featured-card-large">
+            <div class="featured-media-box">
+              <span class="featured-badge"><i class="fa-solid fa-leaf"></i> ECOLOGY</span>
+              <img src="assect/who-we-are-hand-globe.jpg" alt="Eco Protection" class="featured-media-img">
+            </div>
+            <div class="featured-content-box">
+              <div class="featured-meta-row">
+                <span class="cat-pill-tag badge-green">SUSTAINABILITY</span>
+                <div class="article-date-meta"><i class="fa-regular fa-calendar"></i> 20 Sep 2024</div>
+              </div>
+              <h3 class="featured-article-title">Eco-Friendly Aquifer Protection &amp; Watershed Restorations</h3>
+              <p class="featured-article-desc">Comprehensive strategies to prevent subterranean groundwater contamination and protect natural watershed ecosystems.</p>
+            </div>
+          </article>
+
+          <div class="featured-cards-stacked-col">
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-green">WETLANDS</span>
+                <img src="assect/contact-river-dam.jpg" alt="River Restoration" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 14 Sep 2024</div>
+                <h4 class="small-card-title">River Basin Restoration &amp; Wetland Preservation</h4>
+                <p class="small-card-desc">Balancing human water demand with ecological conservation for sustainable basins.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-teal">SOIL HEALTH</span>
+                <img src="assect/industry-agriculture.jpg" alt="Soil Salinity" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 08 Sep 2024</div>
+                <h4 class="small-card-title">Soil Salinity Management in Agricultural Belts</h4>
+                <p class="small-card-desc">Preventing land degradation through controlled drip irrigation and subsurface drainage.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-blue">GREEN TECH</span>
+                <img src="assect/proc-06-sustainability.jpg" alt="ZLD Systems" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 01 Sep 2024</div>
+                <h4 class="small-card-title">Zero Liquid Discharge (ZLD) Systems for Factories</h4>
+                <p class="small-card-desc">Minimizing industrial environmental footprint with closed-loop recycling solutions.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- PANEL 4: TECHNOLOGY & INNOVATION -->
+        <div class="knowledge-featured-grid" data-category="technology" style="display: none;">
+          <article class="featured-card-large">
+            <div class="featured-media-box">
+              <span class="featured-badge"><i class="fa-solid fa-gear"></i> INNOVATION</span>
+              <img src="assect/service-geophysical-survey-generated.png" alt="3D Aquifer Modeling" class="featured-media-img">
+            </div>
+            <div class="featured-content-box">
+              <div class="featured-meta-row">
+                <span class="cat-pill-tag badge-sky">TECHNOLOGY</span>
+                <div class="article-date-meta"><i class="fa-regular fa-calendar"></i> 22 Sep 2024</div>
+              </div>
+              <h3 class="featured-article-title">Role of 3D Aquifer Modeling &amp; Geophysical Sensors</h3>
+              <p class="featured-article-desc">Leveraging modern 3D inversion software and electromagnetic sensors for precision drilling decisions.</p>
+            </div>
+          </article>
+
+          <div class="featured-cards-stacked-col">
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-blue">GIS SPATIAL</span>
+                <img src="assect/proc-02-analysis.jpg" alt="GIS Mapping" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 16 Sep 2024</div>
+                <h4 class="small-card-title">GIS Spatial Data Analysis in Catchment Mapping</h4>
+                <p class="small-card-desc">Utilizing satellite remote sensing to pinpoint high-potential groundwater zones.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-orange">TELEMETRY</span>
+                <img src="assect/about-aquifer-hands.jpg" alt="IoT Piezometers" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 09 Sep 2024</div>
+                <h4 class="small-card-title">Telemetric Piezometers &amp; Real-Time Monitoring</h4>
+                <p class="small-card-desc">Automated IoT sensors for continuous tracking of groundwater levels and quality.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-teal">DRILLING</span>
+                <img src="assect/service-production-well-generated.png" alt="DTH Drilling" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 03 Sep 2024</div>
+                <h4 class="small-card-title">Advanced DTH &amp; Reverse Circulation Drilling</h4>
+                <p class="small-card-desc">Engineering insights into deep rock borewell drilling technologies for tough geology.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- PANEL 5: INFRASTRUCTURE -->
+        <div class="knowledge-featured-grid" data-category="infrastructure" style="display: none;">
+          <article class="featured-card-large">
+            <div class="featured-media-box">
+              <span class="featured-badge"><i class="fa-solid fa-building"></i> INFRASTRUCTURE</span>
+              <img src="assect/contact-river-dam.jpg" alt="Sustainable Infrastructure" class="featured-media-img">
+            </div>
+            <div class="featured-content-box">
+              <div class="featured-meta-row">
+                <span class="cat-pill-tag badge-amber">INFRASTRUCTURE</span>
+                <div class="article-date-meta"><i class="fa-regular fa-calendar"></i> 25 Sep 2024</div>
+              </div>
+              <h3 class="featured-article-title">Resilient Water Infrastructure for Growing Urban Belts</h3>
+              <p class="featured-article-desc">Designing sustainable stormwater drainage, underground storage reservoirs and distribution networks for modern cities.</p>
+            </div>
+          </article>
+
+          <div class="featured-cards-stacked-col">
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-orange">STORMWATER</span>
+                <img src="assect/about-hero-dam.jpg" alt="Stormwater Management" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 19 Sep 2024</div>
+                <h4 class="small-card-title">Urban Stormwater Drainage &amp; Vault Storage</h4>
+                <p class="small-card-desc">Transforming city flood risk into clean underground freshwater reserves.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-blue">PIPELINES</span>
+                <img src="assect/proc-05-implementation.jpg" alt="Distribution Pipe" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 11 Sep 2024</div>
+                <h4 class="small-card-title">High-Pressure Municipal Distribution Networks</h4>
+                <p class="small-card-desc">Energy-efficient pumping stations and acoustic leak detection protocols.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-teal">DAM SAFETY</span>
+                <img src="assect/contact-river-dam.jpg" alt="Dam Audits" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 04 Sep 2024</div>
+                <h4 class="small-card-title">Dam Safety Audits &amp; Hydraulic Structure Design</h4>
+                <p class="small-card-desc">Ensuring structural integrity and spillway capacity for large water retaining assets.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- PANEL 6: CASE STUDIES -->
+        <div class="knowledge-featured-grid" data-category="casestudies" style="display: none;">
+          <article class="featured-card-large">
+            <div class="featured-media-box">
+              <span class="featured-badge"><i class="fa-solid fa-file-text"></i> CASE STUDY</span>
+              <img src="assect/proc-02-analysis.jpg" alt="Gujarat Revival Study" class="featured-media-img">
+            </div>
+            <div class="featured-content-box">
+              <div class="featured-meta-row">
+                <span class="cat-pill-tag badge-amber">CASE STUDY</span>
+                <div class="article-date-meta"><i class="fa-regular fa-calendar"></i> 26 Sep 2024</div>
+              </div>
+              <h3 class="featured-article-title">Gujarat Industrial Zone Groundwater Revival Case Study</h3>
+              <p class="featured-article-desc">How 2D Electrical Resistivity Tomography saved 15+ industrial production wells from saline water intrusion in Vadodara.</p>
+            </div>
+          </article>
+
+          <div class="featured-cards-stacked-col">
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-green">AGRI YIELD</span>
+                <img src="assect/industry-agriculture.jpg" alt="Agri Water Security" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 17 Sep 2024</div>
+                <h4 class="small-card-title">Agricultural Water Security in Hard-Rock Saurashtra</h4>
+                <p class="small-card-desc">Increasing crop yield by 40% through scientific geophysical siting of 8 recharge wells.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-blue">SMART CITY</span>
+                <img src="assect/about-engineers-rig.jpg" alt="Smart City Project" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 12 Sep 2024</div>
+                <h4 class="small-card-title">Smart City Groundwater Recharge Project</h4>
+                <p class="small-card-desc">Restoring municipal water table by 3.2 meters in 2 consecutive monsoon seasons.</p>
+              </div>
+            </article>
+
+            <article class="featured-small-card-row">
+              <div class="small-card-thumb">
+                <span class="small-card-tag badge-teal">TEXTILE HUB</span>
+                <img src="assect/proc-06-sustainability.jpg" alt="Textile Compliance" class="small-thumb-img">
+              </div>
+              <div class="small-card-content">
+                <div class="article-date-meta" style="margin-bottom: 4px;"><i class="fa-regular fa-calendar"></i> 06 Sep 2024</div>
+                <h4 class="small-card-title">CGWA NOC Compliance for Textile Hub Vadodara</h4>
+                <p class="small-card-desc">End-to-end water impact assessment and rainwater harvesting execution for 500+ KLPD plant.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Carousel Navigation Bar -->
+      <div class="featured-bottom-carousel-nav">
+        <button class="carousel-arrow-btn prev" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="carousel-dots-group">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="carousel-arrow-btn next" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 4. IMPACT COUNTER BANNER (LUXURY BENTO CARD SHOWCASE) ================= -->
+  <section class="knowledge-impact-counter-sec">
+    <div class="container">
+      <div class="impact-bento-master-card">
+        
+        <!-- Background Ambient Waves Artwork -->
+        <div class="impact-card-bg-artwork">
+          <svg viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="700" cy="100" r="300" fill="rgba(0, 117, 255, 0.04)" />
+            <circle cx="100" cy="350" r="250" fill="rgba(56, 189, 248, 0.05)" />
+            <path d="M-50,200 Q200,100 400,250 T850,150" stroke="rgba(0, 117, 255, 0.08)" stroke-width="2" fill="none" />
+          </svg>
+        </div>
+
+        <div class="impact-bento-grid">
+
+          <!-- Left Branding & Headline Column -->
+          <div class="impact-left-brand-col">
+            <div class="impact-badge-pill">
+              <span class="badge-blue-dot"></span>
+              <span class="impact-sub-label">KNOWLEDGE THAT CREATES IMPACT</span>
+            </div>
+            
+            <h2 class="impact-main-heading">
+              Numbers that Reflect <span class="highlight-blue-gradient">Our Commitment</span>
+            </h2>
+
+            <p class="impact-main-desc">
+              Over a decade of technical research, field hydrogeology, and sustainable water management transformed into actionable knowledge.
+            </p>
+
+            <div class="impact-trust-pills-group">
+              <div class="impact-trust-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>CGWA Compliant Data</span>
+              </div>
+              <div class="impact-trust-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Verified Field Studies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 4 Bento Stat Cards Grid -->
+          <div class="impact-right-stats-grid">
+
+            <!-- Card 1 -->
+            <div class="impact-bento-stat-card card-blue">
+              <div class="bento-card-top">
+                <div class="bento-icon-circle icon-blue">
+                  <i class="fa-solid fa-file-lines"></i>
+                </div>
+                <span class="bento-card-trend trend-blue">+15% YoY</span>
+              </div>
+              <div class="bento-card-number text-blue">100+</div>
+              <div class="bento-card-label">Expert Articles</div>
+              <p class="bento-card-sub">In-depth technical guides &amp; research</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="impact-bento-stat-card card-green">
+              <div class="bento-card-top">
+                <div class="bento-icon-circle icon-green">
+                  <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <span class="bento-card-trend trend-green">Certified</span>
+              </div>
+              <div class="bento-card-number text-green">25+</div>
+              <div class="bento-card-label">Technical Experts</div>
+              <p class="bento-card-sub">Hydrogeologists &amp; engineers</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="impact-bento-stat-card card-sky">
+              <div class="bento-card-top">
+                <div class="bento-icon-circle icon-sky">
+                  <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <span class="bento-card-trend trend-sky">Free Access</span>
+              </div>
+              <div class="bento-card-number text-sky">50+</div>
+              <div class="bento-card-label">Resources &amp; Guides</div>
+              <p class="bento-card-sub">Downloadable survey reports</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="impact-bento-stat-card card-amber">
+              <div class="bento-card-top">
+                <div class="bento-icon-circle icon-amber">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <span class="bento-card-trend trend-amber">Since 2014</span>
+              </div>
+              <div class="bento-card-number text-amber">10+</div>
+              <div class="bento-card-label">Years of Sharing</div>
+              <p class="bento-card-sub">Sustainable groundwater solutions</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. BROWSE ARTICLES BY CATEGORY ================= -->
+  <section class="knowledge-categories-grid-sec" id="categories">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="knowledge-sec-header-box" style="margin-bottom: 48px;">
+        <div class="about-sec-badge" style="justify-content: center; margin-bottom: 12px;">
+          <span class="badge-blue-line"></span>
+          <span class="badge-blue-text">EXPLORE BY TOPIC</span>
+          <span class="badge-blue-line"></span>
+        </div>
+        <h2 class="knowledge-sec-title text-center">Browse Articles by <span class="highlight-blue">Category</span></h2>
+        <p class="knowledge-sec-desc text-center">
+          Find the information you need with topics tailored to your technical requirements and interests.
+        </p>
+      </div>
+
+      <!-- 6 Category Bento Cards Grid -->
+      <div class="knowledge-cat-bento-grid">
+
+        <!-- Card 1: Water Management -->
+        <div class="cat-bento-card-item bento-border-blue" data-category="water" style="cursor: pointer;">
+          <div class="cat-bento-media">
+            <span class="bento-count-badge"><i class="fa-solid fa-layer-group"></i> 24+ Articles</span>
+            <img src="assect/contact-river-dam.jpg" alt="Water Management" class="bento-media-img">
+          </div>
+          <div class="cat-bento-footer">
+            <div class="cat-bento-text">
+              <span class="cat-mini-tag text-blue">HYDROGEOLOGY</span>
+              <h3 class="cat-bento-title">Water Management</h3>
+              <p class="cat-bento-desc">Technical insights and solutions for sustainable water resource management.</p>
+            </div>
+            <a href="#featured" class="cat-bento-action-circle action-blue" aria-label="Explore Water Management">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Environment & Sustainability -->
+        <div class="cat-bento-card-item bento-border-green" data-category="environment" style="cursor: pointer;">
+          <div class="cat-bento-media">
+            <span class="bento-count-badge"><i class="fa-solid fa-layer-group"></i> 18+ Guides</span>
+            <img src="assect/who-we-are-hand-globe.jpg" alt="Environment & Sustainability" class="bento-media-img">
+          </div>
+          <div class="cat-bento-footer">
+            <div class="cat-bento-text">
+              <span class="cat-mini-tag text-green">ECOLOGY</span>
+              <h3 class="cat-bento-title">Environment &amp; Sustainability</h3>
+              <p class="cat-bento-desc">Best practices and regulatory frameworks for a greener, healthier future.</p>
+            </div>
+            <a href="#featured" class="cat-bento-action-circle action-green" aria-label="Explore Environment">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Technology & Innovation -->
+        <div class="cat-bento-card-item bento-border-sky" data-category="technology" style="cursor: pointer;">
+          <div class="cat-bento-media">
+            <span class="bento-count-badge"><i class="fa-solid fa-layer-group"></i> 15+ Tools</span>
+            <img src="assect/service-geophysical-survey-generated.png" alt="Technology & Innovation" class="bento-media-img">
+          </div>
+          <div class="cat-bento-footer">
+            <div class="cat-bento-text">
+              <span class="cat-mini-tag text-sky">GIS &amp; SURVEY</span>
+              <h3 class="cat-bento-title">Technology &amp; Innovation</h3>
+              <p class="cat-bento-desc">Latest tools, 3D aquifer models and digital solutions for precision planning.</p>
+            </div>
+            <a href="#featured" class="cat-bento-action-circle action-sky" aria-label="Explore Technology">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Case Studies -->
+        <div class="cat-bento-card-item bento-border-amber" data-category="casestudies" style="cursor: pointer;">
+          <div class="cat-bento-media">
+            <span class="bento-count-badge"><i class="fa-solid fa-layer-group"></i> 30+ Field Reports</span>
+            <img src="assect/proc-02-analysis.jpg" alt="Case Studies" class="bento-media-img">
+          </div>
+          <div class="cat-bento-footer">
+            <div class="cat-bento-text">
+              <span class="cat-mini-tag text-amber">CASE STUDIES</span>
+              <h3 class="cat-bento-title">Case Studies</h3>
+              <p class="cat-bento-desc">Real-world projects, field empirical evidence, and success stories from the field.</p>
+            </div>
+            <a href="#featured" class="cat-bento-action-circle action-amber" aria-label="Explore Case Studies">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5: Guidelines & Standards -->
+        <div class="cat-bento-card-item bento-border-purple" data-category="infrastructure" style="cursor: pointer;">
+          <div class="cat-bento-media">
+            <span class="bento-count-badge"><i class="fa-solid fa-layer-group"></i> 12+ Codes</span>
+            <img src="assect/proc-05-implementation.jpg" alt="Guidelines & Standards" class="bento-media-img">
+          </div>
+          <div class="cat-bento-footer">
+            <div class="cat-bento-text">
+              <span class="cat-mini-tag text-purple">COMPLIANCE</span>
+              <h3 class="cat-bento-title">Guidelines &amp; Standards</h3>
+              <p class="cat-bento-desc">CGWA policies, BIS codes, well design standards and technical references.</p>
+            </div>
+            <a href="#featured" class="cat-bento-action-circle action-purple" aria-label="Explore Guidelines">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6: Reports & Publications -->
+        <div class="cat-bento-card-item bento-border-cyan" data-category="all" style="cursor: pointer;">
+          <div class="cat-bento-media">
+            <span class="bento-count-badge"><i class="fa-solid fa-layer-group"></i> 20+ Papers</span>
+            <img src="assect/proc-06-sustainability.jpg" alt="Reports & Publications" class="bento-media-img">
+          </div>
+          <div class="cat-bento-footer">
+            <div class="cat-bento-text">
+              <span class="cat-mini-tag text-cyan">RESEARCH</span>
+              <h3 class="cat-bento-title">Reports &amp; Publications</h3>
+              <p class="cat-bento-desc">Peer-reviewed research papers, whitepapers and annual water assessment reports.</p>
+            </div>
+            <a href="#featured" class="cat-bento-action-circle action-cyan" aria-label="Explore Reports">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ================= 6. SUSTAINABLE WATER SOLUTIONS CTA BANNER (FLOATING CARD WITH WHITE GAP BEFORE FOOTER) ================= -->
+  <section class="knowledge-cta-rock-stream-sec">
+    <div class="container">
+      
+      <div class="cta-banner-floating-wrapper">
+        <!-- Dark Water Stream Background Artwork Overlay inside the floating card -->
+        <img src="assect/about-bottom-water.jpg" alt="Water stream background" class="cta-rock-stream-bg-img">
+        <div class="cta-rock-stream-overlay"></div>
+
+        <div class="cta-glass-floating-card relative-z2">
+          <div class="cta-glass-card-inner">
+            
+            <!-- Left Text Content -->
+            <div class="cta-left-text-block">
+              <div class="cta-sub-badge-row">
+                <span class="badge-dash">—</span>
+                <span class="badge-sub-text">LET'S BUILD A SUSTAINABLE TOMORROW</span>
+                <span class="badge-dash">—</span>
+              </div>
+
+              <h2 class="cta-card-heading">Partner with Us for Sustainable Water Solutions</h2>
+              
+              <p class="cta-card-subtext">
+                We are committed to providing innovative and practical solutions for land, water and environment management.
+              </p>
+            </div>
+
+            <!-- Right Action Button -->
+            <div class="cta-right-btn-block">
+              <a href="contact.html" class="btn-white-contact-pill">
+                <span>Contact Us</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER (EXACT MATCH WITH HOME PAGE) ================= -->
+  <footer class="master-footer" id="contact">
+
+    <!-- Background Water Landscape & Wave Lines Overlay -->
+    <div class="footer-bg-landscape">
+      <div class="mountain-backdrop-art"></div>
+      <svg class="footer-sine-waves-svg" viewBox="0 0 600 200" fill="none">
+        <path d="M 0,160 C 150,190 300,100 450,140 C 520,160 580,130 600,120" stroke="rgba(56, 189, 248, 0.25)"
+          stroke-width="2" />
+        <path d="M 0,140 C 180,180 320,80 480,120 C 540,140 580,110 600,100" stroke="rgba(56, 189, 248, 0.35)"
+          stroke-width="2.5" />
+        <path d="M 0,120 C 200,160 340,60 500,100 C 560,120 590,90 600,80" stroke="rgba(6, 182, 212, 0.45)"
+          stroke-width="2" />
+      </svg>
+      <div class="footer-water-drop-art">
+        <div class="drop-column"></div>
+        <div class="drop-ripple-circle dr-1"></div>
+        <div class="drop-ripple-circle dr-2"></div>
+        <div class="drop-ripple-circle dr-3"></div>
+      </div>
+    </div>
+
+    <!-- Main Footer Columns Grid -->
+    <div class="container footer-main-container">
+      <div class="footer-grid-5col">
+
+        <!-- Column 1: Brand Info -->
+        <div class="footer-col col-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="assect/logo.png" alt="Bharat Bhujal Tech Pvt. Ltd." class="footer-logo-img">
+          </a>
+
+          <p class="brand-mission-text">
+            Your trusted partner for groundwater exploration, precision borewell drilling, and sustainable water resource management across India.
+          </p>
+
+          <div class="footer-trust-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>ISO 9001:2015 &amp; CGWA Compliant</span>
+          </div>
+
+          <div class="footer-social-circles">
+            <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Website" title="Website"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col col-quicklinks">
+          <h4 class="footer-heading">
+            Quick Links
+            <span class="heading-accent-line"></span>
+          </h4>
+          <ul class="footer-nav-list">
+            <li>
+              <a href="index.html">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>About Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Services &amp; Solutions</span>
+              </a>
+            </li>
+            <li>
+              <a href="knowledge.html">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Knowledge Center</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Contact Us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="footer-col col-services">
+          <h4 class="footer-heading">
+            Our Services
+            <span class="heading-accent-line"></span>
+          </h4>
+          <ul class="footer-services-list">
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-water"></i></span>
+                <span class="f-service-title">Geophysical Survey</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-bore-hole"></i></span>
+                <span class="f-service-title">Production Well Drilling</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-circle-notch"></i></span>
+                <span class="f-service-title">Open Well Solutions</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-gear"></i></span>
+                <span class="f-service-title">Revival of Dry or Failed Bore</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-droplet"></i></span>
+                <span class="f-service-title">Recharge Well &amp; Rainwater</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-file-shield"></i></span>
+                <span class="f-service-title">CGWA Consultancy &amp; NOC</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Get in Touch -->
+        <div class="footer-col col-contact">
+          <h4 class="footer-heading">
+            Get in Touch
+            <span class="heading-accent-line"></span>
+          </h4>
+          <div class="footer-contact-items">
+
+            <!-- Location Tile -->
+            <div class="f-contact-card">
+              <div class="f-contact-icon-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Corporate Office</span>
+                <span class="f-contact-val">301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India</span>
+              </div>
+            </div>
+
+            <!-- Phone Call Tile -->
+            <a href="tel:+919826377611" class="f-contact-card f-contact-link">
+              <div class="f-contact-icon-box pulse-blue">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Direct Technical Inquiry</span>
+                <span class="f-contact-val highlight-val">+91 98263 77611</span>
+              </div>
+              <span class="f-card-action-chip">Call</span>
+            </a>
+
+            <!-- Email Tile -->
+            <a href="mailto:info@bharatbhujal.com" class="f-contact-card f-contact-link">
+              <div class="f-contact-icon-box">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Email Consultation</span>
+                <span class="f-contact-val highlight-val">info@bharatbhujal.com</span>
+              </div>
+            </a>
+
+            <!-- Working Hours Tile -->
+            <div class="f-contact-card">
+              <div class="f-contact-icon-box">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Working Hours</span>
+                <span class="f-contact-val">Mon - Sat : 9:00 AM - 6:00 PM <span class="closed-pill">Sun Closed</span></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Copyright & Legal Bar -->
+    <div class="footer-bottom-strip">
+      <div class="container footer-bottom-inner">
+        <div class="copyright-text">
+          &copy; 2026 Bharat Bhujal Tech Pvt. Ltd. All Rights Reserved.
+        </div>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="sep">|</span>
+          <a href="#">Terms &amp; Conditions</a>
+          <span class="sep">|</span>
+          <a href="#">Sitemap</a>
+        </div>
+        <div class="made-in-tag">
+          <span>🍃 Designed with <span class="heart-blue">💙</span> in India</span>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- ================= CONSULTATION MODAL ================= -->
+  <div class="modal-backdrop-layer" id="consultModal">
+    <div class="modal-dialog-box">
+      <button class="modal-close-btn" onclick="closeConsultModal()">&times;</button>
+
+      <div class="modal-header-section">
+        <div class="modal-icon-bubble"><i class="fa-solid fa-droplet"></i></div>
+        <h3>Free Inquiry &amp; Consultation</h3>
+        <p>Talk to our senior hydrogeologists for site survey &amp; technical feasibility.</p>
+      </div>
+
+      <form class="modal-form-body" onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been submitted successfully.'); closeConsultModal();">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="e.g. Chetan Patel" required>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="e.g. 9826377611" required>
+          </div>
+          <div class="form-group">
+            <label>City / Location</label>
+            <input type="text" placeholder="e.g. Vadodara, Gujarat" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Select Required Service</label>
+          <select required>
+            <option value="">Select a service...</option>
+            <option value="geophysical">Geophysical Survey</option>
+            <option value="production">Production Well Drilling</option>
+            <option value="openwell">Open Well Solutions</option>
+            <option value="revival">Revival of Dry or Failed Bore</option>
+            <option value="recharge">Recharge Well / Rainwater</option>
+            <option value="cgwa">CGWA Consultancy &amp; NOC</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-modal-submit">
+          <span>Submit Free Inquiry</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js?v=1.9.0"></script>
+</body>
+
+</html>

@@ -595,6 +595,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initAboutSlider();
   initClientLogoAutoScroll();
   initIndustriesFilter();
+  initKnowledgeFilters();
+  initKnowledgeScrollAnimations();
 });
 
 // Industries We Serve Category Filter
@@ -804,3 +806,218 @@ function initServicesAnimations() {
   const grid = document.querySelector('.services-cards-grid');
   if (grid) observer.observe(grid);
 }
+
+// ==========================================
+// KNOWLEDGE CENTER: Dynamic Category Filtering & Smooth Article Transitions
+// ==========================================
+function initKnowledgeFilters() {
+  const pillBtns = document.querySelectorAll('.feat-pill-btn');
+  const catFilterItems = document.querySelectorAll('.category-filter-item');
+  const catBentoCards = document.querySelectorAll('.cat-bento-card-item');
+  const panels = document.querySelectorAll('.knowledge-featured-grid');
+  const prevBtn = document.querySelector('.carousel-arrow-btn.prev');
+  const nextBtn = document.querySelector('.carousel-arrow-btn.next');
+  const dots = document.querySelectorAll('.carousel-dots-group .dot');
+
+  if (!pillBtns.length || !panels.length) return;
+
+  const categories = ['all', 'water', 'environment', 'technology', 'infrastructure', 'casestudies'];
+  let currentCategoryIndex = 0;
+
+  function setCategory(cat, smoothScroll = false) {
+    const targetIdx = categories.indexOf(cat);
+    if (targetIdx !== -1) {
+      currentCategoryIndex = targetIdx;
+    }
+
+    // 1. Update Pill Buttons Active State
+    pillBtns.forEach(btn => {
+      if (btn.getAttribute('data-category') === cat) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    // 2. Update Carousel Dots
+    if (dots.length) {
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentCategoryIndex);
+      });
+    }
+
+    // 3. Smooth Fade Transition for Article Panels
+    const currentActivePanel = document.querySelector('.knowledge-featured-grid.active-panel');
+    const targetPanel = document.querySelector(`.knowledge-featured-grid[data-category="${cat}"]`) || panels[0];
+
+    if (currentActivePanel === targetPanel) return;
+
+    if (currentActivePanel) {
+      currentActivePanel.style.opacity = '0';
+      currentActivePanel.style.transform = 'translateY(12px) scale(0.98)';
+      setTimeout(() => {
+        currentActivePanel.classList.remove('active-panel');
+        currentActivePanel.style.display = 'none';
+
+        targetPanel.style.display = 'grid';
+        targetPanel.style.opacity = '0';
+        targetPanel.style.transform = 'translateY(12px) scale(0.98)';
+
+        setTimeout(() => {
+          targetPanel.classList.add('active-panel');
+          targetPanel.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
+          targetPanel.style.opacity = '1';
+          targetPanel.style.transform = 'translateY(0) scale(1)';
+        }, 30);
+      }, 200);
+    } else {
+      panels.forEach(p => { p.style.display = 'none'; p.classList.remove('active-panel'); });
+      targetPanel.style.display = 'grid';
+      targetPanel.classList.add('active-panel');
+      targetPanel.style.opacity = '1';
+      targetPanel.style.transform = 'translateY(0) scale(1)';
+    }
+
+    // 4. Optionally Scroll to Section 3 Header
+    if (smoothScroll) {
+      const secHeader = document.getElementById('featured');
+      if (secHeader) {
+        secHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }
+
+  // Click on Pill Buttons (Section 3)
+  pillBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const cat = btn.getAttribute('data-category');
+      setCategory(cat, false);
+    });
+  });
+
+  // Click on Top 6 Category Tiles (Section 2)
+  catFilterItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      const cat = item.getAttribute('data-category');
+      if (cat) {
+        setCategory(cat, true);
+      }
+    });
+  });
+
+  // Click on Bottom 6 Bento Cards (Section 5)
+  catBentoCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+      e.preventDefault();
+      const cat = card.getAttribute('data-category');
+      if (cat) {
+        setCategory(cat, true);
+      }
+    });
+  });
+
+  // Prev / Next Arrows
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      currentCategoryIndex = (currentCategoryIndex - 1 + categories.length) % categories.length;
+      setCategory(categories[currentCategoryIndex], false);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      currentCategoryIndex = (currentCategoryIndex + 1) % categories.length;
+      setCategory(categories[currentCategoryIndex], false);
+    });
+  }
+
+  // Initialize default active
+  setCategory('all', false);
+}
+
+// ==========================================================================
+// KNOWLEDGE CENTER: MULTI-DIRECTIONAL SCROLL ENTRANCE ANIMATIONS
+// ==========================================================================
+function initKnowledgeScrollAnimations() {
+  const page = document.querySelector('.knowledge-featured-sec');
+  if (!page) return;
+
+  // 1. Section 2 Category Bar (Alternating Left / Right entrance per tile)
+  const categoryBar = document.querySelector('.knowledge-category-filter-bar');
+  if (categoryBar) {
+    const tiles = categoryBar.querySelectorAll('.category-filter-item');
+    tiles.forEach((tile, idx) => {
+      tile.classList.add('kn-anim-init', idx % 2 === 0 ? 'kn-anim-left' : 'kn-anim-right', `kn-stagger-${(idx % 6) + 1}`);
+    });
+  }
+
+  // 2. Section 3 Header (Top entrance) & Pills Row (Left entrance)
+  const sec3Header = document.querySelector('#featured .knowledge-sec-header-box');
+  if (sec3Header) sec3Header.classList.add('kn-anim-init', 'kn-anim-top');
+
+  const pillsRow = document.querySelector('.featured-category-pills-row');
+  if (pillsRow) pillsRow.classList.add('kn-anim-init', 'kn-anim-left');
+
+  // Section 3 Panel Cards (Left card from LEFT, Right small cards from RIGHT)
+  const panels = document.querySelectorAll('.knowledge-featured-grid');
+  panels.forEach(panel => {
+    const largeCard = panel.querySelector('.featured-card-large');
+    if (largeCard) largeCard.classList.add('kn-anim-init', 'kn-anim-left');
+
+    const smallCards = panel.querySelectorAll('.featured-small-card-row');
+    smallCards.forEach((card, idx) => {
+      card.classList.add('kn-anim-init', 'kn-anim-right', `kn-stagger-${idx + 1}`);
+    });
+  });
+
+  // 3. Section 4 Impact Master Bento Card
+  const impactBrandCol = document.querySelector('.impact-left-brand-col');
+  if (impactBrandCol) impactBrandCol.classList.add('kn-anim-init', 'kn-anim-left');
+
+  const statCards = document.querySelectorAll('.impact-bento-stat-card');
+  const statDirs = ['kn-anim-top', 'kn-anim-right', 'kn-anim-left', 'kn-anim-bottom'];
+  statCards.forEach((card, idx) => {
+    card.classList.add('kn-anim-init', statDirs[idx % 4], `kn-stagger-${idx + 1}`);
+  });
+
+  // 4. Section 5 Browse Articles by Category Grid
+  const sec5Header = document.querySelector('#categories .knowledge-sec-header-box');
+  if (sec5Header) sec5Header.classList.add('kn-anim-init', 'kn-anim-top');
+
+  const bentoCards = document.querySelectorAll('.cat-bento-card-item');
+  const bentoDirs = ['kn-anim-left', 'kn-anim-bottom', 'kn-anim-right', 'kn-anim-left', 'kn-anim-bottom', 'kn-anim-right'];
+  bentoCards.forEach((card, idx) => {
+    card.classList.add('kn-anim-init', bentoDirs[idx % 6], `kn-stagger-${(idx % 3) + 1}`);
+  });
+
+  // 5. Section 6 Floating CTA Banner
+  const ctaCard = document.querySelector('.knowledge-cta-rock-stream-sec .cta-banner-floating-wrapper');
+  if (ctaCard) ctaCard.classList.add('kn-anim-init', 'kn-anim-scale');
+
+  // IntersectionObserver setup for scroll reveal
+  const animTargets = document.querySelectorAll('.kn-anim-init');
+  if (!animTargets.length) return;
+
+  if (!('IntersectionObserver' in window)) {
+    animTargets.forEach(el => el.classList.add('kn-anim-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('kn-anim-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  animTargets.forEach(el => observer.observe(el));
+}
+
+

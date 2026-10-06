@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Bharat Bhujal Tech Pvt. Ltd.</title>
+  <meta name="description"
+    content="Contact Bharat Bhujal Tech Pvt. Ltd. for land, water, and environmental management solutions. Get in touch with our expert team today.">
+
+  <!-- Google Fonts: Inter, Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css?v=3.2.0">
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR (EXACT AS HOME PAGE) ================= -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+
+      <!-- Left Contact & Location Details -->
+      <div class="top-bar-left">
+        <div class="top-info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India</span>
+        </div>
+        <a href="mailto:info@bharatbhujal.com" class="top-info-item">
+          <i class="fa-regular fa-envelope"></i>
+          <span>info@bharatbhujal.com</span>
+        </a>
+        <a href="tel:+919826377611" class="top-info-item">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>+91 98263 77611</span>
+        </a>
+      </div>
+
+      <!-- Right Social Icons -->
+      <div class="top-bar-right">
+        <div class="top-social-group">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER / NAVBAR (EXACT AS HOME PAGE) ================= -->
+  <header class="main-header" id="navbar">
+    <div class="container navbar-container">
+
+      <!-- Logo: Bharat Bhujal Tech Pvt. Ltd. -->
+      <a href="index.html" class="brand-logo">
+        <img src="assect/logo.png" alt="Bharat Bhujal Tech Pvt. Ltd." class="site-main-logo">
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="index.html#services" class="nav-link">
+              Services <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-list">
+              <li><a href="index.html#services"><i class="fa-solid fa-water"></i> Geophysical Survey</a></li>
+              <li><a href="index.html#services"><i class="fa-solid fa-bore-hole"></i> Production Well</a></li>
+              <li><a href="index.html#services"><i class="fa-solid fa-circle-notch"></i> Open Well Solutions</a></li>
+              <li><a href="index.html#services"><i class="fa-solid fa-gear"></i> Revival of Dry or Failed Bore</a></li>
+              <li><a href="index.html#services"><i class="fa-solid fa-droplet"></i> Recharge Well</a></li>
+              <li><a href="index.html#services"><i class="fa-solid fa-file-shield"></i> CGWA Consultancy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="knowledge.html" class="nav-link">Knowledge Center</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="nav-right-actions">
+        <!-- Free Inquiry Button -->
+        <button class="btn-inquiry-pill" onclick="openConsultModal()" aria-label="Free Inquiry">
+          <i class="fa-solid fa-file-signature inquiry-icon"></i>
+          <span>Get in Touch +</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= 1. LUXURY ROYAL BLUE HERO BANNER ================= -->
+  <section class="contact-hero-banner-sec">
+    <div class="contact-hero-dark-overlay"></div>
+    <div class="contact-hero-inner container">
+      <div class="about-sec-badge" style="justify-content: flex-start; margin-bottom: 14px;">
+        <span class="badge-blue-line"></span>
+        <span class="badge-blue-text">CONTACT US</span>
+      </div>
+
+      <div class="about-page-breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Contact Us</span>
+      </div>
+
+      <h1 class="about-page-title">Contact <span class="highlight-blue">Us</span></h1>
+
+      <h2 class="about-page-subtitle">
+        Let’s Work Together for a <span class="highlight-blue">Sustainable Future</span>
+      </h2>
+
+      <p class="about-page-desc">
+        We are here to discuss your requirements and provide turnkey solutions for land, water and environmental management.
+      </p>
+
+      <!-- Hero Stats Bar (Exact Match with Home & About Page) -->
+      <div class="hero-stats-bar">
+        <div class="stat-item">
+          <div class="stat-icon-circle"><i class="fa-solid fa-phone"></i></div>
+          <div class="stat-meta">
+            <span class="num">24/7</span>
+            <span class="lbl">Support</span>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="stat-meta">
+            <span class="num">Vadodara</span>
+            <span class="lbl">Head Office</span>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon-circle"><i class="fa-solid fa-map-location-dot"></i></div>
+          <div class="stat-meta">
+            <span class="txt-bold">Pan India</span>
+            <span class="lbl">Coverage</span>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon-circle"><i class="fa-solid fa-user-gear"></i></div>
+          <div class="stat-meta">
+            <span class="txt-bold">Expert</span>
+            <span class="lbl">Tech Team</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2. 4 CONTACT INFO CARDS BAR ================= -->
+  <section class="contact-cards-bar-sec">
+    <div class="container">
+      <div class="contact-cards-4col-grid">
+
+        <!-- Card 1: Call Us -->
+        <div class="contact-info-card-item card-theme-blue">
+          <div class="contact-card-icon-circle icon-blue">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <div class="contact-card-meta">
+            <h3 class="contact-card-label">Call Us</h3>
+            <a href="tel:+919826377611" class="contact-card-val">+91 98263 77611</a>
+            <p class="contact-card-sub">Mon – Sat: 09:00 AM to 06:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Email Us -->
+        <div class="contact-info-card-item card-theme-green">
+          <div class="contact-card-icon-circle icon-green">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+          <div class="contact-card-meta">
+            <h3 class="contact-card-label">Email Us</h3>
+            <a href="mailto:info@bharatbhujal.com" class="contact-card-val">info@bharatbhujal.com</a>
+            <p class="contact-card-sub">We respond within 24 hours</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Visit Our Office -->
+        <div class="contact-info-card-item card-theme-amber">
+          <div class="contact-card-icon-circle icon-amber">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="contact-card-meta">
+            <h3 class="contact-card-label">Visit Our Office</h3>
+            <p class="contact-card-val-sm">301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India</p>
+          </div>
+        </div>
+
+        <!-- Card 4: Working Hours -->
+        <div class="contact-info-card-item card-theme-purple">
+          <div class="contact-card-icon-circle icon-purple">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <div class="contact-card-meta">
+            <h3 class="contact-card-label">Working Hours</h3>
+            <p class="contact-card-val-sm">Monday – Saturday: 09:00 AM to 06:00 PM (Sunday Closed)</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. GET IN TOUCH MAIN FORM & VISUAL CARD ================= -->
+  <section class="contact-main-form-sec">
+    <div class="container">
+      <div class="contact-form-visual-grid">
+
+        <!-- Left Column: Premium Form -->
+        <div class="contact-form-card-wrapper">
+          <div class="about-sec-badge" style="justify-content: flex-start;">
+            <span class="badge-blue-line"></span>
+            <span class="badge-blue-text">SEND US A MESSAGE</span>
+          </div>
+
+          <h2 class="contact-sec-title">
+            Get In <span class="blue-highlight">Touch</span>
+          </h2>
+
+          <p class="contact-form-subtext">
+            Fill out the form below and our hydrogeology experts will get back to you shortly.
+          </p>
+
+          <form class="contact-actual-form" id="contactForm" onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been submitted successfully.');">
+            <div class="form-inputs-row-2col">
+              <!-- Full Name -->
+              <div class="form-group-item">
+                <label for="fullName">Full Name <span class="req-star">*</span></label>
+                <input type="text" id="fullName" class="form-control-pill" placeholder="Enter your full name" required>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group-item">
+                <label for="emailAddress">Email Address <span class="req-star">*</span></label>
+                <input type="email" id="emailAddress" class="form-control-pill" placeholder="Enter your email address" required>
+              </div>
+            </div>
+
+            <div class="form-inputs-row-2col">
+              <!-- Phone Number -->
+              <div class="form-group-item">
+                <label for="phoneNumber">Phone Number <span class="req-star">*</span></label>
+                <input type="tel" id="phoneNumber" class="form-control-pill" placeholder="Enter your phone number" required>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group-item">
+                <label for="subjectSelect">Service Required <span class="req-star">*</span></label>
+                <select id="subjectSelect" class="form-control-pill select-pill" required>
+                  <option value="" disabled selected>Select a service...</option>
+                  <option value="geophysical">Geophysical Survey</option>
+                  <option value="drilling">Production Well Drilling</option>
+                  <option value="openwell">Open Well Solutions</option>
+                  <option value="revival">Revival of Dry / Failed Bore</option>
+                  <option value="recharge">Recharge Well &amp; Rainwater</option>
+                  <option value="cgwa">CGWA Consultancy &amp; NOC</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group-item form-group-full">
+              <label for="messageText">Message <span class="req-star">*</span></label>
+              <textarea id="messageText" class="form-control-pill textarea-pill" rows="4" placeholder="Describe your site details or requirement.." required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-submit-row">
+              <button type="submit" class="btn-send-message-pill">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right Column: Visual Card -->
+        <div class="contact-visual-card-right">
+          <img src="assect/contact-river-dam.jpg" alt="Let's Create a Cleaner, Greener and Safer Tomorrow" class="contact-card-backdrop-img">
+
+          <!-- Top Left Dark Navy Glassmorphic Message Overlay Card -->
+          <div class="contact-card-glass-box">
+            <h3 class="contact-card-glass-title">
+              Let’s Create<br>a Cleaner, Greener<br>and Safer Tomorrow
+            </h3>
+            <p class="contact-card-glass-desc">
+              We look forward to hearing from you and exploring how we can work together.
+            </p>
+          </div>
+
+          <!-- Bottom 3 Floating Pill Badges -->
+          <div class="contact-card-floating-badges-row">
+            <div class="contact-card-floating-pill">
+              <div class="floating-icon-circle icon-blue">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <span class="floating-pill-lbl">Water<br>Management</span>
+            </div>
+
+            <div class="contact-card-floating-pill">
+              <div class="floating-icon-circle icon-green">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <span class="floating-pill-lbl">Environmental<br>Solutions</span>
+            </div>
+
+            <div class="contact-card-floating-pill">
+              <div class="floating-icon-circle icon-amber">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <span class="floating-pill-lbl">Sustainable<br>Development</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. FIND US HERE - OFFICE LOCATION & MAP ================= -->
+  <section class="contact-office-map-sec">
+    <div class="container">
+      <!-- Centered Location Section Header -->
+      <div class="location-sec-header">
+        <div class="about-sec-badge" style="justify-content: center;">
+          <span class="badge-blue-line"></span>
+          <span class="badge-blue-text">OUR OFFICE LOCATION</span>
+          <span class="badge-blue-line"></span>
+        </div>
+
+        <h2 class="contact-sec-title-centered">
+          Find Us <span class="blue-highlight">Here</span>
+        </h2>
+
+        <p class="contact-sec-desc-centered">
+          Visit our corporate office or reach out through the contact details below. We are conveniently located in Vadodara and easily accessible for client consultation meetings.
+        </p>
+      </div>
+
+      <!-- Luxury Office Map Container Box -->
+      <div class="office-map-card-container">
+        <div class="office-map-grid-2col">
+
+          <!-- Left Info Box -->
+          <div class="office-info-left-col">
+            <div class="office-header-group">
+              <div class="office-main-icon-circle">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="office-header-meta">
+                <h3 class="office-title">Corporate Office</h3>
+                <p class="office-address">
+                  301, SDF Complex, Nr. Pragati Building,<br>
+                  Akshar Chowk, Vadodara,<br>
+                  Gujarat, India
+                </p>
+              </div>
+            </div>
+
+            <div class="office-contact-rows">
+              <!-- Phone -->
+              <div class="office-detail-row">
+                <div class="office-row-icon icon-blue">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="office-row-content">
+                  <span class="office-row-label">Phone Call Inquiry</span>
+                  <a href="tel:+919826377611" class="office-row-val">+91 98263 77611</a>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="office-detail-row">
+                <div class="office-row-icon icon-green">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="office-row-content">
+                  <span class="office-row-label">Email Consultation</span>
+                  <a href="mailto:info@bharatbhujal.com" class="office-row-val">info@bharatbhujal.com</a>
+                </div>
+              </div>
+
+              <!-- Working Hours -->
+              <div class="office-detail-row">
+                <div class="office-row-icon icon-darkblue">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="office-row-content">
+                  <span class="office-row-label">Working Hours</span>
+                  <span class="office-row-txt">Mon – Sat: 09:00 AM to 06:00 PM <span class="closed-pill">Sun Closed</span></span>
+                </div>
+              </div>
+
+              <!-- Get Directions Link -->
+              <div class="office-detail-row direction-row" style="margin-top: 10px;">
+                <a href="https://maps.google.com/?q=Akshar+Chowk+Vadodara" target="_blank" class="btn-get-directions-pill">
+                  <i class="fa-solid fa-diamond-turn-right"></i>
+                  <span>Get Directions on Google Maps</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Interactive Google Map Embed -->
+          <div class="office-map-right-col">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.682142512965!2d73.165!3d22.295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc641d0000001%3A0x1!2sAkshar%20Chowk%2C%20Vadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. SUSTAINABLE WATER SOLUTIONS CTA BANNER ================= -->
+  <section class="knowledge-cta-rock-stream-sec">
+    <div class="container">
+      
+      <div class="cta-banner-floating-wrapper">
+        <!-- Dark Water Stream Background Artwork Overlay inside the floating card -->
+        <img src="assect/about-bottom-water.jpg" alt="Water stream background" class="cta-rock-stream-bg-img">
+        <div class="cta-rock-stream-overlay"></div>
+
+        <div class="cta-glass-floating-card relative-z2">
+          <div class="cta-glass-card-inner">
+            
+            <!-- Left Text Content -->
+            <div class="cta-left-text-block">
+              <div class="cta-sub-badge-row">
+                <span class="badge-dash">—</span>
+                <span class="badge-sub-text">LET'S BUILD A SUSTAINABLE TOMORROW</span>
+                <span class="badge-dash">—</span>
+              </div>
+
+              <h2 class="cta-card-heading">Partner with Us for Sustainable Water Solutions</h2>
+              
+              <p class="cta-card-subtext">
+                We are committed to providing innovative and practical solutions for land, water and environment management.
+              </p>
+            </div>
+
+            <!-- Right Action Button -->
+            <div class="cta-right-btn-block">
+              <button class="btn-white-contact-pill" onclick="openConsultModal()">
+                <span>Contact Us</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER (EXACT MATCH WITH HOME PAGE) ================= -->
+  <footer class="master-footer" id="contact">
+
+    <!-- Background Water Landscape & Wave Lines Overlay -->
+    <div class="footer-bg-landscape">
+      <div class="mountain-backdrop-art"></div>
+      <svg class="footer-sine-waves-svg" viewBox="0 0 600 200" fill="none">
+        <path d="M 0,160 C 150,190 300,100 450,140 C 520,160 580,130 600,120" stroke="rgba(56, 189, 248, 0.25)"
+          stroke-width="2" />
+        <path d="M 0,140 C 180,180 320,80 480,120 C 540,140 580,110 600,100" stroke="rgba(56, 189, 248, 0.35)"
+          stroke-width="2.5" />
+        <path d="M 0,120 C 200,160 340,60 500,100 C 560,120 590,90 600,80" stroke="rgba(6, 182, 212, 0.45)"
+          stroke-width="2" />
+      </svg>
+      <div class="footer-water-drop-art">
+        <div class="drop-column"></div>
+        <div class="drop-ripple-circle dr-1"></div>
+        <div class="drop-ripple-circle dr-2"></div>
+        <div class="drop-ripple-circle dr-3"></div>
+      </div>
+    </div>
+
+    <!-- Main Footer Columns Grid -->
+    <div class="container footer-main-container">
+      <div class="footer-grid-5col">
+
+        <!-- Column 1: Brand Info -->
+        <div class="footer-col col-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="assect/logo.png" alt="Bharat Bhujal Tech Pvt. Ltd." class="footer-logo-img">
+          </a>
+
+          <p class="brand-mission-text">
+            Your trusted partner for groundwater exploration, precision borewell drilling, and sustainable water resource management across India.
+          </p>
+
+          <div class="footer-trust-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>ISO 9001:2015 &amp; CGWA Compliant</span>
+          </div>
+
+          <div class="footer-social-circles">
+            <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Website" title="Website"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col col-quicklinks">
+          <h4 class="footer-heading">
+            Quick Links
+            <span class="heading-accent-line"></span>
+          </h4>
+          <ul class="footer-nav-list">
+            <li>
+              <a href="index.html">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>About Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Services &amp; Solutions</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#knowledge">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Knowledge Center</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <i class="fa-solid fa-chevron-right f-link-arrow"></i>
+                <span>Contact Us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="footer-col col-services">
+          <h4 class="footer-heading">
+            Our Services
+            <span class="heading-accent-line"></span>
+          </h4>
+          <ul class="footer-services-list">
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-water"></i></span>
+                <span class="f-service-title">Geophysical Survey</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-bore-hole"></i></span>
+                <span class="f-service-title">Production Well Drilling</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-circle-notch"></i></span>
+                <span class="f-service-title">Open Well Solutions</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-gear"></i></span>
+                <span class="f-service-title">Revival of Dry or Failed Bore</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-droplet"></i></span>
+                <span class="f-service-title">Recharge Well &amp; Rainwater</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">
+                <span class="f-service-badge"><i class="fa-solid fa-file-shield"></i></span>
+                <span class="f-service-title">CGWA Consultancy &amp; NOC</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Get in Touch -->
+        <div class="footer-col col-contact">
+          <h4 class="footer-heading">
+            Get in Touch
+            <span class="heading-accent-line"></span>
+          </h4>
+          <div class="footer-contact-items">
+
+            <!-- Location Tile -->
+            <div class="f-contact-card">
+              <div class="f-contact-icon-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Corporate Office</span>
+                <span class="f-contact-val">301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India</span>
+              </div>
+            </div>
+
+            <!-- Phone Call Tile -->
+            <a href="tel:+919826377611" class="f-contact-card f-contact-link">
+              <div class="f-contact-icon-box pulse-blue">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Direct Technical Inquiry</span>
+                <span class="f-contact-val highlight-val">+91 98263 77611</span>
+              </div>
+              <span class="f-card-action-chip">Call</span>
+            </a>
+
+            <!-- Email Tile -->
+            <a href="mailto:info@bharatbhujal.com" class="f-contact-card f-contact-link">
+              <div class="f-contact-icon-box">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Email Consultation</span>
+                <span class="f-contact-val highlight-val">info@bharatbhujal.com</span>
+              </div>
+            </a>
+
+            <!-- Working Hours Tile -->
+            <div class="f-contact-card">
+              <div class="f-contact-icon-box">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="f-contact-details">
+                <span class="f-contact-label">Working Hours</span>
+                <span class="f-contact-val">Mon - Sat : 9:00 AM - 6:00 PM <span class="closed-pill">Sun Closed</span></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Copyright & Legal Bar -->
+    <div class="footer-bottom-strip">
+      <div class="container footer-bottom-inner">
+        <div class="copyright-text">
+          &copy; 2026 Bharat Bhujal Tech Pvt. Ltd. All Rights Reserved.
+        </div>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="sep">|</span>
+          <a href="#">Terms &amp; Conditions</a>
+          <span class="sep">|</span>
+          <a href="#">Sitemap</a>
+        </div>
+        <div class="made-in-tag">
+          <span>🍃 Designed with <span class="heart-blue">💙</span> in India</span>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- ================= CONSULTATION MODAL ================= -->
+  <div class="modal-backdrop-layer" id="consultModal">
+    <div class="modal-dialog-box">
+      <button class="modal-close-btn" onclick="closeConsultModal()">&times;</button>
+
+      <div class="modal-header-section">
+        <div class="modal-icon-bubble"><i class="fa-solid fa-droplet"></i></div>
+        <h3>Free Inquiry &amp; Consultation</h3>
+        <p>Talk to our senior hydrogeologists for site survey &amp; technical feasibility.</p>
+      </div>
+
+      <form class="modal-form-body" onsubmit="event.preventDefault(); alert('Inquiry submitted successfully!'); closeConsultModal();">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="e.g. Chetan Patel" required>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="e.g. 9826377611" required>
+          </div>
+          <div class="form-group">
+            <label>City / Location</label>
+            <input type="text" placeholder="e.g. Vadodara, Gujarat" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Select Required Service</label>
+          <select required>
+            <option value="">Select a service...</option>
+            <option value="geophysical">Geophysical Survey</option>
+            <option value="production">Production Well Drilling</option>
+            <option value="openwell">Open Well Solutions</option>
+            <option value="revival">Revival of Dry or Failed Bore</option>
+            <option value="recharge">Recharge Well / Rainwater</option>
+            <option value="cgwa">CGWA Consultancy &amp; NOC</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-modal-submit">
+          <span>Submit Free Inquiry</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

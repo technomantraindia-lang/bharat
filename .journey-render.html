@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Journey preview</title><style>html,body,iframe{margin:0;width:100%;height:100%;border:0;overflow:hidden}</style></head>
+<body>
+  <iframe src="about.html"></iframe>
+  <script>
+    document.querySelector('iframe').addEventListener('load', function () {
+      const frame = this;
+      setTimeout(function () {
+        const journey = frame.contentWindow.document.getElementById('journey');
+        frame.contentWindow.scrollTo(0, journey.offsetTop);
+      }, 900);
+    });
+  </script>
+</body>
+</html>
