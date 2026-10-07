@@ -767,9 +767,13 @@ function initProcessAnimations() {
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
-  // Observe the card row container
-  const row = document.querySelector('.process-cards-row');
-  if (row) observer.observe(row);
+  // Observe the card row container(s)
+  const processRows = document.querySelectorAll('.process-cards-row, .process-cards-5row, .sd-methodology-sec');
+  if (processRows.length) {
+    processRows.forEach(r => observer.observe(r));
+  } else {
+    cards.forEach(c => observer.observe(c));
+  }
 }
 
 // ==========================================
