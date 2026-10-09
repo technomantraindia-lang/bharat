@@ -18,10 +18,10 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Workspace ID: tm-ws-1c3b596939051378137c64b6
 - Window ID: tm-win-71e97444ee5d05a858ec797f
 - Project: bharta
-- Framework: 
+- Framework: html-static
 - Developer mode: smart
 - Model mode: eco
-- Active file: index.html
+- Active file: services/borewell-revival.html
 - Objective: Current developer prompt in this workspace/window only.
 - Blocker: none
 - Next action: Inspect current prompt and workspace evidence before editing.
@@ -29,9 +29,11 @@ The extension refreshes this file automatically. Prefer its concise state over o
 ## Touched files in this capsule
 
 ## Recent files in this workspace/window
+- services/borewell-revival.html
+- services.html
+- .gsd/JOURNAL.md
 - index.html
 - .gsd/templates/architecture.md
-- .gsd/JOURNAL.md
 
 ## Hard rule
 If a file, goal, screenshot, terminal output, or decision is not connected to this capsule, do not use it for the current task.

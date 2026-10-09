@@ -5,8 +5,8 @@
 - Workspace: bharta
 - Technology: HTML/CSS/JavaScript
 - Active file at refresh: None
-- Local code graph: 4 files · 3 edges · 0 matched flows
-- Refreshed: 2026-10-06T03:23:28.778Z
+- Local code graph: 13 files · 6 edges · 0 matched flows
+- Refreshed: 2026-10-09T06:10:02.908Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -118,7 +118,16 @@
 - adapters/GEMINI.md
 - adapters/GPT_OSS.md
 - ARCHITECTURE.md
+- contact.html
+- knowledge.html
 - main.js
 - model_capabilities.yaml
 - PROJECT_RULES.md
+- services/borewell-revival.html
+- services/cgwa-consultancy.html
+- services/geophysical-survey.html
+- services/open-well-solutions.html
+- services/production-well.html
+- services/recharge-well.html
+- services/service-detail.html
 - STACK.md
