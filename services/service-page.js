@@ -137,7 +137,7 @@
       intro: 'Recharge structures need regular cleaning to keep water moving through filters, shafts and recharge zones without avoidable clogging.',
       detail: 'We assess silt, debris and filter-media condition, then recommend cleaning and maintenance actions that improve recharge performance and service life.',
       benefits: ['Recharge performance assessment', 'Silt and debris removal planning', 'Maintenance recommendations'],
-      steps: ['Inspect the recharge structure', 'Identify blockage and media condition', 'Complete cleaning guidance and performance checks'], facts: ['Silt removal', 'Filter upkeep', 'Recharge performance']
+      steps: ['Inspect the recharge structure — We review the recharge pit, filter layers and visible site condition.', 'Identify blockage and media condition — We locate silt, debris and filter-media issues affecting recharge flow.', 'Complete cleaning guidance and performance checks — We recommend practical maintenance steps to restore performance.'], facts: ['Silt removal', 'Filter upkeep', 'Recharge performance']
     },
     'drilling-borewell': {
       title: 'Borewell Drilling Services', category: 'DRILLING', image: '../assect/service-production-well-generated.png',
@@ -716,6 +716,71 @@
     ['groundwater-investigation-stem.html', 'fa-layer-group', 'Groundwater & Investigation (sTEM)']
   ].map(([href, icon, label]) => `<li><a href="../services/${href}"><i class="fa-solid ${icon}"></i> ${label}</a></li>`).join('');
 
+  const technicalCapabilitiesSection = `
+    <section class="technical-capabilities-section">
+      <div class="container technical-capabilities-container">
+        <div class="technical-capabilities-grid">
+          <div class="technical-capabilities-copy">
+            <span class="technical-capabilities-kicker">TECHNICAL CAPABILITIES</span>
+            <h2>Advanced Equipment &amp;<br>Scientific Approach</h2>
+            <p>We use state-of-the-art equipment and industry best practices to deliver high-quality data and insights.</p>
+            <div class="technical-capabilities-list">
+              <div class="technical-capability-row"><span class="technical-capability-icon"><i class="fa-solid fa-flask"></i></span><strong>Methods Used</strong><span>(e.g. ERT, VES, GPR, Seismic, etc.)</span></div>
+              <div class="technical-capability-row"><span class="technical-capability-icon"><i class="fa-solid fa-chart-line"></i></span><strong>Output</strong><span>(e.g. 2D/3D models, maps, reports)</span></div>
+              <div class="technical-capability-row"><span class="technical-capability-icon"><i class="fa-solid fa-microchip"></i></span><strong>Equipment</strong><span>(e.g. multi-channel resistivity meter)</span></div>
+              <div class="technical-capability-row"><span class="technical-capability-icon"><i class="fa-solid fa-ruler-vertical"></i></span><strong>Exploration Depth</strong><span>(e.g. up to 400 meters)</span></div>
+              <div class="technical-capability-row"><span class="technical-capability-icon"><i class="fa-solid fa-file-lines"></i></span><strong>Deliverables</strong><span>(e.g. technical report, recommendations)</span></div>
+            </div>
+          </div>
+
+          <div class="technical-capabilities-visual">
+            <div class="technical-diagram-wrap">
+              <img src="../assect/about-aquifer-cutaway-generated.png" alt="Scientific subsurface aquifer and borewell cross-section">
+              <div class="technical-diagram-labels" aria-label="Subsurface layers">
+                <span>Top Soil</span>
+                <span>Weathered Layer</span>
+                <span>Fracture Zone</span>
+                <span>Aquifer Layer</span>
+                <span>Bedrock</span>
+              </div>
+            </div>
+            <div class="technical-capability-stats">
+              <div class="technical-stat-card"><span class="technical-stat-icon"><i class="fa-solid fa-flask-vial"></i></span><span><strong>Up to 400 m</strong><small>Exploration Depth</small></span></div>
+              <div class="technical-stat-card"><span class="technical-stat-icon"><i class="fa-solid fa-layer-group"></i></span><span><strong>2D / 3D</strong><small>Subsurface Mapping</small></span></div>
+              <div class="technical-stat-card"><span class="technical-stat-icon"><i class="fa-solid fa-shield-halved"></i></span><span><strong>High Accuracy</strong><small>Data Interpretation</small></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>`;
+
+  const benefitHeading = service.benefitHeading || service.title.replace(/\s+services?$/i, '');
+  const benefitDescription = service.longForm?.whyText || service.intro;
+  const benefitItems = Array.from({ length: 6 }, (_, index) => service.benefits[index] || service.facts?.[index % (service.facts?.length || 1)] || service.steps?.[index % (service.steps?.length || 1)] || 'Technical project support');
+  const benefitReferenceSection = `
+    <section class="gpr-redesign-section gpr-redesign-benefits">
+      <div class="container gpr-redesign-container">
+        <div class="gpr-benefits-reference-panel">
+          <div class="gpr-benefits-reference-intro">
+            <span class="gpr-redesign-kicker">KEY BENEFITS</span>
+            <h2>Why Choose Our<br><span>${benefitHeading}</span> Services?</h2>
+            <p>${benefitDescription}</p>
+            <div class="gpr-benefits-reference-visual">
+              <img src="../assect/gpr-hero-engineer.jpg" alt="Technical field team delivering ${benefitHeading}">
+              <div class="gpr-benefits-reference-badge"><i class="fa-solid fa-bullseye"></i><span>Advanced<br>Technical Mapping</span><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="gpr-benefits-reference-list">
+            ${benefitItems.map((benefit, index) => {
+              const icons = ['fa-ban', 'fa-hand-holding-seedling', 'fa-layer-group', 'fa-faucet-drip', 'fa-stopwatch', 'fa-magnifying-glass-chart'];
+              const tones = ['blue', 'green', 'purple', 'blue', 'green', 'purple'];
+              return `<article class="gpr-benefits-reference-card"><span class="gpr-benefits-reference-icon ${tones[index]}"><i class="fa-solid ${icons[index]}"></i></span><span class="gpr-benefits-reference-copy"><strong>${benefit}</strong><small>Reliable support for safer, better-planned project decisions.</small></span><span class="gpr-benefits-reference-number">0${index + 1}</span><span class="gpr-benefits-reference-arrow"><i class="fa-solid fa-chevron-right"></i></span></article>`;
+            }).join('')}
+          </div>
+        </div>
+      </div>
+    </section>`;
+
   const richContent = service.longForm ? `
     <div class="dedicated-service-rich-content">
       <div class="dedicated-service-rich-intro">
@@ -775,7 +840,7 @@
       </div>
     </section>
 
-    <section class="gpr-redesign-section gpr-redesign-benefits"><div class="container gpr-redesign-container"><div class="gpr-redesign-benefits-grid"><div class="gpr-redesign-benefits-intro"><span class="gpr-redesign-kicker">KEY BENEFITS</span><h2>Why Choose Our<br>GPR Survey Services?</h2><p>${service.longForm.whyText}</p></div><div class="gpr-redesign-benefit-list">${service.benefits.map((benefit, index) => { const icons = ['fa-shield-halved', 'fa-ban', 'fa-building', 'fa-crosshairs', 'fa-arrows-rotate', 'fa-circle-nodes', 'fa-gauge-high', 'fa-road']; return `<div class="gpr-redesign-benefit"><i class="fa-solid ${icons[index] || 'fa-circle-check'}"></i><span><b>${benefit}</b><small>Reliable support for safer, better-planned site investigations.</small></span></div>`; }).join('')}</div></div></div></section>
+    ${benefitReferenceSection}
 
     <section class="gpr-workflow-section"><div class="container gpr-redesign-container"><div class="gpr-workflow-panel"><div class="gpr-workflow-pill"><i class="fa-solid fa-circle"></i> EXECUTION WORKFLOW</div><h2>From Field Investigation to <span>Actionable Insights</span></h2><div class="gpr-workflow-grid">${service.steps.map((step, index) => { const parts = step.split(' — '); const images = ['../assect/journey-survey-v2.png', '../assect/journey-analysis-v2.png', '../assect/journey-implementation-v2.png', '../assect/journey-monitoring-v2.png', '../assect/journey-impact-v2.png']; return `<article class="gpr-workflow-card"><div class="gpr-workflow-orb"><img src="${images[index]}" alt="${parts[0]}"><b>0${index + 1}</b></div><h3>${['Site Assessment & Planning', 'Field Geophysical Survey', '2D/3D Data Modeling', 'Hydrogeological Analysis', 'Actionable Report'][index]}</h3><p>${['Study geology, terrain, existing wells, satellite data, and site requirements.', 'Conduct ERT, VES, VLF, and multi-electrode resistivity investigations on site.', 'Convert raw field resistivity data into high-resolution subsurface tomograms.', 'Identify aquifer boundaries, fracture paths, salinity, and water table levels.', 'Deliver certified GPS coordinates, recommended depths, and drilling instructions.'][index]}</p><span class="gpr-workflow-underline"></span></article>`; }).join('')}</div></div></div></section>
 
@@ -793,6 +858,131 @@
   ` : '';
 
   document.title = `${service.title} | Bharat Bhujal Tech Pvt. Ltd.`;
+  const premiumCapabilities = (service.longForm?.solutions || service.benefits.map(benefit => [benefit, 'Structured technical support delivered with clear fieldwork, interpretation and reporting.'])).slice(0, 6);
+  const premiumApplicationsSource = service.longForm?.applications || service.facts || service.benefits;
+  const premiumApplications = Array.from({ length: 5 }, (_, index) => premiumApplicationsSource[index] || benefitItems[index % benefitItems.length] || 'Project application');
+  const premiumStrengths = (service.longForm?.strengths || benefitItems).slice(0, 8);
+  const premiumFaqs = Array.from({ length: 8 }, (_, index) => service.longForm?.faqs?.[index] || [`What does ${benefitItems[index % benefitItems.length].toLowerCase()} include?`, `${benefitItems[index % benefitItems.length]} is planned around the project scope, site conditions and the technical information needed for a dependable decision.`]);
+  const premiumSteps = Array.from({ length: 5 }, (_, index) => service.steps[index] || ['Site assessment and project planning — We review the site, requirements and available information.', 'Field investigation and data collection — We collect the field evidence needed for a dependable assessment.', 'Data processing and interpretation — We convert field data into clear technical findings.', 'Analysis and recommendations — We interpret the results against project conditions and objectives.', 'Technical reporting and handover — We provide concise findings and practical next-step guidance.'][index]);
+  const premiumOverviewImage = service.overviewImage || (service.layout === 'gpr' ? '../assect/gpr-overview-reference-generated.png' : service.image);
+  const premiumMain = `
+      <section class="premium-service-hero" style="--premium-hero-image: url('${service.heroImage || service.image}')">
+        <div class="premium-service-hero-overlay"></div>
+        <div class="container premium-service-hero-inner">
+          <div class="premium-breadcrumb"><a href="../index.html">Home</a><i class="fa-solid fa-chevron-right"></i><a href="../services.html">Services</a><i class="fa-solid fa-chevron-right"></i><span>${service.title}</span></div>
+          <div class="premium-hero-layout">
+            <div class="premium-hero-copy"><span class="premium-eyebrow premium-eyebrow-light">${service.category}</span><h1>${service.title}</h1><p>${service.subtitle}</p><div class="premium-hero-actions"><a href="../contact.html" class="premium-btn premium-btn-primary">Request a Consultation <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="#premium-overview" class="premium-btn premium-btn-ghost">Explore Service <i class="fa-solid fa-arrow-down"></i></a></div></div>
+            <div class="premium-hero-visual"><img src="${service.image}" alt="${service.title}"><div class="premium-hero-visual-caption"><i class="fa-solid fa-location-crosshairs"></i><span><strong>Site-specific expertise</strong><small>Measured. Interpreted. Actionable.</small></span></div></div>
+          </div>
+          <div class="premium-hero-trust"><span><i class="fa-solid fa-shield-halved"></i> Scientific methodology</span><span><i class="fa-solid fa-chart-line"></i> Technical reporting</span><span><i class="fa-solid fa-headset"></i> Expert consultation</span></div>
+        </div>
+      </section>
+
+      <section class="premium-section premium-overview-section" id="premium-overview">
+        <div class="container premium-container">
+          <div class="premium-overview-reference">
+            <div class="premium-overview-reference-copy">
+              <span class="premium-overview-reference-kicker">${service.longForm?.whyLabel || 'SERVICE OVERVIEW'}</span>
+              <h2>${service.overviewTitle || service.longForm?.whyTitle || `What is ${service.title}?`}</h2>
+              <div class="premium-overview-reference-callout"><p>${service.overviewLead || service.intro}</p></div>
+              <p class="premium-overview-reference-secondary">${service.overviewSecondary || service.detail}</p>
+            </div>
+            <div class="premium-overview-reference-visual"><img src="${premiumOverviewImage}" alt="${service.title} service overview visual"></div>
+          </div>
+        </div>
+      </section>
+
+      ${benefitReferenceSection}
+
+      <section class="premium-section premium-capabilities-section">
+        <div class="container premium-container">
+          <div class="premium-section-heading"><span class="premium-eyebrow">TECHNICAL CAPABILITIES</span><h2>Specialist knowledge, clearly delivered</h2><p>Every assignment is shaped around reliable field information, experienced interpretation and documentation your team can use.</p></div>
+          <div class="premium-capability-grid">${premiumCapabilities.map(([title, text], index) => `<article class="premium-capability-card"><span class="premium-card-number">0${index + 1}</span><span class="premium-capability-icon"><i class="fa-solid ${['fa-compass-drafting', 'fa-microscope', 'fa-layer-group', 'fa-file-lines', 'fa-gears', 'fa-chart-line'][index] || 'fa-circle-check'}"></i></span><h3>${title}</h3><p>${text}</p><span class="premium-card-line"></span></article>`).join('')}</div>
+        </div>
+      </section>
+
+      <section class="premium-section premium-process-section">
+        <div class="container premium-container"><div class="premium-section-heading premium-heading-split"><div><span class="premium-eyebrow">OUR APPROACH</span><h2>From first question to confident action</h2></div><p>Our process keeps fieldwork, analysis and recommendations connected from start to finish.</p></div><div class="premium-process-track">${premiumSteps.map((step, index) => { const parts = step.split(' â€” '); return `<article class="premium-process-step"><span class="premium-step-dot">0${index + 1}</span><div><h3>${parts[0]}</h3><p>${parts.slice(1).join(' â€” ') || 'A focused stage of the project designed around your site requirements.'}</p></div></article>`; }).join('')}</div></div>
+      </section>
+
+      <section class="premium-section premium-applications-section">
+        <div class="container premium-container"><div class="premium-section-heading"><span class="premium-eyebrow">WHERE WE HELP</span><h2>Designed for real project conditions</h2><p>Our technical support adapts across sectors, sites and decision-making needs.</p></div><div class="premium-application-grid">${premiumApplications.map((item, index) => `<div class="premium-application-item"><span>0${String(index + 1).padStart(2, '0')}</span><i class="fa-solid fa-arrow-up-right"></i><strong>${item}</strong></div>`).join('')}</div></div>
+      </section>
+
+      <section class="premium-section premium-strengths-section">
+        <div class="container premium-container"><div class="premium-strengths-panel"><div class="premium-strengths-intro"><span class="premium-eyebrow premium-eyebrow-light">WHY WORK WITH US?</span><h2>Technical confidence at every stage</h2><p>We combine field experience, scientific discipline and transparent communication to help projects move forward with clarity.</p><a href="../contact.html" class="premium-btn premium-btn-light">Talk to our experts <i class="fa-solid fa-arrow-right"></i></a></div><div class="premium-strength-grid">${premiumStrengths.map(strength => `<div><i class="fa-solid fa-circle-check"></i><span>${strength}</span></div>`).join('')}</div></div></div>
+      </section>
+
+      <section class="premium-section premium-faq-section">
+        <div class="container premium-container"><div class="premium-faq-layout"><div class="premium-section-heading"><span class="premium-eyebrow">COMMON QUESTIONS</span><h2>Everything you need to know before getting started</h2><p>Have a site-specific question? Our technical team can help you understand the right next step.</p></div><div class="premium-faq-list">${premiumFaqs.map(([question, answer]) => `<details><summary>${question}<i class="fa-solid fa-plus"></i></summary><p>${answer}</p></details>`).join('')}</div></div></div>
+      </section>
+
+      <section class="premium-final-cta"><div class="container premium-container"><div><span class="premium-eyebrow premium-eyebrow-light">READY TO DISCUSS YOUR SITE?</span><h2>${service.ctaTitle || 'Get a practical recommendation from our team.'}</h2><p>${service.ctaText || 'Share your site requirements and let our specialists help you plan the right technical solution.'}</p></div><a href="../contact.html" class="premium-btn premium-btn-light">${service.ctaLabel || 'Contact Our Team'} <i class="fa-solid fa-arrow-right"></i></a></div></section>`;
+
+  const referenceHeroImage = '../assect/contact-river-dam.jpg';
+  const referenceOverviewImage = service.overviewImage || (service.layout === 'gpr' ? '../assect/gpr-service-overview-v2.png' : service.image);
+  const referenceFaqHeading = service.layout === 'gpr' ? 'Ground Penetrating Radar (GPR)<br>Survey Services <span>FAQs</span>' : `${service.title} <span>FAQs</span>`;
+  const referenceStepImages = ['../assect/journey-survey-v2.png', '../assect/journey-analysis-v2.png', '../assect/journey-implementation-v2.png', '../assect/journey-monitoring-v2.png', '../assect/journey-impact-v2.png'];
+  const referenceApplicationImages = ['../assect/industry-infrastructure.jpg', '../assect/industry-manufacturing.jpg', '../assect/industry-township.jpg', '../assect/industry-municipal.jpg', '../assect/industry-agriculture.jpg'];
+  const referenceApplicationDescriptions = ['Roads, utilities and project infrastructure.', 'Pipelines, facilities and industrial operations.', 'Site development and residential projects.', 'Public infrastructure and civic works.', 'Land, water and environmental studies.'];
+  const referenceApplicationSource = service.layout === 'gpr'
+    ? ['Roads & Highways', 'Buildings & Infrastructure', 'Industrial Sites', 'Railways', 'Water & Sewerage', 'Open Land & Environmental']
+    : (service.longForm?.applications || service.facts || service.benefits);
+  const referenceApplicationItems = Array.from({ length: 6 }, (_, index) => ({
+    title: referenceApplicationSource[index] || benefitItems[index % benefitItems.length] || 'Project applications',
+    description: [
+      'Locate underground utilities and avoid damage during construction and maintenance.',
+      'Identify buried structures, voids and subsurface features for safer and smarter construction.',
+      'Detect underground utilities, tanks, foundations and other hidden features in industrial areas.',
+      'Map subsurface utilities and detect voids to support safe and efficient projects.',
+      'Locate water pipes, sewer lines, ducts and other underground utilities with high accuracy.',
+      'Support land development, site assessment and environmental investigations with non-invasive surveys.'
+    ][index]
+  }));
+  const referenceApplicationIcons = ['fa-road', 'fa-building', 'fa-industry', 'fa-train-subway', 'fa-droplet', 'fa-tree-city'];
+  const referenceApplicationTones = ['blue', 'green', 'purple', 'orange', 'pink', 'blue'];
+  const referenceTechnicalImage = service.layout === 'gpr' ? '../assect/gpr-technical-capabilities-generated.png' : service.image;
+  const referenceProcessTitle = service.layout === 'gpr' ? 'GPR Survey' : service.title;
+  const referenceProcessIcons = ['fa-clipboard-check', 'fa-compass-drafting', 'fa-gears', 'fa-file-lines', 'fa-lightbulb'];
+  const referenceProcessTones = ['blue', 'green', 'purple', 'orange', 'blue'];
+  const referenceHeroTitle = service.layout === 'gpr' ? 'Ground Penetrating<br>Radar <span>(GPR)</span> Survey' : service.title;
+  const referenceOverviewTitle = service.layout === 'gpr' ? 'What is a <span>Ground<br>Penetrating Radar (GPR)</span> Survey?' : (service.overviewTitle || service.longForm?.whyTitle || ('What is ' + service.title + '?'));
+  const referenceMain = `
+    <section class="reference-service-hero" style="--reference-hero-image: url('${referenceHeroImage}')">
+      <div class="reference-service-hero-overlay"></div>
+      <div class="container reference-service-hero-inner">
+        <div class="reference-service-breadcrumb"><a href="../index.html">Home</a><i class="fa-solid fa-chevron-right"></i><a href="../services.html">Services</a><i class="fa-solid fa-chevron-right"></i><span>${service.title}</span></div>
+        <div class="reference-service-hero-copy"><span class="reference-service-kicker">${service.category}</span><h1>${referenceHeroTitle}</h1><p>${service.subtitle}</p><div class="reference-service-actions"><a href="../contact.html" class="reference-service-btn reference-service-btn-primary">${service.heroCta || 'Request a Consultation'} <i class="fa-solid fa-arrow-right"></i></a></div></div>
+      </div>
+    </section>
+
+    <section class="reference-service-overview reference-service-overview-combined" id="premium-overview">
+      <div class="container reference-service-container"><div class="reference-overview-grid"><div class="reference-overview-visual"><img src="${referenceOverviewImage}" alt="${service.title} service overview visual"><div class="reference-overview-float reference-overview-float-top"><i class="fa-solid fa-tower-broadcast"></i><b>Non-Destructive<br>Survey Method</b></div><div class="reference-overview-float reference-overview-float-bottom"><i class="fa-solid fa-wave-square"></i><span><b>2D/3D Subsurface Mapping</b><small>${benefitItems[0] || 'Accurate underground mapping'} with high accuracy.</small></span><i class="fa-solid fa-chevron-right"></i></div></div><div class="reference-overview-copy"><span class="reference-service-kicker reference-service-kicker-blue">${service.longForm?.whyLabel || 'SERVICE OVERVIEW'}</span><h2>${referenceOverviewTitle}</h2><div class="reference-overview-description"><p>${service.overviewLead || service.intro}</p><p>${service.overviewSecondary || service.detail}</p></div><div class="reference-overview-benefits-heading"><span>FIELD OUTCOMES</span><small>Clear information for better project decisions.</small></div><div class="reference-overview-benefits">${benefitItems.slice(0, 4).map((benefit, index) => `<article><span class="reference-overview-benefit-icon tone-${['blue', 'green', 'orange', 'purple'][index]}"><i class="fa-solid ${['fa-crosshairs', 'fa-cube', 'fa-leaf', 'fa-stopwatch'][index]}"></i></span><span><b>${benefit}</b><small>${['Locate hidden utilities and buried services with high accuracy.', 'Detect foundations, tanks, voids and other subsurface features.', 'Get detailed information without disturbing the existing site.', 'Quick surveys with reliable data for safer project planning.'][index]}</small></span></article>`).join('')}</div></div></div></div>
+    </section>
+
+    <section class="reference-service-section reference-process-section reference-process-reference">
+      <div class="container reference-service-container reference-process-reference-inner"><span class="reference-service-kicker reference-service-kicker-blue">OUR PROCESS</span><h2>How Our <span>${referenceProcessTitle}</span> Works</h2><p class="reference-section-intro">We follow a proven, step-by-step methodology to deliver accurate and reliable subsurface insights for your project.</p><div class="reference-process-grid">${premiumSteps.slice(0, 5).map((step, index) => { const parts = step.split(/\s+(?:—|â€”—?)\s+/); return `<article class="reference-process-card tone-${referenceProcessTones[index]}"><b class="reference-process-number">0${index + 1}</b><span class="reference-process-icon"><i class="fa-solid ${referenceProcessIcons[index]}"></i></span><h3>${parts[0]}</h3><p>${parts.slice(1).join(' ') || 'A focused stage of the project designed around your site requirements.'}</p><span class="reference-process-bottom-line"></span>${index < 4 ? '<span class="reference-process-arrow"><i class="fa-solid fa-arrow-right"></i></span>' : ''}</article>`; }).join('')}</div></div>
+    </section>
+
+    <section class="reference-service-section reference-technical-section">
+      <div class="container reference-service-container"><div class="reference-technical-grid"><div class="reference-technical-copy"><span class="reference-service-kicker reference-service-kicker-blue">TECHNICAL CAPABILITIES</span><h2>Advanced Equipment &amp; Scientific Approach</h2><p>We use state-of-the-art equipment and industry best practices to deliver high-quality data and insights.</p><div class="reference-technical-list">${premiumCapabilities.slice(0, 5).map(([title, text], index) => `<div><i class="fa-solid ${['fa-flask', 'fa-chart-line', 'fa-microchip', 'fa-ruler-vertical', 'fa-file-lines'][index]}"></i><strong>${title}</strong><em>•</em><small>${text}</small></div>`).join('')}</div></div><div class="reference-technical-visual"><img src="${referenceTechnicalImage}" alt="${service.title} technical capability"><div class="reference-technical-stats"><span><i class="fa-solid fa-flask-vial"></i><b>Up to 400 m</b><small>Exploration Depth</small></span><span><i class="fa-solid fa-layer-group"></i><b>2D / 3D</b><small>Subsurface Mapping</small></span><span><i class="fa-solid fa-shield-halved"></i><b>High Accuracy</b><small>Data Interpretation</small></span><span><i class="fa-solid fa-file-lines"></i><b>Detailed Reports</b><small>&amp; Recommendations</small></span></div></div></div></div>
+    </section>
+
+    <section class="reference-service-section reference-applications-section reference-applications-reference">
+      <div class="container reference-service-container reference-applications-reference-inner"><span class="reference-service-kicker reference-service-kicker-blue">APPLICATIONS</span><h2>Industries <span>We Serve</span></h2><p class="reference-section-intro">Our ${service.title.toLowerCase()} services are suitable for a wide range of industries and site conditions, helping you gain critical insights for safer and more efficient projects.</p><div class="reference-applications-grid">${referenceApplicationItems.map((application, index) => `<article class="reference-application-card tone-${referenceApplicationTones[index]}"><b class="reference-application-number">0${index + 1}</b><span class="reference-application-icon"><i class="fa-solid ${referenceApplicationIcons[index]}"></i></span><h3>${application.title}</h3><p>${application.description}</p><span class="reference-application-bottom-line"></span></article>`).join('')}</div></div>
+    </section>
+
+    <section class="reference-service-section reference-faq-section reference-faq-reference">
+      <div class="container reference-service-container reference-faq-reference-inner">
+        <div class="reference-faq-reference-heading"><span class="reference-service-kicker reference-service-kicker-blue">FREQUENTLY ASKED QUESTIONS</span><h2>${referenceFaqHeading}</h2><p>Get answers to common questions about our ${service.title.toLowerCase()} services, process, accuracy and applications.</p></div>
+        <div class="reference-faq-reference-grid">
+          <aside class="reference-faq-contact-panel"><div class="reference-faq-panel-orb reference-faq-panel-orb-top"></div><div class="reference-faq-panel-orb reference-faq-panel-orb-bottom"></div><h3>Still Have<br><span>Questions?</span></h3><p>Our experts are here to help you with any queries about ${service.title.toLowerCase()} services, methodology, or project requirements.</p><a class="reference-faq-contact-btn" href="../contact.html">Get in Touch <i class="fa-solid fa-arrow-right"></i></a><div class="reference-faq-contact-items"><a href="../contact.html"><i class="fa-solid fa-phone-volume"></i><span><b>Speak to an Expert</b><small>Discuss your project requirements</small></span></a><a href="mailto:info@bharatbhujal.com"><i class="fa-regular fa-envelope"></i><span><b>Email Us</b><small>Get detailed information</small></span></a><a href="../contact.html"><i class="fa-regular fa-file-lines"></i><span><b>Request a Quote</b><small>Get a customized solution</small></span></a></div></aside>
+          <div class="reference-faq-reference-list" id="reference-faq-list">${premiumFaqs.slice(0, 7).map(([question, answer], index) => `<details${index === 0 ? ' open' : ''}><summary><span class="reference-faq-question"><b>0${index + 1}</b><strong>${question}</strong></span><span class="reference-faq-toggle"><i class="fa-solid fa-chevron-down"></i></span></summary><p>${answer}</p></details>`).join('')}</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reference-service-cta reference-service-cta-reference"><div class="container reference-service-container reference-cta-shell"><div class="reference-cta-panel"><div><span class="reference-service-kicker">LET'S BUILD A SUSTAINABLE TOMORROW</span><h2>Partner with Us for Sustainable Water Solutions</h2><p>We are committed to providing innovative and practical solutions for land, water and environment management.</p></div><a href="../contact.html" class="reference-cta-contact-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div></div></section>`;
   document.body.innerHTML = `
     <div class="top-bar">
       <div class="container top-bar-inner">
@@ -822,35 +1012,24 @@
     </header>
 
     <main>
-      ${service.layout === 'gpr' ? gprMain : `
-      <section class="dedicated-service-hero service-detail-banner" style="background-image: url('${service.image}')">
-        <div class="dedicated-service-hero-overlay"></div>
-        <div class="container dedicated-service-hero-inner">
-          <div class="contact-breadcrumb-wrap"><a href="../index.html">Home</a><i class="fa-solid fa-chevron-right"></i><a href="../services.html">Services</a><i class="fa-solid fa-chevron-right"></i><span class="bc-current">${service.title}</span></div>
-          <div class="service-detail-banner-layout"><div class="service-detail-banner-copy"><h1>${service.title}</h1><p>${service.subtitle}</p></div></div>
-        </div>
-      </section>
-
-      <section class="dedicated-service-section">
-        <div class="container dedicated-service-container">
-          <div class="dedicated-service-overview">
-            <div class="dedicated-service-image-wrap"><span class="dedicated-service-image-accent"></span><img src="${service.image}" alt="${service.title}"><span class="dedicated-service-image-badge"><i class="fa-solid fa-droplet"></i> ${service.category}</span></div>
-            <div class="dedicated-service-copy"><span class="dedicated-service-eyebrow">BHARAT BHUJAL TECH SOLUTION</span><h2>${service.overviewTitle || `Practical expertise for <span>${service.title}</span>`}</h2><div class="dedicated-service-lead-card"><p class="dedicated-service-lead">${service.intro}</p></div><p class="dedicated-service-detail">${service.detail}</p><ul class="dedicated-service-checklist">${ticks(service.benefits)}</ul></div>
-          </div>
-
-          ${richContent}
-
-          ${service.longForm ? '' : `<div class="dedicated-service-facts"><div><span class="dedicated-service-eyebrow">SERVICE FOCUS</span><h2>What this service delivers</h2></div><div class="dedicated-service-fact-grid">${service.facts.map((fact, index) => `<div class="dedicated-service-fact"><span>0${index + 1}</span><i class="fa-solid fa-layer-group"></i><strong>${fact}</strong></div>`).join('')}</div></div>`}
-
-          ${service.longForm ? '' : `<div class="dedicated-service-process"><div class="dedicated-service-process-heading"><span class="dedicated-service-eyebrow">OUR APPROACH</span><h2>A clear path from investigation to action</h2></div><div class="dedicated-service-step-grid">${list(service.steps, 'dedicated-service-step')}</div></div>`}
-
-          <div class="dedicated-service-bottom-cta"><div><span class="dedicated-service-eyebrow">READY TO DISCUSS YOUR SITE?</span><h2>${service.ctaTitle || 'Get a practical recommendation from our team.'}</h2>${service.ctaText ? `<p>${service.ctaText}</p>` : ''}</div><a href="../contact.html" class="btn-white-contact-pill">${service.ctaLabel || 'Contact Our Team'} <i class="fa-solid fa-arrow-right"></i></a></div>
-        </div>
-      </section>`}
+      ${referenceMain}
     </main>
 
     <footer class="master-footer" id="contact"><div class="footer-bg-landscape"><div class="mountain-backdrop-art"></div><div class="footer-water-drop-art"><div class="drop-column"></div><div class="drop-ripple-circle dr-1"></div><div class="drop-ripple-circle dr-2"></div><div class="drop-ripple-circle dr-3"></div></div></div><div class="container footer-main-container"><div class="footer-grid-5col"><div class="footer-col col-brand"><a href="../index.html" class="footer-logo"><img src="../assect/logo.png" alt="Bharat Bhujal Tech Pvt. Ltd." class="footer-logo-img"></a><p class="brand-mission-text">Your trusted partner for groundwater exploration, precision borewell drilling, and sustainable water resource management across India.</p><div class="footer-trust-badge"><i class="fa-solid fa-shield-halved"></i><span>ISO 9001:2015 &amp; CGWA Compliant</span></div></div><div class="footer-col col-quicklinks"><h4 class="footer-heading">Quick Links<span class="heading-accent-line"></span></h4><ul class="footer-nav-list"><li><a href="../index.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>Home</span></a></li><li><a href="../about.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>About Us</span></a></li><li><a href="../services.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>All Services</span></a></li><li><a href="../contact.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>Contact Us</span></a></li></ul></div><div class="footer-col col-contact"><h4 class="footer-heading">Get in Touch<span class="heading-accent-line"></span></h4><div class="footer-contact-items"><a href="tel:+919826377611" class="f-contact-card f-contact-link"><div class="f-contact-icon-box pulse-blue"><i class="fa-solid fa-phone-volume"></i></div><div class="f-contact-details"><span class="f-contact-label">Technical Inquiry</span><span class="f-contact-val highlight-val">+91 98263 77611</span></div></a><a href="mailto:info@bharatbhujal.com" class="f-contact-card f-contact-link"><div class="f-contact-icon-box"><i class="fa-regular fa-envelope"></i></div><div class="f-contact-details"><span class="f-contact-label">Email Consultation</span><span class="f-contact-val highlight-val">info@bharatbhujal.com</span></div></a></div></div></div></div><div class="footer-bottom-strip"><div class="container footer-bottom-inner"><div class="copyright-text">&copy; 2026 Bharat Bhujal Tech Pvt. Ltd. All Rights Reserved.</div><div class="made-in-tag"><span>Designed with <span class="heart-blue">&#10084;</span> in India</span></div></div></div></footer>
   `;
+
+  // Keep each FAQ group as a true accordion: opening one answer closes the others.
+  document.querySelectorAll('.reference-faq-reference-list, .premium-faq-list, .dedicated-service-faq-list, .gpr-redesign-faq-list').forEach(group => {
+    const questions = Array.from(group.querySelectorAll('details'));
+    questions.forEach(question => {
+      question.addEventListener('toggle', () => {
+        if (!question.open) return;
+        questions.forEach(otherQuestion => {
+          if (otherQuestion !== question && otherQuestion.open) otherQuestion.open = false;
+        });
+      });
+    });
+  });
 
   const homepageFooter = `
     <footer class="master-footer" id="contact">
