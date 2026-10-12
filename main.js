@@ -658,9 +658,25 @@ function initScrollRevealAnimations() {
     { container: '.testi-cards-row', item: '.testi-card-box' },
     { container: '.faq-accordion-stack', item: '.faq-card-item' },
     { container: '.footer-grid-5col', item: '.footer-col' },
-    { container: '.about-bento-grid', item: '.about-bento-card' }
+    { container: '.about-bento-grid', item: '.about-bento-card' },
+    { container: '.about-impact-strip', item: '.about-impact-stat' },
+    { container: '.about-mission-grid', item: '.about-mission-card' },
+    // Service-detail sections use the same homepage entrance choreography.
+    { container: '.reference-overview-benefits', item: 'article' },
+    { container: '.reference-process-grid', item: '.reference-process-card' },
+    { container: '.reference-technical-list', item: 'div' },
+    { container: '.reference-applications-grid', item: '.reference-application-card' },
+    { container: '.reference-faq-reference-list', item: 'details' },
+    { container: '.reference-faq-contact-items', item: 'a' },
+    // Contact-page cards and panels use the same alternating motion.
+    { container: '.contact-cards-4col-grid', item: '.contact-info-card-item' },
+    { container: '.contact-form-visual-grid', item: '.contact-form-card-wrapper, .contact-visual-card-right' },
+    { container: '.contact-card-floating-badges-row', item: '.contact-card-floating-pill' },
+    { container: '.office-map-grid-2col', item: '.office-info-left-col, .office-map-right-col' },
+    { container: '.office-contact-rows', item: '.office-detail-row' }
   ];
 
+  const isContactPage = Boolean(document.querySelector('.contact-hero-banner-sec'));
   containerStaggerPairs.forEach(({ container, item }) => {
     const parent = document.querySelector(container);
     if (!parent) return;
@@ -668,6 +684,12 @@ function initScrollRevealAnimations() {
     items.forEach((el, idx) => {
       el.classList.add('reveal-stagger-item');
       el.style.setProperty('--stagger-index', idx);
+
+      // Service-detail cards alternate their entrance direction for a more
+      // natural left/right rhythm while keeping the homepage stagger timing.
+      if (el.closest('body[data-service]') || isContactPage) {
+        el.dataset.revealDirection = idx % 2 === 0 ? 'left' : 'right';
+      }
     });
   });
 
@@ -688,8 +710,29 @@ function initScrollRevealAnimations() {
     '.testi-slider-showcase',
     '.faq-content-col',
     '.global-cta-section .industries-action-banner',
-    '.footer-grid-5col'
+    '.footer-grid-5col',
+    '.about-impact-strip-section',
+    '.about-mission-section',
+    // Shared service-detail page sections.
+    'body[data-service] .reference-service-overview-combined',
+    'body[data-service] .reference-process-reference',
+    'body[data-service] .reference-technical-section',
+    'body[data-service] .reference-applications-reference',
+    'body[data-service] .reference-faq-reference',
+    'body[data-service] .reference-service-cta-reference',
+    // Contact-page sections.
+    'body.contact-page .contact-hero-inner',
+    'body.contact-page .contact-cards-bar-sec',
+    'body.contact-page .contact-main-form-sec',
+    'body.contact-page .contact-office-map-sec',
+    'body.contact-page .knowledge-cta-rock-stream-sec'
   ];
+
+  const serviceHero = document.querySelector('body[data-service] .reference-service-hero-inner');
+  if (serviceHero) {
+    serviceHero.classList.add('service-hero-motion');
+    requestAnimationFrame(() => serviceHero.classList.add('is-revealed'));
+  }
 
   const targets = document.querySelectorAll(sectionElements.join(', '));
   if (!targets.length) return;

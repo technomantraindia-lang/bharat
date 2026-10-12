@@ -695,25 +695,25 @@
     return `<article class="dedicated-service-rich-step"><span>0${index + 1}</span><div><h3>${title}</h3><p>${parts.join(' — ')}</p></div></article>`;
   }).join('');
   const serviceMenu = [
-    ['services.html', 'fa-list-check', 'All Services'],
-    ['gpr-survey.html', 'fa-water', 'GPR Survey'],
-    ['cgwa-application.html', 'fa-file-shield', 'CGWA Application'],
-    ['cleaning-recharge-well.html', 'fa-broom', 'Cleaning Of Recharge Well'],
-    ['drilling-borewell.html', 'fa-bore-hole', 'Drilling Borewell'],
-    ['environmental-remediation.html', 'fa-leaf', 'Environmental Remediation'],
-    ['geo-technical-work.html', 'fa-compass-drafting', 'Geo Technical Work'],
-    ['impact-assessment-report.html', 'fa-chart-line', 'Impact Assessment Report'],
-    ['piezometer-supplier.html', 'fa-ruler-vertical', 'Piezometer Supplier'],
-    ['pump-test.html', 'fa-gauge-high', 'Pump Test'],
-    ['rain-water-harvesting.html', 'fa-cloud-showers-water', 'Rain Water Harvesting'],
-    ['water-audit.html', 'fa-list-check', 'Water Audit'],
-    ['water-flow-meter.html', 'fa-water', 'Water Flow Meter'],
-    ['water-flowmeter-calibration.html', 'fa-sliders', 'Water Flowmeter Calibration'],
-    ['water-sample-analysis.html', 'fa-flask', 'Water Sample Analysis'],
-    ['flood-analysis.html', 'fa-house-flood-water', 'Flood Analysis'],
-    ['water-credit.html', 'fa-hand-holding-droplet', 'Water Credit'],
-    ['hydrology.html', 'fa-water', 'Hydrology'],
-    ['groundwater-investigation-stem.html', 'fa-layer-group', 'Groundwater & Investigation (sTEM)']
+    ['services.html', 'fa-arrow-right', 'All Services'],
+    ['gpr-survey.html', 'fa-arrow-right', 'GPR Survey'],
+    ['cgwa-application.html', 'fa-arrow-right', 'CGWA Application'],
+    ['cleaning-recharge-well.html', 'fa-arrow-right', 'Cleaning Of Recharge Well'],
+    ['drilling-borewell.html', 'fa-arrow-right', 'Drilling Borewell'],
+    ['environmental-remediation.html', 'fa-arrow-right', 'Environmental Remediation'],
+    ['geo-technical-work.html', 'fa-arrow-right', 'Geo Technical Work'],
+    ['impact-assessment-report.html', 'fa-arrow-right', 'Impact Assessment Report'],
+    ['piezometer-supplier.html', 'fa-arrow-right', 'Piezometer Supplier'],
+    ['pump-test.html', 'fa-arrow-right', 'Pump Test'],
+    ['rain-water-harvesting.html', 'fa-arrow-right', 'Rain Water Harvesting'],
+    ['water-audit.html', 'fa-arrow-right', 'Water Audit'],
+    ['water-flow-meter.html', 'fa-arrow-right', 'Water Flow Meter'],
+    ['water-flowmeter-calibration.html', 'fa-arrow-right', 'Water Flowmeter Calibration'],
+    ['water-sample-analysis.html', 'fa-arrow-right', 'Water Sample Analysis'],
+    ['flood-analysis.html', 'fa-arrow-right', 'Flood Analysis'],
+    ['water-credit.html', 'fa-arrow-right', 'Water Credit'],
+    ['hydrology.html', 'fa-arrow-right', 'Hydrology'],
+    ['groundwater-investigation-stem.html', 'fa-arrow-right', 'Groundwater & Investigation (sTEM)']
   ].map(([href, icon, label]) => `<li><a href="../services/${href}"><i class="fa-solid ${icon}"></i> ${label}</a></li>`).join('');
 
   const technicalCapabilitiesSection = `
