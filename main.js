@@ -661,6 +661,7 @@ function initScrollRevealAnimations() {
     { container: '.about-bento-grid', item: '.about-bento-card' },
     { container: '.about-impact-strip', item: '.about-impact-stat' },
     { container: '.about-mission-grid', item: '.about-mission-card' },
+    { container: '.about-approach-steps', item: '.about-approach-step' },
     // Service-detail sections use the same homepage entrance choreography.
     { container: '.reference-overview-benefits', item: 'article' },
     { container: '.reference-process-grid', item: '.reference-process-card' },

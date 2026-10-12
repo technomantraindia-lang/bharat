@@ -4,7 +4,7 @@
     'flood-analysis': {
       title: 'Flood Analysis',
       category: 'RISK STUDY',
-      image: '../assect/contact-river-dam.jpg',
+      image: '../assect/service/Flood Analysis.png', technicalImage: '../assect/contact-river-dam.jpg',
       subtitle: 'Hydrological and site-based flood analysis to understand risk, drainage patterns and practical mitigation needs.',
       intro: 'Our flood analysis service brings together catchment behaviour, rainfall patterns, drainage paths and site levels to help organisations make safer water and infrastructure decisions.',
       detail: 'We translate field observations and available hydrological data into clear risk findings, planning inputs and mitigation recommendations for projects exposed to surface-water flooding.',
@@ -15,7 +15,7 @@
     'water-credit': {
       title: 'Water Credit',
       category: 'WATER STEWARDSHIP',
-      image: '../assect/industry-commercial.jpg',
+      image: '../assect/service/Water Credit.png', technicalImage: '../assect/industry-commercial.jpg',
       subtitle: 'Water-credit support for measuring conservation outcomes and planning responsible water stewardship.',
       intro: 'Our water-credit support helps organisations understand the water value of conservation, recharge and efficiency projects in a transparent, measurable way.',
       detail: 'We help define a practical baseline, identify measurable interventions and organise supporting evidence so water-saving and replenishment outcomes can be communicated with confidence.',
@@ -26,7 +26,7 @@
     'hydrology': {
       title: 'Hydrology',
       category: 'HYDROLOGY',
-      image: '../assect/our-expertise-3d-diagram-exact.png',
+      image: '../assect/service/Hydrology.png', technicalImage: '../assect/our-expertise-3d-diagram-exact.png',
       subtitle: 'Hydrological studies that connect rainfall, surface water, aquifers and site-level water availability.',
       intro: 'Our hydrology services provide a connected view of how water moves through a landscape, from rainfall and runoff to recharge, storage and groundwater availability.',
       detail: 'This understanding supports water-supply planning, recharge design, environmental studies and responsible development decisions across rural, industrial and infrastructure sites.',
@@ -37,7 +37,7 @@
     'groundwater-investigation-stem': {
       title: 'Groundwater & Investigation (sTEM)',
       category: 'INVESTIGATION',
-      image: '../assect/journey-analysis-v2.png',
+      image: '../assect/service/Groundwater & Investigation (sTEM).png', technicalImage: '../assect/journey-analysis-v2.png',
       subtitle: 'Scientific groundwater investigation using sTEM-based interpretation for better subsurface understanding.',
       intro: 'Our groundwater investigation service combines field investigation with scientific interpretation to improve understanding of subsurface conditions before a project moves into implementation.',
       detail: 'We organise the available geological, hydrogeological and field evidence into practical findings that support groundwater targeting, resource planning and technical reporting.',
@@ -46,7 +46,7 @@
       facts: ['Groundwater targeting', 'Field investigation', 'Technical interpretation']
     },
     'gpr-survey': {
-      layout: 'gpr', title: 'Ground Penetrating Radar (GPR) Survey Services', category: 'GPR SURVEY', image: '../assect/service-geophysical-survey-generated.png',
+      layout: 'gpr', title: 'Ground Penetrating Radar (GPR) Survey Services', category: 'GPR SURVEY', image: '../assect/service/GPR Survey.png', technicalImage: '../assect/service-geophysical-survey-generated.png',
       heroImage: '../assect/srv-geophysical.jpg',
       bannerFeatures: ['Accurate Results', 'Advanced Technology', 'Expert Team', 'Sustainable Solutions'],
       overviewTitle: 'What is a Ground Penetrating Radar (GPR) Survey?',
@@ -87,7 +87,7 @@
       }
     },
     'cgwa-application': {
-      title: 'CGWA Approval & Application Assistance', category: 'COMPLIANCE', image: '../assect/service-cgwa-consultancy-generated.png',
+      title: 'CGWA Approval & Application Assistance', category: 'COMPLIANCE', image: '../assect/service/CGWA Application.png', technicalImage: '../assect/service-cgwa-consultancy-generated.png',
       subtitle: 'Professional assistance for obtaining Central Ground Water Authority (CGWA) approvals, including documentation, technical assessments, application submission, and regulatory compliance.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Need Assistance with Your CGWA Application?',
@@ -132,7 +132,7 @@
       }
     },
     'cleaning-recharge-well': {
-      title: 'Cleaning Of Recharge Well', category: 'MAINTENANCE', image: '../assect/service-recharge-well-generated.png',
+      title: 'Cleaning Of Recharge Well', category: 'MAINTENANCE', image: '../assect/service/Cleaning Of Recharge Well.png', technicalImage: '../assect/service-recharge-well-generated.png',
       subtitle: 'Professional recharge-well cleaning and media maintenance for improved groundwater recharge.',
       intro: 'Recharge structures need regular cleaning to keep water moving through filters, shafts and recharge zones without avoidable clogging.',
       detail: 'We assess silt, debris and filter-media condition, then recommend cleaning and maintenance actions that improve recharge performance and service life.',
@@ -140,7 +140,7 @@
       steps: ['Inspect the recharge structure — We review the recharge pit, filter layers and visible site condition.', 'Identify blockage and media condition — We locate silt, debris and filter-media issues affecting recharge flow.', 'Complete cleaning guidance and performance checks — We recommend practical maintenance steps to restore performance.'], facts: ['Silt removal', 'Filter upkeep', 'Recharge performance']
     },
     'drilling-borewell': {
-      title: 'Borewell Drilling Services', category: 'DRILLING', image: '../assect/service-production-well-generated.png',
+      title: 'Borewell Drilling Services', category: 'DRILLING', image: '../assect/service/Drilling Borewell.png', technicalImage: '../assect/service-production-well-generated.png',
       subtitle: 'Reliable borewell drilling services for residential, agricultural, commercial, and industrial water requirements, supported by site assessment, hydrogeological expertise, and appropriate drilling methods.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Planning a Borewell for Your Site?',
@@ -183,7 +183,7 @@
       }
     },
     'environmental-remediation': {
-      title: 'Environmental Remediation Services', category: 'ENVIRONMENT', image: '../assect/industry-agriculture.jpg',
+      title: 'Environmental Remediation Services', category: 'ENVIRONMENT', image: '../assect/service/Environmental Remediation.png', technicalImage: '../assect/industry-agriculture.jpg',
       subtitle: 'Professional environmental remediation services for assessing, managing, and addressing soil and groundwater contamination across industrial, commercial, infrastructure, and development sites.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Need Help Assessing an Environmental Concern?',
@@ -227,7 +227,7 @@
       }
     },
     'geo-technical-work': {
-      title: 'Geotechnical Investigation Services', category: 'ENGINEERING', image: '../assect/proc-03-drilling.jpg',
+      title: 'Geotechnical Investigation Services', category: 'ENGINEERING', image: '../assect/service/Geo Technical Work.png', technicalImage: '../assect/proc-03-drilling.jpg',
       subtitle: 'Professional geotechnical investigation services to assess soil, rock, and subsurface conditions for construction, infrastructure, commercial, and industrial projects.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Planning a Construction or Infrastructure Project?',
@@ -270,7 +270,7 @@
       }
     },
     'impact-assessment-report': {
-      title: 'Impact Assessment Report Services', category: 'ASSESSMENT', image: '../assect/proc-02-analysis.jpg',
+      title: 'Impact Assessment Report Services', category: 'ASSESSMENT', image: '../assect/service/Impact Assessment Report.png', technicalImage: '../assect/proc-02-analysis.jpg',
       subtitle: 'Comprehensive impact assessment and reporting services to evaluate the environmental and groundwater implications of proposed projects and support informed planning and regulatory requirements.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Need an Impact Assessment for Your Project?',
@@ -313,7 +313,7 @@
       }
     },
     'piezometer-supplier': {
-      title: 'Piezometer Supplier', category: 'MONITORING', image: '../assect/hydrogeology-3d-recharge-diagram.jpg',
+      title: 'Piezometer Supplier', category: 'MONITORING', image: '../assect/service/Piezometer Supplier.png', technicalImage: '../assect/hydrogeology-3d-recharge-diagram.jpg',
       subtitle: 'Reliable piezometer supply for groundwater monitoring, geotechnical investigations, construction projects, and environmental applications, with suitable equipment selected according to project and site requirements.',
       heroCta: 'Request a Quote',
       ctaTitle: 'Looking for the Right Piezometer for Your Project?',
@@ -356,7 +356,7 @@
       }
     },
     'pump-test': {
-      title: 'Pump Test Services', category: 'TESTING', image: '../assect/proc-04-testing.jpg',
+      title: 'Pump Test Services', category: 'TESTING', image: '../assect/service/Pump Test.png', technicalImage: '../assect/proc-04-testing.jpg',
       subtitle: 'Accurate pumping tests to evaluate borewell performance, groundwater yield, drawdown, and aquifer response for groundwater development, infrastructure, industrial, and water resource projects.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Need to Assess Your Borewell Performance?',
@@ -397,7 +397,7 @@
       }
     },
     'rain-water-harvesting': {
-      title: 'Rainwater Harvesting Solutions', category: 'CONSERVATION', image: '../assect/service-recharge-well-generated.png',
+      title: 'Rainwater Harvesting Solutions', category: 'CONSERVATION', image: '../assect/service/Rain Water Harvesting.png', technicalImage: '../assect/service-recharge-well-generated.png',
       subtitle: 'Sustainable rainwater harvesting systems designed to conserve water, recharge groundwater, and support long-term water management for residential, commercial, industrial, and institutional projects.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Build a Sustainable Water Management System',
@@ -443,7 +443,7 @@
       }
     },
     'water-audit': {
-      title: 'Water Audit Services', category: 'EFFICIENCY', image: '../assect/journey-impact-v2.png',
+      title: 'Water Audit Services', category: 'EFFICIENCY', image: '../assect/service/Water Audit.png', technicalImage: '../assect/journey-impact-v2.png',
       subtitle: 'Water audit services to assess water use, identify losses, improve efficiency, and support sustainable water management across industrial, commercial, institutional, and infrastructure projects.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Looking to Improve Your Water Management?',
@@ -485,7 +485,7 @@
       }
     },
     'water-flow-meter': {
-      title: 'Water Flow Meter Services', category: 'MEASUREMENT', image: '../assect/our-expertise-3d-diagram.jpg',
+      title: 'Water Flow Meter Services', category: 'MEASUREMENT', image: '../assect/service/Water Flow Meter.png', technicalImage: '../assect/our-expertise-3d-diagram.jpg',
       subtitle: 'Reliable water flow meter solutions for measuring, monitoring, and managing water movement across industrial, commercial, institutional, and infrastructure projects.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Need Reliable Water Flow Measurement?',
@@ -526,7 +526,7 @@
       }
     },
     'water-flowmeter-calibration': {
-      title: 'Water Flowmeter Calibration Services', category: 'CALIBRATION', image: '../assect/proc-04-testing.jpg',
+      title: 'Water Flowmeter Calibration Services', category: 'CALIBRATION', image: '../assect/service/Water Flowmeter Calibration.png', technicalImage: '../assect/proc-04-testing.jpg',
       subtitle: 'Professional water flowmeter calibration services to verify measurement accuracy, identify deviations, and ensure reliable flow data for groundwater, industrial, commercial, and water management applications.',
       heroCta: 'Request a Calibration',
       ctaTitle: 'Need Your Water Flowmeter Calibrated?',
@@ -569,7 +569,7 @@
       }
     },
     'water-sample-analysis': {
-      title: 'Water Sample Analysis Services', category: 'LAB ANALYSIS', image: '../assect/faq-aquifer-droplet.jpg',
+      title: 'Water Sample Analysis Services', category: 'LAB ANALYSIS', image: '../assect/service/Water Sample Analysis.png', technicalImage: '../assect/faq-aquifer-droplet.jpg',
       subtitle: 'To assess water quality and identify physical, chemical, and other relevant parameters for groundwater, surface water, drinking water, industrial, and environmental applications.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Need Your Water Quality Assessed?',
@@ -852,7 +852,7 @@
 
     <section class="gpr-redesign-section gpr-redesign-faq"><div class="container gpr-redesign-container"><div class="gpr-redesign-faq-grid"><div><span class="gpr-redesign-kicker">FAQ</span><h2>Common Questions<br>About GPR Surveys</h2><p>Find answers to the most common questions about our Ground Penetrating Radar (GPR) survey services.</p><a class="gpr-redesign-btn gpr-redesign-btn-primary" href="#gpr-faq-list">View All FAQs <i class="fa-solid fa-arrow-right"></i></a></div><div class="gpr-redesign-faq-list" id="gpr-faq-list">${service.longForm.faqs.map(([question, answer]) => `<details><summary>${question}<i class="fa-solid fa-plus"></i></summary><p>${answer}</p></details>`).join('')}</div></div></div></section>
 
-    <section class="gpr-redesign-section gpr-redesign-related"><div class="container gpr-redesign-container"><div class="gpr-redesign-related-heading"><div><span class="gpr-redesign-kicker">RELATED SERVICES</span><h2>Explore Other Services</h2></div><a href="../services.html">View All Services <i class="fa-solid fa-arrow-right"></i></a></div><div class="gpr-redesign-related-grid">${[['../assect/srv-geophysical.jpg', 'GeoPhysical Survey', '3D Aquifer Mapping', 'geo-technical-work.html'], ['../assect/service-production-well-generated.png', 'Drilling Services', 'Production Well', 'drilling-borewell.html'], ['../assect/journey-analysis-v2.png', 'Groundwater', 'Hydrogeology Study', 'hydrology.html'], ['../assect/service-cgwa-consultancy-generated.png', 'CGWA Consultancy', '& NOC Support', 'cgwa-application.html']].map(([image, title, text, href], index) => `<a href="${href}" class="gpr-redesign-related-card"><img src="${image}" alt="${title}"><span>0${index + 1}</span><b>${title}<br>${text}</b><i class="fa-solid fa-arrow-right"></i></a>`).join('')}</div></div></section>
+    <section class="gpr-redesign-section gpr-redesign-related"><div class="container gpr-redesign-container"><div class="gpr-redesign-related-heading"><div><span class="gpr-redesign-kicker">RELATED SERVICES</span><h2>Explore Other Services</h2></div><a href="../services.html">View All Services <i class="fa-solid fa-arrow-right"></i></a></div><div class="gpr-redesign-related-grid">${[['../assect/srv-geophysical.jpg', 'GeoPhysical Survey', '3D Aquifer Mapping', 'geo-technical-work.html'], ['../assect/service-production-well-generated.png', 'Drilling Services', 'Production Well', 'drilling-borewell.html'], ['../assect/journey-analysis-v2.png', 'Groundwater', 'Hydrogeology Study', 'hydrology.html'], ['../assect/service/CGWA Application.png', 'CGWA Consultancy', '& NOC Support', 'cgwa-application.html']].map(([image, title, text, href], index) => `<a href="${href}" class="gpr-redesign-related-card"><img src="${image}" alt="${title}"><span>0${index + 1}</span><b>${title}<br>${text}</b><i class="fa-solid fa-arrow-right"></i></a>`).join('')}</div></div></section>
 
     <section class="gpr-redesign-cta"><div class="gpr-redesign-cta-overlay"></div><div class="container gpr-redesign-container"><div><span class="gpr-redesign-kicker">LET'S BUILD A SAFER TOMORROW</span><h2>Need a Professional GPR Survey?</h2><p>Talk to our experts and get accurate subsurface insights for your project.</p></div><div class="gpr-redesign-actions"><a class="gpr-redesign-btn gpr-redesign-btn-primary" href="../contact.html">Get Expert Consultation <i class="fa-solid fa-arrow-right"></i></a><a class="gpr-redesign-btn gpr-redesign-btn-outline" href="../contact.html"><i class="fa-regular fa-file-lines"></i> Download Brochure</a></div></div></section>
   ` : '';
@@ -941,7 +941,29 @@
   }));
   const referenceApplicationIcons = ['fa-road', 'fa-building', 'fa-industry', 'fa-train-subway', 'fa-droplet', 'fa-tree-city'];
   const referenceApplicationTones = ['blue', 'green', 'purple', 'orange', 'pink', 'blue'];
-  const referenceTechnicalImage = service.layout === 'gpr' ? '../assect/gpr-technical-capabilities-generated.png' : service.image;
+  const technicalCapabilityImageMap = {
+    'flood-analysis': '../assect/technical-capabilities/flood-analysis.png',
+    'water-credit': '../assect/technical-capabilities/water-credit.png',
+    'hydrology': '../assect/technical-capabilities/hydrology.png',
+    'groundwater-investigation-stem': '../assect/technical-capabilities/groundwater-investigation-stem.png',
+    'gpr-survey': '../assect/technical-capabilities/gpr-survey.png',
+    'cgwa-application': '../assect/technical-capabilities/cgwa-application.png',
+    'cleaning-recharge-well': '../assect/technical-capabilities/cleaning-recharge-well.png',
+    'drilling-borewell': '../assect/technical-capabilities/drilling-borewell.png',
+    'environmental-remediation': '../assect/technical-capabilities/environmental-remediation.png',
+    'geo-technical-work': '../assect/technical-capabilities/geo-technical-work.png',
+    'impact-assessment-report': '../assect/technical-capabilities/impact-assessment-report.png',
+    'piezometer-supplier': '../assect/technical-capabilities/piezometer-supplier.png',
+    'pump-test': '../assect/technical-capabilities/pump-test.png',
+    'rain-water-harvesting': '../assect/technical-capabilities/rain-water-harvesting.png',
+    'water-audit': '../assect/technical-capabilities/water-audit.png',
+    'water-flow-meter': '../assect/technical-capabilities/water-flow-meter.png',
+    'water-flowmeter-calibration': '../assect/technical-capabilities/water-flowmeter-calibration.png',
+    'water-sample-analysis': '../assect/technical-capabilities/water-sample-analysis.png',
+    'open-well-solutions-detail': '../assect/technical-capabilities/open-well-solutions-detail.png',
+    'borewell-revival-detail': '../assect/technical-capabilities/borewell-revival-detail.png'
+  };
+  const referenceTechnicalImage = technicalCapabilityImageMap[key] || (service.layout === 'gpr' ? '../assect/gpr-technical-capabilities-generated.png' : (service.technicalImage || service.image));
   const referenceProcessTitle = service.layout === 'gpr' ? 'GPR Survey' : service.title;
   const referenceProcessIcons = ['fa-clipboard-check', 'fa-compass-drafting', 'fa-gears', 'fa-file-lines', 'fa-lightbulb'];
   const referenceProcessTones = ['blue', 'green', 'purple', 'orange', 'blue'];
