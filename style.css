@@ -8432,11 +8432,12 @@ body[data-service="gpr-survey"] .dedicated-service-bottom-cta {
 .modal-dialog-box {
   background: #ffffff;
   width: 100%;
-  max-width: 520px;
-  border-radius: var(--radius-lg);
-  padding: 36px;
+  max-width: 540px;
+  border: 1px solid rgba(186, 230, 253, 0.8);
+  border-radius: 24px;
+  padding: 38px 36px 34px;
   position: relative;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 28px 80px rgba(2, 24, 54, 0.34), 0 0 0 8px rgba(255, 255, 255, 0.08);
   transform: scale(0.92);
   transition: var(--transition);
 }
@@ -8448,19 +8449,27 @@ body[data-service="gpr-survey"] .dedicated-service-bottom-cta {
 .modal-close-btn {
   position: absolute;
   top: 16px;
-  right: 18px;
-  font-size: 1.8rem;
-  color: var(--text-muted);
+  right: 17px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 1.55rem;
+  color: #71839b;
   line-height: 1;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .modal-close-btn:hover {
-  color: var(--text-dark);
+  color: #0b2b50;
+  background: #eef7fd;
+  transform: rotate(90deg);
 }
 
 .modal-header-section {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .modal-icon-bubble {
@@ -8477,14 +8486,16 @@ body[data-service="gpr-survey"] .dedicated-service-bottom-cta {
 }
 
 .modal-header-section h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: var(--header-dark);
+  margin-bottom: 5px;
 }
 
 .modal-header-section p {
   color: var(--text-muted);
-  font-size: 0.88rem;
+  font-size: 0.87rem;
+  line-height: 1.5;
 }
 
 .modal-form-body .form-group {
@@ -8506,21 +8517,36 @@ body[data-service="gpr-survey"] .dedicated-service-bottom-cta {
 }
 
 .modal-form-body input,
-.modal-form-body select {
+.modal-form-body select,
+.modal-form-body textarea {
   width: 100%;
-  padding: 12px 14px;
+  padding: 13px 14px;
   border: 1.5px solid var(--border-light);
-  border-radius: var(--radius-sm);
+  border-radius: 10px;
   font-family: inherit;
   font-size: 0.9rem;
+  line-height: 1.45;
   outline: none;
   transition: var(--transition);
+  background: #ffffff;
+  color: var(--text-dark);
 }
 
 .modal-form-body input:focus,
-.modal-form-body select:focus {
+.modal-form-body select:focus,
+.modal-form-body textarea:focus {
   border-color: var(--primary-blue);
   box-shadow: 0 0 0 3px rgba(0, 128, 255, 0.15);
+}
+
+.modal-form-body textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+
+.modal-form-body input::placeholder,
+.modal-form-body textarea::placeholder {
+  color: #9aabbd;
 }
 
 .btn-modal-submit {
@@ -8529,17 +8555,19 @@ body[data-service="gpr-survey"] .dedicated-service-bottom-cta {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: var(--primary-blue);
+  background: linear-gradient(135deg, #087de0, #0d5fb5);
   color: #ffffff;
-  padding: 14px;
-  border-radius: var(--radius-full);
+  padding: 14px 18px;
+  border-radius: 12px;
   font-weight: 700;
   font-size: 1rem;
   margin-top: 10px;
 }
 
 .btn-modal-submit:hover {
-  background: var(--primary-hover);
+  background: linear-gradient(135deg, #096fc8, #084d97);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(8, 107, 200, 0.24);
 }
 
 /* ==========================================================================
