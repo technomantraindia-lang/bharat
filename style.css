@@ -15501,7 +15501,8 @@ video {
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
 }
 
-.about-whoweare-img-wrap img.main-whoweare-img {
+.about-whoweare-img-wrap img.main-whoweare-img,
+.about-whoweare-img-wrap video.main-whoweare-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -15510,7 +15511,8 @@ video {
   transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.about-whoweare-img-wrap:hover img.main-whoweare-img {
+.about-whoweare-img-wrap:hover img.main-whoweare-img,
+.about-whoweare-img-wrap:hover video.main-whoweare-video {
   transform: scale(1.05);
 }
 
@@ -22301,6 +22303,272 @@ body[data-service] .reference-process-reference {
     linear-gradient(180deg, #fbfdff 0%, #f2f9ff 100%);
 }
 
+/* Final Our Journey layout override. */
+body.about-page .about-journey-reference {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 0 58px;
+  background:
+    radial-gradient(circle at 82% 10%, rgba(189, 228, 255, 0.25), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+}
+
+body.about-page .about-journey-reference::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 46%;
+  height: 100%;
+  opacity: 0.58;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(71, 166, 231, 0.15) 1px, transparent 1px);
+  background-size: 18px 18px;
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.7) 35%, #000 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.7) 35%, #000 100%);
+}
+
+body.about-page .about-journey-reference-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1580px;
+  padding: 0 28px;
+}
+
+body.about-page .about-journey-reference-layout {
+  display: grid;
+  grid-template-columns: minmax(520px, 0.92fr) minmax(650px, 1.08fr);
+  align-items: center;
+  gap: clamp(38px, 4.5vw, 82px);
+}
+
+body.about-page .about-journey-reference-visual {
+  position: relative;
+  min-height: 470px;
+}
+
+body.about-page .about-journey-reference-blob {
+  position: absolute;
+  inset: 16px 34px 20px -20px;
+  border-radius: 48% 52% 50% 50%;
+  background: linear-gradient(145deg, #a8e3ff 0%, #dff6ff 70%, rgba(235, 250, 255, 0.3) 100%);
+  transform: rotate(-7deg);
+  opacity: 0.78;
+}
+
+body.about-page .about-journey-reference-image {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 670px);
+  height: 470px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 0 46% 46% 0;
+  box-shadow: 0 22px 44px rgba(24, 99, 145, 0.18);
+  clip-path: ellipse(88% 88% at 30% 50%);
+}
+
+body.about-page .about-journey-reference-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.05) contrast(1.03);
+}
+
+body.about-page .about-journey-reference-content {
+  position: relative;
+  padding-top: 4px;
+}
+
+body.about-page .about-journey-reference-kicker {
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  color: #178fe9;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 2.2px;
+}
+
+body.about-page .about-journey-reference-kicker .badge-dash {
+  width: 30px;
+  height: 2px;
+  background: #178fe9;
+}
+
+body.about-page .about-journey-reference-content h2 {
+  max-width: 720px;
+  margin: 0;
+  color: #0b2c53;
+  font-size: clamp(2.4rem, 4.15vw, 4.45rem);
+  font-weight: 850;
+  line-height: 0.99;
+  letter-spacing: -0.065em;
+}
+
+body.about-page .about-journey-reference-content h2 span {
+  color: #158cf0;
+  background: linear-gradient(90deg, #087edc 0%, #22a9ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.about-page .about-journey-reference-intro {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: #58718a;
+  font-size: clamp(0.9rem, 1.1vw, 1.08rem);
+  line-height: 1.52;
+}
+
+body.about-page .about-journey-reference-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 38px;
+}
+
+body.about-page .about-journey-reference-timeline::before {
+  content: '';
+  position: absolute;
+  top: 39px;
+  right: 6%;
+  left: 6%;
+  border-top: 2px dotted #b7dff3;
+}
+
+body.about-page .about-journey-reference-step {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+body.about-page .about-journey-reference-step:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  top: 22px;
+  right: -17px;
+  color: #499fe0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+body.about-page .about-journey-reference-node {
+  display: grid;
+  place-items: center;
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 17px;
+  border: 5px solid rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1.45rem;
+  box-shadow: 0 10px 22px rgba(36, 124, 181, 0.2);
+}
+
+body.about-page .journey-reference-cyan .about-journey-reference-node { background: #18b6c7; }
+body.about-page .journey-reference-blue .about-journey-reference-node { background: #1477d7; }
+body.about-page .journey-reference-purple .about-journey-reference-node { background: #8648df; }
+body.about-page .journey-reference-orange .about-journey-reference-node { background: #f49a12; }
+
+body.about-page .about-journey-reference-step h3 {
+  margin: 0 0 8px;
+  color: #0d315a;
+  font-size: clamp(0.9rem, 1.1vw, 1.12rem);
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+body.about-page .about-journey-reference-step p {
+  max-width: 170px;
+  margin: 0 auto;
+  color: #607a95;
+  font-size: 0.76rem;
+  line-height: 1.48;
+}
+
+@media (max-width: 1180px) {
+  body.about-page .about-journey-reference-layout {
+    grid-template-columns: minmax(410px, 0.86fr) minmax(0, 1.14fr);
+    gap: 40px;
+  }
+
+  body.about-page .about-journey-reference-visual,
+  body.about-page .about-journey-reference-image {
+    min-height: 390px;
+    height: 390px;
+  }
+}
+
+@media (max-width: 820px) {
+  body.about-page .about-journey-reference {
+    padding: 62px 0 70px;
+  }
+
+  body.about-page .about-journey-reference-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  body.about-page .about-journey-reference-visual {
+    min-height: 310px;
+  }
+
+  body.about-page .about-journey-reference-image {
+    width: min(100%, 620px);
+    height: 310px;
+    margin: 0 auto;
+  }
+
+  body.about-page .about-journey-reference-content {
+    text-align: center;
+  }
+
+  body.about-page .about-journey-reference-kicker {
+    justify-content: center;
+  }
+
+  body.about-page .about-journey-reference-content h2,
+  body.about-page .about-journey-reference-intro {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  body.about-page .about-journey-reference-timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 28px;
+  }
+
+  body.about-page .about-journey-reference-timeline::before,
+  body.about-page .about-journey-reference-step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body.about-page .about-journey-reference-container {
+    padding: 0 18px;
+  }
+
+  body.about-page .about-journey-reference-content h2 {
+    font-size: clamp(2.2rem, 11vw, 3rem);
+  }
+
+  body.about-page .about-journey-reference-timeline {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  body.about-page .about-journey-reference-step p {
+    max-width: 250px;
+  }
+}
+
 body[data-service] .reference-process-reference h2 {
   width: min(1080px, 100%);
   margin: 16px auto 12px;
@@ -22448,6 +22716,272 @@ body[data-service] .reference-process-arrow {
   box-shadow: 0 8px 16px rgba(49, 112, 187, 0.12);
 }
 
+/* Final Our Journey override — keeps the reference layout above legacy rules. */
+body.about-page .about-journey-reference {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 0 58px;
+  background:
+    radial-gradient(circle at 82% 10%, rgba(189, 228, 255, 0.25), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+}
+
+body.about-page .about-journey-reference::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 46%;
+  height: 100%;
+  opacity: 0.58;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(71, 166, 231, 0.15) 1px, transparent 1px);
+  background-size: 18px 18px;
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.7) 35%, #000 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.7) 35%, #000 100%);
+}
+
+body.about-page .about-journey-reference-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1580px;
+  padding: 0 28px;
+}
+
+body.about-page .about-journey-reference-layout {
+  display: grid;
+  grid-template-columns: minmax(520px, 0.92fr) minmax(650px, 1.08fr);
+  align-items: center;
+  gap: clamp(38px, 4.5vw, 82px);
+}
+
+body.about-page .about-journey-reference-visual {
+  position: relative;
+  min-height: 470px;
+}
+
+body.about-page .about-journey-reference-blob {
+  position: absolute;
+  inset: 16px 34px 20px -20px;
+  border-radius: 48% 52% 50% 50%;
+  background: linear-gradient(145deg, #a8e3ff 0%, #dff6ff 70%, rgba(235, 250, 255, 0.3) 100%);
+  transform: rotate(-7deg);
+  opacity: 0.78;
+}
+
+body.about-page .about-journey-reference-image {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 670px);
+  height: 470px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 0 46% 46% 0;
+  box-shadow: 0 22px 44px rgba(24, 99, 145, 0.18);
+  clip-path: ellipse(88% 88% at 30% 50%);
+}
+
+body.about-page .about-journey-reference-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.05) contrast(1.03);
+}
+
+body.about-page .about-journey-reference-content {
+  position: relative;
+  padding-top: 4px;
+}
+
+body.about-page .about-journey-reference-kicker {
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  color: #178fe9;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 2.2px;
+}
+
+body.about-page .about-journey-reference-kicker .badge-dash {
+  width: 30px;
+  height: 2px;
+  background: #178fe9;
+}
+
+body.about-page .about-journey-reference-content h2 {
+  max-width: 720px;
+  margin: 0;
+  color: #0b2c53;
+  font-size: clamp(2.4rem, 4.15vw, 4.45rem);
+  font-weight: 850;
+  line-height: 0.99;
+  letter-spacing: -0.065em;
+}
+
+body.about-page .about-journey-reference-content h2 span {
+  color: #158cf0;
+  background: linear-gradient(90deg, #087edc 0%, #22a9ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.about-page .about-journey-reference-intro {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: #58718a;
+  font-size: clamp(0.9rem, 1.1vw, 1.08rem);
+  line-height: 1.52;
+}
+
+body.about-page .about-journey-reference-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 38px;
+}
+
+body.about-page .about-journey-reference-timeline::before {
+  content: '';
+  position: absolute;
+  top: 39px;
+  right: 6%;
+  left: 6%;
+  border-top: 2px dotted #b7dff3;
+}
+
+body.about-page .about-journey-reference-step {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+body.about-page .about-journey-reference-step:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  top: 22px;
+  right: -17px;
+  color: #499fe0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+body.about-page .about-journey-reference-node {
+  display: grid;
+  place-items: center;
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 17px;
+  border: 5px solid rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1.45rem;
+  box-shadow: 0 10px 22px rgba(36, 124, 181, 0.2);
+}
+
+body.about-page .journey-reference-cyan .about-journey-reference-node { background: #18b6c7; }
+body.about-page .journey-reference-blue .about-journey-reference-node { background: #1477d7; }
+body.about-page .journey-reference-purple .about-journey-reference-node { background: #8648df; }
+body.about-page .journey-reference-orange .about-journey-reference-node { background: #f49a12; }
+
+body.about-page .about-journey-reference-step h3 {
+  margin: 0 0 8px;
+  color: #0d315a;
+  font-size: clamp(0.9rem, 1.1vw, 1.12rem);
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+body.about-page .about-journey-reference-step p {
+  max-width: 170px;
+  margin: 0 auto;
+  color: #607a95;
+  font-size: 0.76rem;
+  line-height: 1.48;
+}
+
+@media (max-width: 1180px) {
+  body.about-page .about-journey-reference-layout {
+    grid-template-columns: minmax(410px, 0.86fr) minmax(0, 1.14fr);
+    gap: 40px;
+  }
+
+  body.about-page .about-journey-reference-visual,
+  body.about-page .about-journey-reference-image {
+    min-height: 390px;
+    height: 390px;
+  }
+}
+
+@media (max-width: 820px) {
+  body.about-page .about-journey-reference {
+    padding: 62px 0 70px;
+  }
+
+  body.about-page .about-journey-reference-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  body.about-page .about-journey-reference-visual {
+    min-height: 310px;
+  }
+
+  body.about-page .about-journey-reference-image {
+    width: min(100%, 620px);
+    height: 310px;
+    margin: 0 auto;
+  }
+
+  body.about-page .about-journey-reference-content {
+    text-align: center;
+  }
+
+  body.about-page .about-journey-reference-kicker {
+    justify-content: center;
+  }
+
+  body.about-page .about-journey-reference-content h2,
+  body.about-page .about-journey-reference-intro {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  body.about-page .about-journey-reference-timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 28px;
+  }
+
+  body.about-page .about-journey-reference-timeline::before,
+  body.about-page .about-journey-reference-step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body.about-page .about-journey-reference-container {
+    padding: 0 18px;
+  }
+
+  body.about-page .about-journey-reference-content h2 {
+    font-size: clamp(2.2rem, 11vw, 3rem);
+  }
+
+  body.about-page .about-journey-reference-timeline {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  body.about-page .about-journey-reference-step p {
+    max-width: 250px;
+  }
+}
+
 /* Final section background palette: each service block has its own visual identity. */
 body[data-service] .reference-service-overview-combined.reference-service-overview-combined {
   background:
@@ -22515,6 +23049,482 @@ body[data-service] .reference-service-cta-reference.reference-service-cta-refere
 
   body[data-service] .reference-process-reference .reference-process-grid {
     margin-top: 54px;
+  }
+}
+
+/* Our Journey — screenshot-matched landscape and milestone timeline. */
+body.about-page .about-journey-reference {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 0 58px;
+  background:
+    radial-gradient(circle at 82% 10%, rgba(189, 228, 255, 0.25), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+}
+
+body.about-page .about-journey-reference::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 46%;
+  height: 100%;
+  opacity: 0.58;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(71, 166, 231, 0.15) 1px, transparent 1px);
+  background-size: 18px 18px;
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.7) 35%, #000 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.7) 35%, #000 100%);
+}
+
+body.about-page .about-journey-reference-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1580px;
+  padding: 0 28px;
+}
+
+body.about-page .about-journey-reference-layout {
+  display: grid;
+  grid-template-columns: minmax(520px, 0.92fr) minmax(650px, 1.08fr);
+  align-items: center;
+  gap: clamp(38px, 4.5vw, 82px);
+}
+
+body.about-page .about-journey-reference-visual {
+  position: relative;
+  min-height: 470px;
+}
+
+body.about-page .about-journey-reference-blob {
+  position: absolute;
+  inset: 16px 34px 20px -20px;
+  border-radius: 48% 52% 50% 50%;
+  background: linear-gradient(145deg, #a8e3ff 0%, #dff6ff 70%, rgba(235, 250, 255, 0.3) 100%);
+  transform: rotate(-7deg);
+  opacity: 0.78;
+}
+
+body.about-page .about-journey-reference-image {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 670px);
+  height: 470px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 0 46% 46% 0;
+  box-shadow: 0 22px 44px rgba(24, 99, 145, 0.18);
+  clip-path: ellipse(88% 88% at 30% 50%);
+}
+
+body.about-page .about-journey-reference-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.05) contrast(1.03);
+}
+
+body.about-page .about-journey-reference-content {
+  position: relative;
+  padding-top: 4px;
+}
+
+body.about-page .about-journey-reference-kicker {
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  color: #178fe9;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 2.2px;
+}
+
+body.about-page .about-journey-reference-kicker .badge-dash {
+  width: 30px;
+  height: 2px;
+  background: #178fe9;
+}
+
+body.about-page .about-journey-reference-content h2 {
+  max-width: 720px;
+  margin: 0;
+  color: #0b2c53;
+  font-size: clamp(2.4rem, 4.15vw, 4.45rem);
+  font-weight: 850;
+  line-height: 0.99;
+  letter-spacing: -0.065em;
+}
+
+body.about-page .about-journey-reference-content h2 span {
+  color: #158cf0;
+  background: linear-gradient(90deg, #087edc 0%, #22a9ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.about-page .about-journey-reference-intro {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: #58718a;
+  font-size: clamp(0.9rem, 1.1vw, 1.08rem);
+  line-height: 1.52;
+}
+
+body.about-page .about-journey-reference-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 38px;
+}
+
+body.about-page .about-journey-reference-timeline::before {
+  content: '';
+  position: absolute;
+  top: 39px;
+  right: 6%;
+  left: 6%;
+  border-top: 2px dotted #b7dff3;
+}
+
+body.about-page .about-journey-reference-step {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+body.about-page .about-journey-reference-step:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  top: 22px;
+  right: -17px;
+  color: #499fe0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+body.about-page .about-journey-reference-node {
+  display: grid;
+  place-items: center;
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 17px;
+  border: 5px solid rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1.45rem;
+  box-shadow: 0 10px 22px rgba(36, 124, 181, 0.2);
+}
+
+body.about-page .journey-reference-cyan .about-journey-reference-node { background: #18b6c7; }
+body.about-page .journey-reference-blue .about-journey-reference-node { background: #1477d7; }
+body.about-page .journey-reference-purple .about-journey-reference-node { background: #8648df; }
+body.about-page .journey-reference-orange .about-journey-reference-node { background: #f49a12; }
+
+body.about-page .about-journey-reference-step h3 {
+  margin: 0 0 8px;
+  color: #0d315a;
+  font-size: clamp(0.9rem, 1.1vw, 1.12rem);
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+body.about-page .about-journey-reference-step p {
+  max-width: 170px;
+  margin: 0 auto;
+  color: #607a95;
+  font-size: 0.76rem;
+  line-height: 1.48;
+}
+
+@media (max-width: 1180px) {
+  body.about-page .about-journey-reference-layout {
+    grid-template-columns: minmax(410px, 0.86fr) minmax(0, 1.14fr);
+    gap: 40px;
+  }
+
+  body.about-page .about-journey-reference-visual,
+  body.about-page .about-journey-reference-image {
+    min-height: 390px;
+    height: 390px;
+  }
+}
+
+@media (max-width: 820px) {
+  body.about-page .about-journey-reference {
+    padding: 62px 0 70px;
+  }
+
+  body.about-page .about-journey-reference-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  body.about-page .about-journey-reference-visual {
+    min-height: 310px;
+  }
+
+  body.about-page .about-journey-reference-image {
+    width: min(100%, 620px);
+    height: 310px;
+    margin: 0 auto;
+  }
+
+  body.about-page .about-journey-reference-content {
+    text-align: center;
+  }
+
+  body.about-page .about-journey-reference-kicker {
+    justify-content: center;
+  }
+
+  body.about-page .about-journey-reference-content h2,
+  body.about-page .about-journey-reference-intro {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  body.about-page .about-journey-reference-timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 28px;
+  }
+
+  body.about-page .about-journey-reference-timeline::before,
+  body.about-page .about-journey-reference-step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body.about-page .about-journey-reference-container {
+    padding: 0 18px;
+  }
+
+  body.about-page .about-journey-reference-content h2 {
+    font-size: clamp(2.2rem, 11vw, 3rem);
+  }
+
+  body.about-page .about-journey-reference-timeline {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  body.about-page .about-journey-reference-step p {
+    max-width: 250px;
+  }
+}
+
+/* Why Choose Us — premium feature-card finish. */
+body.about-page .about-whychoose-sec {
+  position: relative;
+  overflow: hidden;
+  padding: 88px 0 96px;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(94, 193, 255, 0.2), transparent 27%),
+    radial-gradient(circle at 92% 76%, rgba(144, 224, 255, 0.18), transparent 29%),
+    linear-gradient(145deg, #fafdff 0%, #eef8ff 52%, #f8fcff 100%);
+}
+
+body.about-page .about-whychoose-sec::before,
+body.about-page .about-whychoose-sec::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  border: 1px solid rgba(80, 172, 229, 0.15);
+  border-radius: 50%;
+}
+
+body.about-page .about-whychoose-sec::before {
+  top: -160px;
+  left: -120px;
+  width: 430px;
+  height: 430px;
+  box-shadow: 0 0 0 26px rgba(114, 204, 255, 0.035), 0 0 0 52px rgba(114, 204, 255, 0.025);
+}
+
+body.about-page .about-whychoose-sec::after {
+  right: -170px;
+  bottom: -210px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 0 0 28px rgba(114, 204, 255, 0.035), 0 0 0 56px rgba(114, 204, 255, 0.025);
+}
+
+body.about-page .about-whychoose-sec .whoweare-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1240px;
+}
+
+body.about-page .whychoose-header-center {
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+body.about-page .whychoose-header-center .about-sec-badge {
+  margin-bottom: 17px;
+  color: #0787dc;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+body.about-page .whychoose-header-center .badge-dash {
+  width: 28px;
+  height: 2px;
+  background: #0787dc;
+}
+
+body.about-page .whychoose-header-center .about-sec-heading {
+  margin-bottom: 15px;
+  color: #082e59 !important;
+  font-size: clamp(2rem, 3.4vw, 3rem) !important;
+  font-weight: 850;
+  letter-spacing: -0.055em;
+  line-height: 1.08;
+}
+
+body.about-page .whychoose-header-center .highlight-text {
+  color: #168aeb !important;
+  background: linear-gradient(120deg, #087fdc 0%, #4f6cff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.about-page .whychoose-intro {
+  max-width: 620px;
+  color: #607b94;
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+body.about-page .whychoose-cards-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+body.about-page .whychoose-card-box {
+  min-height: 246px;
+  padding: 28px 25px 24px;
+  border: 1px solid rgba(113, 182, 222, 0.28);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 14px 30px rgba(32, 101, 145, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease, background 220ms ease;
+}
+
+body.about-page .whychoose-card-box::before {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  color: rgba(26, 112, 164, 0.2);
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 1.5px;
+}
+
+body.about-page .whychoose-card-box:nth-child(1)::before { content: '01'; }
+body.about-page .whychoose-card-box:nth-child(2)::before { content: '02'; }
+body.about-page .whychoose-card-box:nth-child(3)::before { content: '03'; }
+body.about-page .whychoose-card-box:nth-child(4)::before { content: '04'; }
+
+body.about-page .whychoose-card-box::after {
+  display: none !important;
+}
+
+body.about-page .whychoose-card-box:hover {
+  transform: translateY(-8px);
+  border-color: rgba(34, 157, 220, 0.52);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 22px 42px rgba(32, 101, 145, 0.14), 0 0 0 4px rgba(94, 193, 255, 0.08);
+}
+
+body.about-page .whychoose-top-line {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 24px;
+  left: 24px;
+  height: 4px;
+  border-radius: 0 0 8px 8px;
+}
+
+body.about-page .whychoose-card-box.card-theme-1 .whychoose-top-line { background: linear-gradient(90deg, #168ee4, #6bd6ff); }
+body.about-page .whychoose-card-box.card-theme-2 .whychoose-top-line { background: linear-gradient(90deg, #25af61, #86db9c); }
+body.about-page .whychoose-card-box.card-theme-3 .whychoose-top-line { background: linear-gradient(90deg, #ed9418, #ffd078); }
+body.about-page .whychoose-card-box.card-theme-4 .whychoose-top-line { background: linear-gradient(90deg, #7e49df, #bf9aff); }
+
+body.about-page .whychoose-icon {
+  position: relative;
+  width: 66px;
+  height: 66px;
+  margin: 12px auto 20px;
+  border: 1px solid currentColor;
+  border-radius: 21px;
+  box-shadow: 0 12px 22px rgba(36, 117, 173, 0.12), inset 0 0 0 5px rgba(255, 255, 255, 0.48);
+  font-size: 1.28rem;
+  transition: transform 220ms ease, border-radius 220ms ease;
+}
+
+body.about-page .whychoose-card-box:hover .whychoose-icon {
+  transform: translateY(-3px) rotate(-4deg);
+  border-radius: 50%;
+}
+
+body.about-page .whychoose-card-title {
+  margin: 0 0 10px;
+  color: #092f5c;
+  font-size: 1.04rem;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+body.about-page .whychoose-card-desc {
+  max-width: 218px;
+  color: #607b94;
+  font-size: 0.78rem;
+  line-height: 1.58;
+}
+
+@media (max-width: 980px) {
+  body.about-page .whychoose-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  body.about-page .about-whychoose-sec {
+    padding: 64px 0 70px;
+  }
+
+  body.about-page .whychoose-header-center {
+    margin-bottom: 34px;
+  }
+
+  body.about-page .whychoose-header-center .about-sec-heading {
+    font-size: clamp(1.85rem, 9vw, 2.4rem) !important;
+  }
+
+  body.about-page .whychoose-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  body.about-page .whychoose-card-box {
+    min-height: 0;
+    padding: 25px 24px 23px;
   }
 }
 
@@ -24450,6 +25460,201 @@ body.about-page .journey-reference-orange .about-journey-reference-node {
   }
 }
 
+/* Final screenshot match for the newly added journey section. */
+body.about-page .about-journey-reference {
+  padding: 28px 0 58px;
+  background:
+    radial-gradient(circle at 82% 10%, rgba(189, 228, 255, 0.25), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+}
+
+body.about-page .about-journey-reference::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 46%;
+  opacity: 0.58;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(71, 166, 231, 0.15) 1px, transparent 1px);
+  background-size: 18px 18px;
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.7) 35%, #000 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.7) 35%, #000 100%);
+}
+
+body.about-page .about-journey-reference-container {
+  max-width: 1580px;
+  padding: 0 28px;
+}
+
+body.about-page .about-journey-reference-layout {
+  grid-template-columns: minmax(520px, 0.92fr) minmax(650px, 1.08fr);
+  gap: clamp(38px, 4.5vw, 82px);
+}
+
+body.about-page .about-journey-reference-visual {
+  min-height: 470px;
+}
+
+body.about-page .about-journey-reference-blob {
+  inset: 16px 34px 20px -20px;
+  border-radius: 48% 52% 50% 50%;
+  background: linear-gradient(145deg, #a8e3ff 0%, #dff6ff 70%, rgba(235, 250, 255, 0.3) 100%);
+  transform: rotate(-7deg);
+  opacity: 0.78;
+}
+
+body.about-page .about-journey-reference-image {
+  width: 100%;
+  height: 470px;
+  border-radius: 0 46% 46% 0;
+  box-shadow: 0 22px 44px rgba(24, 99, 145, 0.18);
+  clip-path: none;
+}
+
+body.about-page .about-journey-reference-content h2 {
+  max-width: 720px;
+  font-size: clamp(2.4rem, 4.15vw, 4.45rem);
+  font-weight: 850;
+  line-height: 0.99;
+  letter-spacing: -0.065em;
+}
+
+body.about-page .about-journey-reference-content h2 span {
+  background: linear-gradient(90deg, #087edc 0%, #22a9ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.about-page .about-journey-reference-intro {
+  max-width: 720px;
+  margin-top: 20px;
+  font-size: clamp(0.9rem, 1.1vw, 1.08rem);
+  line-height: 1.52;
+}
+
+body.about-page .about-journey-reference-timeline {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 38px;
+}
+
+body.about-page .about-journey-reference-timeline::before {
+  top: 39px;
+  right: 6%;
+  left: 6%;
+  border-top: 2px dotted #b7dff3;
+}
+
+body.about-page .about-journey-reference-step {
+  text-align: center;
+}
+
+body.about-page .about-journey-reference-step:not(:last-child)::after {
+  content: '→';
+  top: 22px;
+  right: -17px;
+  color: #499fe0;
+  font-size: 1.5rem;
+}
+
+body.about-page .about-journey-reference-node {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 17px;
+  border: 5px solid rgba(255, 255, 255, 0.92);
+  font-size: 1.45rem;
+  box-shadow: 0 10px 22px rgba(36, 124, 181, 0.2);
+}
+
+body.about-page .about-journey-reference-step h3 {
+  margin-bottom: 8px;
+  font-size: clamp(0.9rem, 1.1vw, 1.12rem);
+}
+
+body.about-page .about-journey-reference-step p {
+  max-width: 170px;
+  font-size: 0.76rem;
+  line-height: 1.48;
+}
+
+@media (max-width: 1180px) {
+  body.about-page .about-journey-reference-layout {
+    grid-template-columns: minmax(410px, 0.86fr) minmax(0, 1.14fr);
+    gap: 40px;
+  }
+
+  body.about-page .about-journey-reference-visual,
+  body.about-page .about-journey-reference-image {
+    min-height: 390px;
+    height: 390px;
+  }
+}
+
+@media (max-width: 820px) {
+  body.about-page .about-journey-reference {
+    padding: 62px 0 70px;
+  }
+
+  body.about-page .about-journey-reference-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  body.about-page .about-journey-reference-visual {
+    min-height: 310px;
+  }
+
+  body.about-page .about-journey-reference-image {
+    width: min(100%, 620px);
+    height: 310px;
+    margin: 0 auto;
+  }
+
+  body.about-page .about-journey-reference-content {
+    text-align: center;
+  }
+
+  body.about-page .about-journey-reference-kicker {
+    justify-content: center;
+  }
+
+  body.about-page .about-journey-reference-content h2,
+  body.about-page .about-journey-reference-intro {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  body.about-page .about-journey-reference-timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 28px;
+  }
+
+  body.about-page .about-journey-reference-timeline::before,
+  body.about-page .about-journey-reference-step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body.about-page .about-journey-reference-container {
+    padding: 0 18px;
+  }
+
+  body.about-page .about-journey-reference-content h2 {
+    font-size: clamp(2.2rem, 11vw, 3rem);
+  }
+
+  body.about-page .about-journey-reference-timeline {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  body.about-page .about-journey-reference-step p {
+    max-width: 250px;
+  }
+}
+
 body.about-page .about-whychoose-sec {
   padding: 88px 0 102px;
   background:
@@ -24551,6 +25756,2673 @@ body.about-page .whychoose-card-box {
   body.about-page .about-whychoose-sec {
     padding-top: 62px;
     padding-bottom: 76px;
+  }
+}
+
+/* Why Choose Us — exact connected-card reference treatment. */
+body.about-page .about-whychoose-sec {
+  position: relative;
+  overflow: hidden;
+  padding: 52px 0 34px;
+  background:
+    radial-gradient(circle at 4% 42%, rgba(79, 174, 238, 0.18), transparent 28%),
+    radial-gradient(circle at 98% 58%, rgba(114, 215, 255, 0.2), transparent 25%),
+    linear-gradient(180deg, #f8fdff 0%, #edf8ff 100%);
+}
+
+body.about-page .about-whychoose-sec::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.48;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(46, 145, 218, 0.16) 1px, transparent 1px);
+  background-size: 19px 19px;
+  mask-image: linear-gradient(90deg, #000 0%, transparent 22%, transparent 78%, #000 100%);
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 22%, transparent 78%, #000 100%);
+}
+
+body.about-page .about-whychoose-sec .whoweare-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1540px;
+  padding: 0 26px;
+}
+
+body.about-page .whychoose-header-center {
+  display: none;
+}
+
+body.about-page .whychoose-connection-art {
+  position: absolute;
+  z-index: 0;
+  top: -31px;
+  right: 3%;
+  left: 3%;
+  height: 150px;
+  pointer-events: none;
+}
+
+body.about-page .whychoose-connection-art svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+body.about-page .whychoose-connection-path {
+  fill: none;
+  stroke: url(#whyChooseJourneyGradient);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+body.about-page .connection-node {
+  fill: #ffffff;
+  stroke-width: 4;
+}
+
+body.about-page .node-blue { stroke: #258bec; }
+body.about-page .node-green { stroke: #18a84b; }
+body.about-page .node-orange { stroke: #ee8c11; }
+
+body.about-page .whychoose-cards-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1540px;
+  margin: 0 auto;
+  padding-top: 42px;
+}
+
+body.about-page .whychoose-card-box {
+  position: relative;
+  min-height: 282px;
+  padding: 73px 36px 34px;
+  border: 1px solid rgba(104, 177, 226, 0.32);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 17px 30px rgba(37, 111, 161, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.98);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  overflow: visible;
+  transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
+}
+
+body.about-page .whychoose-card-box:hover {
+  transform: translateY(-7px);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 24px 42px rgba(37, 111, 161, 0.17), 0 0 0 4px rgba(91, 188, 239, 0.08);
+}
+
+body.about-page .whychoose-card-box.card-theme-1 { border-color: rgba(76, 166, 237, 0.34); background: linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(232, 247, 255, 0.76)); }
+body.about-page .whychoose-card-box.card-theme-2 { border-color: rgba(75, 190, 112, 0.3); background: linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(235, 255, 239, 0.76)); }
+body.about-page .whychoose-card-box.card-theme-3 { border-color: rgba(242, 163, 48, 0.3); background: linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(255, 248, 232, 0.78)); }
+body.about-page .whychoose-card-box.card-theme-4 { border-color: rgba(142, 105, 235, 0.3); background: linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(245, 240, 255, 0.78)); }
+
+body.about-page .whychoose-card-box::before,
+body.about-page .whychoose-card-box::after {
+  display: none !important;
+}
+
+body.about-page .whychoose-top-line {
+  display: none;
+}
+
+body.about-page .whychoose-card-number {
+  position: absolute;
+  top: 11px;
+  right: 32px;
+  color: rgba(28, 126, 208, 0.27);
+  font-size: 2.75rem;
+  font-weight: 850;
+  letter-spacing: -0.08em;
+  line-height: 1;
+}
+
+body.about-page .card-theme-2 .whychoose-card-number { color: rgba(47, 182, 83, 0.27); }
+body.about-page .card-theme-3 .whychoose-card-number { color: rgba(237, 142, 15, 0.28); }
+body.about-page .card-theme-4 .whychoose-card-number { color: rgba(111, 65, 220, 0.26); }
+
+body.about-page .whychoose-icon {
+  position: absolute;
+  z-index: 2;
+  top: -47px;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 94px;
+  height: 94px;
+  margin: 0;
+  border: 7px solid rgba(255, 255, 255, 0.72);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1.78rem;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 20px rgba(22, 99, 155, 0.2);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+body.about-page .whychoose-card-box:hover .whychoose-icon {
+  transform: translateX(-50%) scale(1.06);
+  box-shadow: 0 14px 25px rgba(22, 99, 155, 0.25);
+}
+
+body.about-page .whychoose-card-box.card-theme-1 .whychoose-icon { background: linear-gradient(145deg, #258bf0, #0863ce); }
+body.about-page .whychoose-card-box.card-theme-2 .whychoose-icon { background: linear-gradient(145deg, #20b957, #078332); }
+body.about-page .whychoose-card-box.card-theme-3 .whychoose-icon { background: linear-gradient(145deg, #f39a1b, #dc6f00); }
+body.about-page .whychoose-card-box.card-theme-4 .whychoose-icon { background: linear-gradient(145deg, #733de0, #4a16bf); }
+
+body.about-page .whychoose-card-title {
+  margin: 0;
+  color: #092b57;
+  font-size: clamp(1.08rem, 1.45vw, 1.52rem);
+  font-weight: 850;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  text-align: left;
+  white-space: nowrap;
+}
+
+body.about-page .whychoose-card-title span {
+  color: #168df0;
+}
+
+body.about-page .card-theme-2 .whychoose-card-title span { color: #139a42; }
+body.about-page .card-theme-3 .whychoose-card-title span { color: #e87b08; }
+body.about-page .card-theme-4 .whychoose-card-title span { color: #6030d1; }
+
+body.about-page .whychoose-title-line {
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin: 14px 0 15px;
+  border-radius: 999px;
+  background: #168df0;
+}
+
+body.about-page .card-theme-2 .whychoose-title-line { background: #16a84b; }
+body.about-page .card-theme-3 .whychoose-title-line { background: #ef8410; }
+body.about-page .card-theme-4 .whychoose-title-line { background: #6a35d8; }
+
+body.about-page .whychoose-card-desc {
+  max-width: 285px;
+  margin: 0;
+  color: #637a94;
+  font-size: clamp(0.78rem, 0.92vw, 0.98rem);
+  line-height: 1.55;
+  text-align: left;
+}
+
+body.about-page .whychoose-card-art {
+  position: absolute;
+  right: 26px;
+  bottom: 15px;
+  color: rgba(39, 139, 226, 0.2);
+  font-size: 3.9rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+body.about-page .card-theme-2 .whychoose-card-art { color: rgba(27, 176, 82, 0.2); }
+body.about-page .card-theme-3 .whychoose-card-art { color: rgba(237, 148, 24, 0.2); }
+body.about-page .card-theme-4 .whychoose-card-art { color: rgba(115, 70, 221, 0.2); }
+
+@media (max-width: 1050px) {
+  body.about-page .whychoose-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 68px;
+  }
+}
+
+@media (max-width: 600px) {
+  body.about-page .about-whychoose-sec {
+    padding: 54px 0 64px;
+  }
+
+  body.about-page .about-whychoose-sec .whoweare-container {
+    padding: 0 18px;
+  }
+
+  body.about-page .whychoose-connection-art {
+    display: none;
+  }
+
+  body.about-page .whychoose-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 62px;
+    padding-top: 48px;
+  }
+
+  body.about-page .whychoose-card-box {
+    min-height: 250px;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  body.about-page .whychoose-card-title {
+    font-size: 1.28rem;
+  }
+}
+
+/* Final Why Choose Us composition — match the connected-card reference. */
+/* Keep the About hero banner content as wide as the Contact page container. */
+body.about-page .contact-hero-inner {
+  max-width: 1720px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+@media (max-width: 1199px) {
+  body.about-page .contact-hero-inner {
+    max-width: 100%;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  body.about-page .contact-hero-inner {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+}
+
+body.about-page .about-whychoose-sec {
+  padding: 34px 0 76px;
+  background:
+    linear-gradient(90deg, rgba(242, 250, 255, 0.22) 0%, rgba(255, 255, 255, 0.76) 28%, rgba(255, 255, 255, 0.93) 61%, rgba(246, 252, 255, 0.48) 100%),
+    url('assect/about-journey-backdrop-v2.png') center / cover no-repeat;
+}
+
+body.about-page .about-whychoose-sec::after {
+  content: "";
+  position: absolute;
+  right: -8%;
+  bottom: -28%;
+  width: 56%;
+  height: 64%;
+  border: 18px solid rgba(91, 183, 241, 0.12);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  transform: rotate(-18deg);
+  pointer-events: none;
+}
+
+body.about-page .about-whychoose-sec .whoweare-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1640px;
+  padding: 0 32px;
+}
+
+body.about-page .whychoose-header-center {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto 18px;
+  text-align: center;
+}
+
+body.about-page .whychoose-header-center .about-sec-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  color: #087ddd;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+body.about-page .whychoose-header-center .badge-dash {
+  width: 46px;
+  height: 3px;
+  background: #087ddd;
+  border-radius: 99px;
+}
+
+body.about-page .whychoose-header-center .about-sec-heading {
+  margin: 0 auto 14px;
+  color: #091f49 !important;
+  font-size: clamp(2.25rem, 4.4vw, 4.25rem) !important;
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+}
+
+body.about-page .whychoose-header-center .highlight-text {
+  color: #1389ee !important;
+  background: linear-gradient(100deg, #087ddd 0%, #197ef2 48%, #6655e8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.about-page .whychoose-header-center .whychoose-intro {
+  max-width: 820px;
+  margin: 0 auto;
+  color: #4e6786;
+  font-size: clamp(0.95rem, 1.25vw, 1.18rem);
+  line-height: 1.55;
+}
+
+body.about-page .whychoose-connection-art {
+  top: 284px;
+  right: 2%;
+  left: 2%;
+  height: 158px;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+body.about-page .whychoose-connection-art svg {
+  width: 100%;
+  height: 100%;
+}
+
+body.about-page .whychoose-cards-grid {
+  position: relative;
+  z-index: 2;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 72px 0 0;
+  gap: 22px;
+}
+
+body.about-page .whychoose-card-box {
+  min-height: 286px;
+  padding: 76px 40px 34px;
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  border-radius: 26px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(242, 249, 255, 0.57));
+  box-shadow: 0 22px 38px rgba(26, 111, 180, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+body.about-page .whychoose-card-box::before {
+  opacity: 0.92;
+  border-radius: 26px;
+}
+
+body.about-page .whychoose-card-box.card-theme-1 { --why-color: #1687e8; }
+body.about-page .whychoose-card-box.card-theme-2 { --why-color: #159842; }
+body.about-page .whychoose-card-box.card-theme-3 { --why-color: #e77d0a; }
+body.about-page .whychoose-card-box.card-theme-4 { --why-color: #6232d7; }
+
+body.about-page .whychoose-icon {
+  top: -52px;
+  width: 104px;
+  height: 104px;
+  border-width: 7px;
+  box-shadow: 0 12px 20px rgba(11, 101, 182, 0.23);
+}
+
+body.about-page .whychoose-card-number {
+  top: 17px;
+  right: 30px;
+  font-size: 3.1rem;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.22;
+}
+
+body.about-page .whychoose-card-title {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 13px;
+  color: #0b214d;
+  font-size: clamp(1.35rem, 1.65vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+
+body.about-page .whychoose-card-title span {
+  color: var(--why-color) !important;
+}
+
+body.about-page .whychoose-title-line {
+  width: 38px;
+  height: 3px;
+  margin-bottom: 17px;
+  border-radius: 99px;
+  background: var(--why-color);
+}
+
+body.about-page .whychoose-card-desc {
+  position: relative;
+  z-index: 2;
+  max-width: 310px;
+  margin: 0;
+  color: #59708d;
+  font-size: 1.02rem;
+  line-height: 1.58;
+}
+
+body.about-page .whychoose-card-art {
+  right: 28px;
+  bottom: 24px;
+  font-size: 4.15rem;
+  opacity: 0.16;
+}
+
+@media (max-width: 1200px) {
+  body.about-page .whychoose-card-box { padding-right: 28px; padding-left: 28px; }
+  body.about-page .whychoose-card-title { font-size: 1.34rem; }
+  body.about-page .whychoose-card-desc { font-size: 0.95rem; }
+}
+
+@media (max-width: 1050px) {
+  body.about-page .whychoose-connection-art { top: 296px; }
+  body.about-page .whychoose-cards-grid { padding-top: 76px; }
+  body.about-page .whychoose-card-title { white-space: normal; }
+}
+
+@media (max-width: 600px) {
+  body.about-page .about-whychoose-sec {
+    padding: 58px 0 68px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(245, 252, 255, 0.93)),
+      url('assect/about-journey-backdrop-v2.png') center / cover no-repeat;
+  }
+
+  body.about-page .about-whychoose-sec .whoweare-container { padding: 0 18px; }
+  body.about-page .whychoose-header-center { margin-bottom: 12px; }
+  body.about-page .whychoose-header-center .about-sec-badge { gap: 9px; font-size: 0.68rem; letter-spacing: 2px; }
+  body.about-page .whychoose-header-center .badge-dash { width: 28px; height: 2px; }
+  body.about-page .whychoose-header-center .about-sec-heading { font-size: clamp(2rem, 10vw, 2.65rem) !important; }
+  body.about-page .whychoose-header-center .whychoose-intro { font-size: 0.92rem; }
+  body.about-page .whychoose-connection-art { display: none; }
+  body.about-page .whychoose-cards-grid { grid-template-columns: 1fr; gap: 62px; padding-top: 68px; }
+  body.about-page .whychoose-card-box { min-height: 266px; padding: 74px 28px 30px; }
+  body.about-page .whychoose-card-title { font-size: 1.38rem; }
+}
+
+/* Final visual polish: keep the Why Choose heading consistent with Home. */
+body.about-page .about-whychoose-sec {
+  background:
+    linear-gradient(90deg, rgba(235, 248, 255, 0.34) 0%, rgba(255, 255, 255, 0.82) 28%, rgba(255, 255, 255, 0.94) 62%, rgba(241, 250, 255, 0.56) 100%),
+    url('assect/about-journey-backdrop-v2.png') center / cover no-repeat;
+}
+
+body.about-page .whychoose-header-center .about-sec-heading {
+  max-width: 980px;
+  font-size: clamp(2.2rem, 3.25vw, 3.5rem) !important;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+body.about-page .whychoose-header-center .whychoose-intro {
+  max-width: 780px;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+body.about-page .whychoose-card-box {
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 34px rgba(21, 93, 151, 0.17), inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+body.about-page .whychoose-card-box.card-theme-1 .whychoose-icon,
+body.about-page .whychoose-card-box.card-theme-2 .whychoose-icon,
+body.about-page .whychoose-card-box.card-theme-3 .whychoose-icon,
+body.about-page .whychoose-card-box.card-theme-4 .whychoose-icon {
+  color: #ffffff !important;
+}
+
+body.about-page .whychoose-card-box.card-theme-1 .whychoose-card-number { color: #1687e8; }
+body.about-page .whychoose-card-box.card-theme-2 .whychoose-card-number { color: #159842; }
+body.about-page .whychoose-card-box.card-theme-3 .whychoose-card-number { color: #e77d0a; }
+body.about-page .whychoose-card-box.card-theme-4 .whychoose-card-number { color: #6232d7; }
+
+@media (max-width: 600px) {
+  body.about-page .whychoose-header-center .about-sec-heading {
+    font-size: clamp(2rem, 9vw, 2.65rem) !important;
+  }
+}
+
+/* Compact card row: remove the excess empty space inside each card. */
+@media (min-width: 1051px) {
+  body.about-page .whychoose-cards-grid {
+    max-width: 1600px;
+    gap: 14px;
+    padding-top: 58px;
+  }
+
+  body.about-page .whychoose-card-box {
+    min-height: 252px;
+    padding: 64px 30px 26px;
+    border-radius: 22px;
+  }
+
+  body.about-page .whychoose-card-box::before {
+    border-radius: 22px;
+  }
+
+  body.about-page .whychoose-icon {
+    top: -44px;
+    width: 88px;
+    height: 88px;
+    border-width: 6px;
+    font-size: 1.5rem;
+  }
+
+  body.about-page .whychoose-card-number {
+    top: 15px;
+    right: 24px;
+    font-size: 2.65rem;
+  }
+
+  body.about-page .whychoose-card-title {
+    margin-bottom: 10px;
+    font-size: clamp(1.18rem, 1.35vw, 1.48rem);
+  }
+
+  body.about-page .whychoose-title-line {
+    width: 34px;
+    height: 3px;
+    margin-bottom: 13px;
+  }
+
+  body.about-page .whychoose-card-desc {
+    max-width: 285px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  body.about-page .whychoose-card-art {
+    right: 22px;
+    bottom: 17px;
+    font-size: 3.4rem;
+  }
+}
+
+/* Add comfortable space above the Why Choose Us section. */
+body.about-page .about-whychoose-sec {
+  padding-top: 78px;
+}
+
+@media (max-width: 600px) {
+  body.about-page .about-whychoose-sec {
+    padding-top: 64px;
+  }
+}
+
+/* Final Our Journey polish — match the Why Choose typography and rhythm. */
+body.about-page .about-journey-reference {
+  padding: 64px 0 76px;
+  background:
+    radial-gradient(circle at 82% 10%, rgba(189, 228, 255, 0.25), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+}
+
+body.about-page .about-journey-reference-content h2 {
+  max-width: 760px;
+  font-size: clamp(2.2rem, 3.25vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+body.about-page .about-journey-reference-intro {
+  max-width: 760px;
+  margin-top: 16px;
+  color: #4e6786;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+body.about-page .about-journey-reference-timeline {
+  gap: 16px;
+  margin-top: 34px;
+}
+
+body.about-page .about-journey-reference-timeline::before {
+  top: 36px;
+  right: 5%;
+  left: 5%;
+  height: 2px;
+  border: 0;
+  background: linear-gradient(90deg, #18b5c5 0%, #1474d4 34%, #8847df 68%, #f49a12 100%);
+  opacity: 0.46;
+}
+
+body.about-page .about-journey-reference-step:not(:last-child)::after {
+  top: 21px;
+  right: -13px;
+  color: #2b9ce1;
+  font-size: 1.25rem;
+}
+
+body.about-page .about-journey-reference-node {
+  width: 74px;
+  height: 74px;
+  margin: 0 auto 15px;
+  border: 6px solid rgba(255, 255, 255, 0.94);
+  font-size: 1.35rem;
+  box-shadow: 0 11px 22px rgba(36, 124, 181, 0.2);
+}
+
+body.about-page .about-journey-reference-step h3 {
+  margin-bottom: 9px;
+  color: #0b214d;
+  font-size: clamp(1.18rem, 1.35vw, 1.48rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+body.about-page .about-journey-reference-step p {
+  max-width: 180px;
+  color: #59708d;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 820px) {
+  body.about-page .about-journey-reference {
+    padding: 58px 0 68px;
+  }
+
+  body.about-page .about-journey-reference-content h2 {
+    font-size: clamp(2.2rem, 8vw, 3.1rem);
+  }
+
+  body.about-page .about-journey-reference-step h3 {
+    font-size: 1.18rem;
+  }
+}
+
+/* Final Our Journey milestone cards — a cleaner match for Why Choose Us. */
+body.about-page .about-journey-reference-timeline {
+  gap: 14px;
+  margin-top: 62px;
+  align-items: stretch;
+}
+
+body.about-page .about-journey-reference-timeline::before {
+  top: 0;
+  right: 5%;
+  left: 5%;
+  height: 2px;
+  border: 0;
+  background: linear-gradient(90deg, #18b5c5 0%, #1474d4 34%, #8847df 68%, #f49a12 100%);
+  opacity: 0.55;
+}
+
+body.about-page .about-journey-reference-step {
+  min-height: 196px;
+  padding: 48px 18px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 16px 30px rgba(26, 111, 180, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  text-align: center;
+}
+
+body.about-page .journey-reference-cyan { border-color: rgba(24, 181, 197, 0.3); background: linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(232, 251, 255, 0.76)); }
+body.about-page .journey-reference-blue { border-color: rgba(20, 116, 212, 0.26); background: linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(234, 245, 255, 0.78)); }
+body.about-page .journey-reference-purple { border-color: rgba(136, 71, 223, 0.26); background: linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(246, 239, 255, 0.8)); }
+body.about-page .journey-reference-orange { border-color: rgba(244, 154, 18, 0.3); background: linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(255, 247, 229, 0.8)); }
+
+body.about-page .about-journey-reference-node {
+  position: absolute;
+  top: -38px;
+  left: 50%;
+  width: 76px;
+  height: 76px;
+  margin: 0;
+  border-width: 6px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+body.about-page .about-journey-reference-step:not(:last-child)::after {
+  top: -15px;
+  right: -14px;
+  z-index: 3;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border: 1px solid rgba(170, 218, 244, 0.7);
+  border-radius: 50%;
+  color: #2b9ce1;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 1rem;
+  box-shadow: 0 5px 12px rgba(55, 142, 194, 0.12);
+}
+
+body.about-page .about-journey-reference-step h3 {
+  margin-bottom: 9px;
+  color: #0b214d;
+  font-size: clamp(1.18rem, 1.35vw, 1.48rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+body.about-page .about-journey-reference-step p {
+  max-width: 190px;
+  color: #59708d;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 820px) {
+  body.about-page .about-journey-reference-step {
+    min-height: 190px;
+  }
+
+  body.about-page .about-journey-reference-timeline::before,
+  body.about-page .about-journey-reference-step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+/* Extra refinement for the milestone cards. */
+body.about-page .about-journey-reference-step {
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+body.about-page .about-journey-reference-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 38px rgba(26, 111, 180, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+body.about-page .about-journey-reference-step::before {
+  position: absolute;
+  top: 14px;
+  right: 17px;
+  color: rgba(12, 57, 103, 0.2);
+  font-size: 1.05rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+body.about-page .about-journey-reference-step:nth-child(1)::before { content: '01'; color: rgba(24, 181, 197, 0.42); }
+body.about-page .about-journey-reference-step:nth-child(2)::before { content: '02'; color: rgba(20, 116, 212, 0.38); }
+body.about-page .about-journey-reference-step:nth-child(3)::before { content: '03'; color: rgba(136, 71, 223, 0.38); }
+body.about-page .about-journey-reference-step:nth-child(4)::before { content: '04'; color: rgba(244, 154, 18, 0.46); }
+
+body.about-page .journey-reference-cyan { box-shadow: inset 0 3px 0 #18b5c5, 0 16px 30px rgba(26, 111, 180, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.96); }
+body.about-page .journey-reference-blue { box-shadow: inset 0 3px 0 #1474d4, 0 16px 30px rgba(26, 111, 180, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.96); }
+body.about-page .journey-reference-purple { box-shadow: inset 0 3px 0 #8847df, 0 16px 30px rgba(26, 111, 180, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.96); }
+body.about-page .journey-reference-orange { box-shadow: inset 0 3px 0 #f49a12, 0 16px 30px rgba(26, 111, 180, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.96); }
+
+body.about-page .about-journey-reference-node {
+  width: 70px;
+  height: 70px;
+  top: -35px;
+  font-size: 1.22rem;
+}
+
+body.about-page .about-journey-reference-step:not(:last-child)::after {
+  top: -13px;
+  right: -14px;
+  display: block;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  color: #2b9ce1;
+  background: transparent;
+  font-size: 1.35rem;
+  line-height: 1;
+  box-shadow: none;
+}
+
+body.about-page .about-journey-reference-step h3 {
+  font-size: clamp(1.2rem, 1.38vw, 1.5rem);
+}
+
+/* Full-bleed Our Journey split layout: image flush to the left edge. */
+body.about-page .about-journey-reference {
+  padding: 0;
+  background:
+    radial-gradient(circle at 76% 14%, rgba(189, 228, 255, 0.26), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f5fbff 100%);
+}
+
+body.about-page .about-journey-reference-container {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+body.about-page .about-journey-reference-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0;
+  align-items: stretch;
+}
+
+body.about-page .about-journey-reference-visual {
+  min-height: 560px;
+}
+
+body.about-page .about-journey-reference-blob {
+  inset: 30px 8% 30px -10%;
+  opacity: 0.72;
+}
+
+body.about-page .about-journey-reference-image {
+  width: 100%;
+  height: 560px;
+  border: 0;
+  border-right: 5px solid rgba(255, 255, 255, 0.96);
+  border-radius: 0 48% 48% 0;
+  box-shadow: 18px 20px 42px rgba(24, 99, 145, 0.16);
+  clip-path: none;
+}
+
+body.about-page .about-journey-reference-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
+  padding: 66px clamp(32px, 5vw, 86px) 66px clamp(36px, 4vw, 72px);
+}
+
+body.about-page .about-journey-reference-content h2,
+body.about-page .about-journey-reference-intro {
+  max-width: 760px;
+}
+
+@media (max-width: 1100px) {
+  body.about-page .about-journey-reference-content {
+    padding-right: 34px;
+    padding-left: 34px;
+  }
+
+  body.about-page .about-journey-reference-timeline {
+    gap: 9px;
+  }
+}
+
+@media (max-width: 820px) {
+  body.about-page .about-journey-reference {
+    padding: 0;
+  }
+
+  body.about-page .about-journey-reference-layout {
+    grid-template-columns: 1fr;
+  }
+
+  body.about-page .about-journey-reference-visual {
+    min-height: 360px;
+  }
+
+  body.about-page .about-journey-reference-image {
+    height: 360px;
+    border-right: 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.96);
+    border-radius: 0 0 42% 42%;
+  }
+
+  body.about-page .about-journey-reference-content {
+    max-width: none;
+    padding: 58px 22px 70px;
+  }
+}
+
+/* 2x2 compact milestone grid for the Our Journey section. */
+body.about-page .about-journey-reference-timeline {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 38px 14px;
+  margin-top: 50px;
+}
+
+body.about-page .about-journey-reference-timeline::before,
+body.about-page .about-journey-reference-step:not(:last-child)::after {
+  display: none;
+}
+
+body.about-page .about-journey-reference-step {
+  min-height: 168px;
+  padding: 42px 16px 18px;
+  border-radius: 18px;
+}
+
+body.about-page .about-journey-reference-node {
+  top: -32px;
+  width: 64px;
+  height: 64px;
+  border-width: 5px;
+  font-size: 1.1rem;
+}
+
+body.about-page .about-journey-reference-step h3 {
+  margin-bottom: 7px;
+  font-size: clamp(1.12rem, 1.28vw, 1.36rem);
+}
+
+body.about-page .about-journey-reference-step p {
+  max-width: 220px;
+  font-size: 0.86rem;
+  line-height: 1.42;
+}
+
+@media (max-width: 480px) {
+  body.about-page .about-journey-reference-timeline {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+}
+
+/* Alternative editorial milestone layout: compact horizontal tiles. */
+body.about-page .about-journey-reference-timeline {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 18px;
+  margin-top: 36px;
+}
+
+body.about-page .about-journey-reference-step {
+  min-height: 148px;
+  padding: 25px 18px 22px 92px;
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-left-width: 4px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 12px 25px rgba(26, 111, 180, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.98);
+  text-align: left;
+}
+
+body.about-page .about-journey-reference-step:hover {
+  transform: translateX(4px);
+  box-shadow: 0 17px 30px rgba(26, 111, 180, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+body.about-page .journey-reference-cyan { border-left-color: #18b5c5; background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(232, 251, 255, 0.8)); box-shadow: -3px 0 0 #18b5c5, 0 12px 25px rgba(26, 111, 180, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.98); }
+body.about-page .journey-reference-blue { border-left-color: #1474d4; background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(234, 245, 255, 0.82)); box-shadow: -3px 0 0 #1474d4, 0 12px 25px rgba(26, 111, 180, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.98); }
+body.about-page .journey-reference-purple { border-left-color: #8847df; background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(246, 239, 255, 0.82)); box-shadow: -3px 0 0 #8847df, 0 12px 25px rgba(26, 111, 180, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.98); }
+body.about-page .journey-reference-orange { border-left-color: #f49a12; background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 247, 229, 0.84)); box-shadow: -3px 0 0 #f49a12, 0 12px 25px rgba(26, 111, 180, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.98); }
+
+body.about-page .about-journey-reference-node {
+  top: 50%;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  border-width: 5px;
+  transform: translateY(-50%);
+  font-size: 1.08rem;
+  box-shadow: 0 9px 18px rgba(36, 124, 181, 0.2);
+}
+
+body.about-page .about-journey-reference-step::before {
+  top: 14px;
+  right: 16px;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+}
+
+body.about-page .about-journey-reference-step h3 {
+  margin: 0 0 7px;
+  color: #0b214d;
+  font-size: clamp(1.08rem, 1.25vw, 1.3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+body.about-page .about-journey-reference-step p {
+  max-width: 230px;
+  margin: 0;
+  color: #59708d;
+  font-size: 0.82rem;
+  line-height: 1.42;
+}
+
+@media (max-width: 480px) {
+  body.about-page .about-journey-reference-timeline {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Final compact text treatment: keep milestone copy to two lines. */
+body.about-page .about-journey-reference-timeline {
+  gap: 28px 14px;
+  margin-top: 30px;
+}
+
+body.about-page .about-journey-reference-step {
+  min-height: 126px;
+  padding: 21px 14px 17px 82px;
+  border-radius: 16px;
+}
+
+body.about-page .about-journey-reference-node {
+  left: 17px;
+  width: 54px;
+  height: 54px;
+  border-width: 4px;
+  font-size: 0.98rem;
+}
+
+body.about-page .about-journey-reference-step h3 {
+  margin-bottom: 5px;
+  font-size: clamp(1.04rem, 1.18vw, 1.2rem);
+  white-space: nowrap;
+}
+
+body.about-page .about-journey-reference-step p {
+  max-width: 270px;
+  min-height: 2.48em;
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.24;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+body.about-page .about-journey-reference-step::before {
+  top: 10px;
+  right: 13px;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 480px) {
+  body.about-page .about-journey-reference-step {
+    min-height: 122px;
+    padding-right: 12px;
+  }
+
+  body.about-page .about-journey-reference-step p {
+    max-width: 300px;
+  }
+}
+
+/* Tighten the 2x2 milestone spacing. */
+body.about-page .about-journey-reference-timeline {
+  gap: 10px 8px;
+}
+
+body.about-page .about-journey-reference-step {
+  padding-left: 76px;
+}
+
+body.about-page .about-journey-reference-node {
+  left: 14px;
+}
+
+@media (max-width: 480px) {
+  body.about-page .about-journey-reference-timeline {
+    gap: 14px;
+  }
+}
+
+/* Reduce the empty lower area inside each milestone tile. */
+body.about-page .about-journey-reference-step {
+  min-height: 104px;
+  padding: 12px 12px 12px 76px;
+  justify-content: center;
+}
+
+body.about-page .about-journey-reference-timeline {
+  row-gap: 8px;
+}
+
+@media (max-width: 480px) {
+  body.about-page .about-journey-reference-timeline {
+    row-gap: 12px;
+  }
+}
+
+/* Refined split image treatment for Our Journey. */
+@media (min-width: 821px) {
+  body.about-page .about-journey-reference-layout {
+    grid-template-columns: minmax(0, 46%) minmax(0, 54%);
+  }
+
+  body.about-page .about-journey-reference-visual,
+  body.about-page .about-journey-reference-image {
+    min-height: 520px;
+    height: 520px;
+  }
+}
+
+body.about-page .about-journey-reference-visual {
+  isolation: isolate;
+}
+
+body.about-page .about-journey-reference-image {
+  border-right-width: 6px;
+  border-radius: 0 44% 44% 0;
+  box-shadow: 18px 18px 38px rgba(24, 99, 145, 0.16);
+}
+
+body.about-page .about-journey-reference-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(7, 38, 70, 0.02) 38%, rgba(7, 38, 70, 0.22) 100%);
+}
+
+body.about-page .about-journey-reference-image img {
+  object-position: center center;
+  filter: saturate(1.08) contrast(1.04) brightness(1.02);
+}
+
+@media (max-width: 820px) {
+  body.about-page .about-journey-reference-visual,
+  body.about-page .about-journey-reference-image {
+    min-height: 340px;
+    height: 340px;
+  }
+}
+
+/* Add a clean breathing frame around the left journey image. */
+@media (min-width: 821px) {
+  body.about-page .about-journey-reference-visual {
+    min-height: 576px;
+    padding: 28px 0 28px 26px;
+  }
+
+  body.about-page .about-journey-reference-image {
+    height: 520px;
+  }
+}
+
+@media (max-width: 820px) {
+  body.about-page .about-journey-reference-visual {
+    padding: 0;
+  }
+}
+
+/* Keep the journey image flush with the left edge. */
+body.about-page .about-journey-reference {
+  overflow-x: hidden;
+}
+
+@media (min-width: 821px) {
+  body.about-page .about-journey-reference-visual {
+    padding-left: 0;
+  }
+
+  body.about-page .about-journey-reference-content,
+  body.about-page .about-journey-reference-layout > * {
+    min-width: 0;
+  }
+}
+
+/* About hero matched to the Contact page banner treatment. */
+body.about-page .contact-hero-banner-sec {
+  min-height: 394px;
+  padding: 0;
+  background: url('assect/about-hero-dam.jpg') center 35% / cover no-repeat;
+}
+
+body.about-page .contact-hero-dark-overlay {
+  background:
+    linear-gradient(90deg, rgba(3, 25, 49, 0.96) 0%, rgba(4, 39, 67, 0.84) 43%, rgba(7, 68, 105, 0.38) 100%),
+    linear-gradient(180deg, rgba(2, 28, 52, 0.35), rgba(5, 51, 82, 0.62));
+}
+
+body.about-page .contact-hero-inner {
+  display: block;
+  width: 100%;
+  max-width: 1720px;
+  min-height: 394px;
+  padding: 46px 40px 26px;
+}
+
+body.about-page .about-hero-copy {
+  position: relative;
+  z-index: 3;
+  max-width: 630px;
+}
+
+body.about-page .about-page-breadcrumb {
+  margin: 0 0 18px;
+  font-size: 0.72rem;
+  letter-spacing: 1.4px;
+}
+
+body.about-page .about-page-title {
+  max-width: 720px;
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: clamp(2.8rem, 4vw, 3.7rem);
+  line-height: 1.05;
+  letter-spacing: -1.6px;
+}
+
+body.about-page .about-page-title .highlight-blue {
+  color: #24cbf6;
+}
+
+body.about-page .about-page-subtitle {
+  max-width: 620px;
+  margin: 0 0 12px;
+  color: rgba(245, 251, 255, 0.95);
+  font-size: clamp(1.08rem, 1.55vw, 1.35rem);
+  line-height: 1.2;
+}
+
+body.about-page .about-page-desc {
+  max-width: 620px;
+  margin: 0;
+  color: rgba(239, 249, 255, 0.86);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+body.about-page .about-hero-stats {
+  max-width: 530px;
+  margin: 21px 0 0;
+}
+
+/* Premium compact stats panel for the About hero. */
+body.about-page .about-hero-stats {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: min(100%, 610px);
+  max-width: 610px;
+  margin: 24px 0 0;
+  padding: 10px 12px;
+  overflow: hidden;
+  border: 1px solid rgba(127, 211, 252, 0.28);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(3, 35, 61, 0.78), rgba(7, 77, 112, 0.52));
+  box-shadow: 0 14px 30px rgba(1, 28, 51, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(14px);
+}
+
+body.about-page .about-hero-stats::before {
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  content: '';
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.9), transparent);
+}
+
+body.about-page .about-hero-stats .stat-item,
+body.about-page .about-hero-stats .stat-item:first-child,
+body.about-page .about-hero-stats .stat-item:last-child {
+  min-width: 0;
+  padding: 8px 12px;
+  gap: 9px;
+  border-right: 1px solid rgba(152, 224, 255, 0.26);
+}
+
+body.about-page .about-hero-stats .stat-item:last-child {
+  border-right: 0;
+}
+
+body.about-page .about-hero-stats .stat-icon-circle {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(186, 230, 253, 0.48);
+  border-radius: 10px;
+  background: linear-gradient(145deg, #19c5ef, #0877c8);
+  color: #ffffff;
+  font-size: 0.92rem;
+  box-shadow: 0 7px 14px rgba(2, 132, 199, 0.28);
+}
+
+body.about-page .about-hero-stats .stat-meta {
+  min-width: 0;
+}
+
+body.about-page .about-hero-stats .stat-meta .num,
+body.about-page .about-hero-stats .stat-meta .txt-bold {
+  display: block;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 0.94rem;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body.about-page .about-hero-stats .stat-meta .lbl {
+  display: block;
+  margin-top: 3px;
+  color: rgba(218, 243, 255, 0.82);
+  font-size: 0.56rem;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  body.about-page .about-hero-stats {
+    width: min(100%, 390px);
+    max-width: 390px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px 0;
+    padding: 9px;
+  }
+
+  body.about-page .about-hero-stats .stat-item,
+  body.about-page .about-hero-stats .stat-item:first-child,
+  body.about-page .about-hero-stats .stat-item:last-child {
+    padding: 7px 9px;
+  }
+
+  body.about-page .about-hero-stats .stat-item:nth-child(2) {
+    border-right: 0;
+  }
+
+  body.about-page .about-hero-stats .stat-icon-circle {
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  body.about-page .about-hero-stats .stat-meta .num,
+  body.about-page .about-hero-stats .stat-meta .txt-bold {
+    font-size: 0.82rem;
+  }
+
+  body.about-page .about-hero-stats .stat-meta .lbl {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  body.about-page .contact-hero-inner {
+    min-height: 520px;
+    padding: 40px 22px 34px;
+  }
+
+  body.about-page .about-hero-copy {
+    max-width: none;
+  }
+}
+
+/* Match the Who We Are impact strip to the premium hero stats card. */
+body.about-page .about-impact-strip-section {
+  padding: 28px 0 38px;
+  background:
+    radial-gradient(circle at 8% 10%, rgba(105, 203, 255, 0.14), transparent 25%),
+    linear-gradient(180deg, #f8fcff 0%, #edf8fd 100%);
+}
+
+body.about-page .about-impact-strip {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: min(1240px, calc(100% - 48px));
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 10px 12px;
+  overflow: hidden;
+  border: 1px solid rgba(127, 211, 252, 0.3);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(3, 35, 61, 0.96), rgba(7, 77, 112, 0.9));
+  box-shadow: 0 16px 34px rgba(1, 48, 79, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+body.about-page .about-impact-strip::before {
+  position: absolute;
+  top: 0;
+  left: 14%;
+  right: 14%;
+  height: 1px;
+  content: '';
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.95), transparent);
+}
+
+body.about-page .about-impact-stat {
+  min-width: 0;
+  min-height: 72px;
+  padding: 8px 22px;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+body.about-page .about-impact-stat:not(:last-child)::after {
+  top: 12px;
+  height: calc(100% - 24px);
+  background: rgba(152, 224, 255, 0.28);
+}
+
+body.about-page .about-impact-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  place-items: center;
+  border: 1px solid rgba(186, 230, 253, 0.48);
+  border-radius: 11px;
+  background: linear-gradient(145deg, #19c5ef, #0877c8);
+  color: #ffffff;
+  font-size: 1rem;
+  box-shadow: 0 7px 14px rgba(2, 132, 199, 0.28);
+}
+
+body.about-page .about-impact-copy {
+  min-width: 0;
+  gap: 3px;
+}
+
+body.about-page .about-impact-copy strong {
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body.about-page .about-impact-copy small {
+  overflow: hidden;
+  color: rgba(218, 243, 255, 0.82);
+  font-size: 0.62rem;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  body.about-page .about-impact-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.about-page .about-impact-stat {
+    padding: 8px 14px;
+  }
+
+  body.about-page .about-impact-stat:nth-child(2)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  body.about-page .about-impact-strip-section {
+    padding: 20px 0 28px;
+  }
+
+  body.about-page .about-impact-strip {
+    width: min(calc(100% - 28px), 390px);
+    grid-template-columns: 1fr;
+    padding: 9px;
+  }
+
+  body.about-page .about-impact-stat,
+  body.about-page .about-impact-stat:nth-child(2) {
+    min-height: 58px;
+    padding: 7px 9px;
+  }
+
+  body.about-page .about-impact-stat::after,
+  body.about-page .about-impact-stat:nth-child(2)::after {
+    top: auto;
+    right: 9px;
+    bottom: 0;
+    display: block;
+    width: calc(100% - 18px);
+    height: 1px;
+  }
+
+  body.about-page .about-impact-stat:last-child::after {
+    display: none;
+  }
+}
+
+/* Centered foundation heading aligned to the Why Choose content width. */
+body.about-page .about-mission-section {
+  padding: 64px 0 72px;
+}
+
+body.about-page .about-mission-inner {
+  max-width: 1120px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+body.about-page .about-mission-heading-row {
+  display: block;
+  max-width: 780px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+body.about-page .about-mission-heading-row > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.about-page .about-mission-kicker {
+  justify-content: center;
+  margin-bottom: 13px;
+}
+
+body.about-page .about-mission-heading-row h2 {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: clamp(2.25rem, 3.4vw, 3rem);
+  line-height: 1.08;
+  text-align: center;
+}
+
+body.about-page .about-mission-heading-row > p {
+  max-width: 680px;
+  margin: 16px auto 0;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+body.about-page .about-mission-grid {
+  max-width: 100%;
+  margin: 0;
+  gap: 22px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 700px) {
+  body.about-page .about-mission-section {
+    padding: 50px 0 58px;
+  }
+
+  body.about-page .about-mission-inner {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  body.about-page .about-mission-heading-row {
+    margin-bottom: 28px;
+  }
+
+  body.about-page .about-mission-heading-row h2 {
+    font-size: clamp(1.9rem, 8vw, 2.45rem);
+  }
+}
+
+/* High-contrast Mission, Vision & Values cards. */
+body.about-page .about-mission-grid {
+  align-items: stretch;
+  gap: 22px;
+}
+
+body.about-page .about-mission-card {
+  min-height: 238px;
+  padding: 26px 27px 25px;
+  border: 1px solid rgba(190, 219, 238, 0.95);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 15px 34px rgba(15, 67, 103, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  color: #092d55;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+body.about-page .about-mission-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(38, 157, 226, 0.55);
+  box-shadow: 0 22px 42px rgba(15, 67, 103, 0.18);
+}
+
+body.about-page .about-mission-card::before {
+  display: block;
+  height: 4px;
+  border-radius: 20px 20px 0 0;
+}
+
+body.about-page .about-mission-card::after {
+  display: block;
+  right: -64px;
+  bottom: -76px;
+  width: 190px;
+  height: 190px;
+  opacity: 0.7;
+}
+
+body.about-page .about-mission-card-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 19px;
+}
+
+body.about-page .about-mission-card-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 14px;
+  color: #ffffff;
+  background: linear-gradient(145deg, #159cf0, #086dc4);
+  box-shadow: 0 8px 16px rgba(19, 141, 240, 0.22);
+  font-size: 1.18rem;
+}
+
+body.about-page .mission-card-green .about-mission-card-icon {
+  color: #ffffff;
+  background: linear-gradient(145deg, #26c77e, #0b9959);
+  box-shadow: 0 8px 16px rgba(24, 182, 110, 0.2);
+}
+
+body.about-page .mission-card-purple .about-mission-card-icon {
+  color: #ffffff;
+  background: linear-gradient(145deg, #a15df4, #7133d9);
+  box-shadow: 0 8px 16px rgba(132, 72, 239, 0.2);
+}
+
+body.about-page .about-mission-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #082f5d;
+  font-size: 1.16rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+body.about-page .about-mission-card p,
+body.about-page .about-mission-card li {
+  position: relative;
+  z-index: 1;
+  color: #4e6982;
+  font-size: 0.84rem;
+  line-height: 1.62;
+}
+
+body.about-page .about-mission-card p {
+  max-width: 38ch;
+  margin: 0;
+}
+
+body.about-page .about-mission-card ul {
+  position: relative;
+  z-index: 1;
+  gap: 8px;
+}
+
+body.about-page .about-mission-card li {
+  align-items: center;
+  gap: 9px;
+}
+
+body.about-page .about-mission-card li i {
+  margin-top: 0;
+  color: #f39a12;
+  font-size: 0.76rem;
+}
+
+body.about-page .about-mission-card-number {
+  top: 17px;
+  right: 22px;
+  color: rgba(30, 143, 229, 0.12);
+  font-size: 2.5rem;
+  font-weight: 850;
+}
+
+@media (max-width: 700px) {
+  body.about-page .about-mission-card {
+    min-height: 0;
+    padding: 23px 22px;
+  }
+}
+
+/* Centered principle cards inspired by the supplied reference; section background stays unchanged. */
+body.about-page .about-mission-card {
+  min-height: 268px;
+  padding: 31px 28px 28px;
+  border: 1px solid rgba(189, 218, 237, 0.95);
+  border-top: 4px solid var(--mission-card-accent, #138df0);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 28px rgba(28, 83, 119, 0.1);
+  text-align: center;
+}
+
+body.about-page .about-mission-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(38, 157, 226, 0.48);
+  box-shadow: 0 20px 36px rgba(28, 83, 119, 0.16);
+}
+
+body.about-page .about-mission-card::before {
+  display: none;
+}
+
+body.about-page .about-mission-card::after {
+  display: block;
+  right: -72px;
+  bottom: -82px;
+  width: 190px;
+  height: 190px;
+  opacity: 0.32;
+}
+
+body.about-page .about-mission-card-number {
+  top: 16px;
+  right: 22px;
+  color: rgba(30, 143, 229, 0.1);
+  font-size: 2.4rem;
+}
+
+body.about-page .about-mission-card-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+body.about-page .about-mission-card-icon {
+  width: 70px;
+  height: 70px;
+  flex-basis: 70px;
+  border: 1px solid rgba(19, 141, 240, 0.26);
+  border-radius: 50%;
+  color: #087fe2;
+  background: rgba(215, 239, 255, 0.72);
+  box-shadow: 0 7px 0 rgba(19, 141, 240, 0.05), 0 10px 20px rgba(19, 141, 240, 0.12);
+  font-size: 1.28rem;
+}
+
+body.about-page .mission-card-green .about-mission-card-icon {
+  color: #079c67;
+  border-color: rgba(24, 182, 110, 0.26);
+  background: rgba(218, 247, 235, 0.78);
+  box-shadow: 0 7px 0 rgba(24, 182, 110, 0.05), 0 10px 20px rgba(24, 182, 110, 0.12);
+}
+
+body.about-page .mission-card-purple .about-mission-card-icon {
+  color: #8644e9;
+  border-color: rgba(132, 72, 239, 0.25);
+  background: rgba(239, 226, 255, 0.8);
+  box-shadow: 0 7px 0 rgba(132, 72, 239, 0.05), 0 10px 20px rgba(132, 72, 239, 0.12);
+}
+
+body.about-page .mission-card-commitment {
+  --mission-card-accent: #0eaaa8;
+  --mission-card-wash: rgba(14, 170, 168, 0.08);
+}
+
+body.about-page .mission-card-commitment .about-mission-card-icon {
+  color: #0b9795;
+  border-color: rgba(14, 170, 168, 0.25);
+  background: rgba(219, 249, 247, 0.82);
+  box-shadow: 0 7px 0 rgba(14, 170, 168, 0.05), 0 10px 20px rgba(14, 170, 168, 0.12);
+}
+
+body.about-page .about-mission-card h3 {
+  width: fit-content;
+  margin: 0 auto;
+  color: #092d55;
+  font-size: 1.17rem;
+  line-height: 1.25;
+}
+
+body.about-page .about-mission-card h3::after {
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin: 11px auto 0;
+  border-radius: 999px;
+  content: '';
+  background: var(--mission-card-accent, #138df0);
+}
+
+body.about-page .about-mission-card p,
+body.about-page .about-mission-card li {
+  color: #58718a;
+  font-size: 0.83rem;
+  line-height: 1.62;
+}
+
+body.about-page .about-mission-card p {
+  max-width: 33ch;
+  margin: 0 auto;
+}
+
+body.about-page .about-mission-card ul {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+body.about-page .about-mission-card li {
+  gap: 8px;
+}
+
+@media (max-width: 700px) {
+  body.about-page .about-mission-card {
+    min-height: 0;
+    padding: 27px 22px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  body.about-page .about-mission-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  body.about-page .about-mission-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Keep Foundation cards aligned with the Why Choose section's container and type scale. */
+body.about-page .about-mission-inner {
+  width: 100%;
+  max-width: 1400px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+body.about-page .about-mission-grid {
+  width: 100%;
+  max-width: none;
+  gap: 24px;
+}
+
+body.about-page .about-mission-card {
+  min-height: 280px;
+  padding: 24px 24px 22px;
+  border-radius: 24px;
+}
+
+body.about-page .about-mission-card-head {
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+body.about-page .about-mission-card-icon {
+  width: 58px;
+  height: 58px;
+  flex-basis: 58px;
+}
+
+body.about-page .about-mission-card h3::after {
+  margin-top: 8px;
+}
+
+body.about-page .about-mission-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+body.about-page .about-mission-card p,
+body.about-page .about-mission-card li {
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+body.about-page .about-mission-card p {
+  max-width: 31ch;
+}
+
+body.about-page .about-mission-card ul {
+  gap: 5px;
+}
+
+@media (max-width: 900px) {
+  body.about-page .about-mission-card {
+    min-height: 265px;
+  }
+}
+
+@media (max-width: 700px) {
+  body.about-page .about-mission-inner {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  body.about-page .about-mission-card {
+    min-height: 0;
+    padding: 30px 22px 27px;
+  }
+}
+
+/* Wider, more balanced Who We Are layout with richer supporting copy. */
+body.about-page .about-whoweare-sec {
+  padding: 84px 0 78px;
+}
+
+body.about-page .about-whoweare-sec .whoweare-container {
+  max-width: 1540px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+body.about-page .about-grid-2col {
+  grid-template-columns: minmax(0, 0.86fr) minmax(560px, 1.14fr);
+  grid-template-areas: 'copy visual';
+  gap: clamp(52px, 5vw, 86px);
+}
+
+body.about-page .about-whoweare-content {
+  max-width: 640px;
+  align-self: center;
+}
+
+body.about-page .about-whoweare-content .about-sec-heading {
+  max-width: 630px;
+  margin: 0 0 19px;
+  color: #0b1732;
+  font-size: clamp(2.25rem, 3.45vw, 3.35rem);
+  font-weight: 850;
+  line-height: 1.04;
+  letter-spacing: -1.8px;
+  text-wrap: balance;
+}
+
+body.about-page .about-whoweare-content .about-sec-heading::after {
+  display: block;
+  width: 58px;
+  height: 4px;
+  margin-top: 17px;
+  border-radius: 999px;
+  content: '';
+  background: linear-gradient(90deg, #118de8, #39c3f5);
+}
+
+body.about-page .about-whoweare-content .about-sec-text {
+  max-width: 620px;
+  margin-bottom: 27px;
+  color: #4e6982;
+  font-size: 0.94rem;
+  line-height: 1.72;
+}
+
+body.about-page .about-whoweare-img-wrap {
+  padding: 8px;
+  border: 1px solid rgba(174, 216, 239, 0.8);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 22px 48px rgba(24, 88, 127, 0.16);
+}
+
+body.about-page .about-whoweare-img-inner {
+  height: 370px;
+  border: 0;
+  border-radius: 19px;
+}
+
+body.about-page .about-whoweare-button {
+  padding: 13px 22px;
+  border-radius: 999px;
+  box-shadow: 0 10px 22px rgba(17, 116, 194, 0.2);
+}
+
+@media (max-width: 900px) {
+  body.about-page .about-grid-2col {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'copy' 'visual';
+  }
+
+  body.about-page .about-whoweare-content {
+    max-width: 760px;
+  }
+
+  body.about-page .about-whoweare-img-inner {
+    height: min(54vw, 430px);
+  }
+}
+
+@media (max-width: 520px) {
+  body.about-page .about-whoweare-sec .whoweare-container {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  body.about-page .about-whoweare-sec {
+    padding: 58px 0 42px;
+  }
+
+  body.about-page .about-whoweare-content .about-sec-heading {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+    letter-spacing: -1.1px;
+  }
+
+  body.about-page .about-whoweare-content .about-sec-text {
+    font-size: 0.88rem;
+  }
+
+  body.about-page .about-whoweare-img-inner {
+    height: 290px;
+  }
+}
+
+/* Refined About impact ribbon: wider, brighter and easier to scan. */
+body.about-page .about-impact-strip-section {
+  padding: 30px 0 40px;
+}
+
+body.about-page .about-impact-strip {
+  width: min(1400px, calc(100% - 64px));
+  max-width: 1400px;
+  padding: 12px 18px;
+  border: 1px solid rgba(125, 211, 252, 0.42);
+  border-radius: 22px;
+  background: linear-gradient(115deg, #062d4b 0%, #0a4565 52%, #176882 100%);
+  box-shadow: 0 18px 38px rgba(7, 60, 91, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+body.about-page .about-impact-strip::before {
+  left: 10%;
+  right: 10%;
+  background: linear-gradient(90deg, transparent, rgba(92, 211, 255, 0.95), transparent);
+}
+
+body.about-page .about-impact-stat {
+  min-height: 78px;
+  padding: 9px 34px;
+  gap: 14px;
+  transition: transform 220ms ease;
+}
+
+body.about-page .about-impact-stat:hover {
+  transform: translateY(-3px);
+}
+
+body.about-page .about-impact-stat:not(:last-child)::after {
+  top: 13px;
+  height: calc(100% - 26px);
+  background: linear-gradient(180deg, transparent, rgba(128, 219, 255, 0.48), transparent);
+}
+
+body.about-page .about-impact-icon {
+  width: 46px;
+  height: 46px;
+  flex-basis: 46px;
+  border: 1px solid rgba(196, 239, 255, 0.5);
+  border-radius: 14px;
+  background: linear-gradient(145deg, #25c8f2, #0878c9);
+  color: #ffffff;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 17px rgba(1, 143, 210, 0.28);
+}
+
+body.about-page .about-impact-stat:nth-child(2) .about-impact-icon {
+  background: linear-gradient(145deg, #3bd38e, #07985c);
+  box-shadow: 0 8px 17px rgba(9, 164, 98, 0.24);
+}
+
+body.about-page .about-impact-stat:nth-child(3) .about-impact-icon {
+  background: linear-gradient(145deg, #ffb536, #ec7d08);
+  box-shadow: 0 8px 17px rgba(238, 132, 14, 0.24);
+}
+
+body.about-page .about-impact-stat:nth-child(4) .about-impact-icon {
+  background: linear-gradient(145deg, #a77cff, #6937d5);
+  box-shadow: 0 8px 17px rgba(114, 63, 217, 0.24);
+}
+
+body.about-page .about-impact-copy {
+  gap: 4px;
+}
+
+body.about-page .about-impact-copy strong {
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+body.about-page .about-impact-copy small {
+  color: rgba(221, 245, 255, 0.86);
+  font-size: 0.65rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  body.about-page .about-impact-strip {
+    width: min(100% - 36px, 620px);
+    padding: 10px;
+  }
+
+  body.about-page .about-impact-stat {
+    padding: 9px 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  body.about-page .about-impact-strip-section {
+    padding: 22px 0 30px;
+  }
+
+  body.about-page .about-impact-strip {
+    width: min(100% - 28px, 390px);
+  }
+}
+
+/* Match Foundation heading typography to the Why Choose section. */
+body.about-page .about-mission-heading-row {
+  max-width: 1040px;
+  margin: 0 auto 40px;
+}
+
+body.about-page .about-mission-heading-row h2 {
+  max-width: 980px;
+  color: #092d55;
+  font-size: clamp(2.2rem, 3.25vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+body.about-page .about-mission-heading-row h2 span {
+  color: #147de4;
+  background: linear-gradient(90deg, #168df0, #2d72df);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.about-page .about-mission-heading-row > p {
+  max-width: 780px;
+  margin: 16px auto 0;
+  color: #4e6786;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 600px) {
+  body.about-page .about-mission-heading-row h2 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
+  }
+
+  body.about-page .about-mission-heading-row > p {
+    font-size: 0.92rem;
+  }
+}
+
+/* Wider, cleaner Approach section aligned with the Who We Are content width. */
+body.about-page .about-approach-sec {
+  padding: 84px 0 92px;
+}
+
+body.about-page .about-approach-container {
+  width: 100%;
+  max-width: 1540px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+body.about-page .about-approach-layout {
+  grid-template-columns: minmax(360px, 0.76fr) minmax(0, 1.24fr);
+  gap: clamp(54px, 6vw, 96px);
+}
+
+body.about-page .about-approach-visual {
+  min-height: 410px;
+}
+
+body.about-page .about-approach-image-frame {
+  width: min(340px, 86%);
+  height: 390px;
+  border-width: 7px;
+  border-radius: 38px 56px 34px 56px;
+  transform: rotate(-7deg);
+  box-shadow: 0 24px 42px rgba(22, 106, 156, 0.2);
+}
+
+body.about-page .about-approach-blob-back {
+  left: 8%;
+  width: 220px;
+  height: 122px;
+}
+
+body.about-page .about-approach-blob-front {
+  right: 5%;
+  width: 200px;
+  height: 128px;
+}
+
+body.about-page .about-approach-kicker {
+  margin-bottom: 13px;
+}
+
+body.about-page .about-approach-content h2 {
+  max-width: 760px;
+  font-size: clamp(2.35rem, 3.55vw, 3.5rem);
+  line-height: 1.06;
+  letter-spacing: -1.5px;
+}
+
+body.about-page .about-approach-intro {
+  max-width: 760px;
+  margin: 16px 0 40px;
+  color: #4e6982;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+body.about-page .about-approach-steps {
+  gap: 24px;
+}
+
+body.about-page .about-approach-steps::before {
+  top: 24px;
+  right: 5%;
+  left: 5%;
+  background: repeating-linear-gradient(90deg, #6cb9e6 0 5px, transparent 5px 10px);
+}
+
+body.about-page .about-approach-step-number {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  border-width: 4px;
+  font-size: 0.78rem;
+}
+
+body.about-page .about-approach-step h3 {
+  margin-bottom: 8px;
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+
+body.about-page .about-approach-step p {
+  max-width: 175px;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  body.about-page .about-approach-container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  body.about-page .about-approach-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  body.about-page .about-approach-visual {
+    min-height: 390px;
+  }
+
+  body.about-page .about-approach-image-frame {
+    width: min(340px, 86%);
+  }
+}
+
+@media (max-width: 600px) {
+  body.about-page .about-approach-sec {
+    padding: 58px 0 68px;
+  }
+
+  body.about-page .about-approach-container {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  body.about-page .about-approach-content h2 {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+
+  body.about-page .about-approach-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 18px;
+  }
+
+  body.about-page .about-approach-steps::before {
+    display: none;
+  }
+}
+
+/* Balanced vertical breathing room around the About hero. */
+body.about-page .contact-hero-banner-sec {
+  min-height: 420px;
+  margin-bottom: 36px;
+}
+
+body.about-page .contact-hero-inner {
+  min-height: 420px;
+  padding: 58px 40px 58px;
+}
+
+@media (max-width: 700px) {
+  body.about-page .contact-hero-banner-sec {
+    min-height: 520px;
+    margin-bottom: 28px;
+  }
+
+  body.about-page .contact-hero-inner {
+    min-height: 520px;
+    padding: 48px 22px 52px;
+  }
+}
+
+/* Premium step cards for the Approach timeline. */
+body.about-page .about-approach-steps {
+  gap: 20px;
+  padding-top: 8px;
+}
+
+body.about-page .about-approach-steps::before {
+  top: 33px;
+  right: 8%;
+  left: 8%;
+  height: 2px;
+  opacity: 0.75;
+  background: repeating-linear-gradient(90deg, #69b8e4 0 6px, transparent 6px 12px);
+}
+
+body.about-page .about-approach-step {
+  min-height: 186px;
+  padding: 20px 18px 19px;
+  border: 1px solid rgba(151, 205, 234, 0.56);
+  border-top: 3px solid #1788e4;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0 12px 24px rgba(35, 111, 157, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.86);
+  text-align: center;
+  transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
+}
+
+body.about-page .about-approach-step:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 30px rgba(35, 111, 157, 0.15);
+}
+
+body.about-page .approach-step-green {
+  border-top-color: #16ad78;
+}
+
+body.about-page .approach-step-blue-dark {
+  border-top-color: #137ee5;
+}
+
+body.about-page .approach-step-purple {
+  border-top-color: #8042e6;
+}
+
+body.about-page .about-approach-step-number {
+  position: relative;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 15px;
+  border-width: 4px;
+  font-size: 0.8rem;
+  box-shadow: 0 7px 15px rgba(13, 105, 166, 0.2);
+}
+
+body.about-page .about-approach-step h3 {
+  margin-bottom: 8px;
+  color: #092c57;
+  font-size: 0.96rem;
+  line-height: 1.24;
+}
+
+body.about-page .about-approach-step p {
+  max-width: 190px;
+  margin: 0 auto;
+  color: #5d7892;
+  font-size: 0.75rem;
+  line-height: 1.48;
+}
+
+@media (max-width: 600px) {
+  body.about-page .about-approach-steps {
+    padding-top: 0;
+  }
+
+  body.about-page .about-approach-step {
+    min-height: 0;
+    padding: 18px 14px 17px;
+  }
+}
+
+/* Reference-style four-card process timeline. */
+body.about-page .about-approach-steps {
+  gap: 20px;
+  padding-top: 8px;
+}
+
+body.about-page .about-approach-steps::before {
+  top: 46px;
+  right: 8%;
+  left: 8%;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, #8ec9e9 0 6px, transparent 6px 12px);
+}
+
+body.about-page .about-approach-step {
+  min-height: 204px;
+  padding: 20px 18px 18px;
+  border: 1px solid rgba(157, 205, 232, 0.68);
+  border-top: 3px solid #148ae6;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 12px 24px rgba(35, 111, 157, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+body.about-page .about-approach-step:nth-child(2) {
+  border-top-color: #12ad78;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.76), rgba(236, 252, 245, 0.72));
+}
+
+body.about-page .about-approach-step:nth-child(3) {
+  border-top-color: #137ee5;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.76), rgba(235, 247, 255, 0.74));
+}
+
+body.about-page .about-approach-step:nth-child(4) {
+  border-top-color: #8042e6;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.76), rgba(246, 240, 255, 0.72));
+}
+
+body.about-page .about-approach-step:not(:last-child)::after {
+  top: 20px;
+  right: -14px;
+  color: #62b4e3;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+body.about-page .about-approach-step-number {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 15px;
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  font-size: 0.78rem;
+  box-shadow: 0 7px 16px rgba(13, 105, 166, 0.2);
+}
+
+body.about-page .about-approach-step h3 {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  line-height: 1.22;
+}
+
+body.about-page .about-approach-step p {
+  max-width: 180px;
+  font-size: 0.74rem;
+  line-height: 1.48;
+}
+
+@media (max-width: 600px) {
+  body.about-page .about-approach-step {
+    min-height: 0;
+  }
+
+  body.about-page .about-approach-step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+/* Consistent breathing room between every top-level About page section. */
+body.about-page > section + section {
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  body.about-page > section + section {
+    margin-top: 20px;
+  }
+}
+
+/* Match the Approach heading with the About page's shared heading system. */
+body.about-page .about-approach-kicker {
+  gap: 10px;
+  margin-bottom: 14px;
+  color: #168ee4;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+body.about-page .about-approach-kicker .badge-dash {
+  width: 28px;
+  height: 2px;
+  background: #168ee4;
+}
+
+body.about-page .about-approach-content h2 {
+  max-width: 900px;
+  color: #092d55;
+  font-size: clamp(2.2rem, 3.25vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+body.about-page .about-approach-content h2 span {
+  color: #147de4;
+  background: linear-gradient(90deg, #168df0, #2d72df);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.about-page .about-approach-intro {
+  max-width: 780px;
+  margin: 16px 0 38px;
+  color: #4e6786;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+body.about-page .about-approach-content {
+  padding: 4px 0;
+}
+
+@media (max-width: 600px) {
+  body.about-page .about-approach-content h2 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
+  }
+
+  body.about-page .about-approach-intro {
+    font-size: 0.92rem;
+  }
+}
+
+/* Compact, richer Approach cards with less unused vertical space. */
+body.about-page .about-approach-sec {
+  padding: 58px 0 64px;
+}
+
+body.about-page .about-approach-layout {
+  grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(42px, 5vw, 70px);
+  align-items: center;
+}
+
+body.about-page .about-approach-visual {
+  min-height: 300px;
+}
+
+body.about-page .about-approach-image-frame {
+  width: min(294px, 86%);
+  height: 300px;
+}
+
+body.about-page .about-approach-content h2 {
+  font-size: clamp(2.05rem, 3.15vw, 3.15rem);
+  line-height: 1.06;
+}
+
+body.about-page .about-approach-intro {
+  max-width: 760px;
+  margin: 14px 0 28px;
+  font-size: 0.92rem;
+  line-height: 1.58;
+}
+
+body.about-page .about-approach-steps {
+  gap: 14px;
+}
+
+body.about-page .about-approach-step {
+  min-height: 184px;
+  padding: 18px 15px 16px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(239, 249, 255, 0.72));
+  box-shadow: 0 14px 28px rgba(35, 111, 157, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+body.about-page .about-approach-step:nth-child(2) {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(235, 252, 246, 0.76));
+}
+
+body.about-page .about-approach-step:nth-child(3) {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(235, 247, 255, 0.76));
+}
+
+body.about-page .about-approach-step:nth-child(4) {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(246, 240, 255, 0.76));
+}
+
+body.about-page .about-approach-step-number {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 13px;
+  border-width: 4px;
+  font-size: 0.75rem;
+}
+
+body.about-page .about-approach-step h3 {
+  margin-bottom: 7px;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+body.about-page .about-approach-step p {
+  max-width: 205px;
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  body.about-page .about-approach-visual {
+    min-height: 340px;
+  }
+
+  body.about-page .about-approach-image-frame {
+    height: min(54vw, 340px);
+  }
+}
+
+@media (max-width: 600px) {
+  body.about-page .about-approach-sec {
+    padding: 50px 0 58px;
+  }
+
+  body.about-page .about-approach-step {
+    min-height: 0;
+    padding: 18px 14px 17px;
   }
 }
 
