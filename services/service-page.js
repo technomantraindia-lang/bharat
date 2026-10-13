@@ -695,7 +695,7 @@
     return `<article class="dedicated-service-rich-step"><span>0${index + 1}</span><div><h3>${title}</h3><p>${parts.join(' — ')}</p></div></article>`;
   }).join('');
   const serviceMenu = [
-    ['services.html', 'fa-arrow-right', 'All Services'],
+    ['../services.html', 'fa-arrow-right', 'All Services'],
     ['gpr-survey.html', 'fa-arrow-right', 'GPR Survey'],
     ['cgwa-application.html', 'fa-arrow-right', 'CGWA Application'],
     ['cleaning-recharge-well.html', 'fa-arrow-right', 'Cleaning Of Recharge Well'],
@@ -714,7 +714,7 @@
     ['water-credit.html', 'fa-arrow-right', 'Water Credit'],
     ['hydrology.html', 'fa-arrow-right', 'Hydrology'],
     ['groundwater-investigation-stem.html', 'fa-arrow-right', 'Groundwater & Investigation (sTEM)']
-  ].map(([href, icon, label]) => `<li><a href="../services/${href}"><i class="fa-solid ${icon}"></i> ${label}</a></li>`).join('');
+  ].map(([href, icon, label]) => `<li><a href="${href.startsWith('../') ? href : `../services/${href}`}"><i class="fa-solid ${icon}"></i> ${label}</a></li>`).join('');
 
   const technicalCapabilitiesSection = `
     <section class="technical-capabilities-section">
