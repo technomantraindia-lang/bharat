@@ -1,0 +1,3270 @@
+{
+  "version": 2,
+  "workspace": "bharta",
+  "builtAt": "2026-10-15T03:42:20.294Z",
+  "reason": "files created",
+  "policy": {
+    "localOnly": true,
+    "sendFullIndexToAi": false,
+    "candidateLimit": 5,
+    "incremental": true
+  },
+  "stats": {
+    "reused": 87,
+    "rescanned": 5,
+    "skipped": 0
+  },
+  "files": [
+    {
+      "path": ".agent/workflows/add-phase.md",
+      "size": 2033,
+      "mtimeMs": 1790740470887.65,
+      "hash": "7149c15f69b020ba6e8fad421ee513d68da8c34219172ccda70429b2c6885a56",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/add-todo.md",
+      "size": 1629,
+      "mtimeMs": 1790740470888.6494,
+      "hash": "54972fbb41eff622f27c19334c0294e6c80d7cc3b1d9f4db57b29c7c3ce6485e",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/audit-milestone.md",
+      "size": 2509,
+      "mtimeMs": 1790740470889.6494,
+      "hash": "685841a3826b59006bf4e977ee8b89cd5bcdb536c1ca6c9148dc74162d322396",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/check-todos.md",
+      "size": 1987,
+      "mtimeMs": 1790740470890.6482,
+      "hash": "fcfc9ff36e374be1b1717a4d6112ac1b6632c6c0750bd28d4f13a39b8674b572",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/complete-milestone.md",
+      "size": 4962,
+      "mtimeMs": 1790740470891.6477,
+      "hash": "1939bfa783f1bfc211c77dccd9d6e932ae52479cefe9273ffe8203ceb0a47903",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/debug.md",
+      "size": 6517,
+      "mtimeMs": 1790740470892.6475,
+      "hash": "d7d23e4aa24e28427f3a15ad101729ebc7b31da44a07fa28437283562ff39e11",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/discuss-phase.md",
+      "size": 2891,
+      "mtimeMs": 1790740470893.6472,
+      "hash": "b912122561ac889d2b82f377e357880069c9caeada0c8214dd722c98c595bdb1",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/execute.md",
+      "size": 11659,
+      "mtimeMs": 1790740470895.6465,
+      "hash": "207ea3fca7268b5562a18f58808454d0c6debfa9263e1bac57f66d496f7be60d",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/help.md",
+      "size": 3534,
+      "mtimeMs": 1790740470896.6465,
+      "hash": "072152ac8b7a37bff5336276427553e909e2ca5ca67e50353ca794a86a7cfac7",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/insert-phase.md",
+      "size": 2760,
+      "mtimeMs": 1790740470897.6448,
+      "hash": "59af71b845799c3cc1e644bbc66b0adb04fa1268f051428c60fc8997127d2f26",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/install.md",
+      "size": 5613,
+      "mtimeMs": 1790740470899.581,
+      "hash": "a72633e7ed1de5651c38b17ee54f8d60b8f2722da00b54578a95ebf17b3e4188",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/list-phase-assumptions.md",
+      "size": 2163,
+      "mtimeMs": 1790740470900.5818,
+      "hash": "580d7cf04245e1d4c9892fc3ea2ddfd1062046452fade4b2b21d2543e6cefc29",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/map.md",
+      "size": 9849,
+      "mtimeMs": 1790740470901.5825,
+      "hash": "07d984ce254e5da665ecf29f947fed378496d5690764260c3f35f48dbc59337b",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/new-milestone.md",
+      "size": 3674,
+      "mtimeMs": 1790740470902.5823,
+      "hash": "fa310d258a8653e137d0edf312b075c11705963100f6fb1bf7aa83839d1df66b",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/new-project.md",
+      "size": 9694,
+      "mtimeMs": 1790740470903.5818,
+      "hash": "a7eaa648cc9d5a5b31bc61ed5ee29ffdefb2f7128c8ead69be423c2b3e0ff14b",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/pause.md",
+      "size": 4628,
+      "mtimeMs": 1790740470904.5808,
+      "hash": "fd1bafc3e16db2946e79cb49ece637cd92dbe4fecd66e1276c1866f61b41175c",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/plan-milestone-gaps.md",
+      "size": 2475,
+      "mtimeMs": 1790740470905.579,
+      "hash": "7b1ea79922e5f6e2b480a92026c590e70c9d22bff1446a6943920832c0197559",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/plan.md",
+      "size": 12630,
+      "mtimeMs": 1790740470906.5789,
+      "hash": "c3463770ec6772ba9fd7530bb80e609948d4b38bef0a0b7cf1a0bb57e6f02a70",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/progress.md",
+      "size": 2545,
+      "mtimeMs": 1790740470907.5789,
+      "hash": "ae67cc32e12f9ec889880108f447de68013966bc15850ac86d1fc5c8ded1bb36",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/remove-phase.md",
+      "size": 2995,
+      "mtimeMs": 1790740470908.5789,
+      "hash": "fd020e239f71a9dad1b7096c5a7d7b795386412afdfa443206973af5accbb874",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/research-phase.md",
+      "size": 3926,
+      "mtimeMs": 1790740470909.5774,
+      "hash": "496a3bf9b2b7b83325b7bbdfaf895b243585c6b656b842644f4de33ac1ff97ec",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/resume.md",
+      "size": 3844,
+      "mtimeMs": 1790740470910.577,
+      "hash": "c93306db315a71e382c390dfa531f1b32faffeea59a410db192714388206e5bf",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/sprint.md",
+      "size": 4623,
+      "mtimeMs": 1790740470911.8684,
+      "hash": "faeb0a67e6b0a260a44b24d84157a39d15cf8d1f84bc003cc5de80377adb2ab3",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/update.md",
+      "size": 5703,
+      "mtimeMs": 1790740470913.7954,
+      "hash": "f6b381a78cdb462ee1cb81e16f5103343a41be5dd70b3b63e6214ae51355db9f",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/verify.md",
+      "size": 7430,
+      "mtimeMs": 1790740470953.085,
+      "hash": "8f3ad0b11d0cb875141b49c02a91882ea1d15ebb9cc4ac1e78a9c5f8b147e043",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/web-search.md",
+      "size": 3204,
+      "mtimeMs": 1790740470953.085,
+      "hash": "8ee9cb36306d63eb8a9c164014b1345debb1f6107dc57565ecd2023591606514",
+      "locators": []
+    },
+    {
+      "path": ".agent/workflows/whats-new.md",
+      "size": 2617,
+      "mtimeMs": 1790740470953.085,
+      "hash": "ce31e3750aba1db8ee06a935feba94add86d724c44e5737b1179d305da84d713",
+      "locators": []
+    },
+    {
+      "path": ".agents/agents/gsd-debugger.md",
+      "size": 3571,
+      "mtimeMs": 1790740470953.085,
+      "hash": "cd745b4f81081351336a8cf27a1d16a51d0743780a021d37f45329dbec42cc88",
+      "locators": []
+    },
+    {
+      "path": ".agents/agents/gsd-executor.md",
+      "size": 4321,
+      "mtimeMs": 1790740470953.085,
+      "hash": "95e5b19bdd78c987a01ca8fc3090e6e94e6967917ff71b2d87ae04d2bd036024",
+      "locators": []
+    },
+    {
+      "path": ".agents/agents/gsd-planner.md",
+      "size": 2891,
+      "mtimeMs": 1790740470953.085,
+      "hash": "c522a5f4144424e451f23014056515cee9365734c1e7c83ecf53f6b202711167",
+      "locators": []
+    },
+    {
+      "path": ".agents/agents/gsd-researcher.md",
+      "size": 3581,
+      "mtimeMs": 1790740470963.0896,
+      "hash": "a80daaafcf90466081b6d858f62561a09e0a5598fc6eed86d3ee3eeb72a9b8c4",
+      "locators": []
+    },
+    {
+      "path": ".agents/agents/gsd-verifier.md",
+      "size": 3325,
+      "mtimeMs": 1790740470963.0896,
+      "hash": "566e56f3df883ff16dc2dddd2bf8e11e4e50568d8987ac483fe9551ead05af30",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/codebase-mapper/SKILL.md",
+      "size": 4800,
+      "mtimeMs": 1790740470967.148,
+      "hash": "509698f3414910db730ecdbea4f8c8ccfbcbfd967c926f1f5f20a6a2cab23ae9",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/context-compressor/SKILL.md",
+      "size": 4646,
+      "mtimeMs": 1790740470967.148,
+      "hash": "75a40dc6fd7dd9f1fc7b970eff39a254a145cdb38595aa310e6c921185a6b519",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/context-fetch/SKILL.md",
+      "size": 4230,
+      "mtimeMs": 1790740470967.148,
+      "hash": "29e1bf4bd8d937c6953ecfb89bf0bab1a3367486a50c6498c2f5de2c004d6518",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/context-health-monitor/SKILL.md",
+      "size": 3164,
+      "mtimeMs": 1790740470967.148,
+      "hash": "a22b09a4e85fcf6e29cb8a30cabf443691ea5b1a50f5064894045814d5907e9f",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/debugger/SKILL.md",
+      "size": 7531,
+      "mtimeMs": 1790740470967.148,
+      "hash": "490fc0eb53c512e1821cb4d1acf9ce0d0d635437becf212af595f517b8081b7b",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/empirical-validation/SKILL.md",
+      "size": 2689,
+      "mtimeMs": 1790740470967.148,
+      "hash": "909dd2c4a1abe0ebe29bc3526a1f8c059e7c5cb926964ae6791bdd86bea81c83",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/executor/SKILL.md",
+      "size": 13328,
+      "mtimeMs": 1790740470967.148,
+      "hash": "b36fab1da283f1d744a132a73198d937293f44463ba8d446921fe2b267c53542",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/plan-checker/SKILL.md",
+      "size": 6638,
+      "mtimeMs": 1790740470967.148,
+      "hash": "9183c57277c25f8afc4f0e0f4d246156f3e1f3ee4ff7f86185433e55c315d561",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/planner/SKILL.md",
+      "size": 13262,
+      "mtimeMs": 1790740470979.8088,
+      "hash": "4422c889b47e72bb648b776def9fd5baccbe355ea4eb2e2e828d6ac4052060f1",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/subagent-delegation/SKILL.md",
+      "size": 7007,
+      "mtimeMs": 1790740470979.8088,
+      "hash": "706ccd7b0e5c10765ae9913965ff043727ee27194e25a76fba4b721bc00f201f",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/token-budget/SKILL.md",
+      "size": 3800,
+      "mtimeMs": 1790740470979.8088,
+      "hash": "851200d03b70bf558e35fa9fd08fef8ee2b3bb4885737b793418bf0b8fc642cc",
+      "locators": []
+    },
+    {
+      "path": ".agents/skills/verifier/SKILL.md",
+      "size": 10537,
+      "mtimeMs": 1790740470979.8088,
+      "hash": "077db5d7f5dd2d65622c8acd7f04fb30496f8f444dc4224700dcd3604955bc84",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/05-technomantra-execution-mode.md",
+      "size": 504,
+      "mtimeMs": 1790825207850.0522,
+      "hash": "cfe4e31c978cc57329739733daf9c669ef1d3de77ce9958f9f60aa70e4eb48d5",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/06-technomantra-developer-mode.md",
+      "size": 453,
+      "mtimeMs": 1790825207850.0522,
+      "hash": "24302e90e32c445afc09689cda13e6682d9ae1dd88c49361c761eee04ad35e7b",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/07-technomantra-eco-execution.md",
+      "size": 1982,
+      "mtimeMs": 1790756790813.8313,
+      "hash": "9ef5a742dc131dde34557377d2eec85fae45e74f57418c29e9d44c09dfdacf37",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/08-technomantra-task-watchdog.md",
+      "size": 1827,
+      "mtimeMs": 1791960758236.5984,
+      "hash": "363c5bc4d61ed575b0dc3e2350c689b6093517c161241f6efca4c473feafc24c",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/09-technomantra-multitask-isolation.md",
+      "size": 2813,
+      "mtimeMs": 1791960758239.5962,
+      "hash": "0375609553f971ceddcebac652d62356ec69b8e0461de77b684f9057181459c3",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/10-technomantra-project-memory.md",
+      "size": 3879,
+      "mtimeMs": 1792035735994.472,
+      "hash": "c23e1600d518fc7b13dfc4fdcb0909b89f51543b42a7602d1d5b6cdff470d4b2",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/11-technomantra-code-knowledge.md",
+      "size": 3981,
+      "mtimeMs": 1792035735989.474,
+      "hash": "9d58f28963683fe16b671e9f042a43707a3a7dd158f720d27818e1c2b5222c53",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/11-technomantra-patch-index.md",
+      "size": 700,
+      "mtimeMs": 1792035735647.5918,
+      "hash": "b9318f547d7a73bb659254373f9f8f87fdb0aded4dc6cf55cae00c9cf2249220",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/12-technomantra-task-capsules.md",
+      "size": 2583,
+      "mtimeMs": 1792034215391.1401,
+      "hash": "c513c7cb2b1d83c610397369fe7d60ee7c873cf67cd0371b5085072107def86e",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/13-technomantra-runtime-price-optimizer.md",
+      "size": 541,
+      "mtimeMs": 1791960758295.5642,
+      "hash": "63f350d85a96d1cffc9bcc7e2823febd39ae7e1d0d1b7f2a49678d660e653e33",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/14-technomantra-adaptive-cost-optimizer.md",
+      "size": 441,
+      "mtimeMs": 1791960758304.561,
+      "hash": "15fd9320cb9f3b012d404cb363073f3139567b65f8c4a3fed86000773296623b",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/15-technomantra-fast-coding-engine.md",
+      "size": 558,
+      "mtimeMs": 1791960758308.557,
+      "hash": "1fbbaf6e9ebf232f95ed9d9bca4bcfdf2f82ef3c306f8eda9a647187fe2be5a2",
+      "locators": []
+    },
+    {
+      "path": ".clinerules/90-technomantra-selected-agent.md",
+      "size": 411,
+      "mtimeMs": 1790756759502.2476,
+      "hash": "7fccc4e80676a9bbb675bc04ec498cef4e4a7627df0c5d2fd710504403b76aa1",
+      "locators": []
+    },
+    {
+      "path": ".journey-render.html",
+      "size": 567,
+      "mtimeMs": 1791203178900.1826,
+      "hash": "7245235a71525d71f208623e6942da9e3b8023425afc03fef73814b41f1fb404",
+      "locators": []
+    },
+    {
+      "path": "about.html",
+      "size": 35293,
+      "mtimeMs": 1791870556940.3804,
+      "hash": "9b1ae232601b6df86465e80c952e1d93bb1631058f15025c301ca9d8cdda65c0",
+      "locators": [
+        {
+          "kind": "class",
+          "name": ".about-page",
+          "line": 24
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar",
+          "line": 27
+        },
+        {
+          "kind": "class",
+          "name": ".container",
+          "line": 28
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-inner",
+          "line": 28
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-left",
+          "line": 31
+        },
+        {
+          "kind": "class",
+          "name": ".top-info-item",
+          "line": 32
+        },
+        {
+          "kind": "class",
+          "name": ".fa-solid",
+          "line": 33
+        },
+        {
+          "kind": "class",
+          "name": ".fa-location-dot",
+          "line": 33
+        },
+        {
+          "kind": "class",
+          "name": ".fa-regular",
+          "line": 37
+        },
+        {
+          "kind": "class",
+          "name": ".fa-envelope",
+          "line": 37
+        },
+        {
+          "kind": "class",
+          "name": ".fa-phone-volume",
+          "line": 41
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-right",
+          "line": 47
+        },
+        {
+          "kind": "class",
+          "name": ".top-social-group",
+          "line": 48
+        },
+        {
+          "kind": "class",
+          "name": ".fa-brands",
+          "line": 49
+        },
+        {
+          "kind": "class",
+          "name": ".fa-linkedin-in",
+          "line": 49
+        },
+        {
+          "kind": "class",
+          "name": ".fa-facebook-f",
+          "line": 50
+        },
+        {
+          "kind": "class",
+          "name": ".fa-youtube",
+          "line": 51
+        },
+        {
+          "kind": "id",
+          "name": "#navbar",
+          "line": 59
+        },
+        {
+          "kind": "class",
+          "name": ".main-header",
+          "line": 59
+        },
+        {
+          "kind": "class",
+          "name": ".navbar-container",
+          "line": 60
+        },
+        {
+          "kind": "class",
+          "name": ".brand-logo",
+          "line": 63
+        },
+        {
+          "kind": "class",
+          "name": ".site-main-logo",
+          "line": 64
+        },
+        {
+          "kind": "id",
+          "name": "#navMenu",
+          "line": 68
+        },
+        {
+          "kind": "class",
+          "name": ".nav-menu",
+          "line": 68
+        },
+        {
+          "kind": "class",
+          "name": ".nav-list",
+          "line": 69
+        },
+        {
+          "kind": "class",
+          "name": ".nav-item",
+          "line": 70
+        },
+        {
+          "kind": "class",
+          "name": ".nav-link",
+          "line": 71
+        },
+        {
+          "kind": "class",
+          "name": ".active",
+          "line": 74
+        },
+        {
+          "kind": "class",
+          "name": ".has-dropdown",
+          "line": 76
+        },
+        {
+          "kind": "class",
+          "name": ".fa-chevron-down",
+          "line": 78
+        },
+        {
+          "kind": "class",
+          "name": ".nav-arrow",
+          "line": 78
+        },
+        {
+          "kind": "class",
+          "name": ".dropdown-list",
+          "line": 80
+        },
+        {
+          "kind": "class",
+          "name": ".fa-arrow-right",
+          "line": 81
+        },
+        {
+          "kind": "class",
+          "name": ".nav-right-actions",
+          "line": 112
+        },
+        {
+          "kind": "class",
+          "name": ".btn-inquiry-pill",
+          "line": 114
+        },
+        {
+          "kind": "class",
+          "name": ".fa-file-signature",
+          "line": 115
+        },
+        {
+          "kind": "class",
+          "name": ".inquiry-icon",
+          "line": 115
+        },
+        {
+          "kind": "class",
+          "name": ".arrow-icon",
+          "line": 117
+        },
+        {
+          "kind": "id",
+          "name": "#mobileMenuToggle",
+          "line": 121
+        },
+        {
+          "kind": "class",
+          "name": ".mobile-toggle",
+          "line": 121
+        },
+        {
+          "kind": "class",
+          "name": ".bar",
+          "line": 122
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-banner-sec",
+          "line": 132
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-dark-overlay",
+          "line": 133
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-inner",
+          "line": 134
+        },
+        {
+          "kind": "class",
+          "name": ".about-hero-copy",
+          "line": 135
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-breadcrumb",
+          "line": 136
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-title",
+          "line": 140
+        },
+        {
+          "kind": "heading",
+          "name": "About",
+          "line": 140
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-subtitle",
+          "line": 142
+        },
+        {
+          "kind": "heading",
+          "name": "Committed to Sustainable Solutions for",
+          "line": 142
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-desc",
+          "line": 144
+        },
+        {
+          "kind": "class",
+          "name": ".about-whoweare-sec",
+          "line": 153
+        },
+        {
+          "kind": "class",
+          "name": ".whoweare-container",
+          "line": 154
+        },
+        {
+          "kind": "class",
+          "name": ".about-grid-2col",
+          "line": 155
+        },
+        {
+          "kind": "class",
+          "name": ".about-whoweare-img-wrap",
+          "line": 157
+        },
+        {
+          "kind": "class",
+          "name": ".about-whoweare-img-inner",
+          "line": 158
+        },
+        {
+          "kind": "class",
+          "name": ".main-whoweare-video",
+          "line": 159
+        },
+        {
+          "kind": "class",
+          "name": ".about-whoweare-content",
+          "line": 166
+        },
+        {
+          "kind": "class",
+          "name": ".about-sec-badge",
+          "line": 167
+        },
+        {
+          "kind": "class",
+          "name": ".badge-dash",
+          "line": 168
+        },
+        {
+          "kind": "class",
+          "name": ".about-sec-heading",
+          "line": 173
+        },
+        {
+          "kind": "class",
+          "name": ".about-heading-desktop",
+          "line": 174
+        },
+        {
+          "kind": "class",
+          "name": ".about-heading-mobile",
+          "line": 175
+        },
+        {
+          "kind": "class",
+          "name": ".about-sec-text",
+          "line": 178
+        },
+        {
+          "kind": "class",
+          "name": ".about-impact-strip-section",
+          "line": 188
+        },
+        {
+          "kind": "class",
+          "name": ".about-impact-strip",
+          "line": 190
+        },
+        {
+          "kind": "class",
+          "name": ".about-impact-stat",
+          "line": 191
+        },
+        {
+          "kind": "class",
+          "name": ".about-impact-icon",
+          "line": 192
+        },
+        {
+          "kind": "class",
+          "name": ".about-impact-copy",
+          "line": 193
+        },
+        {
+          "kind": "class",
+          "name": ".about-mission-section",
+          "line": 212
+        },
+        {
+          "kind": "class",
+          "name": ".about-mission-overlay",
+          "line": 213
+        },
+        {
+          "kind": "class",
+          "name": ".about-mission-inner",
+          "line": 214
+        },
+        {
+          "kind": "class",
+          "name": ".about-mission-heading-row",
+          "line": 215
+        },
+        {
+          "kind": "class",
+          "name": ".about-mission-kicker",
+          "line": 217
+        },
+        {
+          "kind": "heading",
+          "name": "Mission, Vision &amp;",
+          "line": 222
+        },
+        {
+          "kind": "class",
+          "name": ".about-mission-grid",
+          "line": 227
+        },
+        {
+          "kind": "class",
+          "name": ".about-mission-card",
+          "line": 228
+        },
+        {
+          "kind": "class",
+          "name": ".mission-card-blue",
+          "line": 228
+        },
+        {
+          "kind": "class",
+          "name": ".about-mission-card-number",
+          "line": 229
+        },
+        {
+          "kind": "class",
+          "name": ".about-mission-card-head",
+          "line": 230
+        }
+      ]
+    },
+    {
+      "path": "assect/client/ic_logo (1).svg",
+      "size": 171283,
+      "mtimeMs": 1791962446585.5403,
+      "hash": "6559563a3c02c5ab008acc66b35c6423eaa356e9bf2b0ff0ab5cbc57b9860d28",
+      "locators": []
+    },
+    {
+      "path": "assect/client/ic_logo.svg",
+      "size": 171283,
+      "mtimeMs": 1791961330882.2102,
+      "hash": "6559563a3c02c5ab008acc66b35c6423eaa356e9bf2b0ff0ab5cbc57b9860d28",
+      "locators": []
+    },
+    {
+      "path": "contact.html",
+      "size": 32522,
+      "mtimeMs": 1791869308801.1765,
+      "hash": "6c088e79ac05fd9e9ef918f54b561bdb9cb71856b10e667ee955320e6c15947b",
+      "locators": [
+        {
+          "kind": "class",
+          "name": ".contact-page",
+          "line": 24
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar",
+          "line": 27
+        },
+        {
+          "kind": "class",
+          "name": ".container",
+          "line": 28
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-inner",
+          "line": 28
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-left",
+          "line": 31
+        },
+        {
+          "kind": "class",
+          "name": ".top-info-item",
+          "line": 32
+        },
+        {
+          "kind": "class",
+          "name": ".fa-solid",
+          "line": 33
+        },
+        {
+          "kind": "class",
+          "name": ".fa-location-dot",
+          "line": 33
+        },
+        {
+          "kind": "class",
+          "name": ".fa-regular",
+          "line": 37
+        },
+        {
+          "kind": "class",
+          "name": ".fa-envelope",
+          "line": 37
+        },
+        {
+          "kind": "class",
+          "name": ".fa-phone-volume",
+          "line": 41
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-right",
+          "line": 47
+        },
+        {
+          "kind": "class",
+          "name": ".top-social-group",
+          "line": 48
+        },
+        {
+          "kind": "class",
+          "name": ".fa-brands",
+          "line": 49
+        },
+        {
+          "kind": "class",
+          "name": ".fa-linkedin-in",
+          "line": 49
+        },
+        {
+          "kind": "class",
+          "name": ".fa-facebook-f",
+          "line": 50
+        },
+        {
+          "kind": "class",
+          "name": ".fa-youtube",
+          "line": 51
+        },
+        {
+          "kind": "id",
+          "name": "#navbar",
+          "line": 59
+        },
+        {
+          "kind": "class",
+          "name": ".main-header",
+          "line": 59
+        },
+        {
+          "kind": "class",
+          "name": ".navbar-container",
+          "line": 60
+        },
+        {
+          "kind": "class",
+          "name": ".brand-logo",
+          "line": 63
+        },
+        {
+          "kind": "class",
+          "name": ".site-main-logo",
+          "line": 64
+        },
+        {
+          "kind": "id",
+          "name": "#navMenu",
+          "line": 68
+        },
+        {
+          "kind": "class",
+          "name": ".nav-menu",
+          "line": 68
+        },
+        {
+          "kind": "class",
+          "name": ".nav-list",
+          "line": 69
+        },
+        {
+          "kind": "class",
+          "name": ".nav-item",
+          "line": 70
+        },
+        {
+          "kind": "class",
+          "name": ".nav-link",
+          "line": 71
+        },
+        {
+          "kind": "class",
+          "name": ".has-dropdown",
+          "line": 76
+        },
+        {
+          "kind": "class",
+          "name": ".fa-chevron-down",
+          "line": 78
+        },
+        {
+          "kind": "class",
+          "name": ".nav-arrow",
+          "line": 78
+        },
+        {
+          "kind": "class",
+          "name": ".dropdown-list",
+          "line": 80
+        },
+        {
+          "kind": "class",
+          "name": ".fa-arrow-right",
+          "line": 81
+        },
+        {
+          "kind": "class",
+          "name": ".active",
+          "line": 106
+        },
+        {
+          "kind": "class",
+          "name": ".nav-right-actions",
+          "line": 112
+        },
+        {
+          "kind": "class",
+          "name": ".btn-inquiry-pill",
+          "line": 114
+        },
+        {
+          "kind": "class",
+          "name": ".fa-file-signature",
+          "line": 115
+        },
+        {
+          "kind": "class",
+          "name": ".inquiry-icon",
+          "line": 115
+        },
+        {
+          "kind": "class",
+          "name": ".arrow-icon",
+          "line": 117
+        },
+        {
+          "kind": "id",
+          "name": "#mobileMenuToggle",
+          "line": 121
+        },
+        {
+          "kind": "class",
+          "name": ".mobile-toggle",
+          "line": 121
+        },
+        {
+          "kind": "class",
+          "name": ".bar",
+          "line": 122
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-banner-sec",
+          "line": 132
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-dark-overlay",
+          "line": 133
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-inner",
+          "line": 134
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-breadcrumb",
+          "line": 135
+        },
+        {
+          "kind": "class",
+          "name": ".fa-chevron-right",
+          "line": 137
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-title",
+          "line": 141
+        },
+        {
+          "kind": "heading",
+          "name": "Contact",
+          "line": 141
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-subtitle",
+          "line": 143
+        },
+        {
+          "kind": "class",
+          "name": ".highlight-blue",
+          "line": 144
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-desc",
+          "line": 147
+        },
+        {
+          "kind": "class",
+          "name": ".hero-stats-bar",
+          "line": 152
+        },
+        {
+          "kind": "class",
+          "name": ".stat-item",
+          "line": 153
+        },
+        {
+          "kind": "class",
+          "name": ".stat-icon-circle",
+          "line": 154
+        },
+        {
+          "kind": "class",
+          "name": ".stat-meta",
+          "line": 155
+        },
+        {
+          "kind": "class",
+          "name": ".num",
+          "line": 156
+        },
+        {
+          "kind": "class",
+          "name": ".lbl",
+          "line": 157
+        },
+        {
+          "kind": "class",
+          "name": ".txt-bold",
+          "line": 172
+        },
+        {
+          "kind": "class",
+          "name": ".contact-cards-bar-sec",
+          "line": 189
+        },
+        {
+          "kind": "class",
+          "name": ".contact-cards-4col-grid",
+          "line": 191
+        },
+        {
+          "kind": "class",
+          "name": ".contact-info-card-item",
+          "line": 194
+        },
+        {
+          "kind": "class",
+          "name": ".card-theme-blue",
+          "line": 194
+        },
+        {
+          "kind": "class",
+          "name": ".contact-card-icon-circle",
+          "line": 195
+        },
+        {
+          "kind": "class",
+          "name": ".icon-blue",
+          "line": 195
+        },
+        {
+          "kind": "class",
+          "name": ".contact-card-meta",
+          "line": 198
+        },
+        {
+          "kind": "class",
+          "name": ".contact-card-label",
+          "line": 199
+        },
+        {
+          "kind": "heading",
+          "name": "Call Us",
+          "line": 199
+        },
+        {
+          "kind": "class",
+          "name": ".contact-card-val",
+          "line": 200
+        },
+        {
+          "kind": "class",
+          "name": ".contact-card-sub",
+          "line": 201
+        },
+        {
+          "kind": "class",
+          "name": ".card-theme-green",
+          "line": 206
+        },
+        {
+          "kind": "class",
+          "name": ".icon-green",
+          "line": 207
+        },
+        {
+          "kind": "class",
+          "name": ".fa-paper-plane",
+          "line": 208
+        },
+        {
+          "kind": "heading",
+          "name": "Email Us",
+          "line": 211
+        },
+        {
+          "kind": "class",
+          "name": ".card-theme-amber",
+          "line": 218
+        },
+        {
+          "kind": "class",
+          "name": ".icon-amber",
+          "line": 219
+        },
+        {
+          "kind": "heading",
+          "name": "Visit Our Office",
+          "line": 223
+        },
+        {
+          "kind": "class",
+          "name": ".contact-card-val-sm",
+          "line": 224
+        },
+        {
+          "kind": "class",
+          "name": ".card-theme-purple",
+          "line": 229
+        },
+        {
+          "kind": "class",
+          "name": ".icon-purple",
+          "line": 230
+        },
+        {
+          "kind": "class",
+          "name": ".fa-clock",
+          "line": 231
+        }
+      ]
+    },
+    {
+      "path": "index.html",
+      "size": 115002,
+      "mtimeMs": 1791869303448.811,
+      "hash": "3880c3527d78e8a69ad63383107a5687d00fcb8de7a16bae5e7110db4b712bd4",
+      "locators": [
+        {
+          "kind": "class",
+          "name": ".top-bar",
+          "line": 27
+        },
+        {
+          "kind": "class",
+          "name": ".container",
+          "line": 28
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-inner",
+          "line": 28
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-left",
+          "line": 31
+        },
+        {
+          "kind": "class",
+          "name": ".top-info-item",
+          "line": 32
+        },
+        {
+          "kind": "class",
+          "name": ".fa-solid",
+          "line": 33
+        },
+        {
+          "kind": "class",
+          "name": ".fa-location-dot",
+          "line": 33
+        },
+        {
+          "kind": "class",
+          "name": ".fa-regular",
+          "line": 37
+        },
+        {
+          "kind": "class",
+          "name": ".fa-envelope",
+          "line": 37
+        },
+        {
+          "kind": "class",
+          "name": ".fa-phone-volume",
+          "line": 41
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-right",
+          "line": 47
+        },
+        {
+          "kind": "class",
+          "name": ".top-social-group",
+          "line": 48
+        },
+        {
+          "kind": "class",
+          "name": ".fa-brands",
+          "line": 49
+        },
+        {
+          "kind": "class",
+          "name": ".fa-linkedin-in",
+          "line": 49
+        },
+        {
+          "kind": "class",
+          "name": ".fa-facebook-f",
+          "line": 50
+        },
+        {
+          "kind": "class",
+          "name": ".fa-youtube",
+          "line": 51
+        },
+        {
+          "kind": "id",
+          "name": "#navbar",
+          "line": 59
+        },
+        {
+          "kind": "class",
+          "name": ".main-header",
+          "line": 59
+        },
+        {
+          "kind": "class",
+          "name": ".navbar-container",
+          "line": 60
+        },
+        {
+          "kind": "class",
+          "name": ".brand-logo",
+          "line": 63
+        },
+        {
+          "kind": "class",
+          "name": ".site-main-logo",
+          "line": 64
+        },
+        {
+          "kind": "id",
+          "name": "#navMenu",
+          "line": 68
+        },
+        {
+          "kind": "class",
+          "name": ".nav-menu",
+          "line": 68
+        },
+        {
+          "kind": "class",
+          "name": ".nav-list",
+          "line": 69
+        },
+        {
+          "kind": "class",
+          "name": ".nav-item",
+          "line": 70
+        },
+        {
+          "kind": "class",
+          "name": ".nav-link",
+          "line": 71
+        },
+        {
+          "kind": "class",
+          "name": ".active",
+          "line": 71
+        },
+        {
+          "kind": "class",
+          "name": ".has-dropdown",
+          "line": 76
+        },
+        {
+          "kind": "class",
+          "name": ".fa-chevron-down",
+          "line": 78
+        },
+        {
+          "kind": "class",
+          "name": ".nav-arrow",
+          "line": 78
+        },
+        {
+          "kind": "class",
+          "name": ".dropdown-list",
+          "line": 80
+        },
+        {
+          "kind": "class",
+          "name": ".fa-arrow-right",
+          "line": 81
+        },
+        {
+          "kind": "class",
+          "name": ".nav-right-actions",
+          "line": 112
+        },
+        {
+          "kind": "class",
+          "name": ".btn-inquiry-pill",
+          "line": 114
+        },
+        {
+          "kind": "class",
+          "name": ".fa-file-signature",
+          "line": 115
+        },
+        {
+          "kind": "class",
+          "name": ".inquiry-icon",
+          "line": 115
+        },
+        {
+          "kind": "class",
+          "name": ".arrow-icon",
+          "line": 117
+        },
+        {
+          "kind": "id",
+          "name": "#mobileMenuToggle",
+          "line": 121
+        },
+        {
+          "kind": "class",
+          "name": ".mobile-toggle",
+          "line": 121
+        },
+        {
+          "kind": "class",
+          "name": ".bar",
+          "line": 122
+        },
+        {
+          "kind": "id",
+          "name": "#home",
+          "line": 132
+        },
+        {
+          "kind": "class",
+          "name": ".hero-banner",
+          "line": 132
+        },
+        {
+          "kind": "class",
+          "name": ".hero-video-bg-wrap",
+          "line": 134
+        },
+        {
+          "kind": "id",
+          "name": "#heroVideo1",
+          "line": 135
+        },
+        {
+          "kind": "class",
+          "name": ".hero-video-bg",
+          "line": 135
+        },
+        {
+          "kind": "class",
+          "name": ".video-visible",
+          "line": 135
+        },
+        {
+          "kind": "id",
+          "name": "#heroVideo2",
+          "line": 138
+        },
+        {
+          "kind": "class",
+          "name": ".hero-video-overlay",
+          "line": 141
+        },
+        {
+          "kind": "class",
+          "name": ".hero-container",
+          "line": 145
+        },
+        {
+          "kind": "class",
+          "name": ".hero-left-content",
+          "line": 148
+        },
+        {
+          "kind": "class",
+          "name": ".hero-badge-pill",
+          "line": 151
+        },
+        {
+          "kind": "class",
+          "name": ".badge-pulse-indicator",
+          "line": 152
+        },
+        {
+          "kind": "class",
+          "name": ".badge-title-txt",
+          "line": 153
+        },
+        {
+          "kind": "class",
+          "name": ".hero-main-title",
+          "line": 157
+        },
+        {
+          "kind": "class",
+          "name": ".text-water-gradient",
+          "line": 159
+        },
+        {
+          "kind": "class",
+          "name": ".hero-subtext-para",
+          "line": 163
+        },
+        {
+          "kind": "class",
+          "name": ".hero-buttons-flex",
+          "line": 168
+        },
+        {
+          "kind": "class",
+          "name": ".btn-hero-explore",
+          "line": 169
+        },
+        {
+          "kind": "class",
+          "name": ".btn-hero-talk",
+          "line": 173
+        },
+        {
+          "kind": "class",
+          "name": ".fa-headset",
+          "line": 174
+        },
+        {
+          "kind": "class",
+          "name": ".hero-stats-bar",
+          "line": 180
+        },
+        {
+          "kind": "class",
+          "name": ".stat-item",
+          "line": 182
+        },
+        {
+          "kind": "class",
+          "name": ".stat-icon-circle",
+          "line": 183
+        },
+        {
+          "kind": "class",
+          "name": ".fa-award",
+          "line": 184
+        },
+        {
+          "kind": "class",
+          "name": ".stat-meta",
+          "line": 186
+        },
+        {
+          "kind": "class",
+          "name": ".num",
+          "line": 187
+        },
+        {
+          "kind": "class",
+          "name": ".lbl",
+          "line": 188
+        },
+        {
+          "kind": "class",
+          "name": ".fa-check-double",
+          "line": 194
+        },
+        {
+          "kind": "class",
+          "name": ".fa-map-location-dot",
+          "line": 204
+        },
+        {
+          "kind": "class",
+          "name": ".txt-bold",
+          "line": 207
+        },
+        {
+          "kind": "class",
+          "name": ".fa-user-gear",
+          "line": 214
+        },
+        {
+          "kind": "id",
+          "name": "#about",
+          "line": 231
+        },
+        {
+          "kind": "class",
+          "name": ".about-bharat-section",
+          "line": 231
+        },
+        {
+          "kind": "class",
+          "name": ".about-leaf-decor-left",
+          "line": 233
+        },
+        {
+          "kind": "class",
+          "name": ".about-leaf-img-left",
+          "line": 234
+        },
+        {
+          "kind": "class",
+          "name": ".about-bg-sky-glow",
+          "line": 236
+        },
+        {
+          "kind": "class",
+          "name": ".about-bg-aqua-mesh",
+          "line": 237
+        },
+        {
+          "kind": "class",
+          "name": ".about-main-grid",
+          "line": 240
+        },
+        {
+          "kind": "class",
+          "name": ".about-left-col",
+          "line": 243
+        },
+        {
+          "kind": "class",
+          "name": ".about-category-pill",
+          "line": 246
+        }
+      ]
+    },
+    {
+      "path": "knowledge.html",
+      "size": 55677,
+      "mtimeMs": 1791869311949.7942,
+      "hash": "03e0641e2594da8f7041767d06cdcca572bddca43633b3946f7a1e1c4448c163",
+      "locators": [
+        {
+          "kind": "class",
+          "name": ".top-bar",
+          "line": 27
+        },
+        {
+          "kind": "class",
+          "name": ".container",
+          "line": 28
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-inner",
+          "line": 28
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-left",
+          "line": 31
+        },
+        {
+          "kind": "class",
+          "name": ".top-info-item",
+          "line": 32
+        },
+        {
+          "kind": "class",
+          "name": ".fa-solid",
+          "line": 33
+        },
+        {
+          "kind": "class",
+          "name": ".fa-location-dot",
+          "line": 33
+        },
+        {
+          "kind": "class",
+          "name": ".fa-regular",
+          "line": 37
+        },
+        {
+          "kind": "class",
+          "name": ".fa-envelope",
+          "line": 37
+        },
+        {
+          "kind": "class",
+          "name": ".fa-phone-volume",
+          "line": 41
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-right",
+          "line": 47
+        },
+        {
+          "kind": "class",
+          "name": ".top-social-group",
+          "line": 48
+        },
+        {
+          "kind": "class",
+          "name": ".fa-brands",
+          "line": 49
+        },
+        {
+          "kind": "class",
+          "name": ".fa-linkedin-in",
+          "line": 49
+        },
+        {
+          "kind": "class",
+          "name": ".fa-facebook-f",
+          "line": 50
+        },
+        {
+          "kind": "class",
+          "name": ".fa-youtube",
+          "line": 51
+        },
+        {
+          "kind": "id",
+          "name": "#navbar",
+          "line": 59
+        },
+        {
+          "kind": "class",
+          "name": ".main-header",
+          "line": 59
+        },
+        {
+          "kind": "class",
+          "name": ".navbar-container",
+          "line": 60
+        },
+        {
+          "kind": "class",
+          "name": ".brand-logo",
+          "line": 63
+        },
+        {
+          "kind": "class",
+          "name": ".site-main-logo",
+          "line": 64
+        },
+        {
+          "kind": "id",
+          "name": "#navMenu",
+          "line": 68
+        },
+        {
+          "kind": "class",
+          "name": ".nav-menu",
+          "line": 68
+        },
+        {
+          "kind": "class",
+          "name": ".nav-list",
+          "line": 69
+        },
+        {
+          "kind": "class",
+          "name": ".nav-item",
+          "line": 70
+        },
+        {
+          "kind": "class",
+          "name": ".nav-link",
+          "line": 71
+        },
+        {
+          "kind": "class",
+          "name": ".has-dropdown",
+          "line": 76
+        },
+        {
+          "kind": "class",
+          "name": ".fa-chevron-down",
+          "line": 78
+        },
+        {
+          "kind": "class",
+          "name": ".nav-arrow",
+          "line": 78
+        },
+        {
+          "kind": "class",
+          "name": ".dropdown-list",
+          "line": 80
+        },
+        {
+          "kind": "class",
+          "name": ".fa-arrow-right",
+          "line": 81
+        },
+        {
+          "kind": "class",
+          "name": ".active",
+          "line": 103
+        },
+        {
+          "kind": "class",
+          "name": ".nav-right-actions",
+          "line": 112
+        },
+        {
+          "kind": "class",
+          "name": ".btn-inquiry-pill",
+          "line": 114
+        },
+        {
+          "kind": "class",
+          "name": ".fa-file-signature",
+          "line": 115
+        },
+        {
+          "kind": "class",
+          "name": ".inquiry-icon",
+          "line": 115
+        },
+        {
+          "kind": "class",
+          "name": ".arrow-icon",
+          "line": 117
+        },
+        {
+          "kind": "id",
+          "name": "#mobileMenuToggle",
+          "line": 121
+        },
+        {
+          "kind": "class",
+          "name": ".mobile-toggle",
+          "line": 121
+        },
+        {
+          "kind": "class",
+          "name": ".bar",
+          "line": 122
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-banner-sec",
+          "line": 132
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-dark-overlay",
+          "line": 133
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-inner",
+          "line": 134
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-breadcrumb",
+          "line": 135
+        },
+        {
+          "kind": "class",
+          "name": ".fa-chevron-right",
+          "line": 137
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-title",
+          "line": 141
+        },
+        {
+          "kind": "heading",
+          "name": "Knowledge for a",
+          "line": 141
+        },
+        {
+          "kind": "class",
+          "name": ".about-page-desc",
+          "line": 143
+        },
+        {
+          "kind": "class",
+          "name": ".hero-stats-bar",
+          "line": 148
+        },
+        {
+          "kind": "class",
+          "name": ".stat-item",
+          "line": 149
+        },
+        {
+          "kind": "class",
+          "name": ".stat-icon-circle",
+          "line": 150
+        },
+        {
+          "kind": "class",
+          "name": ".stat-meta",
+          "line": 151
+        },
+        {
+          "kind": "class",
+          "name": ".txt-bold",
+          "line": 152
+        },
+        {
+          "kind": "class",
+          "name": ".lbl",
+          "line": 153
+        },
+        {
+          "kind": "id",
+          "name": "#featured",
+          "line": 185
+        },
+        {
+          "kind": "class",
+          "name": ".knowledge-featured-sec",
+          "line": 185
+        },
+        {
+          "kind": "class",
+          "name": ".featured-sec-bg-dam-art",
+          "line": 187
+        },
+        {
+          "kind": "class",
+          "name": ".knowledge-sec-header-box",
+          "line": 192
+        },
+        {
+          "kind": "class",
+          "name": ".about-sec-badge",
+          "line": 193
+        },
+        {
+          "kind": "class",
+          "name": ".badge-blue-line",
+          "line": 194
+        },
+        {
+          "kind": "class",
+          "name": ".badge-blue-text",
+          "line": 195
+        },
+        {
+          "kind": "class",
+          "name": ".knowledge-sec-title",
+          "line": 198
+        },
+        {
+          "kind": "class",
+          "name": ".text-center",
+          "line": 198
+        },
+        {
+          "kind": "heading",
+          "name": "Latest from",
+          "line": 198
+        },
+        {
+          "kind": "class",
+          "name": ".knowledge-sec-desc",
+          "line": 199
+        },
+        {
+          "kind": "class",
+          "name": ".featured-category-pills-row",
+          "line": 205
+        },
+        {
+          "kind": "class",
+          "name": ".feat-pill-btn",
+          "line": 206
+        },
+        {
+          "kind": "class",
+          "name": ".featured-panels-master-wrapper",
+          "line": 215
+        },
+        {
+          "kind": "class",
+          "name": ".knowledge-featured-grid",
+          "line": 218
+        },
+        {
+          "kind": "class",
+          "name": ".active-panel",
+          "line": 218
+        },
+        {
+          "kind": "class",
+          "name": ".featured-card-large",
+          "line": 219
+        },
+        {
+          "kind": "class",
+          "name": ".featured-media-box",
+          "line": 220
+        },
+        {
+          "kind": "class",
+          "name": ".featured-badge",
+          "line": 221
+        },
+        {
+          "kind": "class",
+          "name": ".featured-media-img",
+          "line": 222
+        },
+        {
+          "kind": "class",
+          "name": ".featured-content-box",
+          "line": 224
+        },
+        {
+          "kind": "class",
+          "name": ".featured-meta-row",
+          "line": 225
+        },
+        {
+          "kind": "class",
+          "name": ".cat-pill-tag",
+          "line": 226
+        },
+        {
+          "kind": "class",
+          "name": ".badge-blue",
+          "line": 226
+        },
+        {
+          "kind": "class",
+          "name": ".article-date-meta",
+          "line": 227
+        },
+        {
+          "kind": "class",
+          "name": ".featured-article-title",
+          "line": 229
+        }
+      ]
+    },
+    {
+      "path": "main.js",
+      "size": 36911,
+      "mtimeMs": 1791874550336.661,
+      "hash": "5d711ee3a6fd99ed05ea6faf001915347b805d21111e89d7de06c8df55222618",
+      "locators": [
+        {
+          "kind": "function",
+          "name": "initAboutReveal",
+          "line": 19
+        },
+        {
+          "kind": "function",
+          "name": "initHeroVideo",
+          "line": 44
+        },
+        {
+          "kind": "function",
+          "name": "swapVideos",
+          "line": 78
+        },
+        {
+          "kind": "function",
+          "name": "monitorLoop",
+          "line": 114
+        },
+        {
+          "kind": "function",
+          "name": "initMobileMenu",
+          "line": 136
+        },
+        {
+          "kind": "function",
+          "name": "switchHeroVisual",
+          "line": 188
+        },
+        {
+          "kind": "function",
+          "name": "initStratumHoverSync",
+          "line": 219
+        },
+        {
+          "kind": "function",
+          "name": "initStatsCounter",
+          "line": 231
+        },
+        {
+          "kind": "function",
+          "name": "openStoryVideoModal",
+          "line": 267
+        },
+        {
+          "kind": "function",
+          "name": "initSearchButton",
+          "line": 295
+        },
+        {
+          "kind": "function",
+          "name": "openConsultModal",
+          "line": 308
+        },
+        {
+          "kind": "function",
+          "name": "closeConsultModal",
+          "line": 324
+        },
+        {
+          "kind": "function",
+          "name": "toggleFaq",
+          "line": 338
+        },
+        {
+          "kind": "function",
+          "name": "initTestimonialsSlider",
+          "line": 366
+        },
+        {
+          "kind": "function",
+          "name": "getVisibleCount",
+          "line": 383
+        },
+        {
+          "kind": "function",
+          "name": "getMaxIndex",
+          "line": 389
+        },
+        {
+          "kind": "function",
+          "name": "renderDots",
+          "line": 393
+        },
+        {
+          "kind": "function",
+          "name": "updateDots",
+          "line": 409
+        },
+        {
+          "kind": "function",
+          "name": "goToSlide",
+          "line": 417
+        },
+        {
+          "kind": "function",
+          "name": "nextSlide",
+          "line": 445
+        },
+        {
+          "kind": "function",
+          "name": "prevSlide",
+          "line": 451
+        },
+        {
+          "kind": "function",
+          "name": "startAutoplay",
+          "line": 471
+        },
+        {
+          "kind": "function",
+          "name": "stopAutoplay",
+          "line": 476
+        },
+        {
+          "kind": "function",
+          "name": "restartAutoplay",
+          "line": 483
+        },
+        {
+          "kind": "function",
+          "name": "initClientLogoAutoScroll",
+          "line": 530
+        },
+        {
+          "kind": "function",
+          "name": "switchAboutSlide",
+          "line": 554
+        },
+        {
+          "kind": "function",
+          "name": "nextAboutSlide",
+          "line": 572
+        },
+        {
+          "kind": "function",
+          "name": "prevAboutSlide",
+          "line": 576
+        },
+        {
+          "kind": "function",
+          "name": "resetAboutSlideTimer",
+          "line": 580
+        },
+        {
+          "kind": "function",
+          "name": "initAboutSlider",
+          "line": 601
+        },
+        {
+          "kind": "function",
+          "name": "initIndustriesFilter",
+          "line": 629
+        },
+        {
+          "kind": "function",
+          "name": "handleFormSubmit",
+          "line": 662
+        },
+        {
+          "kind": "function",
+          "name": "handleNewsletterSubmit",
+          "line": 669
+        },
+        {
+          "kind": "function",
+          "name": "initScrollRevealAnimations",
+          "line": 678
+        },
+        {
+          "kind": "function",
+          "name": "initClientMarquee",
+          "line": 794
+        },
+        {
+          "kind": "function",
+          "name": "initProcessAnimations",
+          "line": 810
+        },
+        {
+          "kind": "function",
+          "name": "initServicesAnimations",
+          "line": 852
+        },
+        {
+          "kind": "function",
+          "name": "initKnowledgeFilters",
+          "line": 887
+        },
+        {
+          "kind": "function",
+          "name": "setCategory",
+          "line": 901
+        },
+        {
+          "kind": "function",
+          "name": "initKnowledgeScrollAnimations",
+          "line": 1017
+        }
+      ]
+    },
+    {
+      "path": "model_capabilities.yaml",
+      "size": 2943,
+      "mtimeMs": 1790740471046.4531,
+      "hash": "36c84ea88de7bf4bdadc9b4f550ecd7b78cb6c58f33f58e7029b040d06ca8443",
+      "locators": []
+    },
+    {
+      "path": "PROJECT_RULES.md",
+      "size": 9465,
+      "mtimeMs": 1790740471046.4531,
+      "hash": "b58c9e802dbdecaa080bfcd9adf4f831b13df0875e88903af32e0f1fffd54cc6",
+      "locators": []
+    },
+    {
+      "path": "services.html",
+      "size": 27749,
+      "mtimeMs": 1791869427135.0508,
+      "hash": "b4b1dd454a6d819ba3ddcdabb338811dfdd469d3afe50d6c0be07873450cf3ab",
+      "locators": [
+        {
+          "kind": "class",
+          "name": ".services-directory-page",
+          "line": 17
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar",
+          "line": 18
+        },
+        {
+          "kind": "class",
+          "name": ".container",
+          "line": 19
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-inner",
+          "line": 19
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-left",
+          "line": 20
+        },
+        {
+          "kind": "class",
+          "name": ".top-info-item",
+          "line": 21
+        },
+        {
+          "kind": "class",
+          "name": ".top-bar-right",
+          "line": 25
+        },
+        {
+          "kind": "class",
+          "name": ".top-social-group",
+          "line": 26
+        },
+        {
+          "kind": "class",
+          "name": ".fa-brands",
+          "line": 27
+        },
+        {
+          "kind": "class",
+          "name": ".fa-linkedin-in",
+          "line": 27
+        },
+        {
+          "kind": "class",
+          "name": ".fa-facebook-f",
+          "line": 28
+        },
+        {
+          "kind": "class",
+          "name": ".fa-youtube",
+          "line": 29
+        },
+        {
+          "kind": "id",
+          "name": "#navbar",
+          "line": 35
+        },
+        {
+          "kind": "class",
+          "name": ".main-header",
+          "line": 35
+        },
+        {
+          "kind": "class",
+          "name": ".navbar-container",
+          "line": 36
+        },
+        {
+          "kind": "class",
+          "name": ".brand-logo",
+          "line": 37
+        },
+        {
+          "kind": "class",
+          "name": ".site-main-logo",
+          "line": 38
+        },
+        {
+          "kind": "id",
+          "name": "#navMenu",
+          "line": 41
+        },
+        {
+          "kind": "class",
+          "name": ".nav-menu",
+          "line": 41
+        },
+        {
+          "kind": "class",
+          "name": ".nav-list",
+          "line": 42
+        },
+        {
+          "kind": "class",
+          "name": ".nav-item",
+          "line": 43
+        },
+        {
+          "kind": "class",
+          "name": ".has-dropdown",
+          "line": 45
+        },
+        {
+          "kind": "class",
+          "name": ".nav-link",
+          "line": 46
+        },
+        {
+          "kind": "class",
+          "name": ".active",
+          "line": 46
+        },
+        {
+          "kind": "class",
+          "name": ".dropdown-list",
+          "line": 47
+        },
+        {
+          "kind": "class",
+          "name": ".fa-solid",
+          "line": 48
+        },
+        {
+          "kind": "class",
+          "name": ".fa-arrow-right",
+          "line": 48
+        },
+        {
+          "kind": "class",
+          "name": ".nav-right-actions",
+          "line": 74
+        },
+        {
+          "kind": "class",
+          "name": ".btn-inquiry-pill",
+          "line": 75
+        },
+        {
+          "kind": "class",
+          "name": ".fa-file-signature",
+          "line": 76
+        },
+        {
+          "kind": "class",
+          "name": ".inquiry-icon",
+          "line": 76
+        },
+        {
+          "kind": "id",
+          "name": "#mobileMenuToggle",
+          "line": 78
+        },
+        {
+          "kind": "class",
+          "name": ".mobile-toggle",
+          "line": 78
+        },
+        {
+          "kind": "class",
+          "name": ".services-directory-hero",
+          "line": 84
+        },
+        {
+          "kind": "class",
+          "name": ".services-directory-hero-overlay",
+          "line": 85
+        },
+        {
+          "kind": "class",
+          "name": ".services-directory-hero-inner",
+          "line": 86
+        },
+        {
+          "kind": "class",
+          "name": ".contact-breadcrumb-wrap",
+          "line": 87
+        },
+        {
+          "kind": "class",
+          "name": ".fa-chevron-right",
+          "line": 88
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-title",
+          "line": 90
+        },
+        {
+          "kind": "heading",
+          "name": "Services",
+          "line": 90
+        },
+        {
+          "kind": "class",
+          "name": ".contact-hero-subtitle",
+          "line": 91
+        },
+        {
+          "kind": "class",
+          "name": ".services-directory-section",
+          "line": 95
+        },
+        {
+          "kind": "class",
+          "name": ".services-directory-glow",
+          "line": 96
+        },
+        {
+          "kind": "class",
+          "name": ".services-directory-container",
+          "line": 97
+        },
+        {
+          "kind": "class",
+          "name": ".services-directory-intro",
+          "line": 98
+        },
+        {
+          "kind": "class",
+          "name": ".services-category-pill",
+          "line": 99
+        },
+        {
+          "kind": "class",
+          "name": ".services-main-heading",
+          "line": 100
+        },
+        {
+          "kind": "heading",
+          "name": "One trusted partner for",
+          "line": 100
+        },
+        {
+          "kind": "class",
+          "name": ".services-subtext-para",
+          "line": 101
+        },
+        {
+          "kind": "class",
+          "name": ".services-directory-grid",
+          "line": 104
+        },
+        {
+          "kind": "class",
+          "name": ".directory-service-card",
+          "line": 105
+        },
+        {
+          "kind": "class",
+          "name": ".directory-card-blue",
+          "line": 105
+        },
+        {
+          "kind": "class",
+          "name": ".directory-card-media",
+          "line": 106
+        },
+        {
+          "kind": "class",
+          "name": ".directory-card-body",
+          "line": 107
+        },
+        {
+          "kind": "heading",
+          "name": "GPR Survey",
+          "line": 107
+        },
+        {
+          "kind": "class",
+          "name": ".directory-card-purple",
+          "line": 110
+        },
+        {
+          "kind": "heading",
+          "name": "CGWA Application",
+          "line": 112
+        },
+        {
+          "kind": "class",
+          "name": ".directory-card-cyan",
+          "line": 115
+        },
+        {
+          "kind": "heading",
+          "name": "Cleaning Of Recharge Well",
+          "line": 117
+        },
+        {
+          "kind": "class",
+          "name": ".directory-card-sapphire",
+          "line": 120
+        },
+        {
+          "kind": "heading",
+          "name": "Drilling Borewell",
+          "line": 122
+        },
+        {
+          "kind": "class",
+          "name": ".directory-card-emerald",
+          "line": 125
+        },
+        {
+          "kind": "heading",
+          "name": "Environmental Remediation",
+          "line": 127
+        },
+        {
+          "kind": "heading",
+          "name": "Geo Technical Work",
+          "line": 132
+        },
+        {
+          "kind": "heading",
+          "name": "Impact Assessment Report",
+          "line": 137
+        },
+        {
+          "kind": "heading",
+          "name": "Piezometer Supplier",
+          "line": 142
+        },
+        {
+          "kind": "heading",
+          "name": "Pump Test",
+          "line": 147
+        },
+        {
+          "kind": "heading",
+          "name": "Rain Water Harvesting",
+          "line": 152
+        },
+        {
+          "kind": "heading",
+          "name": "Water Audit",
+          "line": 157
+        },
+        {
+          "kind": "heading",
+          "name": "Water Flow Meter",
+          "line": 162
+        },
+        {
+          "kind": "heading",
+          "name": "Water Flowmeter Calibration",
+          "line": 167
+        },
+        {
+          "kind": "heading",
+          "name": "Water Sample Analysis",
+          "line": 172
+        },
+        {
+          "kind": "heading",
+          "name": "Flood Analysis",
+          "line": 177
+        },
+        {
+          "kind": "heading",
+          "name": "Water Credit",
+          "line": 182
+        },
+        {
+          "kind": "heading",
+          "name": "Hydrology",
+          "line": 187
+        },
+        {
+          "kind": "id",
+          "name": "#service-18",
+          "line": 190
+        },
+        {
+          "kind": "heading",
+          "name": "Groundwater &amp; Investigation (sTEM)",
+          "line": 192
+        },
+        {
+          "kind": "class",
+          "name": ".knowledge-cta-rock-stream-sec",
+          "line": 199
+        },
+        {
+          "kind": "class",
+          "name": ".cta-banner-floating-wrapper",
+          "line": 201
+        },
+        {
+          "kind": "class",
+          "name": ".cta-rock-stream-bg-img",
+          "line": 202
+        }
+      ]
+    },
+    {
+      "path": "services/borewell-revival-detail.html",
+      "size": 421,
+      "mtimeMs": 1791809263280.244,
+      "hash": "b1c38c285ef0b5bf93457c33445a5b845e4d5fa3ea01e35b930aa4f4d6fb7542",
+      "locators": []
+    },
+    {
+      "path": "services/borewell-revival.html",
+      "size": 445,
+      "mtimeMs": 1791809263848.799,
+      "hash": "4a90d2eb8a601804c92270e716daeeb167359cb726ef1d63407710990bda2e6d",
+      "locators": []
+    },
+    {
+      "path": "services/cgwa-application.html",
+      "size": 414,
+      "mtimeMs": 1791809264524.9485,
+      "hash": "e3fd5178f79225b79a550cad54630c597569da15810f822298e210103a28ed8d",
+      "locators": []
+    },
+    {
+      "path": "services/cleaning-recharge-well.html",
+      "size": 429,
+      "mtimeMs": 1791809265285.2222,
+      "hash": "67fac7a3284ab7be68bea761c6e7e06777f98a7297bbd4fbf29e14c76bedb9cf",
+      "locators": []
+    },
+    {
+      "path": "services/drilling-borewell.html",
+      "size": 416,
+      "mtimeMs": 1791809265951.8413,
+      "hash": "6861f77c29f70d2a722cb8524f54d4728db822557628a2f0fa687eee7158f32d",
+      "locators": []
+    },
+    {
+      "path": "services/environmental-remediation.html",
+      "size": 432,
+      "mtimeMs": 1791809266672.7644,
+      "hash": "fa5e5daab0035ae88b4166e80ffe33faa4e8921987561e5b5b4c264240e9b906",
+      "locators": []
+    },
+    {
+      "path": "services/flood-analysis.html",
+      "size": 410,
+      "mtimeMs": 1791809268502.257,
+      "hash": "9d7f257bed2f5ef1cf4e7c2e9721d4f9d96bbecb7f144ab0a568dd6c6ee0e214",
+      "locators": []
+    },
+    {
+      "path": "services/geo-technical-work.html",
+      "size": 418,
+      "mtimeMs": 1791809269260.282,
+      "hash": "37d61cf1e5784e96f338b88f6d1936fc053cfe973e1f7113628e31733d77cae5",
+      "locators": []
+    },
+    {
+      "path": "services/gpr-survey.html",
+      "size": 429,
+      "mtimeMs": 1791809269856.3125,
+      "hash": "e94ba68b9df9cf73c88cd8fcb66207c30b3ed088760adae46afc5aef5410c096",
+      "locators": []
+    },
+    {
+      "path": "services/groundwater-investigation-stem.html",
+      "size": 446,
+      "mtimeMs": 1791809270387.8171,
+      "hash": "0e443b971bac86b30f33907665f5150185271a8daead5c73a5ccd92c282b4fb6",
+      "locators": []
+    },
+    {
+      "path": "services/hydrology.html",
+      "size": 400,
+      "mtimeMs": 1791809271095.9827,
+      "hash": "a11c96aa186e2c4de8f7bd24af0e43e203ebb087bddf33414efaed493c5d3b01",
+      "locators": []
+    },
+    {
+      "path": "services/impact-assessment-report.html",
+      "size": 430,
+      "mtimeMs": 1791809271733.2192,
+      "hash": "cf44d8f4e7943041e2e6f042954f17658cd74722e120d98b27f0cd051fd05cab",
+      "locators": []
+    },
+    {
+      "path": "services/open-well-solutions-detail.html",
+      "size": 418,
+      "mtimeMs": 1791809272400.7986,
+      "hash": "7681ee786af275881c10eb5a81a351e1b2cb5ffc9ce2a1a9a60da85e384af108",
+      "locators": []
+    },
+    {
+      "path": "services/piezometer-supplier.html",
+      "size": 420,
+      "mtimeMs": 1791809273006.1125,
+      "hash": "3103b64ef2f3c366be5fafa1a8c313537cb6590b1cb2ef0e13265d6a7749b5e7",
+      "locators": []
+    },
+    {
+      "path": "services/pump-test.html",
+      "size": 400,
+      "mtimeMs": 1791809273605.4922,
+      "hash": "bcb41790af86fbb93a7136b6f8874e16779de4c7864f02cf358aff7d1d7ac96c",
+      "locators": []
+    },
+    {
+      "path": "services/rain-water-harvesting.html",
+      "size": 424,
+      "mtimeMs": 1791809274232.6064,
+      "hash": "6abdcb20201a31e00ff102630c07377db32da3b7bc7ccd2a89c5f246573725f9",
+      "locators": []
+    },
+    {
+      "path": "services/service-page.js",
+      "size": 155020,
+      "mtimeMs": 1791874552310.0112,
+      "hash": "1104daafd707f36d75fc631877878707a617ba6e7071791e43a78a58ab75b7df",
+      "locators": []
+    },
+    {
+      "path": "services/water-audit.html",
+      "size": 404,
+      "mtimeMs": 1791809274955.1494,
+      "hash": "0bcdf9b11cd4aba20f9520f95ccf3e59eb157976f5ad9763ac70d6adf37ff84d",
+      "locators": []
+    },
+    {
+      "path": "services/water-credit.html",
+      "size": 406,
+      "mtimeMs": 1791809275567.1436,
+      "hash": "7f88b6fabcea570a8b765fdb0c9660d9b752c7c738da1541e30d29d2367f1901",
+      "locators": []
+    },
+    {
+      "path": "services/water-flow-meter.html",
+      "size": 414,
+      "mtimeMs": 1791809276309.5083,
+      "hash": "75bbb8b759c2b785ba150a9b88e51798b6a2672eca9c1108f6273863822c3dc8",
+      "locators": []
+    },
+    {
+      "path": "services/water-flowmeter-calibration.html",
+      "size": 436,
+      "mtimeMs": 1791809277078.4756,
+      "hash": "241438ccd6a98aef5ac0db3d021b2c09f88133f6db554411c836790782629b3a",
+      "locators": []
+    },
+    {
+      "path": "services/water-sample-analysis.html",
+      "size": 424,
+      "mtimeMs": 1791809277696.349,
+      "hash": "a07988c10b88477ccad56847585dc7cd06c79cb8894659aeef1f01c4a9a7d3e2",
+      "locators": []
+    },
+    {
+      "path": "STACK.md",
+      "size": 871,
+      "mtimeMs": 1790757203449.464,
+      "hash": "c5a6642b68ec9afd88bc9604406d896ca33fb8311f2295756ecb0a58ae790969",
+      "locators": []
+    },
+    {
+      "path": "style.css",
+      "size": 779956,
+      "mtimeMs": 1791875677693.334,
+      "hash": "18a918d549167c4a5ea446538d9ae52952ee8efa766acd331df5a04a711f4565",
+      "locators": [
+        {
+          "kind": "custom-property",
+          "name": "--primary-blue",
+          "line": 7
+        },
+        {
+          "kind": "custom-property",
+          "name": "--primary-hover",
+          "line": 8
+        },
+        {
+          "kind": "custom-property",
+          "name": "--dark-navy",
+          "line": 9
+        },
+        {
+          "kind": "custom-property",
+          "name": "--header-dark",
+          "line": 10
+        },
+        {
+          "kind": "custom-property",
+          "name": "--text-dark",
+          "line": 11
+        },
+        {
+          "kind": "custom-property",
+          "name": "--text-muted",
+          "line": 12
+        },
+        {
+          "kind": "custom-property",
+          "name": "--text-light-footer",
+          "line": 13
+        },
+        {
+          "kind": "custom-property",
+          "name": "--border-light",
+          "line": 14
+        },
+        {
+          "kind": "custom-property",
+          "name": "--bg-light-pill",
+          "line": 15
+        },
+        {
+          "kind": "custom-property",
+          "name": "--cyan-accent",
+          "line": 16
+        },
+        {
+          "kind": "custom-property",
+          "name": "--font-body",
+          "line": 18
+        },
+        {
+          "kind": "custom-property",
+          "name": "--font-heading",
+          "line": 19
+        },
+        {
+          "kind": "custom-property",
+          "name": "--radius-sm",
+          "line": 21
+        },
+        {
+          "kind": "custom-property",
+          "name": "--radius-md",
+          "line": 22
+        },
+        {
+          "kind": "custom-property",
+          "name": "--radius-lg",
+          "line": 23
+        },
+        {
+          "kind": "custom-property",
+          "name": "--radius-full",
+          "line": 24
+        },
+        {
+          "kind": "custom-property",
+          "name": "--transition",
+          "line": 26
+        },
+        {
+          "kind": "selector",
+          "name": ".services-directory-page .services-directory-hero .contact-hero-title",
+          "line": 31
+        },
+        {
+          "kind": "selector",
+          "name": ".services-directory-page .services-directory-hero .contact-hero-title span.highlight-blue",
+          "line": 39
+        },
+        {
+          "kind": "selector",
+          "name": ".services-directory-page .services-directory-hero .contact-hero-subtitle",
+          "line": 44
+        },
+        {
+          "kind": "selector",
+          "name": ".services-directory-page .services-directory-intro .services-main-heading",
+          "line": 52
+        },
+        {
+          "kind": "selector",
+          "name": ".services-directory-page .services-directory-intro .services-subtext-para",
+          "line": 62
+        },
+        {
+          "kind": "selector",
+          "name": ".valued-clients-section",
+          "line": 71
+        },
+        {
+          "kind": "selector",
+          "name": ".valued-clients-section::after",
+          "line": 83
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-container",
+          "line": 100
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-hero-grid",
+          "line": 106
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-left-col",
+          "line": 115
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-category-pill",
+          "line": 123
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-main-heading",
+          "line": 127
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-subtext-para",
+          "line": 135
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-action-wrap",
+          "line": 142
+        },
+        {
+          "kind": "selector",
+          "name": ".btn-clients-explore",
+          "line": 149
+        },
+        {
+          "kind": "selector",
+          "name": ".btn-client-story",
+          "line": 155
+        },
+        {
+          "kind": "selector",
+          "name": ".btn-client-story:hover",
+          "line": 169
+        },
+        {
+          "kind": "selector",
+          "name": ".client-story-play",
+          "line": 175
+        },
+        {
+          "kind": "selector",
+          "name": ".client-story-copy",
+          "line": 187
+        },
+        {
+          "kind": "selector",
+          "name": ".client-story-copy strong",
+          "line": 193
+        },
+        {
+          "kind": "selector",
+          "name": ".client-story-copy small",
+          "line": 198
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-stats-row",
+          "line": 203
+        },
+        {
+          "kind": "selector",
+          "name": ".client-stat-card",
+          "line": 213
+        },
+        {
+          "kind": "selector",
+          "name": ".client-stat-card:nth-child(2) .cstat-icon-circle",
+          "line": 227
+        },
+        {
+          "kind": "selector",
+          "name": ".client-stat-card:nth-child(3) .cstat-icon-circle",
+          "line": 231
+        },
+        {
+          "kind": "selector",
+          "name": ".client-stat-card:nth-child(4) .cstat-icon-circle",
+          "line": 235
+        },
+        {
+          "kind": "selector",
+          "name": ".cstat-icon-circle",
+          "line": 239
+        },
+        {
+          "kind": "selector",
+          "name": ".cstat-bold",
+          "line": 247
+        },
+        {
+          "kind": "selector",
+          "name": ".cstat-lbl",
+          "line": 252
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-right-visual-wrap",
+          "line": 258
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-site-artwork-box",
+          "line": 267
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-site-img",
+          "line": 277
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-site-artwork-box:hover .clients-site-img",
+          "line": 286
+        },
+        {
+          "kind": "selector",
+          "name": ".site-glass-fade-overlay",
+          "line": 290
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-live-badge",
+          "line": 294
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-live-badge b",
+          "line": 313
+        },
+        {
+          "kind": "selector",
+          "name": ".clients-live-icon",
+          "line": 318
+        },
+        {
+          "kind": "selector",
+          "name": ".client-logos-showcase-shell",
+          "line": 330
+        },
+        {
+          "kind": "selector",
+          "name": ".client-logos-showcase-card",
+          "line": 340
+        },
+        {
+          "kind": "selector",
+          "name": ".client-logos-viewport",
+          "line": 352
+        },
+        {
+          "kind": "selector",
+          "name": ".client-logos-grid",
+          "line": 357
+        },
+        {
+          "kind": "selector",
+          "name": ".client-logo-box",
+          "line": 362
+        },
+        {
+          "kind": "selector",
+          "name": ".client-logo-box:last-child",
+          "line": 372
+        },
+        {
+          "kind": "selector",
+          "name": ".client-logo-box .logo-svg",
+          "line": 376
+        },
+        {
+          "kind": "selector",
+          "name": ".client-logo-nav",
+          "line": 380
+        },
+        {
+          "kind": "selector",
+          "name": ".client-logo-nav:hover",
+          "line": 396
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-answers-section",
+          "line": 726
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-container",
+          "line": 734
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-header-box",
+          "line": 743
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-category-pill",
+          "line": 752
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-main-heading",
+          "line": 758
+        },
+        {
+          "kind": "property-use",
+          "name": "--font-heading",
+          "line": 762
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-main-heading .highlight-blue-txt",
+          "line": 769
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-main-heading .highlight-blue-txt::after",
+          "line": 776
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-subtext-para",
+          "line": 788
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-main-grid",
+          "line": 796
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-left-droplet-col",
+          "line": 800
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-droplet-artwork-wrap",
+          "line": 809
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-droplet-img",
+          "line": 814
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-right-accordion-grid",
+          "line": 818
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-item-header",
+          "line": 828
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-question-title",
+          "line": 836
+        },
+        {
+          "kind": "selector",
+          "name": ".faq-item-body",
+          "line": 843
+        }
+      ]
+    }
+  ]
+}

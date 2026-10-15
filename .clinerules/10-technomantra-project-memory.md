@@ -5,8 +5,8 @@
 - Workspace: bharta
 - Technology: HTML/CSS/JavaScript
 - Active file at refresh: None
-- Local code graph: 13 files · 6 edges · 0 matched flows
-- Refreshed: 2026-10-09T06:10:02.908Z
+- Local code graph: 29 files · 28 edges · 0 matched flows
+- Refreshed: 2026-10-15T03:42:20.880Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -14,39 +14,21 @@
 ### Entry / bootstrap candidates
 - index.html
 
+### API / client services
+- services/service-page.js
+
 ### Styles
 - style.css
+
+### Services / actions
+- services/service-page.js
 
 ## Recently edited files
 - None recorded yet
 
 ## High-value project files
 - index.html
-- .gsd/templates/architecture.md
-- .gsd/templates/context.md
-- .gsd/templates/DEBUG.md
-- .gsd/templates/decisions.md
-- .gsd/templates/discovery.md
-- .gsd/templates/journal.md
-- .gsd/templates/milestone.md
-- .gsd/templates/phase-summary.md
-- .gsd/templates/PLAN.md
-- .gsd/templates/project.md
-- .gsd/templates/requirements.md
-- .gsd/templates/RESEARCH.md
-- .gsd/templates/roadmap.md
-- .gsd/templates/spec.md
-- .gsd/templates/sprint.md
-- .gsd/templates/stack.md
-- .gsd/templates/state_snapshot.md
-- .gsd/templates/state.md
-- .gsd/templates/SUMMARY.md
-- .gsd/templates/todo.md
-- .gsd/templates/token_report.md
-- .gsd/templates/UAT.md
-- .gsd/templates/user-setup.md
-- .gsd/templates/VERIFICATION.md
-- GSD-STYLE.md
+- services/service-page.js
 - style.css
 - .agent/workflows/add-phase.md
 - .agent/workflows/add-todo.md
@@ -99,35 +81,44 @@
 - .clinerules/09-technomantra-multitask-isolation.md
 - .clinerules/10-technomantra-project-memory.md
 - .clinerules/11-technomantra-code-knowledge.md
+- .clinerules/11-technomantra-patch-index.md
 - .clinerules/12-technomantra-task-capsules.md
 - .clinerules/13-technomantra-runtime-price-optimizer.md
-
-## Additional indexed files
 - .clinerules/14-technomantra-adaptive-cost-optimizer.md
 - .clinerules/15-technomantra-fast-coding-engine.md
 - .clinerules/90-technomantra-selected-agent.md
-- .gemini/GEMINI.md
-- .gsd/examples/cross-platform.md
-- .gsd/examples/multi-wave-workflow.md
-- .gsd/examples/quick-reference.md
-- .gsd/examples/workflow-example.md
-- .gsd/JOURNAL.md
 - .journey-render.html
+- .technomantra/workspace-index.json
 - about.html
-- adapters/CLAUDE.md
-- adapters/GEMINI.md
-- adapters/GPT_OSS.md
-- ARCHITECTURE.md
+- assect/client/ic_logo (1).svg
+- assect/client/ic_logo.svg
 - contact.html
 - knowledge.html
 - main.js
 - model_capabilities.yaml
 - PROJECT_RULES.md
+- services.html
+- services/borewell-revival-detail.html
 - services/borewell-revival.html
-- services/cgwa-consultancy.html
-- services/geophysical-survey.html
-- services/open-well-solutions.html
-- services/production-well.html
-- services/recharge-well.html
-- services/service-detail.html
+- services/cgwa-application.html
+- services/cleaning-recharge-well.html
+- services/drilling-borewell.html
+- services/environmental-remediation.html
+- services/flood-analysis.html
+- services/geo-technical-work.html
+- services/gpr-survey.html
+
+## Additional indexed files
+- services/groundwater-investigation-stem.html
+- services/hydrology.html
+- services/impact-assessment-report.html
+- services/open-well-solutions-detail.html
+- services/piezometer-supplier.html
+- services/pump-test.html
+- services/rain-water-harvesting.html
+- services/water-audit.html
+- services/water-credit.html
+- services/water-flow-meter.html
+- services/water-flowmeter-calibration.html
+- services/water-sample-analysis.html
 - STACK.md
