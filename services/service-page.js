@@ -1025,6 +1025,7 @@
             <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="../about.html" class="nav-link">About Us</a></li>
             <li class="nav-item has-dropdown"><a href="../services.html" class="nav-link active">Services <i class="fa-solid fa-chevron-down nav-arrow"></i></a><ul class="dropdown-list">${serviceMenu}</ul></li>
+            <li class="nav-item"><a href="../projects.html" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="../knowledge.html" class="nav-link">Knowledge Center</a></li>
             <li class="nav-item"><a href="../contact.html" class="nav-link">Contact Us</a></li>
           </ul>
