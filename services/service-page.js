@@ -35,7 +35,7 @@
       facts: ['Rainfall and runoff', 'Aquifer recharge', 'Water availability']
     },
     'groundwater-investigation-stem': {
-      title: 'Groundwater & Investigation (sTEM)',
+      title: 'Groundwater Survey & Investigation (sTEM)',
       category: 'INVESTIGATION',
       image: '../assect/service/Groundwater & Investigation (sTEM).png', technicalImage: '../assect/journey-analysis-v2.png',
       subtitle: 'Scientific groundwater investigation using sTEM-based interpretation for better subsurface understanding.',
@@ -704,7 +704,7 @@
   }).join('');
   const serviceMenu = [
     ['../services.html', 'fa-arrow-right', 'All Services'],
-    ['groundwater-investigation-stem.html', 'fa-arrow-right', 'Groundwater & Investigation (sTEM)'],
+    ['groundwater-investigation-stem.html', 'fa-arrow-right', 'Groundwater Survey & Investigation (sTEM)'],
     ['rain-water-harvesting.html', 'fa-arrow-right', 'Rain Water Harvesting'],
     ['drilling-borewell.html', 'fa-arrow-right', 'Borewell Drilling Services'],
     ['cgwa-application.html', 'fa-arrow-right', 'CGWA Approval &amp; Application Assistance'],
