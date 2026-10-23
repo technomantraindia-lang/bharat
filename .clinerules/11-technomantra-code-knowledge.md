@@ -2,16 +2,17 @@
 
 > Structural local index. Read current source before editing. Secrets are intentionally excluded.
 
-- Indexed source files: 29
-- Structural edges: 28
+- Indexed source files: 30
+- Structural edges: 29
 - Matched end-to-end flows: 0
-- Updated: 2026-10-15T03:42:20.870Z
+- Updated: 2026-10-23T10:57:51.174Z
 
 ## Dependency edges
 - IMPORT index.html -> style.css, main.js
 - IMPORT about.html -> style.css, main.js
 - IMPORT contact.html -> style.css, main.js
 - IMPORT knowledge.html -> style.css, main.js
+- IMPORT projects.html -> style.css, main.js
 - IMPORT services.html -> style.css, main.js
 - IMPORT services/borewell-revival-detail.html -> style.css, services/service-page.js, main.js
 - IMPORT services/borewell-revival.html -> style.css, services/service-page.js, main.js
@@ -48,4 +49,5 @@
 - UI about.html: #navbar, #navMenu, #mobileMenuToggle, #whyChooseJourneyGradient, #contact, #consultModal, .about-page, .top-bar, .container, .top-bar-inner, .top-bar-left, .top-info-item, .fa-solid, .fa-location-dot
 - UI contact.html: #navbar, #navMenu, #mobileMenuToggle, #contactForm, #fullName, #emailAddress, #phoneNumber, #subjectSelect, #messageText, #contact, #consultModal, .contact-page, .top-bar, .container
 - UI knowledge.html: #navbar, #navMenu, #mobileMenuToggle, #featured, #categories, #contact, #consultModal, .top-bar, .container, .top-bar-inner, .top-bar-left, .top-info-item, .fa-solid, .fa-location-dot
+- UI projects.html: #navbar, #navMenu, #mobileMenuToggle, #project-library, #contact, #consultModal, .contact-page, .projects-page-body, .top-bar, .container, .top-bar-inner, .top-bar-left, .top-info-item, .fa-solid
 - UI services.html: #navbar, #navMenu, #mobileMenuToggle, #service-18, #contact, #consultModal, #serviceName, #serviceEmail, #serviceMessage, .services-directory-page, .top-bar, .container, .top-bar-inner, .top-bar-left

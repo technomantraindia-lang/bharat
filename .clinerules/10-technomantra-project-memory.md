@@ -4,9 +4,9 @@
 
 - Workspace: bharta
 - Technology: HTML/CSS/JavaScript
-- Active file at refresh: None
-- Local code graph: 29 files · 28 edges · 0 matched flows
-- Refreshed: 2026-10-15T03:42:20.880Z
+- Active file at refresh: index.html
+- Local code graph: 30 files · 29 edges · 0 matched flows
+- Refreshed: 2026-10-23T10:57:51.179Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -87,8 +87,11 @@
 - .clinerules/14-technomantra-adaptive-cost-optimizer.md
 - .clinerules/15-technomantra-fast-coding-engine.md
 - .clinerules/90-technomantra-selected-agent.md
+- .clinerules/technomantra-developer-learning.md
+- .clinerules/technomantra-team-learning.md
 - .journey-render.html
 - .technomantra/workspace-index.json
+- .vscode/settings.json
 - about.html
 - assect/client/ic_logo (1).svg
 - assect/client/ic_logo.svg
@@ -97,18 +100,19 @@
 - main.js
 - model_capabilities.yaml
 - PROJECT_RULES.md
+- projects.html
 - services.html
 - services/borewell-revival-detail.html
 - services/borewell-revival.html
 - services/cgwa-application.html
 - services/cleaning-recharge-well.html
 - services/drilling-borewell.html
+
+## Additional indexed files
 - services/environmental-remediation.html
 - services/flood-analysis.html
 - services/geo-technical-work.html
 - services/gpr-survey.html
-
-## Additional indexed files
 - services/groundwater-investigation-stem.html
 - services/hydrology.html
 - services/impact-assessment-report.html

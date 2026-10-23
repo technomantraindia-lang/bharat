@@ -270,7 +270,7 @@
       }
     },
     'impact-assessment-report': {
-      title: 'Impact Assessment Report Services', category: 'ASSESSMENT', image: '../assect/service/Impact Assessment Report.png', technicalImage: '../assect/proc-02-analysis.jpg',
+      title: 'Ground Impact Assessment Report Services', category: 'ASSESSMENT', image: '../assect/service/Impact Assessment Report.png', technicalImage: '../assect/proc-02-analysis.jpg',
       subtitle: 'Comprehensive impact assessment and reporting services to evaluate the environmental and groundwater implications of proposed projects and support informed planning and regulatory requirements.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Need an Impact Assessment for Your Project?',
@@ -398,28 +398,30 @@
     },
     'rain-water-harvesting': {
       title: 'Rainwater Harvesting Solutions', category: 'CONSERVATION', image: '../assect/service/Rain Water Harvesting.png', technicalImage: '../assect/service-recharge-well-generated.png',
-      subtitle: 'Sustainable rainwater harvesting systems designed to conserve water, recharge groundwater, and support long-term water management for residential, commercial, industrial, and institutional projects.',
+      subtitle: 'Scientifically planned rainwater collection, filtration, storage, and artificial recharge systems for residential, commercial, industrial, and institutional projects.',
       heroCta: 'Request a Consultation',
       ctaTitle: 'Build a Sustainable Water Management System',
-      ctaText: 'Whether you require a new rainwater harvesting installation or want to improve an existing system, our team can design and implement solutions that support efficient water conservation and groundwater recharge.',
+      ctaText: 'Whether you need a new rainwater harvesting system or want to improve an existing one, our team can plan the collection, filtration, storage, and recharge arrangement around your site conditions.',
       ctaLabel: 'Contact Our Team',
-      intro: 'Rainwater harvesting includes the process of collecting, filtering, and directing rainwater for storage or groundwater recharge. The biggest benefit is that it helps reduce dependence on conventional water sources, improves groundwater levels, and promotes efficient water resource management.',
-      detail: 'At Hydrogeological, we provide end-to-end rainwater harvesting solutions, including site assessment, system design, installation support, and maintenance, ensuring every system is designed to suit the site\'s requirements and applicable guidelines.',
-      benefits: ['Enhances groundwater recharge', 'Conserves valuable water resources', 'Reduces dependence on municipal water supply', 'Helps prevent soil erosion', 'Minimises stormwater runoff', 'Supports sustainable water management', 'Improves water availability during scarcity', 'Reduces water bills'],
-      steps: ['Site Assessment — Evaluation of site conditions, catchment areas, soil characteristics, and project requirements.', 'System Design — Preparation of customised designs based on available space, rainfall data, and groundwater recharge objectives.', 'Installation — Construction and installation of harvesting structures using appropriate materials and engineering practices.', 'Testing & Commissioning — Verification of system performance before handover.', 'Maintenance Support — Regular inspection and maintenance services to ensure long-term efficiency.'],
-      facts: ['Runoff capture', 'Filtration design', 'Aquifer recharge'],
+      intro: 'Rainwater harvesting is the planned collection of runoff from rooftops, open grounds, lawns, and other catchment surfaces for storage, reuse, or groundwater recharge. A well-designed system helps address falling groundwater levels, urban flooding, changing rainfall patterns, and water shortages while reducing dependence on conventional supplies.',
+      detail: 'Our end-to-end solutions combine collection piping, inspection chambers, sediment and debris filtration, storage, and artificial recharge through recharge pits, dug wells, open wells, active borewells, or suitable defunct borewells. Smart filter units can help separate silt, soil, organic matter, and other impurities before water enters the recharge structure, reducing blockages and helping protect groundwater quality in line with applicable guidelines.',
+      benefits: ['Enhances groundwater recharge', 'Conserves valuable water resources', 'Reduces dependence on municipal water supply', 'Filters silt and debris before recharge', 'Minimises stormwater runoff and urban flooding', 'Supports storage and non-potable reuse', 'Improves water availability during scarcity', 'Enables optional flow measurement and reporting', 'Reduces clogging and maintenance at recharge points', 'Supports residential, commercial, and industrial projects'],
+      steps: ['Site Assessment — We review catchment areas, rainfall patterns, ground levels, soil and groundwater conditions, runoff quality, available space, and the project\'s storage or recharge objective.', 'Site-Specific Design — We prepare the collection, filtration, storage, and recharge layout with inlet and outlet levels, access, maintenance requirements, and applicable guidelines in mind.', 'Pit & Base Preparation — The required pit is excavated to the design levels and a stable PCC base is provided before placing the filter or recharge unit.', 'Filter & Piping Installation — The filter body, dual-screen arrangement, filter bag, collection piping, inspection chambers, and connections to the recharge pit, well, or borewell are installed.', 'Media Filling & Flow Monitoring — Natural granular filter media is placed as specified and an optional ultrasonic water flow meter can be fitted where harvested quantity or compliance reporting is required.', 'Backfilling, Testing & Handover — The system is backfilled with proper compaction, the cover is selected for the site load class, and the complete arrangement is tested before handover with maintenance guidance.'],
+      facts: ['Smart filtration', 'Artificial recharge', 'Flow measurement'],
       longForm: {
         whyLabel: 'SERVICE OVERVIEW',
         whyTitle: 'What is Rainwater Harvesting?',
-        whyText: 'Rainwater harvesting includes the process of collecting, filtering, and directing rainwater for storage or groundwater recharge. The biggest benefit is that it helps reduce dependence on conventional water sources, improves groundwater levels, and promotes efficient water resource management.',
+        whyText: 'Rainwater harvesting is more than collecting water. It is a coordinated system of catchment collection, safe conveyance, filtration, storage, and groundwater recharge. With suitable filtration, collected runoff can be directed to storage or recharge structures while reducing sediment entry, recharge-point clogging, and the impact of excessive surface runoff.',
         solutionsTitle: 'Comprehensive Rainwater Harvesting Solutions',
-        solutionsIntro: 'We offer complete rainwater harvesting services for new developments as well as existing properties.',
+        solutionsIntro: 'We offer complete rainwater harvesting services for new developments as well as existing properties, from site assessment through installation, testing, and maintenance planning.',
         solutions: [
           ['System Planning & Design', 'We assess site conditions, rainfall patterns, catchment areas, and water requirements to design efficient rainwater harvesting systems.'],
-          ['Rooftop Rainwater Harvesting', 'Collection of rainwater from rooftops through filtration systems for groundwater recharge or storage.'],
-          ['Groundwater Recharge Systems', 'Design and construction of recharge wells, recharge pits, and other structures that help replenish groundwater resources.'],
-          ['Filtration Systems', 'Installation of filtration units to remove debris, sediments, and impurities before water enters storage or recharge systems.'],
-          ['Maintenance & Performance Assessment', 'Inspection, cleaning, and maintenance of rainwater harvesting systems to ensure efficient operation throughout the year.']
+          ['Rooftop & Surface Runoff Collection', 'Collection from rooftops, open grounds, lawns, and paved catchments through suitable gutters, stormwater piping, and inspection chambers.'],
+          ['Smart Rainwater Filter Units', 'Filter arrangements with screens, filter bags, and granular media help remove silt, soil, organic matter, and other impurities before storage or recharge.'],
+          ['Artificial Groundwater Recharge', 'Design and connection of recharge pits, dug wells, open wells, active borewells, or suitable defunct borewells to replenish aquifers where site conditions allow.'],
+          ['Storage & Reuse Planning', 'Collected water can be planned for storage and suitable non-potable uses such as irrigation, landscaping, flushing, or process requirements.'],
+          ['Flow Measurement & Compliance Support', 'Optional flow meters, access provisions, and technical records can support water accounting, monitoring, and applicable environmental requirements.'],
+          ['Maintenance & Performance Assessment', 'Inspection, cleaning, filter-media checks, and performance reviews help maintain reliable operation throughout the year.']
         ],
         sectorLabel: 'APPLICATIONS',
         sectorTitle: 'Where Rainwater Harvesting Helps',
@@ -429,10 +431,13 @@
         processTitle: 'Our Process',
         strengthsLabel: 'WHY CHOOSE US?',
         strengthsTitle: 'Complete water conservation support',
-        strengths: ['Experienced hydrogeology and water management professionals', 'Compliance with applicable guidelines and standards', 'Site-specific system design', 'Quality materials and construction practices', 'Technical expertise in groundwater recharge', 'End-to-end project execution', 'Timely project delivery', 'Long-term maintenance support'],
+        strengths: ['Experienced hydrogeology and water management professionals', 'Compliance with applicable guidelines and standards', 'Site-specific system design', 'Fast installation after pit and base preparation', 'Watertight and hygienic filter-unit options', 'Technical expertise in groundwater recharge', 'Low-maintenance and durable system planning', 'Suitability assessment for saline or submerged conditions', 'Optional flow measurement and monitoring', 'End-to-end project execution and maintenance support'],
         faqs: [
           ['What is the purpose of a rainwater harvesting system?', 'A rainwater harvesting system collects and manages rainwater for storage or groundwater recharge, helping conserve water resources and improve long-term water availability.'],
-          ['How is a rainwater harvesting system designed?', 'The design considers catchment area, rainfall patterns, runoff quality, soil and groundwater conditions, available space, water demand and the choice between storage and recharge.'],
+          ['How is a rainwater harvesting system designed?', 'The design considers catchment area, rainfall patterns, runoff quality, soil and groundwater conditions, available space, water demand, access for maintenance, and the choice between storage and recharge.'],
+          ['What does a smart rainwater filter do?', 'It helps separate silt, soil, organic matter, and other impurities from collected runoff before the water reaches storage or a recharge structure, reducing the chance of clogging.'],
+          ['Where can filtered rainwater be recharged?', 'Depending on site conditions and approvals, filtered runoff may be directed to a recharge pit, dug well, open well, active borewell, or suitable defunct borewell.'],
+          ['Can the harvested water quantity be measured?', 'Yes. An optional ultrasonic water flow meter can be included in the piping arrangement where water accounting, monitoring, or environmental reporting is required.'],
           ['Is rainwater harvesting suitable for existing buildings?', 'Yes. Existing buildings can often be assessed for rooftop collection, filtration, storage or recharge options based on site conditions and available space.'],
           ['What types of properties can benefit from rainwater harvesting?', 'Residential communities, commercial buildings, hotels, hospitals, educational institutions, industrial facilities, warehouses and infrastructure projects can all benefit.'],
           ['How often should a rainwater harvesting system be maintained?', 'Inspection and cleaning should be planned around rainfall patterns, debris load, filter condition and the type of storage or recharge structure installed.'],
@@ -578,7 +583,7 @@
       intro: 'Water sample analysis involves testing water to determine its quality and suitability for a specific purpose. Water quality can vary depending on its source, surrounding geological conditions, land use, industrial activities, and other environmental factors.',
       detail: 'Our water sample analysis services support the assessment of groundwater, surface water, and other sources based on project requirements. Samples are collected or submitted for relevant testing, and the results are evaluated against applicable standards or project requirements.',
       benefits: ['Accurate assessment of water quality', 'Detection of potential water quality concerns', 'Identification of physical and chemical parameters', 'Evaluation of groundwater and surface water', 'Technical data for environmental monitoring', 'Support for drinking and domestic water assessment', 'Reliable documentation of water quality results', 'Support for water treatment and management decisions'],
-      steps: ['Sample & Requirement Assessment — We understand the water source, intended use, project objectives, and parameters that need to be assessed.', 'Sample Collection — Water samples are collected from the relevant source using appropriate practices to help maintain sample integrity.', 'Laboratory Testing — Samples are tested for selected physical, chemical, and other relevant parameters according to the assessment requirements.', 'Results Evaluation — Test results are reviewed to understand water-quality characteristics and identify parameters requiring attention.', 'Comparison & Interpretation — Where applicable, results are compared with relevant standards or project-specific requirements to assess suitability.', 'Reporting — Analysis results and observations are compiled into a technical report or test report providing a clear record of the assessment.'], facts: ['Water quality', 'Lab coordination', 'Result interpretation'],
+      steps: ['Sample & Requirement Assessment — We understand the water source, intended use, project objectives, and parameters that need to be assessed.', 'Sample Collection — Water samples are collected from the relevant source using appropriate practices to help maintain sample integrity.', 'Laboratory & NAAL Testing — Samples are tested for selected physical, chemical, and other relevant parameters according to the assessment requirements.', 'Results Evaluation — Test results are reviewed to understand water-quality characteristics and identify parameters requiring attention.', 'Comparison & Interpretation — Where applicable, results are compared with relevant standards or project-specific requirements to assess suitability.', 'Reporting — Analysis results and observations are compiled into a technical report or test report providing a clear record of the assessment.'], facts: ['Water quality', 'Lab coordination', 'Result interpretation'],
       longForm: {
         whyLabel: 'SERVICE OVERVIEW',
         whyTitle: 'Understanding Water Sample Analysis',
@@ -667,7 +672,7 @@
     [data-service].service-icons-fallback .fa-file-shield::before { content: "▣" !important; }
     [data-service].service-icons-fallback .fa-broom::before { content: "⌁" !important; }
     [data-service].service-icons-fallback .fa-bore-hole::before { content: "◎" !important; }
-    [data-service].service-icons-fallback .fa-leaf::before { content: "♣" !important; }
+    [data-service].service-icons-fallback .fa-leaf::before { content: "❧" !important; }
     [data-service].service-icons-fallback .fa-bullseye::before { content: "◉" !important; }
     [data-service].service-icons-fallback .fa-gears::before { content: "⚙" !important; }
     [data-service].service-icons-fallback .fa-user-tie::before { content: "♟" !important; }
@@ -683,6 +688,9 @@
     [data-service].service-icons-fallback .fa-hand-holding-droplet::before { content: "♨" !important; }
     [data-service].service-icons-fallback .fa-list-check::before { content: "☷" !important; }
     [data-service].service-icons-fallback .fa-clock::before { content: "◷" !important; }
+    [data-service].service-icons-fallback .fa-crosshairs::before { content: "◎" !important; }
+    [data-service].service-icons-fallback .fa-cube::before { content: "⬢" !important; }
+    [data-service].service-icons-fallback .fa-stopwatch::before { content: "◷" !important; }
   `;
   document.head.appendChild(iconFallbackStyles);
   document.body.classList.add('service-icons-fallback');
@@ -696,24 +704,24 @@
   }).join('');
   const serviceMenu = [
     ['../services.html', 'fa-arrow-right', 'All Services'],
-    ['gpr-survey.html', 'fa-arrow-right', 'GPR Survey'],
-    ['cgwa-application.html', 'fa-arrow-right', 'CGWA Application'],
-    ['cleaning-recharge-well.html', 'fa-arrow-right', 'Cleaning Of Recharge Well'],
-    ['drilling-borewell.html', 'fa-arrow-right', 'Drilling Borewell'],
-    ['environmental-remediation.html', 'fa-arrow-right', 'Environmental Remediation'],
-    ['geo-technical-work.html', 'fa-arrow-right', 'Geo Technical Work'],
-    ['impact-assessment-report.html', 'fa-arrow-right', 'Impact Assessment Report'],
-    ['piezometer-supplier.html', 'fa-arrow-right', 'Piezometer Supplier'],
-    ['pump-test.html', 'fa-arrow-right', 'Pump Test'],
+    ['groundwater-investigation-stem.html', 'fa-arrow-right', 'Groundwater & Investigation (sTEM)'],
     ['rain-water-harvesting.html', 'fa-arrow-right', 'Rain Water Harvesting'],
-    ['water-audit.html', 'fa-arrow-right', 'Water Audit'],
-    ['water-flow-meter.html', 'fa-arrow-right', 'Water Flow Meter'],
-    ['water-flowmeter-calibration.html', 'fa-arrow-right', 'Water Flowmeter Calibration'],
-    ['water-sample-analysis.html', 'fa-arrow-right', 'Water Sample Analysis'],
-    ['flood-analysis.html', 'fa-arrow-right', 'Flood Analysis'],
+    ['drilling-borewell.html', 'fa-arrow-right', 'Borewell Drilling Services'],
+    ['cgwa-application.html', 'fa-arrow-right', 'CGWA Approval &amp; Application Assistance'],
+    ['water-flow-meter.html', 'fa-arrow-right', 'Water Flow Meter Services'],
+    ['cleaning-recharge-well.html', 'fa-arrow-right', 'Cleaning Of Recharge Well'],
+    ['water-audit.html', 'fa-arrow-right', 'Water Audit Services'],
+    ['water-flowmeter-calibration.html', 'fa-arrow-right', 'Water Flowmeter Calibration Services'],
+    ['piezometer-supplier.html', 'fa-arrow-right', 'Piezometer Supplier'],
+    ['geo-technical-work.html', 'fa-arrow-right', 'Geotechnical Investigation Services'],
+    ['impact-assessment-report.html', 'fa-arrow-right', 'Ground Impact Assessment Report Services'],
+    ['pump-test.html', 'fa-arrow-right', 'Pump Test Services'],
+    ['water-sample-analysis.html', 'fa-arrow-right', 'Water Sample Analysis Services'],
+    ['gpr-survey.html', 'fa-arrow-right', 'Ground Penetrating Radar (GPR) Survey'],
     ['water-credit.html', 'fa-arrow-right', 'Water Credit'],
-    ['hydrology.html', 'fa-arrow-right', 'Hydrology'],
-    ['groundwater-investigation-stem.html', 'fa-arrow-right', 'Groundwater & Investigation (sTEM)']
+    ['environmental-remediation.html', 'fa-arrow-right', 'Environmental Remediation Services'],
+    ['flood-analysis.html', 'fa-arrow-right', 'Flood Analysis'],
+    ['hydrology.html', 'fa-arrow-right', 'Hydrology']
   ].map(([href, icon, label]) => `<li><a href="${href.startsWith('../') ? href : `../services/${href}`}"><i class="fa-solid ${icon}"></i> ${label}</a></li>`).join('');
 
   const technicalCapabilitiesSection = `
@@ -979,7 +987,7 @@
     </section>
 
     <section class="reference-service-overview reference-service-overview-combined" id="premium-overview">
-      <div class="container reference-service-container"><div class="reference-overview-grid"><div class="reference-overview-visual"><img src="${referenceOverviewImage}" alt="${service.title} service overview visual"><div class="reference-overview-float reference-overview-float-top"><i class="fa-solid fa-tower-broadcast"></i><b>Non-Destructive<br>Survey Method</b></div><div class="reference-overview-float reference-overview-float-bottom"><i class="fa-solid fa-wave-square"></i><span><b>2D/3D Subsurface Mapping</b><small>${benefitItems[0] || 'Accurate underground mapping'} with high accuracy.</small></span><i class="fa-solid fa-chevron-right"></i></div></div><div class="reference-overview-copy"><span class="reference-service-kicker reference-service-kicker-blue">${service.longForm?.whyLabel || 'SERVICE OVERVIEW'}</span><h2>${referenceOverviewTitle}</h2><div class="reference-overview-description"><p>${service.overviewLead || service.intro}</p><p>${service.overviewSecondary || service.detail}</p></div><div class="reference-overview-benefits-heading"><span>FIELD OUTCOMES</span><small>Clear information for better project decisions.</small></div><div class="reference-overview-benefits">${benefitItems.slice(0, 4).map((benefit, index) => `<article><span class="reference-overview-benefit-icon tone-${['blue', 'green', 'orange', 'purple'][index]}"><i class="fa-solid ${['fa-crosshairs', 'fa-cube', 'fa-leaf', 'fa-stopwatch'][index]}"></i></span><span><b>${benefit}</b><small>${['Locate hidden utilities and buried services with high accuracy.', 'Detect foundations, tanks, voids and other subsurface features.', 'Get detailed information without disturbing the existing site.', 'Quick surveys with reliable data for safer project planning.'][index]}</small></span></article>`).join('')}</div></div></div></div>
+      <div class="container reference-service-container"><div class="reference-overview-grid"><div class="reference-overview-visual"><img src="${referenceOverviewImage}" alt="${service.title} service overview visual"></div><div class="reference-overview-copy"><span class="reference-service-kicker reference-service-kicker-blue">${service.longForm?.whyLabel || 'SERVICE OVERVIEW'}</span><h2>${referenceOverviewTitle}</h2><div class="reference-overview-description"><p>${service.overviewLead || service.intro}</p><p>${service.overviewSecondary || service.detail}</p></div><div class="reference-overview-benefits-heading"><span>FIELD OUTCOMES</span><small>Clear information for better project decisions.</small></div><div class="reference-overview-benefits">${benefitItems.slice(0, 4).map((benefit, index) => `<article><span class="reference-overview-benefit-icon tone-${['blue', 'green', 'orange', 'purple'][index]}"><i class="fa-solid ${['fa-crosshairs', 'fa-cube', 'fa-leaf', 'fa-stopwatch'][index]}"></i></span><span><b>${benefit}</b><small>${['Locate hidden utilities and buried services with high accuracy.', 'Detect foundations, tanks, voids and other subsurface features.', 'Get detailed information without disturbing the existing site.', 'Quick surveys with reliable data for safer project planning.'][index]}</small></span></article>`).join('')}</div></div></div></div>
     </section>
 
     <section class="reference-service-section reference-process-section reference-process-reference">

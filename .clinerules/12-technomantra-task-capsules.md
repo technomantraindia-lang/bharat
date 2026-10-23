@@ -19,10 +19,10 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Workspace ID: tm-ws-1c3b596939051378137c64b6
 - Window ID: tm-win-71e97444ee5d05a858ec797f
 - Project: bharta
-- Framework: html-static
+- Framework: 
 - Developer mode: smart
 - Model mode: eco
-- Active file: about.html
+- Active file: index.html
 - Objective: Current developer prompt in this workspace/window only.
 - Blocker: none
 - Next action: Inspect current prompt and workspace evidence before editing.
@@ -32,8 +32,8 @@ The extension refreshes this file automatically. Prefer its concise state over o
 ## Touched files in this capsule
 
 ## Recent files in this workspace/window
-- about.html
 - index.html
+- about.html
 - services/service-page.js
 - services/rain-water-harvesting.html
 - services/cgwa-application.html
