@@ -22,7 +22,7 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Framework: 
 - Developer mode: smart
 - Model mode: eco
-- Active file: index.html
+- Active file: services/groundwater-investigation-stem.html
 - Objective: Current developer prompt in this workspace/window only.
 - Blocker: none
 - Next action: Inspect current prompt and workspace evidence before editing.
@@ -32,6 +32,7 @@ The extension refreshes this file automatically. Prefer its concise state over o
 ## Touched files in this capsule
 
 ## Recent files in this workspace/window
+- services/groundwater-investigation-stem.html
 - index.html
 - about.html
 - services/service-page.js
