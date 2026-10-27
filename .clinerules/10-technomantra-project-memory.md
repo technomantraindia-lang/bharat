@@ -6,7 +6,7 @@
 - Technology: HTML/CSS/JavaScript
 - Active file at refresh: services/groundwater-investigation-stem.html
 - Local code graph: 30 files · 29 edges · 0 matched flows
-- Refreshed: 2026-10-26T03:07:45.967Z
+- Refreshed: 2026-10-27T09:21:41.775Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static

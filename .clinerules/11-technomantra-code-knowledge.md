@@ -5,7 +5,7 @@
 - Indexed source files: 30
 - Structural edges: 29
 - Matched end-to-end flows: 0
-- Updated: 2026-10-26T03:07:45.954Z
+- Updated: 2026-10-27T09:21:41.772Z
 
 ## Dependency edges
 - IMPORT services/groundwater-investigation-stem.html -> style.css, services/service-page.js, main.js
