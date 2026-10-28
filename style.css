@@ -40214,7 +40214,7 @@ body.home-page .hero-banner .hero-video-overlay {
   position: absolute !important;
   inset: 0 !important;
   background:
-    linear-gradient(90deg, rgba(232, 247, 255, .98) 0%, rgba(222, 243, 255, .96) 21%, rgba(210, 238, 255, .82) 30%, rgba(210, 238, 255, .36) 40%, rgba(210, 238, 255, 0) 55%),
+    linear-gradient(90deg, rgba(232, 247, 255, .82) 0%, rgba(222, 243, 255, .76) 21%, rgba(210, 238, 255, .56) 30%, rgba(210, 238, 255, .2) 40%, rgba(210, 238, 255, 0) 55%),
     linear-gradient(180deg, rgba(255, 255, 255, .15), transparent 22%, transparent 82%, rgba(203, 233, 252, .46)) !important;
   z-index: 2 !important;
 }
@@ -40410,7 +40410,7 @@ body.home-page .hero-media-side-note { display: none !important; }
   body.home-page .hero-banner .hero-container { width: calc(100% - 72px) !important; }
   body.home-page .hero-intro-layout { width: min(100%, 720px) !important; }
   body.home-page .hero-banner .hero-video-bg-wrap { position: absolute !important; inset: 0 !important; width: 100% !important; height: 100% !important; }
-  body.home-page .hero-banner .hero-video-overlay { background: linear-gradient(90deg, rgba(232, 247, 255, .97) 0%, rgba(222, 243, 255, .9) 34%, rgba(210, 238, 255, .25) 65%, transparent 100%) !important; }
+  body.home-page .hero-banner .hero-video-overlay { background: linear-gradient(90deg, rgba(232, 247, 255, .82) 0%, rgba(222, 243, 255, .72) 34%, rgba(210, 238, 255, .16) 65%, transparent 100%) !important; }
 }
 
 @media (max-width: 700px) {
