@@ -1017,7 +1017,7 @@
     <div class="top-bar">
       <div class="container top-bar-inner">
         <div class="top-bar-left">
-          <div class="top-info-item"><i class="fa-solid fa-location-dot"></i><span>301, SDF Complex, Akshar Chowk, Vadodara, Gujarat, India</span></div>
+          <div class="top-info-item"><i class="fa-solid fa-location-dot"></i><span>506, 507, OneWest by Asopalav, Bhayli-Sevasi Link Road, Vadodara - 391101</span></div>
           <a href="mailto:info@bharatbhujal.com" class="top-info-item"><i class="fa-regular fa-envelope"></i><span>info@bharatbhujal.com</span></a>
           <a href="tel:+919826377611" class="top-info-item"><i class="fa-solid fa-phone-volume"></i><span>+91 98263 77611</span></a>
         </div>
@@ -1093,8 +1093,15 @@
       </div>
       <div class="footer-bottom-strip"><div class="container footer-bottom-inner"><div class="copyright-text">&copy; 2026 Bharat Bhujal Tech Pvt. Ltd. All Rights Reserved.</div><div class="legal-links"><a href="#">Privacy Policy</a><span class="sep">|</span><a href="#">Terms &amp; Conditions</a><span class="sep">|</span><a href="#">Sitemap</a></div><div class="made-in-tag"><span>Designed with <span class="heart-blue">&#10084;</span> in India</span></div></div></div>
     </footer>`;
+  const officeAddress = '506, 507, OneWest by Asopalav, Bhayli-Sevasi Link Road, Vadodara - 391101';
+  document.body.innerHTML = document.body.innerHTML
+    .replaceAll('301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India', officeAddress)
+    .replaceAll('301, SDF Complex, Akshar Chowk, Vadodara, Gujarat, India', officeAddress);
   const currentFooter = document.querySelector('.master-footer');
-  if (currentFooter) currentFooter.outerHTML = homepageFooter;
+  const normalizedFooter = homepageFooter
+    .replaceAll('301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India', officeAddress)
+    .replaceAll('301, SDF Complex, Akshar Chowk, Vadodara, Gujarat, India', officeAddress);
+  if (currentFooter) currentFooter.outerHTML = normalizedFooter;
 })();
 /* <div class="footer-col col-contact">
   <h4 class="footer-heading">Get in Touch<span class="heading-accent-line"></span></h4>
