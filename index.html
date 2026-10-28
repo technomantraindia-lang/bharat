@@ -18,10 +18,10 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="style.css?v=2.24.0">
+  <link rel="stylesheet" href="style.css?v=2.34.0">
 </head>
 
-<body>
+<body class="home-page">
 
   <!-- ================= TOP BAR (EXACT AS SCREENSHOT) ================= -->
   <div class="top-bar">
@@ -131,101 +131,66 @@
     </div>
   </header>
 
-  <!-- ================= HERO BANNER SECTION ================= -->
+  <!-- ================= SPLIT HOMEPAGE HERO ================= -->
   <section class="hero-banner" id="home">
-    <!-- Background Video with Seamless Zero-Delay Looping -->
-    <div class="hero-video-bg-wrap">
-      <video id="heroVideo1" class="hero-video-bg video-visible" autoplay muted playsinline preload="auto">
+    <div class="hero-video-bg-wrap" aria-hidden="true">
+      <video id="heroVideo1" class="hero-video-bg video-visible" autoplay muted loop playsinline preload="auto" poster="assect/hydrogeology-3d-recharge-diagram.jpg">
         <source src="assect/gemini_generated_video_626ab2c2.mp4" type="video/mp4">
       </video>
-      <video id="heroVideo2" class="hero-video-bg" muted playsinline preload="auto">
+      <video id="heroVideo2" class="hero-video-bg" muted playsinline preload="auto" poster="assect/hydrogeology-3d-recharge-diagram.jpg">
         <source src="assect/gemini_generated_video_626ab2c2.mp4" type="video/mp4">
       </video>
       <div class="hero-video-overlay"></div>
     </div>
 
-    <!-- Hero Content Container -->
     <div class="container hero-container">
-
-      <!-- Hero Main Content -->
-      <div class="hero-left-content">
-
-        <!-- Sleek Micro Badge -->
-        <div class="hero-badge-pill">
-          <span class="badge-pulse-indicator"></span>
-          <span class="badge-title-txt">GROUNDWATER EXPLORATION &amp; TECH</span>
+      <div class="hero-intro-layout">
+        <div class="hero-heading-content">
+          <div class="hero-badge-pill">
+            <span class="badge-pulse-indicator" aria-hidden="true"></span>
+            <span class="badge-title-txt">GROUNDWATER EXPLORATION &amp; TECH</span>
+          </div>
+          <h1 class="hero-main-title">
+            Smart Water Solutions<br>
+            for a <span class="text-water-gradient">Sustainable Future</span>
+          </h1>
         </div>
 
-        <!-- Main Heading -->
-        <h1 class="hero-main-title">
-          Smart Water Solutions <br>
-          for a <span class="text-water-gradient">Sustainable Future</span>
-        </h1>
-
-        <!-- Crisp Concise Subtitle -->
-        <p class="hero-subtext-para">
-          Precision geophysical surveys and sustainable groundwater management across India.
-        </p>
-
-        <!-- Modern Action Buttons -->
-        <div class="hero-buttons-flex">
-          <a href="#services" class="btn-hero-explore">
-            <span>Explore Services</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-          <button class="btn-hero-talk" onclick="openConsultModal()">
-            <i class="fa-solid fa-headset"></i>
-            <span>Talk to Experts</span>
-          </button>
+        <div class="hero-side-copy">
+          <p class="hero-subtext-para">
+            Precision geophysical surveys and sustainable groundwater management across India.
+          </p>
+          <div class="hero-buttons-flex">
+            <a href="#services" class="btn-hero-explore">
+              <span>Explore Services</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <button class="btn-hero-talk" onclick="openConsultModal()">
+              <i class="fa-solid fa-headset" aria-hidden="true"></i>
+              <span>Talk to Experts</span>
+            </button>
+          </div>
         </div>
 
-        <!-- Elevated Glass Metric Dock -->
-        <div class="hero-stats-bar">
-
+        <div class="hero-stats-bar" aria-label="Company highlights">
           <div class="stat-item">
-            <div class="stat-icon-circle">
-              <i class="fa-solid fa-award"></i>
-            </div>
-            <div class="stat-meta">
-              <span class="num" data-target="15">15+</span>
-              <span class="lbl">Years Exp.</span>
-            </div>
+            <div class="stat-icon-circle"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+            <div class="stat-meta"><span class="num">15+</span><span class="lbl">Years Experience</span></div>
           </div>
-
           <div class="stat-item">
-            <div class="stat-icon-circle">
-              <i class="fa-solid fa-check-double"></i>
-            </div>
-            <div class="stat-meta">
-              <span class="num" data-target="500">500+</span>
-              <span class="lbl">Projects</span>
-            </div>
+            <div class="stat-icon-circle"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+            <div class="stat-meta"><span class="num">500+</span><span class="lbl">Projects</span></div>
           </div>
-
           <div class="stat-item">
-            <div class="stat-icon-circle">
-              <i class="fa-solid fa-map-location-dot"></i>
-            </div>
-            <div class="stat-meta">
-              <span class="txt-bold">Pan India</span>
-              <span class="lbl">Coverage</span>
-            </div>
+            <div class="stat-icon-circle"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></div>
+            <div class="stat-meta"><span class="txt-bold">Pan India</span><span class="lbl">Coverage</span></div>
           </div>
-
           <div class="stat-item">
-            <div class="stat-icon-circle">
-              <i class="fa-solid fa-user-gear"></i>
-            </div>
-            <div class="stat-meta">
-              <span class="txt-bold">Expert</span>
-              <span class="lbl">Tech Team</span>
-            </div>
+            <div class="stat-icon-circle"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
+            <div class="stat-meta"><span class="txt-bold">Expert</span><span class="lbl">Tech team</span></div>
           </div>
-
         </div>
-
       </div>
-
     </div>
   </section>
 
