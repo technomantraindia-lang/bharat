@@ -4,9 +4,9 @@
 
 - Workspace: bharta
 - Technology: HTML/CSS/JavaScript
-- Active file at refresh: services/groundwater-investigation-stem.html
+- Active file at refresh: None
 - Local code graph: 30 files · 29 edges · 0 matched flows
-- Refreshed: 2026-10-27T09:21:41.775Z
+- Refreshed: 2026-10-28T03:43:07.155Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -27,7 +27,6 @@
 - None recorded yet
 
 ## High-value project files
-- services/groundwater-investigation-stem.html
 - index.html
 - services/service-page.js
 - style.css
@@ -107,13 +106,14 @@
 - services/borewell-revival.html
 - services/cgwa-application.html
 - services/cleaning-recharge-well.html
+- services/drilling-borewell.html
 
 ## Additional indexed files
-- services/drilling-borewell.html
 - services/environmental-remediation.html
 - services/flood-analysis.html
 - services/geo-technical-work.html
 - services/gpr-survey.html
+- services/groundwater-investigation-stem.html
 - services/hydrology.html
 - services/impact-assessment-report.html
 - services/open-well-solutions-detail.html

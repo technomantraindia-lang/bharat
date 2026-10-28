@@ -5,10 +5,9 @@
 - Indexed source files: 30
 - Structural edges: 29
 - Matched end-to-end flows: 0
-- Updated: 2026-10-27T09:21:41.772Z
+- Updated: 2026-10-28T03:43:07.154Z
 
 ## Dependency edges
-- IMPORT services/groundwater-investigation-stem.html -> style.css, services/service-page.js, main.js
 - IMPORT index.html -> style.css, main.js
 - IMPORT about.html -> style.css, main.js
 - IMPORT contact.html -> style.css, main.js
@@ -24,6 +23,7 @@
 - IMPORT services/flood-analysis.html -> style.css, services/service-page.js, main.js
 - IMPORT services/geo-technical-work.html -> style.css, services/service-page.js, main.js
 - IMPORT services/gpr-survey.html -> style.css, services/service-page.js, main.js
+- IMPORT services/groundwater-investigation-stem.html -> style.css, services/service-page.js, main.js
 - IMPORT services/hydrology.html -> style.css, services/service-page.js, main.js
 - IMPORT services/impact-assessment-report.html -> style.css, services/service-page.js, main.js
 - IMPORT services/open-well-solutions-detail.html -> style.css, services/service-page.js, main.js
