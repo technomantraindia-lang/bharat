@@ -4,9 +4,9 @@
 
 - Workspace: bharta
 - Technology: HTML/CSS/JavaScript
-- Active file at refresh: None
+- Active file at refresh: index.html
 - Local code graph: 30 files · 29 edges · 0 matched flows
-- Refreshed: 2026-10-28T06:34:01.658Z
+- Refreshed: 2026-10-30T06:06:17.475Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
