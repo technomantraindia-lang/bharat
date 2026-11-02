@@ -8965,6 +8965,36 @@ body.home-page .hero-media-side-note small i {
   box-shadow: 0 10px 22px rgba(8, 107, 200, 0.24);
 }
 
+.btn-modal-submit:disabled,
+.btn-send-message-pill:disabled {
+  opacity: 0.7;
+  cursor: wait;
+  transform: none;
+  box-shadow: none;
+}
+
+.form-status-message {
+  width: 100%;
+  margin: 12px 0 0;
+  padding: 11px 14px;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.form-status-message.is-success {
+  color: #047857;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+}
+
+.form-status-message.is-error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
 /* ==========================================================================
    7. RESPONSIVE BREAKPOINTS
    ========================================================================== */
@@ -39322,28 +39352,69 @@ body[data-service] .reference-process-icon.reference-process-icon {
   width: 68px;
   height: 68px;
   margin: 0 auto 15px;
-  border: 1px solid rgba(110, 178, 244, 0.48);
-  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  border-radius: 20px;
   color: #087be8;
-  background: #e6f3ff;
-  box-shadow: 0 9px 18px rgba(30, 115, 188, 0.12), inset 0 0 0 5px rgba(255, 255, 255, 0.38);
-  font-size: 1.55rem;
+  background: linear-gradient(145deg, #f1f8ff 0%, #d7ebff 100%);
+  box-shadow: 0 12px 22px rgba(30, 115, 188, 0.15), inset 0 0 0 1px rgba(255, 255, 255, 0.68);
+  font-size: 1.48rem;
   transform: none;
 }
 
+body[data-service] .reference-process-icon.reference-process-icon::before {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 14px;
+  pointer-events: none;
+}
+
+body[data-service] .reference-process-icon.reference-process-icon i {
+  position: relative;
+  z-index: 1;
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(30, 90, 150, 0.12);
+}
+
 body[data-service] .reference-process-card.tone-green .reference-process-icon.reference-process-icon {
-  color: #05b779;
-  background: #e4fbf3;
+  color: #008f6b;
+  background: linear-gradient(145deg, #f0fcf7 0%, #d1f3e6 100%);
+  border-color: #a9e4d0;
 }
 
 body[data-service] .reference-process-card.tone-purple .reference-process-icon.reference-process-icon {
-  color: #7438ed;
-  background: #f0e9ff;
+  color: #7043d4;
+  background: linear-gradient(145deg, #faf7ff 0%, #e8dcff 100%);
+  border-color: #ccbaff;
 }
 
 body[data-service] .reference-process-card.tone-orange .reference-process-icon.reference-process-icon {
-  color: #ff7b00;
-  background: #fff0df;
+  color: #d56b08;
+  background: linear-gradient(145deg, #fff9ef 0%, #ffe5c6 100%);
+  border-color: #ffd29e;
+}
+
+/* Crisp fallback symbols keep workflow icons readable without an icon-font request. */
+body[data-service].service-icons-fallback .reference-process-icon .fa-clipboard-check::before {
+  content: "\2713" !important;
+}
+
+body[data-service].service-icons-fallback .reference-process-icon .fa-compass-drafting::before {
+  content: "\2316" !important;
+}
+
+body[data-service].service-icons-fallback .reference-process-icon .fa-gears::before {
+  content: "\2699" !important;
+}
+
+body[data-service].service-icons-fallback .reference-process-icon .fa-file-lines::before {
+  content: "\25A4" !important;
+}
+
+body[data-service].service-icons-fallback .reference-process-icon .fa-lightbulb::before {
+  content: "\2726" !important;
 }
 
 body[data-service] .reference-process-card.reference-process-card h3 {
@@ -39389,11 +39460,11 @@ body[data-service] .reference-overview-benefit-icon {
   width: 48px;
   height: 48px;
   flex-basis: 48px;
-  border: 1px solid currentColor;
-  border-radius: 14px;
-  font-size: 1.18rem;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 16px;
+  font-size: 1.25rem;
   line-height: 1;
-  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.42), 0 6px 12px rgba(20, 87, 135, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.58), 0 8px 16px rgba(20, 87, 135, 0.12);
 }
 
 body[data-service] .reference-overview-benefit-icon i {
@@ -39407,19 +39478,44 @@ body[data-service] .reference-overview-benefit-icon i {
 }
 
 body[data-service] .reference-overview-benefit-icon.tone-blue {
-  border-color: rgba(8, 121, 237, 0.28);
+  color: #1167d8;
+  background: linear-gradient(145deg, #f0f7ff 0%, #d9ebff 100%);
+  border-color: #a6ceff;
 }
 
 body[data-service] .reference-overview-benefit-icon.tone-green {
-  border-color: rgba(13, 167, 121, 0.28);
+  color: #008f6b;
+  background: linear-gradient(145deg, #effcf7 0%, #d0f3e6 100%);
+  border-color: #9fdfca;
 }
 
 body[data-service] .reference-overview-benefit-icon.tone-orange {
-  border-color: rgba(231, 137, 29, 0.28);
+  color: #d56b08;
+  background: linear-gradient(145deg, #fff8ed 0%, #ffe5c5 100%);
+  border-color: #ffd09a;
 }
 
 body[data-service] .reference-overview-benefit-icon.tone-purple {
-  border-color: rgba(118, 80, 216, 0.28);
+  color: #7043d4;
+  background: linear-gradient(145deg, #f8f3ff 0%, #e8dcff 100%);
+  border-color: #c9b3ff;
+}
+
+/* Reliable fallback glyphs for the field-outcome icons when Font Awesome is unavailable. */
+body[data-service].service-icons-fallback .reference-overview-benefit-icon .fa-crosshairs::before {
+  content: "\25CE" !important;
+}
+
+body[data-service].service-icons-fallback .reference-overview-benefit-icon .fa-cube::before {
+  content: "\2B22" !important;
+}
+
+body[data-service].service-icons-fallback .reference-overview-benefit-icon .fa-leaf::before {
+  content: "\2747" !important;
+}
+
+body[data-service].service-icons-fallback .reference-overview-benefit-icon .fa-stopwatch::before {
+  content: "\23F1" !important;
 }
 
 @media (max-width: 640px) {
@@ -40497,5 +40593,157 @@ body.home-page .hero-intro-layout {
 @media (max-width: 700px) {
   body.home-page .hero-intro-layout {
     transform: none !important;
+  }
+}
+
+/* Technical capability icons: stronger visual hierarchy and dependable fallback glyphs. */
+body[data-service] .reference-technical-list i {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #a9d9f7;
+  border-radius: 14px;
+  color: #087fe2;
+  background: linear-gradient(145deg, #f1faff 0%, #d7efff 100%);
+  box-shadow: 0 8px 16px rgba(25, 143, 225, 0.14), inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  font-size: 0.92rem;
+  line-height: 1;
+}
+
+body[data-service] .reference-technical-list > div:nth-child(2) i {
+  color: #008f6b;
+  border-color: #a7e4d0;
+  background: linear-gradient(145deg, #f0fcf7 0%, #d0f3e6 100%);
+}
+
+body[data-service] .reference-technical-list > div:nth-child(3) i {
+  color: #7043d4;
+  border-color: #cdbbff;
+  background: linear-gradient(145deg, #faf7ff 0%, #e9ddff 100%);
+}
+
+body[data-service] .reference-technical-list > div:nth-child(4) i {
+  color: #d56b08;
+  border-color: #ffd29e;
+  background: linear-gradient(145deg, #fff9ef 0%, #ffe5c6 100%);
+}
+
+body[data-service] .reference-technical-list > div:nth-child(5) i {
+  color: #c33b82;
+  border-color: #f3bfd9;
+  background: linear-gradient(145deg, #fff5fa 0%, #ffe3f0 100%);
+}
+
+body[data-service] .reference-technical-stats i {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(91, 226, 255, 0.72);
+  border-radius: 11px;
+  color: #63e5ff;
+  background: linear-gradient(145deg, rgba(14, 133, 177, 0.72), rgba(4, 52, 94, 0.96));
+  box-shadow: 0 7px 14px rgba(0, 146, 210, 0.22), inset 0 0 0 2px rgba(255, 255, 255, 0.07);
+  font-size: 0.76rem;
+  line-height: 1;
+}
+
+body[data-service].service-icons-fallback .reference-technical-list .fa-flask::before {
+  content: "\2697" !important;
+}
+
+body[data-service].service-icons-fallback .reference-technical-list .fa-chart-line::before {
+  content: "\2197" !important;
+}
+
+body[data-service].service-icons-fallback .reference-technical-list .fa-microchip::before {
+  content: "\25C8" !important;
+}
+
+body[data-service].service-icons-fallback .reference-technical-list .fa-ruler-vertical::before {
+  content: "\2195" !important;
+}
+
+body[data-service].service-icons-fallback .reference-technical-list .fa-file-lines::before {
+  content: "\25A4" !important;
+}
+
+body[data-service].service-icons-fallback .reference-technical-stats .fa-flask-vial::before {
+  content: "\2697" !important;
+}
+
+body[data-service].service-icons-fallback .reference-technical-stats .fa-layer-group::before {
+  content: "\25A6" !important;
+}
+
+body[data-service].service-icons-fallback .reference-technical-stats .fa-shield-halved::before {
+  content: "\25C6" !important;
+}
+
+body[data-service].service-icons-fallback .reference-technical-stats .fa-file-lines::before {
+  content: "\25A4" !important;
+}
+
+/* Keep the floating technical stats icon and copy in separate, non-overlapping columns. */
+body[data-service] .reference-technical-stats span {
+  display: grid !important;
+  grid-template-columns: 38px minmax(0, 1fr) !important;
+  grid-template-rows: auto auto;
+  align-items: center;
+  column-gap: 10px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+body[data-service] .reference-technical-stats span > i {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  place-self: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 12px;
+}
+
+body[data-service] .reference-technical-stats span > b,
+body[data-service] .reference-technical-stats span > small {
+  grid-column: 2;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-service] .reference-technical-stats span > b {
+  align-self: end;
+}
+
+body[data-service] .reference-technical-stats span > small {
+  align-self: start;
+  margin-top: 3px;
+}
+
+body[data-service] .reference-technical-stats span:nth-child(2) > i {
+  color: #71f2c5;
+  border-color: rgba(113, 242, 197, 0.72);
+}
+
+body[data-service] .reference-technical-stats span:nth-child(3) > i {
+  color: #c7a8ff;
+  border-color: rgba(199, 168, 255, 0.72);
+}
+
+body[data-service] .reference-technical-stats span:nth-child(4) > i {
+  color: #ffd08a;
+  border-color: rgba(255, 208, 138, 0.72);
+}
+
+@media (max-width: 520px) {
+  body[data-service] .reference-technical-stats span {
+    grid-template-columns: 32px minmax(0, 1fr) !important;
+    column-gap: 8px;
+  }
+
+  body[data-service] .reference-technical-stats span > i {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
   }
 }

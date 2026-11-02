@@ -637,6 +637,31 @@
   const service = pageData[key];
   if (!service) return;
 
+  const contactServiceValues = {
+    'gpr-survey': 'gpr',
+    'cgwa-application': 'cgwa-application',
+    'cleaning-recharge-well': 'cleaning-recharge-well',
+    'drilling-borewell': 'drilling-borewell',
+    'environmental-remediation': 'environmental-remediation',
+    'geo-technical-work': 'geo-technical',
+    'impact-assessment-report': 'impact-assessment',
+    'piezometer-supplier': 'piezometer',
+    'pump-test': 'pump-test',
+    'rain-water-harvesting': 'rainwater-harvesting',
+    'water-audit': 'water-audit',
+    'water-flow-meter': 'flow-meter',
+    'water-flowmeter-calibration': 'flowmeter-calibration',
+    'water-sample-analysis': 'water-sample-analysis',
+    'open-well-solutions-detail': 'openwell',
+    'borewell-revival-detail': 'revival',
+    'flood-analysis': 'flood-analysis',
+    'water-credit': 'water-credit',
+    'hydrology': 'hydrology',
+    'groundwater-investigation-stem': 'groundwater-investigation'
+  };
+  const serviceContactValue = contactServiceValues[key] || key;
+  const serviceContactHref = `../contact.html?service=${encodeURIComponent(serviceContactValue)}`;
+
   if (!document.querySelector('link[href*="font-awesome"]')) {
     const iconStylesheet = document.createElement('link');
     iconStylesheet.rel = 'stylesheet';
@@ -1105,6 +1130,9 @@
     .replaceAll('+91 98263 77611', phoneDisplay);
   document.querySelectorAll('a.f-contact-link[href^="tel:"] .f-contact-val').forEach((phone) => {
     phone.innerHTML = '+91 73834 62564<br>+91 99797 67963<br>+91 73834 72931';
+  });
+  document.querySelectorAll('a[href="../contact.html"]').forEach((link) => {
+    link.href = serviceContactHref;
   });
   document.querySelectorAll('.copyright-text').forEach((copyright) => {
     copyright.innerHTML = '&copy; 2026 Technomantra India. All Rights Reserved.';

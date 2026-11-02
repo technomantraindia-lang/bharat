@@ -2176,26 +2176,27 @@
         <p>Talk to our senior hydrogeologists for site survey &amp; technical feasibility.</p>
       </div>
 
-      <form class="modal-form-body" onsubmit="handleFormSubmit(event)">
+      <form class="modal-form-body" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleFormSubmit(event)">
+        <input type="hidden" name="access_key" value="e5ed8cf7-aa23-4b64-b1dd-c1670aaaf64a">
         <div class="form-group">
           <label>Full Name</label>
-          <input type="text" placeholder="e.g. Chetan Patel" required>
+          <input type="text" name="name" placeholder="e.g. Chetan Patel" required>
         </div>
 
         <div class="form-row-2">
           <div class="form-group">
             <label>Phone Number</label>
-            <input type="tel" placeholder="e.g. 7383462564" required>
+            <input type="tel" name="phone" placeholder="e.g. 7383462564" required>
           </div>
           <div class="form-group">
             <label>City / Location</label>
-            <input type="text" placeholder="e.g. Vadodara, Gujarat" required>
+            <input type="text" name="city" placeholder="e.g. Vadodara, Gujarat" required>
           </div>
         </div>
 
         <div class="form-group">
           <label>Select Required Service</label>
-          <select required>
+          <select name="service" required>
             <option value="">Select a service...</option>
             <option value="geophysical">Geophysical Survey</option>
             <option value="gpr">GPR Survey</option>
@@ -2232,7 +2233,7 @@
     </div>
   </div>
 
-  <script src="main.js?v=1.7.0"></script>
+  <script src="main.js?v=3.1.0"></script>
 </body>
 
 </html>

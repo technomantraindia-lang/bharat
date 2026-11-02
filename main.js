@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initClientMarquee();
   initProcessAnimations();
   initServicesAnimations();
+  initWeb3Forms();
+  initContactServicePrefill();
 });
 
 // 0.1 About section reveal choreography
@@ -667,11 +669,108 @@ function initIndustriesFilter() {
   });
 }
 
+const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
+const WEB3FORMS_ACCESS_KEY = 'e5ed8cf7-aa23-4b64-b1dd-c1670aaaf64a';
+
+function initWeb3Forms() {
+  const contactForm = document.getElementById('contactForm');
+  if (!contactForm) return;
+
+  contactForm.addEventListener('submit', (event) => {
+    submitToWeb3Forms(event, contactForm);
+  });
+}
+
+function initContactServicePrefill() {
+  const serviceSelect = document.getElementById('subjectSelect');
+  if (!serviceSelect) return;
+
+  const requestedService = new URLSearchParams(window.location.search).get('service');
+  if (!requestedService) return;
+
+  const matchingOption = Array.from(serviceSelect.options).find((option) => option.value === requestedService);
+  if (!matchingOption) return;
+
+  serviceSelect.value = matchingOption.value;
+  serviceSelect.dispatchEvent(new Event('change', { bubbles: true }));
+}
+
+function getWeb3FormStatus(form) {
+  let status = form.querySelector('.form-status-message');
+  if (!status) {
+    status = document.createElement('p');
+    status.className = 'form-status-message';
+    status.setAttribute('role', 'status');
+    status.setAttribute('aria-live', 'polite');
+    form.appendChild(status);
+  }
+  return status;
+}
+
+function setWeb3FormStatus(form, message, type) {
+  const status = getWeb3FormStatus(form);
+  status.textContent = message;
+  status.className = `form-status-message is-${type}`;
+}
+
+async function submitToWeb3Forms(event, form) {
+  event.preventDefault();
+  const targetForm = form || event.target;
+  if (!targetForm || targetForm.dataset.submitting === 'true') return;
+
+  const submitButton = targetForm.querySelector('button[type="submit"]');
+  const originalButtonMarkup = submitButton ? submitButton.innerHTML : '';
+  targetForm.dataset.submitting = 'true';
+
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.setAttribute('aria-busy', 'true');
+    const buttonText = submitButton.querySelector('span');
+    if (buttonText) buttonText.textContent = 'Sending...';
+  }
+
+  try {
+    const formData = new FormData(targetForm);
+    formData.set('access_key', WEB3FORMS_ACCESS_KEY);
+    formData.set('subject', `New ${targetForm.id === 'contactForm' ? 'Contact' : 'Inquiry'} from Bharat Bhujal website`);
+    formData.set('from_name', 'Bharat Bhujal Website');
+    formData.set('page_url', window.location.href);
+
+    const email = formData.get('email');
+    if (email) formData.set('replyto', email);
+
+    const response = await fetch(WEB3FORMS_ENDPOINT, {
+      method: 'POST',
+      body: formData,
+      headers: { Accept: 'application/json' }
+    });
+    const result = await response.json().catch(() => ({}));
+
+    if (!response.ok || result.success !== true) {
+      throw new Error(result.message || result.body?.message || 'Submission failed');
+    }
+
+    setWeb3FormStatus(targetForm, 'Thank you! Your inquiry has been sent successfully. Our team will contact you shortly.', 'success');
+    targetForm.reset();
+
+    if (targetForm.classList.contains('modal-form-body')) {
+      setTimeout(() => closeConsultModal(), 1200);
+    }
+  } catch (error) {
+    console.error('Web3Forms submission failed:', error);
+    setWeb3FormStatus(targetForm, 'Unable to send your inquiry right now. Please try again or call us directly.', 'error');
+  } finally {
+    targetForm.dataset.submitting = 'false';
+    if (submitButton) {
+      submitButton.disabled = false;
+      submitButton.removeAttribute('aria-busy');
+      submitButton.innerHTML = originalButtonMarkup;
+    }
+  }
+}
+
 function handleFormSubmit(e) {
-  e.preventDefault();
-  alert('Thank you! Your consultation request has been submitted to Bharat Bhujal Tech Pvt. Ltd. Our team will contact you shortly.');
-  closeConsultModal();
-  e.target.reset();
+  submitToWeb3Forms(e, e.currentTarget || e.target);
 }
 
 function handleNewsletterSubmit(e) {
