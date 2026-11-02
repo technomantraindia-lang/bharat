@@ -5,7 +5,7 @@
 - Indexed source files: 30
 - Structural edges: 29
 - Matched end-to-end flows: 0
-- Updated: 2026-11-02T03:30:21.889Z
+- Updated: 2026-11-02T04:55:30.438Z
 
 ## Dependency edges
 - IMPORT index.html -> style.css, main.js
@@ -38,7 +38,7 @@
 
 ## Database references
 - DB services/service-page.js -> clear, rainfall, implementation, practical, the, GPR, site, a, relevant, selected, rooftops, collected, rainwater, borewells
-- DB main.js -> Tabs, Slides, active, Pill, Carousel, LEFT, RIGHT
+- DB main.js -> Tabs, Slides, active, Bharat, Pill, Carousel, LEFT, RIGHT
 
 ## Symbols
 - SYMBOL services/service-page.js: list, ticks, richSteps
