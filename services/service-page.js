@@ -1017,9 +1017,9 @@
     <div class="top-bar">
       <div class="container top-bar-inner">
         <div class="top-bar-left">
-          <div class="top-info-item"><i class="fa-solid fa-location-dot"></i><span>506, 507, OneWest by Asopalav, Bhayli-Sevasi Link Road, Vadodara - 391101</span></div>
+          <div class="top-info-item"><i class="fa-solid fa-location-dot"></i><span>506, 507, One West by Asopalav, Beside Advantura, Gotri-Sevasi Link Road, Gotri - 391101</span></div>
           <a href="mailto:info@bharatbhujal.com" class="top-info-item"><i class="fa-regular fa-envelope"></i><span>info@bharatbhujal.com</span></a>
-          <a href="tel:+919826377611" class="top-info-item"><i class="fa-solid fa-phone-volume"></i><span>+91 98263 77611</span></a>
+          <a href="tel:+917383462564" class="top-info-item"><i class="fa-solid fa-phone-volume"></i><span>+91 73834 62564 / +91 99797 67963 / +91 73834 72931</span></a>
         </div>
         <div class="top-bar-right"><div class="top-social-group"><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></div></div>
       </div>
@@ -1046,7 +1046,7 @@
       ${referenceMain}
     </main>
 
-    <footer class="master-footer" id="contact"><div class="footer-bg-landscape"><div class="mountain-backdrop-art"></div><div class="footer-water-drop-art"><div class="drop-column"></div><div class="drop-ripple-circle dr-1"></div><div class="drop-ripple-circle dr-2"></div><div class="drop-ripple-circle dr-3"></div></div></div><div class="container footer-main-container"><div class="footer-grid-5col"><div class="footer-col col-brand"><a href="../index.html" class="footer-logo"><img src="../assect/logo.png" alt="Bharat Bhujal Tech Pvt. Ltd." class="footer-logo-img"></a><p class="brand-mission-text">Your trusted partner for groundwater exploration, precision borewell drilling, and sustainable water resource management across India.</p><div class="footer-trust-badge"><i class="fa-solid fa-shield-halved"></i><span>ISO 9001:2015 &amp; CGWA Compliant</span></div></div><div class="footer-col col-quicklinks"><h4 class="footer-heading">Quick Links<span class="heading-accent-line"></span></h4><ul class="footer-nav-list"><li><a href="../index.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>Home</span></a></li><li><a href="../about.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>About Us</span></a></li><li><a href="../services.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>All Services</span></a></li><li><a href="../contact.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>Contact Us</span></a></li></ul></div><div class="footer-col col-contact"><h4 class="footer-heading">Get in Touch<span class="heading-accent-line"></span></h4><div class="footer-contact-items"><a href="tel:+919826377611" class="f-contact-card f-contact-link"><div class="f-contact-icon-box pulse-blue"><i class="fa-solid fa-phone-volume"></i></div><div class="f-contact-details"><span class="f-contact-label">Technical Inquiry</span><span class="f-contact-val highlight-val">+91 98263 77611</span></div></a><a href="mailto:info@bharatbhujal.com" class="f-contact-card f-contact-link"><div class="f-contact-icon-box"><i class="fa-regular fa-envelope"></i></div><div class="f-contact-details"><span class="f-contact-label">Email Consultation</span><span class="f-contact-val highlight-val">info@bharatbhujal.com</span></div></a></div></div></div></div><div class="footer-bottom-strip"><div class="container footer-bottom-inner"><div class="copyright-text">&copy; 2026 Bharat Bhujal Tech Pvt. Ltd. All Rights Reserved.</div><div class="made-in-tag"><span>Designed with <span class="heart-blue">&#10084;</span> in India</span></div></div></div></footer>
+    <footer class="master-footer" id="contact"><div class="footer-bg-landscape"><div class="mountain-backdrop-art"></div><div class="footer-water-drop-art"><div class="drop-column"></div><div class="drop-ripple-circle dr-1"></div><div class="drop-ripple-circle dr-2"></div><div class="drop-ripple-circle dr-3"></div></div></div><div class="container footer-main-container"><div class="footer-grid-5col"><div class="footer-col col-brand"><a href="../index.html" class="footer-logo"><img src="../assect/logo.png" alt="Bharat Bhujal Tech Pvt. Ltd." class="footer-logo-img"></a><p class="brand-mission-text">Your trusted partner for groundwater exploration, precision borewell drilling, and sustainable water resource management across India.</p></div><div class="footer-col col-quicklinks"><h4 class="footer-heading">Quick Links<span class="heading-accent-line"></span></h4><ul class="footer-nav-list"><li><a href="../index.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>Home</span></a></li><li><a href="../about.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>About Us</span></a></li><li><a href="../services.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>All Services</span></a></li><li><a href="../contact.html"><i class="fa-solid fa-chevron-right f-link-arrow"></i><span>Contact Us</span></a></li></ul></div><div class="footer-col col-contact"><h4 class="footer-heading">Get in Touch<span class="heading-accent-line"></span></h4><div class="footer-contact-items"><a href="tel:+919826377611" class="f-contact-card f-contact-link"><div class="f-contact-icon-box pulse-blue"><i class="fa-solid fa-phone-volume"></i></div><div class="f-contact-details"><span class="f-contact-label">Technical Inquiry</span><span class="f-contact-val highlight-val">+91 98263 77611</span></div></a><a href="mailto:info@bharatbhujal.com" class="f-contact-card f-contact-link"><div class="f-contact-icon-box"><i class="fa-regular fa-envelope"></i></div><div class="f-contact-details"><span class="f-contact-label">Email Consultation</span><span class="f-contact-val highlight-val">info@bharatbhujal.com</span></div></a></div></div></div></div><div class="footer-bottom-strip"><div class="container footer-bottom-inner"><div class="copyright-text">&copy; 2026 Technomantra</div></div></div></footer>
   `;
 
   // Keep each FAQ group as a true accordion: opening one answer closes the others.
@@ -1074,8 +1074,6 @@
           <div class="footer-col col-brand">
             <a href="../index.html" class="footer-logo"><img src="../assect/logo.png" alt="Bharat Bhujal Tech Pvt. Ltd." class="footer-logo-img"></a>
             <p class="brand-mission-text">Your trusted partner for groundwater exploration, precision borewell drilling, and sustainable water resource management across India.</p>
-            <div class="footer-trust-badge"><i class="fa-solid fa-shield-halved"></i><span>ISO 9001:2015 &amp; CGWA Compliant</span></div>
-            <div class="footer-social-circles"><a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a><a href="#" aria-label="Website" title="Website"><i class="fa-solid fa-globe"></i></a></div>
           </div>
           <div class="footer-col col-quicklinks">
             <h4 class="footer-heading">Quick Links<span class="heading-accent-line"></span></h4>
@@ -1091,17 +1089,30 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom-strip"><div class="container footer-bottom-inner"><div class="copyright-text">&copy; 2026 Bharat Bhujal Tech Pvt. Ltd. All Rights Reserved.</div><div class="legal-links"><a href="#">Privacy Policy</a><span class="sep">|</span><a href="#">Terms &amp; Conditions</a><span class="sep">|</span><a href="#">Sitemap</a></div><div class="made-in-tag"><span>Designed with <span class="heart-blue">&#10084;</span> in India</span></div></div></div>
+      <div class="footer-bottom-strip"><div class="container footer-bottom-inner"><div class="copyright-text">&copy; 2026 Technomantra</div></div></div>
     </footer>`;
-  const officeAddress = '506, 507, OneWest by Asopalav, Bhayli-Sevasi Link Road, Vadodara - 391101';
+  const officeAddress = '506, 507, One West by Asopalav, Beside Advantura, Gotri-Sevasi Link Road, Gotri - 391101';
+  const phoneDisplay = '+91 73834 62564 / +91 99797 67963 / +91 73834 72931';
   document.body.innerHTML = document.body.innerHTML
     .replaceAll('301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India', officeAddress)
-    .replaceAll('301, SDF Complex, Akshar Chowk, Vadodara, Gujarat, India', officeAddress);
+    .replaceAll('301, SDF Complex, Akshar Chowk, Vadodara, Gujarat, India', officeAddress)
+    .replaceAll('506, 507, OneWest by Asopalav, Bhayli-Sevasi Link Road, Vadodara - 391101', officeAddress)
+    .replaceAll('tel:+919826377611', 'tel:+917383462564')
+    .replaceAll('+91 98263 77611', phoneDisplay);
   const currentFooter = document.querySelector('.master-footer');
   const normalizedFooter = homepageFooter
     .replaceAll('301, SDF Complex, Nr. Pragati Building, Akshar Chowk, Vadodara, Gujarat, India', officeAddress)
     .replaceAll('301, SDF Complex, Akshar Chowk, Vadodara, Gujarat, India', officeAddress);
   if (currentFooter) currentFooter.outerHTML = normalizedFooter;
+  document.body.innerHTML = document.body.innerHTML
+    .replaceAll('tel:+919826377611', 'tel:+917383462564')
+    .replaceAll('+91 98263 77611', phoneDisplay);
+  document.querySelectorAll('a.f-contact-link[href^="tel:"] .f-contact-val').forEach((phone) => {
+    phone.innerHTML = '+91 73834 62564<br>+91 99797 67963<br>+91 73834 72931';
+  });
+  document.querySelectorAll('.copyright-text').forEach((copyright) => {
+    copyright.innerHTML = '&copy; 2026 Technomantra India. All Rights Reserved.';
+  });
 })();
 /* <div class="footer-col col-contact">
   <h4 class="footer-heading">Get in Touch<span class="heading-accent-line"></span></h4>
@@ -1109,7 +1120,7 @@
 </div>
         </div >
       </div >
-  <div class="footer-bottom-strip"><div class="container footer-bottom-inner"><div class="copyright-text">&copy; 2026 Bharat Bhujal Tech Pvt. Ltd. All Rights Reserved.</div><div class="legal-links"><a href="#">Privacy Policy</a><span class="sep">|</span><a href="#">Terms &amp; Conditions</a><span class="sep">|</span><a href="#">Sitemap</a></div><div class="made-in-tag"><span>Designed with <span class="heart-blue">&#10084;</span> in India</span></div></div></div>
+  <div class="footer-bottom-strip"><div class="container footer-bottom-inner"><div class="copyright-text">&copy; 2026 Technomantra</div></div></div>
     </footer > `;
 */
 /* const currentFooter = document.querySelector('.master-footer');

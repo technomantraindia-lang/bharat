@@ -4,9 +4,9 @@
 
 - Workspace: bharta
 - Technology: HTML/CSS/JavaScript
-- Active file at refresh: index.html
+- Active file at refresh: None
 - Local code graph: 30 files · 29 edges · 0 matched flows
-- Refreshed: 2026-10-30T10:57:58.973Z
+- Refreshed: 2026-11-02T03:30:21.902Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -93,7 +93,6 @@
 - .technomantra/workspace-index.json
 - .vscode/settings.json
 - about.html
-- assect/client/ic_logo (1).svg
 - assect/client/ic_logo.svg
 - contact.html
 - knowledge.html
@@ -107,9 +106,9 @@
 - services/cgwa-application.html
 - services/cleaning-recharge-well.html
 - services/drilling-borewell.html
+- services/environmental-remediation.html
 
 ## Additional indexed files
-- services/environmental-remediation.html
 - services/flood-analysis.html
 - services/geo-technical-work.html
 - services/gpr-survey.html
